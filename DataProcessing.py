@@ -29,9 +29,13 @@ df.to_sql('twitter', conn, if_exists='replace', index=False)
 
 cur.execute("SELECT date FROM twitter WHERE text LIKE '% c++ %'")
 times = cur.fetchall()
-sort(times)
-print(times)
-DateData = matplotlib.dates.datestr2num(times)
+
+actualtime = []
+for time in times:
+    actualtime.append(time)
+print(actualtime)
+DateData = matplotlib.dates.datestr2num(actualtime)
+DateData.sort()
 print(DateData)
 
 #there is a better way to do this
