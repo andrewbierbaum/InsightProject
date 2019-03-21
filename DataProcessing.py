@@ -31,18 +31,19 @@ cur.execute("SELECT date FROM twitter WHERE text LIKE '%c++%'")
 times = cur.fetchall()
 cleantime = [i[0] for i in times]
 
-# cleantime = []
-# for time in times:
-#     cleantime.append(times[0])
-print(cleantime)
+
+#print(cleantime)
 DateData = matplotlib.dates.datestr2num(cleantime)
 DateData.sort()
-print(DateData)
+#print(DateData)
 
-#there is a better way to do this
+#count = [i for i in range(0,cleantime)]
 count = []
 for i in range(len(DateData)):
     count.append(i)
+
+
+#there is a better way to do this
 #maybe come back to for counting data
 # DateAndCount = []
 # #reverse enumberate that is non-iterable
@@ -51,10 +52,14 @@ for i in range(len(DateData)):
 #     DateAndCount = date
 # CountAndDate = enumerate(DateData)
 # print(CountAndDate)
+
+#plot the data
 matplotlib.pyplot.plot_date(DateData,count,xdate=True, drawstyle = 'steps', linestyle = 'solid' )
+matplotlib.pyplot.ylabel('Mentions')
+matplotlib.pyplot.title('c++ twitter mentions')
 plt.show()
 
+#clean up sql
 conn.commit()
 cur.close
 conn.close()
-print('done')
