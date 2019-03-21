@@ -1,0 +1,7 @@
+{
+    "python.linting.pylintEnabled": false,
+    "python.linting.pep8Enabled": false,
+    "python.linting.enabled": true,
+    "python.linting.pydocstyleEnabled": true,
+    "python.pythonPath": "/home/andrew/anaconda3/bin/python"
+}
