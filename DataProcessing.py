@@ -18,11 +18,13 @@ cur.execute("CREATE TABLE twitter (target, ids, date, flag, user,text);")
 #https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html
 #https://www.kaggle.com/kazanova/sentiment140/version/2
 df = pandas.read_csv('TwitterSmall.csv', encoding='ISO-8859-1', names=DATASET_COLUMNS)
-print(len(df))
-print(df.head(5))
+
+#testing to see if loading is working
+#print(len(df))
+#print(df.head(5))
 df.to_sql('twitter', conn, if_exists='replace', index=False)
 
-cur.execute("SELECT text FROM twitter WHERE text LIKE '%cry%' LIMIT 10")
+cur.execute("SELECT count(text) FROM twitter WHERE text LIKE '% sad %' LIMIT 10")
 print(cur.fetchall())
 
 conn.commit()
