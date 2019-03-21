@@ -27,14 +27,15 @@ df = pandas.read_csv('TwitterSmall.csv', encoding='ISO-8859-1', names=DATASET_CO
 #print(df.head(5))
 df.to_sql('twitter', conn, if_exists='replace', index=False)
 
-cur.execute("SELECT date FROM twitter WHERE text LIKE '% c++ %'")
+cur.execute("SELECT date FROM twitter WHERE text LIKE '%c++%'")
 times = cur.fetchall()
+cleantime = [i[0] for i in times]
 
-actualtime = []
-for time in times:
-    actualtime.append(time)
-print(actualtime)
-DateData = matplotlib.dates.datestr2num(actualtime)
+# cleantime = []
+# for time in times:
+#     cleantime.append(times[0])
+print(cleantime)
+DateData = matplotlib.dates.datestr2num(cleantime)
 DateData.sort()
 print(DateData)
 
@@ -50,7 +51,7 @@ for i in range(len(DateData)):
 #     DateAndCount = date
 # CountAndDate = enumerate(DateData)
 # print(CountAndDate)
-matplotlib.pyplot.plot_date(DateData,count,xdate=True)
+matplotlib.pyplot.plot_date(DateData,count,xdate=True, drawstyle = 'steps', linestyle = 'solid' )
 plt.show()
 
 conn.commit()
