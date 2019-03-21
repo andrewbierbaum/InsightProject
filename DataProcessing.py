@@ -22,9 +22,8 @@ print(len(df))
 print(df.head(5))
 df.to_sql('twitter', conn, if_exists='replace', index=False)
 
-print(cur.execute('SELECT * FROM twitter LIMIT 10'))
-
-#text LIKE '% happy %'
+cur.execute("SELECT text FROM twitter WHERE text LIKE '%cry%' LIMIT 10")
+print(cur.fetchall())
 
 conn.commit()
 cur.close
