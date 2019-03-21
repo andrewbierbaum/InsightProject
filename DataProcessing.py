@@ -5,6 +5,9 @@ import sys
 import json
 import os
 import sys
+import datetime
+import matplotlib
+import matplotlib.pyplot as plt
 
 #https://stackoverflow.com/questions/2887878/importing-a-csv-file-into-a-sqlite3-database-table-using-python
 #REDDIT data
@@ -24,8 +27,27 @@ df = pandas.read_csv('TwitterSmall.csv', encoding='ISO-8859-1', names=DATASET_CO
 #print(df.head(5))
 df.to_sql('twitter', conn, if_exists='replace', index=False)
 
-cur.execute("SELECT count(text) FROM twitter WHERE text LIKE '% sad %' LIMIT 10")
-print(cur.fetchall())
+cur.execute("SELECT date FROM twitter WHERE text LIKE '% c++ %'")
+times = cur.fetchall()
+sort(times)
+print(times)
+DateData = matplotlib.dates.datestr2num(times)
+print(DateData)
+
+#there is a better way to do this
+count = []
+for i in range(len(DateData)):
+    count.append(i)
+#maybe come back to for counting data
+# DateAndCount = []
+# #reverse enumberate that is non-iterable
+# count = 0
+# for date in DataData
+#     DateAndCount = date
+# CountAndDate = enumerate(DateData)
+# print(CountAndDate)
+matplotlib.pyplot.plot_date(DateData,count,xdate=True)
+plt.show()
 
 conn.commit()
 cur.close
