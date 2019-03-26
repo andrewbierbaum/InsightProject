@@ -3,5 +3,5 @@
     "python.linting.pep8Enabled": false,
     "python.linting.enabled": true,
     "python.linting.pydocstyleEnabled": true,
-    "python.pythonPath": "/home/andrew/anaconda3/bin/python"
+    "python.pythonPath": "/usr/local/bin/python3"
 }
