@@ -27,8 +27,8 @@ app.layout = html.Div(children=[
     html.H1(children='HackerNews Mentions'),
     html.Div(children='''Comparing the mentions of Xamarin and Flutter on HackerNews'''),
     
-    #builds the year range selector
-    dcc.RangeSlider(id='year_slider', min=2008, max=2020, value=[2008, 2020])
+#    #builds the year range selector
+#    dcc.RangeSlider(id='year_slider', min=2008, max=2020, value=[2008, 2020])
                     
     #builds the graph                    
     dcc.Graph(

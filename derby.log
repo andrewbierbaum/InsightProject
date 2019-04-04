@@ -1,7 +1,7 @@
 ----------------------------------------------------------------
-Thu Apr 04 15:16:50 UTC 2019:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0169-e8ec-8a3c-00001448bcb8 
-on database directory /home/ubuntu/InsightProject/metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@532c4863 
+Thu Apr 04 17:22:38 UTC 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0169-e95f-ba80-00000ecafda0 
+on database directory /home/ubuntu/InsightProject/metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@32907774 
 Loaded from file:/usr/local/spark/jars/derby-10.12.1.1.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_191-8u191-b12-2ubuntu0.16.04.1-b12
