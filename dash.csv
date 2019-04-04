@@ -1,301 +1,1653 @@
-,timestamps
-0,2006-01-05 15:29:58
-1,2006-01-10 02:08:18
-2,2006-01-16 21:28:54
-3,2006-02-01 16:35:28
-4,2006-02-01 17:58:16
-5,2006-02-02 13:36:17
-6,2006-02-08 17:57:28
-7,2006-02-14 08:03:52
-8,2006-02-18 02:08:15
-9,2006-02-20 21:04:21
-10,2006-02-21 15:08:55
-11,2006-03-02 14:34:59
-12,2006-03-07 23:38:55
-13,2006-03-10 14:06:55
-14,2006-03-10 16:31:27
-15,2006-03-10 17:20:55
-16,2006-03-13 18:04:11
-17,2006-03-14 00:51:15
-18,2006-03-14 16:41:58
-19,2006-03-14 23:35:17
-20,2006-03-16 19:52:11
-21,2006-03-17 13:00:31
-22,2006-03-21 04:42:24
-23,2006-03-27 03:33:05
-24,2006-03-27 19:38:39
-25,2006-03-30 15:30:22
-26,2006-04-01 06:51:18
-27,2006-04-02 02:23:14
-28,2006-04-05 16:20:29
-29,2006-04-05 16:27:24
-30,2006-04-07 02:06:41
-31,2006-04-07 06:44:16
-32,2006-04-08 17:15:38
-33,2006-04-11 02:07:32
-34,2006-04-13 17:53:12
-35,2006-04-14 14:18:22
-36,2006-04-17 00:40:22
-37,2006-04-18 15:01:57
-38,2006-04-19 20:40:48
-39,2006-04-23 05:09:52
-40,2006-04-24 21:10:47
-41,2006-04-24 21:33:16
-42,2006-04-25 17:40:08
-43,2006-04-28 07:13:14
-44,2006-04-28 16:32:11
-45,2006-04-30 09:25:17
-46,2006-05-01 11:44:55
-47,2006-05-01 13:36:04
-48,2006-05-01 14:12:30
-49,2006-05-01 20:24:18
-50,2006-05-05 01:48:54
-51,2006-05-05 05:53:38
-52,2006-05-05 15:44:20
-53,2006-05-07 22:10:24
-54,2006-05-09 16:36:17
-55,2006-05-11 04:43:30
-56,2006-05-15 04:27:20
-57,2006-05-16 16:21:39
-58,2006-05-16 20:30:01
-59,2006-05-17 19:30:48
-60,2006-05-22 15:50:38
-61,2006-05-24 09:48:46
-62,2006-05-25 19:26:31
-63,2006-05-25 22:53:46
-64,2006-05-27 23:42:10
-65,2006-06-02 14:30:10
-66,2006-06-07 17:46:28
-67,2006-06-07 22:53:37
-68,2006-06-08 16:31:03
-69,2006-06-11 09:06:22
-70,2006-06-13 19:02:56
-71,2006-06-14 14:31:03
-72,2006-06-14 14:44:29
-73,2006-06-14 15:28:03
-74,2006-06-14 15:30:26
-75,2006-06-15 20:05:23
-76,2006-06-16 13:37:43
-77,2006-06-17 04:48:25
-78,2006-06-18 20:46:01
-79,2006-06-19 19:40:54
-80,2006-06-20 16:11:45
-81,2006-06-20 20:53:40
-82,2006-06-29 15:45:16
-83,2006-07-04 12:43:42
-84,2006-07-05 13:53:32
-85,2006-07-05 19:00:21
-86,2006-07-06 11:12:09
-87,2006-07-06 11:29:18
-88,2006-07-06 16:19:36
-89,2006-07-06 16:48:15
-90,2006-07-07 20:36:04
-91,2006-07-11 10:53:09
-92,2006-07-12 03:23:15
-93,2006-07-14 17:09:32
-94,2006-07-16 04:05:36
-95,2006-07-18 02:17:19
-96,2006-07-18 16:36:07
-97,2006-07-19 12:28:24
-98,2006-07-20 07:02:30
-99,2006-07-20 18:52:08
-100,2006-07-21 02:05:03
-101,2006-07-22 09:16:11
-102,2006-07-22 18:02:25
-103,2006-07-22 18:44:35
-104,2006-07-25 16:19:28
-105,2006-07-25 19:37:23
-106,2006-07-29 19:55:48
-107,2006-07-29 23:58:32
-108,2006-07-30 01:07:13
-109,2006-07-30 12:09:04
-110,2006-07-31 02:26:06
-111,2006-07-31 12:11:15
-112,2006-07-31 23:02:43
-113,2006-08-01 13:56:42
-114,2006-08-07 21:03:30
-115,2006-08-07 21:10:41
-116,2006-08-07 23:03:58
-117,2006-08-07 23:22:49
-118,2006-08-07 23:39:39
-119,2006-08-08 00:33:44
-120,2006-08-08 03:53:46
-121,2006-08-08 06:43:41
-122,2006-08-08 16:48:59
-123,2006-08-08 19:05:32
-124,2006-08-09 10:04:58
-125,2006-08-10 11:53:09
-126,2006-08-12 13:30:49
-127,2006-08-13 18:47:05
-128,2006-08-16 19:10:53
-129,2006-08-21 01:20:27
-130,2006-08-21 08:44:40
-131,2006-08-21 10:58:15
-132,2006-08-21 13:25:21
-133,2006-08-23 06:04:30
-134,2006-08-23 23:58:33
-135,2006-08-24 03:51:42
-136,2006-08-24 18:12:06
-137,2006-08-25 04:21:04
-138,2006-08-26 17:41:07
-139,2006-08-31 14:22:15
-140,2006-09-01 01:27:08
-141,2006-09-02 17:42:36
-142,2006-09-02 19:27:39
-143,2006-09-05 16:46:09
-144,2006-09-05 18:04:28
-145,2006-09-06 04:29:55
-146,2006-09-06 23:39:52
-147,2006-09-08 00:41:54
-148,2006-09-09 20:26:53
-149,2006-09-12 02:13:50
-150,2006-09-12 06:47:36
-151,2006-09-12 06:49:56
-152,2006-09-12 08:48:28
-153,2006-09-12 22:34:06
-154,2006-09-12 23:24:34
-155,2006-09-15 19:57:35
-156,2006-09-15 19:58:29
-157,2006-09-18 12:19:54
-158,2006-09-19 14:34:00
-159,2006-09-20 10:04:59
-160,2006-09-20 11:27:46
-161,2006-09-20 23:27:33
-162,2006-09-21 17:46:22
-163,2006-09-22 15:30:16
-164,2006-09-22 20:50:34
-165,2006-09-22 22:44:47
-166,2006-09-24 11:32:18
-167,2006-09-24 22:11:43
-168,2006-09-28 14:57:39
-169,2006-10-01 10:33:08
-170,2006-10-01 18:12:57
-171,2006-10-01 23:21:07
-172,2006-10-02 14:42:38
-173,2006-10-02 15:44:14
-174,2006-10-02 19:56:55
-175,2006-10-03 14:16:45
-176,2006-10-03 15:14:56
-177,2006-10-03 17:19:21
-178,2006-10-04 18:30:30
-179,2006-10-06 02:44:28
-180,2006-10-07 20:10:23
-181,2006-10-10 08:08:00
-182,2006-10-10 09:45:50
-183,2006-10-13 12:31:23
-184,2006-10-17 13:52:53
-185,2006-10-19 00:27:13
-186,2006-10-19 13:00:28
-187,2006-10-21 19:27:59
-188,2006-10-23 20:55:07
-189,2006-10-24 20:20:07
-190,2006-10-25 17:14:18
-191,2006-10-26 07:23:21
-192,2006-10-26 19:41:37
-193,2006-10-26 20:13:16
-194,2006-10-30 03:31:54
-195,2006-11-02 15:00:49
-196,2006-11-03 17:38:27
-197,2006-11-03 18:23:21
-198,2006-11-03 22:15:24
-199,2006-11-05 16:11:52
-200,2006-11-06 14:41:39
-201,2006-11-06 17:03:37
-202,2006-11-07 14:16:44
-203,2006-11-07 21:58:39
-204,2006-11-08 14:50:24
-205,2006-11-08 19:54:22
-206,2006-11-08 23:19:42
-207,2006-11-09 04:42:22
-208,2006-11-09 07:27:47
-209,2006-11-09 15:07:47
-210,2006-11-09 20:45:00
-211,2006-11-10 03:18:08
-212,2006-11-10 09:20:05
-213,2006-11-11 04:24:34
-214,2006-11-11 06:11:14
-215,2006-11-11 17:47:25
-216,2006-11-13 19:42:28
-217,2006-11-13 19:43:10
-218,2006-11-14 23:39:51
-219,2006-11-15 01:00:42
-220,2006-11-15 03:39:28
-221,2006-11-15 05:55:58
-222,2006-11-15 06:24:59
-223,2006-11-15 18:23:40
-224,2006-11-15 21:39:32
-225,2006-11-16 18:51:25
-226,2006-11-16 22:00:43
-227,2006-11-17 14:34:13
-228,2006-11-17 17:18:09
-229,2006-11-18 06:41:46
-230,2006-11-21 10:34:23
-231,2006-11-21 14:19:42
-232,2006-11-21 17:43:53
-233,2006-11-21 21:21:59
-234,2006-11-21 21:52:42
-235,2006-11-22 04:04:04
-236,2006-11-22 04:26:02
-237,2006-11-23 15:30:35
-238,2006-11-23 19:14:15
-239,2006-11-25 16:01:57
-240,2006-11-26 20:10:23
-241,2006-11-26 20:59:20
-242,2006-11-26 22:07:15
-243,2006-11-27 03:31:47
-244,2006-11-27 04:47:46
-245,2006-11-28 16:47:03
-246,2006-11-28 19:00:10
-247,2006-11-30 17:35:42
-248,2006-11-30 17:36:15
-249,2006-11-30 19:12:49
-250,2006-12-02 13:10:00
-251,2006-12-03 01:34:18
-252,2006-12-04 21:01:44
-253,2006-12-04 21:23:57
-254,2006-12-04 21:24:06
-255,2006-12-05 04:04:28
-256,2006-12-05 16:37:57
-257,2006-12-06 15:05:50
-258,2006-12-06 16:01:15
-259,2006-12-07 12:57:06
-260,2006-12-08 14:02:13
-261,2006-12-08 15:38:08
-262,2006-12-09 22:34:44
-263,2006-12-11 13:46:41
-264,2006-12-12 02:15:30
-265,2006-12-12 02:45:07
-266,2006-12-12 03:20:39
-267,2006-12-12 12:09:42
-268,2006-12-12 20:53:18
-269,2006-12-12 22:05:26
-270,2006-12-13 06:39:01
-271,2006-12-13 06:51:06
-272,2006-12-14 22:41:17
-273,2006-12-15 03:21:16
-274,2006-12-17 18:33:58
-275,2006-12-18 11:59:24
-276,2006-12-19 06:35:17
-277,2006-12-19 22:48:55
-278,2006-12-20 18:29:37
-279,2006-12-20 20:26:59
-280,2006-12-23 00:07:21
-281,2006-12-23 00:24:48
-282,2006-12-24 04:19:34
-283,2006-12-24 16:32:56
-284,2006-12-25 05:06:54
-285,2006-12-25 15:06:33
-286,2006-12-26 05:34:51
-287,2006-12-26 12:55:52
-288,2006-12-26 21:36:53
-289,2006-12-27 20:32:57
-290,2006-12-27 23:35:04
-291,2006-12-28 22:46:03
-292,2006-12-28 22:52:08
-293,2006-12-30 16:35:16
-294,2006-12-31 03:29:15
-295,2006-12-31 05:46:16
-296,2006-12-31 07:24:00
-297,2006-12-31 08:36:03
-298,2006-12-31 11:04:22
-299,2006-12-31 23:28:31
+,body,date
+0,Python being used by microsoft and google is yuk? Are you one of those lispers :-),2006-01-05 15:29:58
+1,"Describes how to disable the image preview feature, and protect yourself against WMF hacks until microsoft fixes the two other unresolved security issues with the WMF engine.",2006-01-10 02:08:18
+2,"The article is worth the read &amp; some of the comments worth thinking about.   But totally misses the development cycle that Graham chose with ViaWeb used (Server based, few developers, close to customer, fast REP). The REP (Read Eval Print) is one of the reasons Graham chose Lisp (&amp; because he was preficient in it).  Is it becuase MS is still desktop focussed that the author misses these points. 
+
+The article begins to loose me when the author starts apeing the MS marketing dept. The author then makes the (fatal) mistake (IMOV) in thinking microsoft is the centre of the development world &amp; everyone wants to work there to improve it and their languages.
+
+If you want to read something about programmers who understand lisp try this article  - - http://www.joelonsoftware.com/articles/fog0000000023.html",2006-01-16 21:28:54
+3,"steve gibson has concluded this is an intentional backdoor inserted by microsoft, yet the wine project has the exact same bug.  it's open source, so someone would have noticed code that was inserted for malicious intent.  here's a more balanced response, from Mark Russinovich of sysinternals.com:
+
+http://www.grc.com/wmf/russinovich.htm",2006-02-01 16:35:28
+4,microsoft behind the scenes,2006-02-01 17:58:16
+5,"&gt;How do I read ppt files?
+
+Very carefully.
+
+&gt;Thanks.
+
+You're welcome.
+
+If you really want to though, you can get a powerpoint viewer for free off microsoft's site.",2006-02-02 13:36:17
+6,"This reminds me when microsoft made separate pages for Opera browsers, and of course these pages were all broken. 
+
+No brainer, it's done on purpose.",2006-02-08 17:57:28
+7,"*we do the rest*
+
+including storage of your precious business data? Does MS really think business will just give them their data in 1 central storage area, offsite &amp; available remotely?
+
+Check this link &amp; make up your own mind:
+http://membercenter.office.microsoft.com/Misc/ManagedContent/en-US/PortEssentialsOffer/Tab1/NoDimension/office_live_shell.html",2006-02-14 08:03:52
+8,"To be honest, I think that domain names registration needs to be a little tighter. Take a look at whitehouse.com or whitehouse.org. Those sites are plainly based on the idea of fooling consumers into thinking they've found whitehouse.gov. Along with yahooo.com and the rest, those should be shut down, since they aren't trying to make their own brand, they're preying on consumer confusion. Then there's things like paypa1.com, which are straight up fraudulent. 
+
+On the other hand, a site like microsoft-sucks.com is fine, since it's perfectly clear to the consumer that the site is unaffiliated with the real MS.",2006-02-18 02:08:15
+9,"They've heard your request! - Office UI is completely changing! Checkout the following links - 
+
+http://www.microsoft.com/office/preview/uioverview.mspx
+http://blogs.msdn.com/jensenh/archive/category/11720.aspx",2006-02-20 21:04:21
+10,...even if it is made by microsoft!,2006-02-21 15:08:55
+11,better google than microsoft or yahoo,2006-03-02 14:34:59
+12,"Just for fun, try:
+https//www.microsoft.com",2006-03-07 23:38:55
+13,"Click on ""Back to microsoft.com Flashback"".
+
+It's actually pretty interesting.",2006-03-10 14:06:55
+14,How about we get a little more generic and just follow the corporate giant where ever they lead us. Seriously thought does microsoft have to over complicate things every bloody time.,2006-03-10 16:31:27
+15,microsoft gives origami bad name,2006-03-10 17:20:55
+16,It was a hurried acquisition done to stanch the bleeding of google shares. Keep your eye on GOOG. It'll go up because of inane gossip about how this is the first real volley on microsoft's motherlode.,2006-03-13 18:04:11
+17,"Considering google's blog and website creation tools, I can see code that can read and write microsoft (and other) formats as a major strategic bonus for google. Word didnt take off until it could read/write its competitors formats - it reduces the risk of changing systems. 
+
+I think some richer editing tools that integrate with desktop products would fit very nicely with google. If google got it cheap, more power to them.",2006-03-14 00:51:15
+18,"Sure... no critical part of the OS is using .net... all this means is that they are listening to their own advice.  http://support.microsoft.com/default.aspx?scid=kb;EN-US;841927
+
+Is MS not dogfooding .net?  I dont know... 
+From the looks of visual studio, I wonder if they dogfood anything.
+",2006-03-14 16:41:58
+19,"The reason microsoft pulled back on using .NET in the core of the OS is because of memory. Simply put, if the system runs out of memory, managed code with automatic memory management goes absolutely haywire and crashes, because it's allocating memory all over the place without the source code's knowledge without giving it an opportunity to handle out-of-memory conditions short of a storm of exceptions. This isn't great, but it's usually okay for applications -- they can't do much when the system is out of memory, anyway -- and application code is notorously careless about checking allocation success. But it's totally unacceptable for the core OS. Apparently, Microsoft originally thought they could deal with these issues, but ultimately they discovered that they couldn't.
+
+Anyway, this article's just a big wad of speculative hot air bullshit. =P
+",2006-03-14 23:35:17
+20,"This is a bit of a tangent, but here goes:
+
+There it is again -- the evil meme that somehow, someday soon, bandwidth will magically be free. Wireless bandwidth, no less!
+
+It isn't true. Bandwidth is expensive. Physical infrastructure is expensive. Google will ultimately have to pay for their infrastructure somehow; if it is through ad support, it still isn't _free_ (even if it is free to you.)
+
+A secondary evil meme is that bandwidth will effectively be infinite in the near future. Again, this is not true. Bandwidth hasn't scaled nearly as well as local storage capacity in the past two decades. We're heading towards a world where we keep the data near the CPU and use bandwidth and the ""cloud"" as a cache and for first-time data access.
+
+See, for example, Jim Gray's enlightening papers on the economics of bandwidth. http://research.microsoft.com/~Gray/
+",2006-03-16 19:52:11
+21,good idea. next-up: apple buys microsoft.,2006-03-17 13:00:31
+22,"interesting idea, not, arguably, the best or most intuitive implementation.  seems to be slightly too microsoft-centered for independent bloggers, or facebook for that matter, to comply.
+
+Still... another standard in an already growing sea of RSS standard-makers. 
+
+Wondering what others have to say, actually.",2006-03-21 04:42:24
+23,"Scheme is a non-pure functional language. You can add things to scheme (as well as to common lisp) that allow type annotations. Common Lisp is NOT a functional language but can be made to act like one.
+
+However, just because you can do something doesn't mean you should. Haskell does things for you that Scheme or Lisp would have to be heavily augmented to do. For one it is a pure functional language that enforces the lack of side effects through a strict type system. This makes some things possible such as STM (http://research.microsoft.com/~simonpj/papers/stm/stm.pdf)[PDF] . The Haskell type system forces STM atomicity to apply to side effect free code (check the paper for a good example).
+
+Monadic programming is definitely possible in Scheme (http://okmij.org/ftp/Scheme/monad-in-Scheme.html) but with nowhere near the syntactic support that Haskell has.
+
+Now all of that said, I've done a bit of work in Haskell and doing anything disk/IO intensive is a royal pain in the arse. Composing monads can be awfully confusing as well, which is what you end up having to do if you want to, say, add an error monad to an IO operation. It makes up for that sort of thing when you move on to more heavily algorithmic/logical programming.
+
+For instance writing an evaluator in Haskell has to be one of the most pleasant experiences ever. Writing a simple lambda calc interpreter is close behind the factorial as far as the Haskell ""hello world"" app goes.
+
+Check it out, it's gauranteed to make your brain twist around a bit and I would wager that even if you don't use it you'll come out with an expanded perspective.
+
+
+
+",2006-03-27 03:33:05
+24,"""Whaaaa Wahhhaaaa! I hate Apple! I hate fanboys! I hate people who overpaid Apple for a Fanboy MP3 player not made by microsoft!""
+
+In other news, the XBOX 360 will only play media streamed to it by a PC with Windows Media Center 2005. PC Mag hails this ""streaming CRAP"" as ""The Next Big Thing(tm)."" John C. Dvorak will write six columns this year about how much he ""loves Microsoft's CRAP""
+
+I would love for open standards to proprogate. I would love to be treated like an honest consumer and not like a criminal. But the people who guard that content feel like each and every bit is a digitally unique snowflake. And if it only gets to play on ordained music players, so be it. They can't let someone copy their precious snowflake and ""lose a sale"". 
+
+The sad thing is he's right. Content and content players should be like cars and gasoline. Every engine can use the gasoline. Its just the tone -- for an editor in chief -- he sure sounds like a 13 year old on IRC. 
+
+",2006-03-27 19:38:39
+25,"you know this is so true, why would i use office when i have openoffice. i think microsoft better start redesigning because right now google seems to be a little better, they just came out with free wi-fi internet, what will they do next??OS??",2006-03-30 15:30:22
+26,"http://blog.csdn.net/myan/archive/2005/11/23/535391.aspx
+
+http://www.hwb.cn/blog/2006/01/why-microsoft-can-blow-off-with-c.html",2006-04-01 06:51:18
+27,"Reddit has a new logo, a mixture of google's, yahoo's and microsoft's logo. So we can call it a GYM (Google,Yahoo.microsoft) logo.",2006-04-02 02:23:14
+28,"There is:
+
+http://www.microsoft.com/mac/products/virtualpc/virtualpc.aspx
+",2006-04-05 16:20:29
+29,"VPC doesn't run on Intel Macs, though. See the Intel Mac FAQ:
+http://www.microsoft.com/mac/default.aspx?pid=macIntelQA",2006-04-05 16:27:24
+30,"I thought the 60% rewrite had already happened - ie when microsoft stopped writing the majority of the code in .net (c#) and rewrote everything again in C/C++/asm.  I'm pretty sure that this 'rewrite' occurred a way back, but it's now been trotted out as a reason for delay (it is, but not the reason for the current delay).  I'm also pretty sure the .net + associated rewrite was mentioned on mini-microsoft during the announcement of this (current) delay",2006-04-07 02:06:41
+31,"2nci srmse sadece windows xp iin yaymlanm:
+http://www.microsoft.com/downloads/details.aspx?familyid=8C09FD61-3F26-4555-AE17-3121B4F51D4D&amp;displaylang=en",2006-04-07 06:44:16
+32,"This is a programming contest for microsoft windows using a c++ rapid application tool called C++ Builder from Borland.
+
+The interesting thing about it is that the results of the contest will be made available as freeware/donationware, with the site helping to get the authors donations for their programs.",2006-04-08 17:15:38
+33,"well...im a programmer and i know that win XP has bugs...but to tell you the truth win XP has evolved a long way since win95-98 is more stable, crash less, and is more user friendly. linux will never catch up with microsoft...unless a monumental virus comes a long and change the face of computer technology. i have try linux and i love it...but is no for everybody...if normal[no computer literate] people have a hard time using the gui in Win what you think is going to happen when they use the command line in linux?!? caos. What i was actually hoping for is that microsoft didnt start the code for win vista from scratch. if i was Mr. Gates i will take the code for win XP, improve it, clean some mayor bugs, made the changes for the new features and make sure it run with old versions, and make it more secure...but keep in mind...windows is never going to be as secure as linux only for one reason and one reason only....every hacker targets windows because no one uses linux. 
+ i do understand most people here talk from a developer point of view...but you have to look a the people who is going to use the end product...i will said that windows is more for regular people that dont want to take house compiling a program or play with settings and configurations but for people that only want to type a simple letter, get email, print pictures and look a porn.",2006-04-11 02:07:32
+34,"from washington.edu, yeah, they are microsofties.",2006-04-13 17:53:12
+35,"Am I the only idiot around who hasn't seen the original microsoft presentation that shows these supposedly ripped off features?
+
+Anyone got a link?",2006-04-14 14:18:22
+36,"I'm voting down, and here's why.
+His premis is patently false. Its ""social bookmarking sites have been hijacked by leftists, and they vote down anything that defends the right.""
+
+I doubt a lot of people in the reddit community are ""leftist"". Let me clarify -- by that remark, I mean they willingly identify themselves as leftist. 
+
+I think a lot of the ""how not to screw up your start up"" articles resonate here a lot of start ups represent capitialism at its best: A small business entering a market , or creating a market, and the consumer choosing them -- the invisible hand at its best. No subsidy, no patent trolling, no product cloning from microsoft. I remember using a small search company years ago to help me find programming documentation. They had a motto of ""Be not evil"" -- and now they're the search king.
+
+Back to this guy's premise: Reddit and Social Bookmarking sites are ""customizable sites"". When I vote down articles about religion, it means I'm going to get less articles on religion on my front page. So his arguement that leftists actually use the site to customize it for themselves is crap. 
+
+Look, I like reddit because it shows me news and opinion that I otherwise wouldn't have read. Maybe this guy should learn to appreciate that as much as the rest of us do.",2006-04-17 00:40:22
+37,"I haven't seen the video (I don't have microsoft stuff instelled) but there is nothing that says that this is fake on the disclaimer.
+
+Here is the disclaimer:
+
+Marc Ecko Enterprises does not condone illegal activity, acts of vandalism, or the destruction of other people's property. We do, however, advocate freedom of expression, graffiti as a recognized art form and the protection of consumer rights regardless of age, race, religion or political affiliation.",2006-04-18 15:01:57
+38,"Google cache...
+
+http://72.14.203.104/search?q=cache:ILiHKIGJa_oJ:www.qbrundage.com/michaelb/pubs/essays/working_at_microsoft.html+qbrundage+working+at+microsoft&amp;hl=en&amp;gl=us&amp;ct=clnk&amp;cd=1",2006-04-19 20:40:48
+39,"I replied on the blog, but also here so all can see:
+
+Wow.  You're a web developer and you don't know about this?
+
+Here's the news flash:
+http://news.google.com/news?q=eolas&amp;btnG=Search+News
+
+Context (including links to workarounds):
+http://en.wikipedia.org/wiki/Eolas
+
+This is ancient.  The case was decided in 2003, and appeals ran out.  MS lost.
+
+And their patch is bad:
+http://weblog.infoworld.com/techwatch/archives/005914.html
+
+You might want to subscribe to some major webdev sites (such as the WaSP)
+http://webstandards.org/index.php?s=eolas&amp;submit=Go%21  
+http://www.webstandards.org/2005/12/04/microsoft-tweaks-ies-handling-of-activex-java/
+
+You're doing your clients a disservice.",2006-04-23 05:09:52
+40,"The results are dramatically different from the regular Google home page.  Search on ""pedal steel"".  From Google.com, my b0b.com site is at the top of list.  From google.com/microsoft, b0b.com isn't even *on* the list.  :(",2006-04-24 21:10:47
+41,"the results of searches on there are somewhat similar to appending ""microsoft"" to the end of any normal google search.  not exactly similar, so I don't know what's up.",2006-04-24 21:33:16
+42,"I know I'm not the [only](http://www.suck.com/daily/97/05/02/daily.html) [one](http://www.microsoft.com/presspass/exec/rick/6-11pcfutures.mspx) who figured Hal was really singing ""**Davey, Davey** give me your answer, do...""
+
+",2006-04-25 17:40:08
+43,"If we are not careful IE is going to punish Mozilla again. Look how far IE7 has come in one release: http://www.microsoft.com/windows/ie/default.mspx
+
+In the last year IE7 has duplicated all the great features of Firefox and then some.
+
+How about extending some of the mediocre features in Firefox, such as Live Bookmarks. Why can't FF change the icon of a Live Bookmark when there are new feeds, and keep track of the posts I have already read?
+
+What about the history storing the full text of the web pages so the history can search the contents of the page, not just titles?",2006-04-28 07:13:14
+44,"you know, a lot of people at that company are really insane. one of the senior management/executive people, a woman, flew across the country _the day after giving birth_. another executive is deaf in one ear because he travelled to an important meeting with microsoft while seriously ill.
+
+to people like that, arriving at 9am is ""late"" and leaving before 7pm is ""early"". so to some extent, they pretty much give up their lives for that money. i don't envy them.",2006-04-28 16:32:11
+45,"Oh well. I wouldn't trust anyone to deliver an application framework when they manage to write crap like this:
+
+    var http = document.all ? new ActiveXObject(""microsoft.XMLHTTP"") : new XMLHttpRequest();
+
+And if you're wondering what's wrong:
+
+1. This fails in browsers supporting document.all, without having ActiveX support. Opera being the most promintent one.
+2. When you want to test for the support of ""Feature A"", test for the support of ""Feature A"", instead of testing ""Feature B""
+
+The practical upshot of 2) is that the code should've been:
+
+    var http = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject(""microsoft.XMLHTTP"");
+
+(Furthermore, you'd really, really want to enclose it in a try-catch, just in the case that the browser does not support XMLHttpRequest at all)",2006-04-30 09:25:17
+46,"A link to a blog that copied from another blog that links to the REAL site:
+http://officelive.microsoft.com/",2006-05-01 11:44:55
+47,"Nintendo is in a different market to sony and microsoft: they make fun innovative games and they make profits.
+
+
+
+",2006-05-01 13:36:04
+48,"of course microsoft should use their own search engine in their browser.  It would be moronic not to, unless they were to decide to get out of the search engine business altogether, which seems unlikely.
+
+That said, I'll stick with google myself.",2006-05-01 14:12:30
+49,the major reason for why crackers target microsoft is becuase is popular...is no so much for poor designed but becuase 99% of the world uses it. mac as always brag about the fact that is untochable to viruses and that if they get a treat the will respond better than microsoft...lets see what they do now and how they respond.,2006-05-01 20:24:18
+50,"He's not saying tools are not at all important, and he's certainly not telling us not to learn tools. He's telling us to not get so used to old tools that we close our eyes to new ones. It's a natural tendency we need to guard against.
+
+In many ways the phenomenal growth in computer science is because the tools keep changing. So the basic tools you're talking about are perhaps a bad thing. For example, a common gripe against UNIX is that [it hasn't changed for decades](http://research.microsoft.com/~daniel/unix-haters.html).
+The fear here is of becoming a settled discipline like civil engineering, with the low wages and loss of glamour that implies.
+
+On the one hand things that weren't possible before are now possible, implying both new uses and new opportunities for tools. On the other hand we've heard how computers get faster just so windows can get more bloated. The challenge is to correctly differentiate change for change's sake from avoiding getting into a rut.",2006-05-05 01:48:54
+51,try type:britney or type:microsoft I want to share the new google operator i found. I need how it can make google better. All ideas welcome,2006-05-05 05:53:38
+52,"Just for the record, the latest public build of C# 3.0 runs on top of the .NET Framework 2.0. It's simply a new compiler and a couple of assemblies for LINQ.
+
+It's available [here](http://msdn.microsoft.com/data/linq/).
+
+
+",2006-05-05 15:44:20
+53,"See [this](http://www.microsoft.com/windowsvista/features/foreveryone/performance.mspx) (scroll down to ""External memory devices""), and [this](http://blogs.msdn.com/tomarcher/archive/2006/04/14/576548.aspx).
+
+EDIT: quote from microsoft's page
+&gt;Wear on the USB drive is not an issue when using it as an Windows ReadyBoost. A unique algorithm optimizes wear patterns, so that a USB device can run as an Windows ReadyBoost for many years, even when heavily used.",2006-05-07 22:10:24
+54,I'd love to see what the pro-microsofts have to say on this case.,2006-05-09 16:36:17
+55,"An interesting statistic: Seattle's obsession with MSFT is far more than San Fransisco's obsession with GOOG (relative to other areas that is). Does this mean, microsoft employees are unduly concerned about their fortunes, and they are using google to search for it?",2006-05-11 04:43:30
+56,"the difference here is that microsoft is again leveraging a monopoly to gain an unfair advantage in another business, just like windows-&gt;office, windows-&gt;ie, now ie-&gt;msn search
+
+duh. i'm sorry but at this point the facts of the case microsoft lost have been repeated so many times that if you don't get it, you never will.",2006-05-15 04:27:20
+57,"""Bearing in mind that NT is based upon the MACH Kernel""
+
+I'd like to see some substantiation of this claim beyond this off-the-cuff remark..
+
+Its true that Richard Rashid, a lead MACH developer was at microsoft during the design of NT, but most accounts say that Dave Cutler formerly of DEC designed it with VMS and RSX-11 in mind, not MACH.
+",2006-05-16 16:21:39
+58,"The difference with microsoft is that we are interfacing with google through standard protocols. So if google becomes evil, we can always ditch them for another service.
+People can't ditch windows that easily because they rely on applications who only run on windows. The same goes for MS Office and their crappy closed .doc format.",2006-05-16 20:30:01
+59,Is anything invented by microsoft?,2006-05-17 19:30:48
+60,"Did you ever hear of Microsoft research? http://research.microsoft.com
+
+They do lots of cutting edge research.",2006-05-22 15:50:38
+61,Some caveats: http://support.microsoft.com/?kbid=299656,2006-05-24 09:48:46
+62,"Excellent article with tons of great links. Somebody more motivated than I could probably accumulate a ton of karma just by posting them all.
+
+One of the best links is to [Jim Gray](http://research.microsoft.com/~Gray/)'s homepage at Microsoft Research.  It's a treasure trove of theory and engineering on enormous database systems. His papers are highly accessible and insightful, and new publications appear frequently. Right now I'm off to read [To BLOB or Not To BLOB](http://research.microsoft.com/research/pubs/view.aspx?msr_tr_id=MSR-TR-2006-45). 
+",2006-05-25 19:26:31
+63,"the plot loses nerd style points for having been produced in microsoft excel. real men* use gnuplot.
+
+*who have never gotten laid",2006-05-25 22:53:46
+64,Also see this interesting [video](http://www.microsoft.com/typography/content/video/TrueTypeHinting.wvx) (.wvx) of how the designers of this font used [hinting](http://www.microsoft.com/resources/design/ClearType.html) to create a more readable font.,2006-05-27 23:42:10
+65,old microsoft vintage ads that take you back to the days ;),2006-06-02 14:30:10
+66,"It's become pretty popular to bash microsoft and, although i realize the shortcomings of many of their products, i try not to join in.  What people tend to forget is that they were the first to be highly successful in what they do and they have marketshare and distribution advantages that other highly talented corporations may never achieve.
+
+I could paint beautiful soup cans or paint randomly on a canvas, but I know I'm no Andy Warhol or Jackson Pollock. 
+
+I could create the billion dollar homepage...or better yet the TRILLION dollar homepage...would you be impressed?
+
+There should be reward for being the 1st.  
+
+Microsoft has earned their success and I see no problem with them trying to squash competitors that try to take minor improvements to their products.
+",2006-06-07 17:46:28
+67,"Your comment on the linux boot time is spot on, I boot up every morning and it does take a minute or so, personally I don't mind particularly. I had read that the starting of services in parallel at boot was coming in and that should speed things up significantly. 
+
+I agree Control Panel is easy enough to find, but I think that for the inexperienced finding the right button to press or switch to toggle can be a bit more difficult. Hardware manager is a good exaple. Go to the system applet and then open up the correct tab (I forget which) and you are greeted with Device Manager, Profile Manager, and a couple of other options which can be a bit baffling.
+
+""To claim that package management is more intuitive than 'download and run setup.exe' is 100% preposterous.""
+
+I disagre with you here. I have to say that I have had difficulty teaching some end users the difference between a kosher website where you could safely ignore the warning given about running a downloaded executable and an iffy as hell site where it is probably not a good idea to download anything. 
+
+www.microsoft.com, for example, doesn't offer a whole lot of software that you can download on the spot. However Synaptic does and provides a neat package to easily remove said software if you don't like it and update it when the time comes. In short package management is a far more elegant solution, you install/remove/update and can find a list of all the stuff on your system in one application. How is this less intuitive?
+
+""Windows Help may be bad, but the Linux equivalent is 'Google aimlessly in the hopes that some random guy had your problem and blogged his solution.'""
+
+I've given up on Windows help, not once has it produced an answer for me it just wasted my time. Have you tried googling a windows error? It is the most frustrating experience around to be given an error code by a program and then find a link to microsoft.com only to discover a list of error codes and some helpful hint to the effect of ""your drivers don't work"". I have yet to encounter a linux error that I could not find a reasonable explanation of, usually swiftly followed by a remedey, this includes the apps I use on linux. 
+
+Linux is not Windows (thank christ) just because it is free/gratis does not mean that there is no price to pay, you have to be willing to invest a little time learning how it works, same as any OS you are new to. There are a great many places to look for info and ask for help (I would go further and say that finding these places is easier if you are looking for the answer to a linux problem than a windows problem). 
+For instance your complaint about getting XMMS to work (I assume you mean the mp3 codec) or videos to run in VLC (I assume you mean video codecs) or install a basic browser plugin (Java/Flash?), the answers to these and many more questions can be found on http://ubuntuguide.org/wiki/Dapper (changed a bit since I last used it but lots of the answers were back there then). This is a well known site in the ubuntu community www.ubuntuforums.org, which is linked to by the main site www.ubuntulinux.org.
+I mean what more do you honestly expect?",2006-06-07 22:53:37
+68,"The Beta 2 release of Windows Vista is now available for IT professionals, developers, and technology enthusiasts. (http://www.microsoft.com/windowsvista)",2006-06-08 16:31:03
+69,LoL awesome. Good job buddy. Go microsoft!,2006-06-11 09:06:22
+70,"when people start a sentence with 'not to sound like a conspiracy theorist', you can just tell they are going to sound like one. There have been whisperings of microsoft and the US government having undocumented, unfettered access to windows operating systems now for as long as there have been networked versions of windows, yet it all only amounts to paranoia and rumourmongering. Ultimately you didn't hear anything about it because you didn't go looking for it. Often legal battles are long and drawn out over many many years - because it's not in mainstream press does not mean it is not going on.
+
+Ultimately, the company that proclaims it will ""do no evil"" has more potential for a bigger breach of privacy and laws than microsoft does, and is more likely riding around with the US governments hands in its pockets than microsoft is.",2006-06-13 19:02:56
+71,"This is apparently legitimate; google for ""Simia-Lico"" and it should turn up the announcement from other sites.  The site linked is http://www.microsoft.com/College/ , though.  I wonder if that makes a different?",2006-06-14 14:31:03
+72,"&gt;Corporations are generally against unionized labor, for example.
+
+And unions are generally against corporations. It's called the adversarial relationship. Just because lawyers sit across from each other in a trial court doesn't mean they are seeking the other's annihilation.
+
+&gt;Another shortcoming with your ""top 10"" list is it goes back to 1989 or 1990;
+
+Probably the first time I've heard someone criticize statistics because the sample size is too large.
+
+&gt; Microsoft, for example, didn't become very active until after that time
+
+[Totals for MS during the 2000 and 1998 cycles:](http://www.opensecrets.org/indivs/search.asp?NumOfThou=0&amp;txtName=microsoft&amp;txtState=%28all+states%29&amp;txtZip=&amp;txtEmploy=&amp;txtCand=&amp;txt2000=Y&amp;txt1998=Y&amp;Order=N) $2,428,968.
+[Totals for MS during 1996 and 1994 cycles:](http://www.opensecrets.org/indivs/search.asp?NumOfThou=0&amp;txtName=microsoft&amp;txtState=%28all+states%29&amp;txtZip=&amp;txtEmploy=&amp;txtCand=&amp;txt1994=Y&amp;txt1996=Y&amp;Order=N) $87,000.
+Totals for MS during 1992 and 1990 cycles: $0.
+Grand total MS spent in the same timespan: $2,515,968. Or just as a little more than 10% of the spending of the Teamsters during the same time.
+
+I could quote more, but I get the impression you'd just as soon counter hard fact with more rhetoric.
+
+&gt;Yes, pretty much all you've done is name-calling and squirming your way out of owning up to your errors. 
+
+Pot, kettle, line 2.
+
+&gt;You're letting your dislike of his personality affect your rationality; you're simply wrong on numerous points of fact.
+
+You're letting your like of Stallman and all things anti-DRM affect your rationality; you're simply wrong on numerous points of fact.
+
+&gt;it says a lot that you harp on HURD while ignoring the incredible amount of software produced by the GNU project.
+
+-- a lot of which was written by other people, who, as I said, gladly spend their free time contributing to it as well as dealing with the ego of Richard Stallman. I salute those people - they have more talent, and much more patience, than I do.
+
+&gt;he campaigns against software patents, DRM, and flawed copyright legislation like the DMCA.
+
+DRM, in and of itself, is not a bad thing. If someone really wants that new Franz Ferdinand CD on a portable music player and it's DRM protected, they have no right to require the record label to unshackle it. DRM is not nearly as restrictive as the FSF makes it out to be; otherwise the iTunes music store would not be as popular as it is.
+
+Of course, for simply showing how DRM is not as restrictive and destructive as Stallman likes to pretend, now you'll probably say I support DRM and proprietary software...
+
+&gt;you are not only offended by him not being ""pro-life"", but support DRM, software patents, and proprietary software, and bitterly resent any attempt to empower the public. That sounds like a deal.
+
+And I was right! Well, you're not the first person I've met to use that cheap ruse. I understand though. Hey, if Stallmantology is what you need to make sense of this society we live in, by all means, keep on drinking the kool aid.",2006-06-14 14:44:29
+73,"if I offer to buy microsoft for $50, it doesn't mean it's worth $50",2006-06-14 15:28:03
+74,"even the email address is bestjobs@microsoft.com
+best jobs as a tester for msn search?",2006-06-14 15:30:26
+75,"It will be interesting to see which is hacked first: [OpenBSD](http://www.openbsd.org/) or [Vista](http://www.microsoft.com/windowsvista/), especially considering OpenBSD has an eight year headstart (""Only one remote hole in the default install, in more than 8 years!"").",2006-06-15 20:05:23
+76,"People should check out Ozzie's latest project called ""[Groove](http://www.groove.net/)"", regardless of what they think of Lotus Notes.  Groove is a bit of a resource hog (although it's getting better) but it can do some very cool things as far as groupware is concerned.  People will see more of it in [Office 2007](http://www.microsoft.com/office/preview/programs/groove/highlights.mspx).",2006-06-16 13:37:43
+77,16 year? Here comes 9 year old [Microsoft Kid](http://www.microsoftkid.com/).,2006-06-17 04:48:25
+78,"Also, keep in mind that those numbers largely represent the popularity of each language with the exception of vb and c#(I imagine microsoft types are more likely to go to msdn).
+
+",2006-06-18 20:46:01
+79,"The iPod parody video he links to is hilarious:
+
+http://video.google.com/videoplay?docid=36099539665548298&amp;q=microsoft+ipod",2006-06-19 19:40:54
+80,You cannot recreate the typeface either.  The [EULA](http://web.archive.org/web/20020227054122/www.microsoft.com/typography/fontpack/eula.htm) forbids you from creating derivative works.,2006-06-20 16:11:45
+81,Maybe it is reset on a keyboard from another country??  Not sure where U.A.E is.   But is this even real?  Does not seem like something microsoft would do in fear of phishing with actual viruses.,2006-06-20 20:53:40
+82,"Ha, this article reminds me of one I read, maybe a year ago, that said there could *never* be another big central company like microsoft. Less than a year later and Google is growing exponentially.
+
+Someone will replace Google, and sooner than people think.",2006-06-29 15:45:16
+83,"Try downloading it from Microsoft instead: http://www.microsoft.com/downloads/details.aspx?familyid=1B286E6D-8912-4E18-B570-42470E2F3582&amp;displaylang=en
+
+[Edit: Since there is no diff on this Windows machine, I can't check if the binaries are the same. They have the same size, though. You need to install WGA to download the bastard from Microsoft's site.]",2006-07-04 12:43:42
+84,"&gt;They have tons of stuff hidden around their website that make Windows run more efficiently
+
+Tell me about it. Of course, to highlight it too well would be to show off how much there is wrong with the OS as shipped.
+
+This is a useful find, and a pretty good explanation of the situation.  No offense to intelliadmin.com, though, but if I'm gonna download and install something to run as a **service** on my Win box, I'm gonna get the [original, straight from the mothership](http://www.microsoft.com/downloads/details.aspx?familyid=1B286E6D-8912-4E18-B570-42470E2F3582&amp;displaylang=en), and not from a third party site.
+
+Interestingly, on my Win2k box (without this service, yet), I find that it shuts down **faster** if I log out, then press the power button, which then starts a software shutdown.  I'm not exactly certain why, though.",2006-07-05 13:53:32
+85,"Connecting net neutrality with antitrust is interesting. Anytime I see lobbyists claim that interfering with a monopoly will slow down growth, I get suspicious.
+
+So are telcos monopolies? I had an interesting conversation a couple of days ago where I said I hated 'monopolistic' cable companies. My friend pointed out that I did have a choice in cable companies. Well, the alternatives have very small market share. That's like microsoft pointing to Apple's 1% market share to claim it's not a monopoly.
+
+But there's an even better test than market share for a monopoly: does the company act like one? Anybody who's had to wait on hold half an hour to get a landline from AT&amp;T knows what I'm talking about. This sort of dysfunctional consumer experience would be unacceptable if AT&amp;T was in a competitive space.",2006-07-05 19:00:21
+86,why can't microsoft release a patch/service pack/update/whatever that makes windows run using a least necessary privilege principle? would that break backward compatibility?,2006-07-06 11:12:09
+87,"a brilliant uncompromising hardliner is precisely what we need to deal with companies and groups like microsoft, the RIAA, and the MPAA. thank god for RMS and screw the people who don't appreciate that the software he pushes is why it's so dirt cheap to run a web business.",2006-07-06 11:29:18
+88,"&gt; why can't microsoft release a patch/service pack/update/whatever that makes windows run using a least necessary privilege principle? would that break backward compatibility?
+
+In a word, yes.
+
+You can always go back and create an unprivileged account, but don't be suprised if software that was written assuming administrative access crashes with or without warning/data corruption/even an error message. Going back and doing all of that error detection for someone else is going to take a lot of work, hence putting it into Vista instead of a service pack.
+",2006-07-06 16:19:36
+89,"The fact that AAVE is specified as being vernacular casts it in a suspicious light from the start... are not *all* languages in a constant state of flux and development? Except for the dead ones and Esperanto?
+
+Just because it has some accepted alternative grammar, does that really elevate it above ""slang"" into actual ""language/dialect"" status? (Comparison: has [leetspeak](http://www.microsoft.com/athome/security/children/leetspeak.mspx) ever been considered anything other than a bunch of slang thrown together?)",2006-07-06 16:48:15
+90,"so a support line worker didnt know anything, and was a bastard to you.  he was a complete idiot, and he recommended microsoft.",2006-07-07 20:36:04
+91,"Bons dias!
+
+Comecei a ver este forum, mas perdi rapidamente a pacincia. As conversas podem ser muito interessantes, quando mantidas por pessoas com a mente aberta - que se informaram antes de falar e sabem argumentar. Em alguns casos, reina a o descalabro!... ""Linux tem mais buracos que windows""? Faz-me lembrar o que me disse h uns tempos um consultor microsoft - que windows era muito mais seguro porque tinha autoupdates. Para alm de no significar nada, j trabalho com linux com autoupdates desde o tempo do windows NT4. Os autoupdates para windows s apareceram com o 2K...
+
+O que  isso de medir a quantidade de buracos? Nos ltimos tempos, foram divulgadas muitas falhas para windows em geral, exchange, etc..., todas elas crticas e capazes de dar acesso remoto total h mquina. Quem se lembra de um descalabro assim em Linux? No lembra porque NUNCA aconteceu.
+Mas no adianta... WAPs, ""windows addicted persons"", so como quem v a luz. No sabe porqu, mas aquilo  que  bom. E morrem at ao fim a afirm-lo!!
+
+Uma proposta: -Tentem suportar opinies em aspectos tcnicos. Assim, as coisas ficam muito mais claras! 
+
+Quando ao visual studio: -Sem dvida, a melhor ferramenta de desenvolvimento no mercado. Especialmente, para quem  preguioso, no sabe programar, ou, muito importante, queira a mxima produtividade sem se preocupar com o resto. A questo, : -Quem vai depois por a aplicao a correr em ambientes crticos, com ""buracos"" como os recentemente encontrados sempre a aparecer?
+
+Um abrao a todos!",2006-07-11 10:53:09
+92,"I don't.
+
+I guess I got burned to many times in the early days; I remember how terrible the early Windows 3.x versions were compared to Mac.  Then I went to college just before Win95 came out and got to see the disaster that was large scale windows networking.  By comparison, the unix labs were a dream.  So I installed slackware and never looked back.
+
+Perhaps if I were new to computers today and XP/2K were all I had used, I might be more tolerant/forgiving of Microsoft's foibles.  But the fact is there are other companies than microsoft making very good software; unlike FourStates I have found OSX to be fantastic.",2006-07-12 03:23:15
+93,"yea, because microsoft is a verb used to mean search for something.",2006-07-14 17:09:32
+94,"yes, it seems to specific to microsoft OS's because 
+1)It uses the microsoft (vista) kernel 
+2)it uses NTFS (can't work the same on ext3,jfs,xfs..etc)",2006-07-16 04:05:36
+95,It is time for microsoft to be broken up. Here is a compelling argument for this.,2006-07-18 02:17:19
+96,"that's not true. john carmack of id software has been giving away the code to his graphics engines (which, at least until around quake III or so, when they came out they were among the cutting edge of realtime 3d graphics) when the last licensed game was released since the DOOM days. carmack's example is particularly instructive in that he made the mistake of using a proprietary sound engine for DOOM which mucked up the code release process.
+
+you can just, more or less, throw it out there if you don't have a bunch of retards creating a legal nightmare waiting to happen. he make it sounds like it's impossible to write a desktop calculator program without infringing on 50 different patents and violating various international arms treaties or something. in the past few years apple has been doing with 300 developers what microsoft can't do with thousands, but it sounds like in the past they had a lot of fucking problems on the engineering side of things.
+
+the real lesson to be drawn here is that you shouldn't make yourself a slave to people who don't want you to be able to use computers freely, which is the basic point Stallman has been making since the '80s.",2006-07-18 16:36:07
+97,"For anyone interested, Microsoft offers a free [viewer](http://www.microsoft.com/downloads/details.aspx?familyid=95E24C87-8732-48D5-8689-AB826E7B8FDF&amp;displaylang=en) that will open any Word document from any version of Word.  I used it for a long time and had no trouble.  Lately OO does a good job of opening Word files, so I usually use that instead.
+
+I disagree with the auther on several points, here.  Some of the things he considers bugs (track changes releasing information, silent printer setting adjustments) are definitely features for me.  I prefer OO these days, but OO sucked for a long time, and so Word has a huge userbase, and you have to admit it's easier to use than the alternatives he recommends, like LaTeX (though TeX has some big advantages for long/scientific papers).",2006-07-19 12:28:24
+98,"Microsoft gets green light to punish OS-less PC vendors.
+
+http://www.theregister.co.uk/2004/01/20/microsoft_gets_green_light/
+
+
+Note that Microsoft ""promotes competition"" for MS Windows machines.
+
+Otherwise they want to punish you.",2006-07-20 07:02:30
+99,"But that's open-source - Dell couldn't possibly support something like that. Fortunately, Microsoft also makes a [memory tester](http://oca.microsoft.com/en/windiag.asp). I can't imagine NOT testing the memory on a computer that starts randomly crashing.
+
+Side note: does anyone know of a memory tester for PowerPC Macs? How about Intel Macs? Replacing iBook onboard RAM has the potential to be very profitable...",2006-07-20 18:52:08
+100,"If you have an LCD monitor, you can get even better text by adjusting Windows ClearType to match your monitor's pixel order.  You need the ClearType Tuner, one of the [Microsoft PowerToys for Windows XP](http://www.microsoft.com/windowsxp/downloads/powertoys/xppowertoys.mspx).",2006-07-21 02:05:03
+101,"i have already activated my windows xp service pack 1 at microsoft but due to a virus i had to format my pc.
+after installing again the windows xp and when activated, the activation process tell me that the product had already been activated.so i used the a crack for skipping the windows activation process and now how can i download software at microsoft.com??? (because of the validation process)",2006-07-22 09:16:11
+102,"Lame Lame Lame.
+
+""Linux"" is not a company, and does not work in the same ways. In the short run, it may very well be less efficient, but at least it's sustainable: what would happen to microsoft based software if microsoft went out of business?",2006-07-22 18:02:25
+103,"&gt; There are no easy-to-use guides on how to program successfully in open-source. To learn how to do it right, usually takes a couple of years of getting to know the lay of the free software landscape.
+
+&gt; With Microsoft, however, there's the Microsoft Developer Network (MSDN). MSDN provides developers with help in writing applications using Microsoft products and programming tools. And, when I say help, I mean: Help.
+
+And it is total garbage compared to linux. Hell, we're talking about a platform where you use the registry, there are no real mountpoints, portability is ignored, has nothing like fhs, everything is arranged terribly instead of broken up into clean layers.
+
+So what if there isn't **one** single end-all reference for linux. There are many *nix references that outdo msdn while actually teaching one about modern software architecture.
+
+&gt; 2. Common Interface
+
+* This is too damn bad, multiple window managers are here to stay.
+
+* As the author says, microsoft, apple, *everyone* that matters changes around their interfaces now and then. Users just have to suck it up.
+
+&gt; 3. Common Format
+
+It's called **plain text files**, winblows should get a clue.
+
+Oh, your talking about third-party office applications? We can all agree that this situation is coming along great.
+
+&gt; And what do the Linux companies do in the way of advertising? Almost nothing.
+
+&gt; Idiots.
+
+Idiots? Do you really think that a commercial linux distro is going to invest *millions* in advertising at this point?
+
+It seems to me that they would be giving the competing distros as much help as themselves. The point is that the distros are completely undifferentiated as far as a winblows user knows. Lindows tried to separate itself by implying that any windows program would run on it but that marketing could only last so long..
+
+&gt; It sucks at growing a mass-market.
+
+Why the hell is this guy so big on getting everyone to use linux? Oh, I forgot, its some kind of religion.
+
+&gt; Linux is no longer the newest, most exciting kid on the block. 
+
+From where I'm standing it is, by far. All of the stuff that a developer (non-games) cares about has dragged behind in windows for many years.
+
+&gt; Start spending the big bucks 
+
+spend spend spend. **That's** what they forgot to do. This guy should be a \*ing economist, his economic reasoning is so profound.
+
+I wont bother responding to the rest of this article, it's clear that what he has to say is pretty useless.
+
+
+",2006-07-22 18:44:35
+104,"I love apple because of its stock - it will make you cash. The appliances and software they make on the other hand rub me the wrong way. I hate their commercials - as if PC users can only use spread-sheet programs. I guess I should admire their marketing guiness by appealing to the ignorance of consumers and making trendy devices. However, I think their products suck the proverbial sausage.
+
+i have used an ipod and a mac and big friggin deal - i find the computer way limitted and overprices.
+
+As for date format of Mail - sure nice touch, but how many short-comings do apple applications have - for me - many! they seem like old windows 3.1 usability to me.
+
+and the single button mouse - for real - that sucks so hard and deep that it brings tears of joy.
+
+plus, mac heads are simply contrarians - we hate bill gates , microsoft, blah blah blah
+
+f you!!!!
+
+now macs run linux, except no file permissions!!!!!
+
+give me a grey box pc with side panels opened up and cables all over the place any day . . .
+
+",2006-07-25 16:19:28
+105,"It sounds like you have already gone spelunking. By default Outlook is laid out like this 
+http://www.microsoft.com/library/media/1033/office/images/outlook/prodinfo/outlooklarge.gif
+That screenshot is 800px wide, but it looks like it may have been shrunk from a max of 1024x768.  The times are clearly visible with room to spare.
+
+As I go through this another thing I notice is that Outlook generally only resizes the reading pane, so once you get your email list the size and format you want it, it doesn't change.  It sounds as though you have to deal with the app reformating itself in MacOS.",2006-07-25 19:37:23
+106,"I think game consoles are the next PC (for home use).  Cell phones after that.  Opera could rule in these arenas if Firefox doesn't respond.
+
+An aside:  If playstaion 3 and nintendo wii both come out with fully integrated Linux OSs, keyboards, and mice, then microsoft could be mostly out of the home in 5 years.  There would need to be a flash-memory hard drive and some sort of super fast switching between game system and OS.  No games for your linux system would be a thing of the past.",2006-07-29 19:55:48
+107,"The use.perl.org article links to [a Microsoft HOWTO page](http://support.microsoft.com/default.aspx?scid=kb;en-us;245225)  that says:
+
+&gt; NOTE: The PERL language permits no spaces at the beginning of a line. 
+
+I think someone confused the difference between Perl code and the end of a here-document.
+",2006-07-29 23:58:32
+108,"microsoft has created a nice tradition of ""do something really embarassing in front of shareholders"", just the same way apple has a nice tradition of ""show something off without making an ass of yourself"".",2006-07-30 01:07:13
+109,ok now i know where [20 billion r&amp;d](http://paul.kedrosky.com/archives/2006/07/28/microsofts_anti.html)  budget is going,2006-07-30 12:09:04
+110,"The Microsoft Expressions Graphic Designer has a 'photo montage' thats a static version of this  
+Watch the Flexible Bitmap video - http://www.microsoft.com/products/expression/en/graphic_designer/demos.mspx?v=gd_effects
+
+They're trying real hard to beat Adobe/Macromedia
+",2006-07-31 02:26:06
+111,"come on ceesaxp i dont have a clue about what u say there the thing is stupid not to let me rename a file however i want
+buu microsoft
+",2006-07-31 12:11:15
+112,"I expected all these to do a bit better:
+
+* [Skater + bottles = music ](http://www.yourdailymedia.com/media/1153220437/Skater_Plus_Some_Bottles_Equals_Music)  ([r](http://reddit.com/info/alez/comments))
+* [musiclens](http://www.musiclens.de/contest/) ([r](http://reddit.com/info/9mq1/comments))
+* [Video of chimp playing pac-man](http://www.youtube.com/watch?v=vqvRjHaDX6M) ([r](http://reddit.com/info/9j98/comments))
+* [USB disco floor](http://msdn.microsoft.com/coding4fun/coolapplications/disco/default.aspx)
+ ([r](http://reddit.com/info/93w1/comments))",2006-07-31 23:02:43
+113,"&gt; Then, my Mac locked up. After I cycled the power a couple of times, it was essentially a brick. Can I blame Microsoft? 
+
+There is no reason that a user-land app should ever lock up your system. As much as we like to blame microsoft, Apple deserves considerable blame here.. Unless it was a hardware problem(?)
+
+Is this a satire of apt-get? He lists quite a few things that didn't work due to it.. Try portage next time.",2006-08-01 13:56:42
+114,"10.3 is still perfectly functional, you know. and it's 1 iteration of OSX (which in the case of my powermac, came with the system), which hasn't required me service-packing it constantly. how much is a fully-functional copy of microsoft's OS which is still full of holes after god knows how long?",2006-08-07 21:03:30
+115,"&gt; 10.3 is still perfectly functional, you know. and it's 1 iteration of OSX (which in the case of my powermac, came with the system), which hasn't required me service-packing it constantly. how much is a fully-functional copy of microsoft's OS which is still full of holes after god knows how long?
+
+You can get a copy of XP Home SP2 (which is all they sell now) for $99 retail. Media Center and Pro cost more. Granted you will have to redownload the updates since SP2 was released, but the same applies for older versions of OS X. I'm not sure what you are defining as ""still full of holes after god knows how long"", but it sounds like fanboism to me.
+
+disclaimer: I do not support Microsoft, I support facts, and logic, and all of the other niceties of civilized discourse that do not fit through the tubes onto the internet.",2006-08-07 21:10:41
+116,"i don't recall exactly when XP came out, but it's still not as secure as even the newer versions of OSX. attribute that to lower distribution or whatever you like -- point being XP isn't noticeably better than 10.2, let alone 10.3, which is still across-the-board compatible, nor 10.4, and will be made obsolete by a new version of windows probably sometime around when 10.5 comes out.
+
+point was to compare XP with the version of OSX that was contemporaneous with its release, meaning that the ""you have to keep buying it!"" comparison it fatuous at best. but thanks for the FUD.
+
+the comparison to XP home is ridiculous as well. jrandom noted it, but you can find a feature comparison here:
+
+http://www.winsupersite.com/showcase/windowsxp_home_pro.asp
+
+[edit] or here: http://www.microsoft.com/windowsxp/pro/howtobuy/choosing2.mspx
+
+also, $100 is for the upgrade -- to get a new version of home, you pay $200. but you have to upgrade to Pro to get multiproc support, 64-bit support, encrypted storage, etc etc etc.
+
+if you really want to run down the list and get into this we can, but you've hardly got the credence to charge me with ""fanboism"" if you can't be bothered to make the basic distinction between the crippled and non-crippled versions of microsoft's OS. go troll somewhere else.",2006-08-07 23:03:58
+117,"My point was that the comment ""how much is a fully-functional copy of microsoft's OS which is still full of holes after god knows how long?"" was either an uninformed or deliberately false comparison.
+
+If XP Home does not fit your definition of a ""fully-functional OS"" (and I would love to see a good reason why it shouldn't) then you can get XP Media Center for 109 or XP Pro for 149 at newegg. Otherwise it matches any version of OS X in price.
+
+The security holes argument is a very complicated topic, and really is one I am not very interested in getting into. There *were* giant, glaring security issues in the past. There have not been any recently. Both operating systems have service packs and other updates that are pretty much required to keep things running correctly.
+
+&gt; if you really want to run down the list and get into this we can, but you've hardly got the credence to charge me with ""fanboism"" if you can't be bothered to make the basic distinction between the crippled and non-crippled versions of microsoft's OS.
+
+That distinction has now been made. I still fail to see how your ""still full of holes"" argument holds water, and still maintain that it sounds like a fanboy statement. Please let me know if and how I am wrong in this.",2006-08-07 23:22:49
+118,"ahh, i see. i wasn't clear.
+
+the point i was trying to make is that i think the meaningful comparison should be between 10.3, which was relatively secure at release and is still compatible/supported, and the original version of XP Pro (or SP2, if you like), which has been continually patched since its release and still isn't all that great. -- point is, it took a while to get that way, whereas it's included in the price of a new apple os, if that makes sense. and it's more expensive. for a new version of xp pro, you could get 3 OSXes.
+
+the short version is that if you don't want to upgrade, you don't have to, and you still have a fully-functional OS that's still arguably superior to microsoft's working release.
+
+(also, to me, ""fully-functional"" means ""non-crippled."")",2006-08-07 23:39:39
+119,"Read Nick Szabo's *[A Formal Language for Analyzing Contracts](http://szabo.best.vwh.net/contractlanguage.html)*. This idea is *very* current in theoretical CS circles. Also, you might want to check out [LexiFi](http://www.lexifi.com/), which started with a *marvelous* paper of S Peyton-Jones, *[Composing Contracts](http://research.microsoft.com/~simonpj/Papers/financial-contracts/contracts-icfp.htm)*.
+
+Enjoy!",2006-08-08 00:33:44
+120,"the story on /. back around the first time vista slipped is that microsoft used to write everything in spaghetti code, do a build, and send back the bugs to be fixed. i.e. hardly any modularity at all. seems almost unbelievable that something like that could happen, but it would explain a lot.",2006-08-08 03:53:46
+121,"that's a fair assessment of my statement. and i'm not sure that i do know what i'm talking about. :) i do know that while i try to be fair to both (e.g., i didn't even know WWDC was today, though i was pleasantly surprised because it makes for fun tech news) i'm getting more and more disappointed with microsoft and while i don't think that apple's done anything revolutionary lately, i haven't been *dissatisfied* with anything they've done since XP's been out.
+
+but. maybe i'm getting biased because i've been using OSX exclusively for... well, two years now, i guess, and i've been happy with it. and, my patience with microsoft is growing increasingly thin -- so the continued defence of XP more and more strikes me as merely contrarian and i probably reply more hastily than i should. but, i used windows for a long time, and both before that, so who knows?
+
+i guess i've pretty much resigned myself to wait for vista (however long that takes) and do my reassessment then. who knows, maybe i'll change my mind. these slugfests always seem to drag on for much longer than i expect -- i thought that ati/nvidia and intel/amd would be over a long time ago, for example. (and i switched more than a few times, as i've done with microsoft and apple.) so. we'll see.
+
+until then, i should probably stay out of debates with other non-casual users (like many on reddit), because it increasingly seems to me that the claims have been pretty much staked for everyone at hand. vista's bet-the-farm strategy against the reliability but progressive upgrades of OSX will be very interesting (and quite the reversal of roles from the original OSX release, now that i think about it).",2006-08-08 06:43:41
+122,"I actually knew this would happen, but I responded this way because the ""Nothing to see here, move along"" remark scored pretty high when Vista made the front page a few weeks ago.
+
+My comment did deserve some downmodding because it contains an opinon without the necessary argumentation. The thing is, people do mod comments up that are completely void of content if they just happen to agree with it. That, in my opinion, is a bit of a problem.
+
+Still, thanks for the upvote.
+
+Edit:
+In this thread, people got a lot of votes by saying ""cool stuff"" and ""awesome design"" - paraphrased. I probably should've started my own post with a disclaimer:
+
+""I completely and totally love Apple, both their software and hardware. Apple rocks my world. Apple is really so much better than microsoft. But honestly, does this OS release offer than much we haven't seen before? Do upgrades to stand-alone applications warrant an OS upgrade?""",2006-08-08 16:48:59
+123,"Yes, but are they ACID? [Guess not](http://support.microsoft.com/kb/q222135/)",2006-08-08 19:05:32
+124,"This is how to Disable ICMP Redirect 
+
+http://www.tweakxp.com/article37152.aspx (for XP)
+
+http://support.microsoft.com/kb/293626/ (for Win2k)
+
+And for linux/unix variants:
+
+http://www.faqs.org/docs/securing/chap5sec57.html
+
+http://www.cromwell-intl.com/security/security-stack-hardening.html",2006-08-09 10:04:58
+125,"Well, finally came up with the answer to this, but not on Wikipedia.
+
+http://www.thocp.net/companies/microsoft/microsoft_company.htm
+
+has annual revenues and so on for MS from day 1.
+
+By the time of the DOS deal their annual was in the millions due to language sales. So buying DOS for $50k was indeed just a matter of putting it on the company accounts. And they weren't a shoestring operation by about 1979. 
+
+There, now we can bury THAT dog.
+
+",2006-08-10 11:53:09
+126,"Great tip...I lament the lack of microsoft power user in the workforce.  Tips like this take me back to the days when everyone seemed to be empowered via Lotus 123.  Since Microsoft Office has dominated the desktop, there has been a precipitous drop in ""power users"".",2006-08-12 13:30:49
+127,"""Even though, smaller teams innovate faster, larger, more resourceful teams, have a better chance at success.""
+
+I see no reason to believe this, unless the smaller team is starved for resources. 
+
+And microsoft investing in startups, as he suggests : That would depend on them getting the good ones before Google does, and being able to pick the right ones, at the right time, before their competitors do. That seems like a problem about as hard as beating Google.",2006-08-13 18:47:05
+128,"Wow, what a great collection of papers.
+
+For those into practical database implementation issues, it's hard to beat [Jim Gray's publications list](http://research.microsoft.com/~Gray/JimGrayPublications.htm) for sheer volume of highly readable papers.",2006-08-16 19:10:53
+129,"There's also the [MS Virtual Desktop powertoy](http://www.microsoft.com/windowsxp/downloads/powertoys/xppowertoys.mspx)
+
+Quite neat.
+
+",2006-08-21 01:20:27
+130,"With go faster stripes, oversized exhaust, big PA in the rear end, tinted window, furry dice.
+
+Of course boy racer cars are all slower than the production equivalent, but they /look/ faster. I guess this is microsoft's thinking.",2006-08-21 08:44:40
+131,"Good grief, don't you guys ever read the Register? It's a parody, clearly the author hasn't incurred any losses, he just uses it as an example for some good ole microsoft bashing. And the 'Sir' refers to the OBE Bill Gates received not too long ago.",2006-08-21 10:58:15
+132,microsoft doesn't matter,2006-08-21 13:25:21
+133,"Microsoft had the Opera developers over last week. 
+http://operawatch.com/news/2006/08/opera-visits-microsoft-in-preparation-for-windows-vista.html I guess it's the second best browsers turn.",2006-08-23 06:04:30
+134,"In support of neilgunton, many many articles on Wikipedia link to sites that have ads. there is certainly no prohibition on that or even a bias against it.
+
+example articles that link to sites with ads include 
+'sourceforge','microsoft','apple computer','linux'",2006-08-23 23:58:33
+135,"Consider the following code (lifted from http://msdn.microsoft.com/msdnmag/issues/04/05/C20/ ):
+
+   public class CityCollection : IEnumerable&lt;string&gt;
+
+   {
+
+      string[] m_Cities = {""New York"",""Paris"",""London""};
+      public IEnumerator&lt;string&gt; GetEnumerator()
+      {
+         for(int i = 0; i&lt;m_Cities.Length; i++)
+            yield return m_Cities[i];
+      }
+   }
+
+If you create the code
+
+   CityCollection cc = new CityCollection();
+
+   foreach (string city in cc) {
+
+      Console.WriteLine(city);
+
+   }
+
+it will use the enumerator to iterate through the values.
+
+But when GetEnumerator() is called, it will start the for loop and traverse as far as the yield statement. The yield statement basically means that the method returns a value, but it remembers its state. 
+
+When GetEnumerator() is called, it will pick up where it left off, and execute the next loop until it reaches yield again -- and so on until the loop completes. Remembering its state in this way is a continuation, because the method continues from where it left off.
+
+The main motivation for adding continuations in c# 2.0 seems to have been making it easier to develop classes that are enumerable (as above), but there are various other cool things you can do with them. Code that relies on continuations is more common in languages like scheme and ruby than in c#, however.",2006-08-24 03:51:42
+136,"if i read another erlang article bt that guy, im going back to digg. I especially cannot stand arguments that make google out to be 'agile' and microsoft 'retarded'. Microsoft's live iniative is going to destroy google, and it wont take long.",2006-08-24 18:12:06
+137,"Grauenwolf,
+
+Seems like I did not write that too clearly. There has yet to be an OS created where garbage collected memory is the memory management solution offered by the kernal. When I said ""used in the kernal"", I meant all OS apps would use a kernal provide memory allocation/dealocation service that is only and entirely garbage collected. 
+
+No one has done this yet. Though the experimental [Singularity OS](http://research.microsoft.com/os/singularity/) is a good attempt. You'll notice they are intending to make heavy use of code verification and other provable techniques in this OSes costruction.",2006-08-25 04:21:04
+138,"Microsoft has been shipping their ""encrypted folders"" for years but it doesn't seem to have made much a difference. Then again, it's a pretty useless form of encryption.
+
+I think that encryption is just too much of a hastle for most people. This is made worse by the fact that you need raid 5 or similar or your data will quickly be wiped out if just one bit goes bad. It also makes emergency recoveries and all kinds of other useful tasks very difficult.
+
+The only answer I can really recomend is to build a NAS box with encryption, fault-tolerent RAID, volume management, and a means of securing your network tunnel to it. This way you can choose whatever fancy distro with binary nvidia drivers or whatever crazy stuff you want without having to figure out how to get all the FS stuff working with each distro of the week. Also, it makes it easier from a hardware perspective, not cluttering your systems with tons of drive cables, less limited in expandibility.
+
+So, my guess is that we just have to wait for NAS boxes to become more common. Many already tout encryption as a feature. That and microsoft getting a clue as to what mount points are.",2006-08-26 17:41:07
+139,"http://research.microsoft.com/~daniel/unix-haters.html
+I immediately bought a hardcopy from half.com. It's definitely recommended. Just like art of unix programming http://catb.org/~esr/writings/taoup/
+",2006-08-31 14:22:15
+140,"&gt; C# seems to have hundreds of different collection classes, used inconsistently in the .NET libraries.
+
+And they're all under `System.Collections` [and are oh-so hard to count. They are: ArrayList, BitArray, Hashtable, Queue, SortedList, and Stack. (Hundreds, I know [1].)](http://msdn2.microsoft.com/en-us/library/system.collections.aspx) And they all implement interfaces defined in .NET (IComparable, IEnumerator, IDictionary, IWeLoveInterfacesHowAboutYou), ensuring consistency between collection types and mentioned countless times in documentationz not to mention that the collection types themselves are extremely well-documented. Oh yeah, it's a real mess.
+
+[1] The rest are abstract classes or those weird case comparer classes that nobody uses except the people who write .NET.",2006-09-01 01:27:08
+141,"Dumb windows apologists. Bleh.
+
+Usability? From windows? Hardly. Installing new machines with a relatively standard XP image, it pops up that stupid little word bubble above the systray telling me ""you have unused icons on the desktop"". It does this no less than 3 times, stealing focus from what I'm trying to do. If you don't click its little X perfectly, it pops up some other asinine wizard. For fuck's sake, I'll delete the damn icons manually, if I want to.
+
+Oh, and then there's the start button. A new unmalwared image, and when you click on start, it has to make the damn clicky sound, and pauses for a second. If you're in a hurry and click on that menu item, which I always am, it ""unclicks"" the submenu, just as it was coming up normally. Nice going microsoft, can you get anything working in an intuitive way?
+
+And don't even get me started on how if they had any sense, it would default to having My Documents and the desktop all secretly map to a network share, mirroring to it for that matter.
+
+You've not experienced hell until you have to help a user backup their documents despite it not being part of your job description, and they have no idea what the distinction is between documents and the Big Blue E on the desktop (but I need that too!).
+
+In short, familiarity != usability.",2006-09-02 17:42:36
+142,"Hrmm...I'm willing to wager that 20 professional software engineers of average height at a successful company (microsoft, google, apple, er...maybe throw in Sun) would be smarter than 20 professional NBA players. However, the taller basketball players might be making more.",2006-09-02 19:27:39
+143,"um, openoffice is beating microsoft office? really? 
+
+that said, his points about the software are good. his points about the name are childish.",2006-09-05 16:46:09
+144,http://support.microsoft.com/default.aspx?scid=kb;en-us;103858,2006-09-05 18:04:28
+145,you forgot the requisite microsoft snark.,2006-09-06 04:29:55
+146,"This one is interesting from Microsoft.
+
+http://research.microsoft.com/projects/AppTexSyn/apptexsyn_supplemental_surface_synthesis.pdf",2006-09-06 23:39:52
+147,"always with the pictures of huge dual LCDs. supposedly half of his movie, whose main purpose was to entice people to try to work for him, had them in clear view. when you realize that his real motive in writing and so on is self-promotion and getting resumes to reject without a second glance, his tone comes off much differently.
+
+we get it, joel: you'll only hire superstar turbogeniuses who love making compilers for poorly designed Greenspun's tenth rule manifestations in the latest flavor-of-the-week language from microsoft. and if 10,000 programmers read your article you'll probably want to reject all of them because none are good enough for _you,_ master Visual Basic hacker that you are. we're not good enough to work on your franken-VBScript bug tracking program!
+
+hey joel, remember how you thought it was a good idea to implement CityDesk using Jet instead of SQLite or BerkeleyDB? only a true master-wizard-megagenius thinks like you. richard feynman and gauss ain't got shit on you and your team of Navy SEAL megawizards, bro.",2006-09-08 00:41:54
+148,"microsoft is really irrelevant now, aren't they?",2006-09-09 20:26:53
+149,"adding piecemeal elements of smalltalk/lisp/ML to a basic, imperative, Algol-like syntax has been done already. cf Ruby and Python. congratulations to microsoft for partially catching up to guido van rossum's pet project from the 80s in 2006.",2006-09-12 02:13:50
+150,[One of the designers of Haskell and developers of GHC works at Microsoft Research](http://research.microsoft.com/~simonpj/).  Maybe that has something to do with it.,2006-09-12 06:47:36
+151,Make that [two of them](http://research.microsoft.com/~emeijer/).,2006-09-12 06:49:56
+152,Make that [three](http://research.microsoft.com/~simonmar/),2006-09-12 08:48:28
+153,"&gt; ... function calls will always be slow because you can never get something compiled down to the point where a function call is just a single CALL instruction ...
+
+Here's an [article](http://msdn.microsoft.com/msdnmag/issues/05/05/JITCompiler/) on how the .NET JIT gets function calls into CALL plus two more instructions for most methods (load 'this', then load 'this.methods, then CALL).
+
+It's not about static vs. dynamic, it's about implementation.  I don't see any reason why Ruby couldn't be wicked fast if someone spent some time on it.  My guess is that Mats just isn't interested enough in optimization (yet?).",2006-09-12 22:34:06
+154,"Pete Wright never worked at Microsoft did he?  His profile says he is a consultant, and every mention he makes is of working at different companies.  He lives in Deltona Florida, Microsoft is in Redmond Washington.
+When he says ""I completely ended my Microsoft career"" I believe he is speaking of using Microsoft products, not working directly for Microsoft.
+edit: I seems he consulted for Avanade, which is a 'joint venture' between microsoft and Accenture. This is NOT microsoft!",2006-09-12 23:24:34
+155,"To fix that, the site could require reviewers to use their work email addresses (with corresponding registration emails), so only someone@microsoft.com could review Microsoft's code.",2006-09-15 19:57:35
+156,"hmm, apparently he hasn't heard of SafeInt:
+
+http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dncode/html/secure05052005.asp
+
+(google for safeint class)
+",2006-09-15 19:58:29
+157,"Some [more information](http://lvb.net/item/3496) (translated from the Dutch):
+&gt; The court decision contains some remarkable conclusions. The judge based his conclusions on a report by expert [Luc Golvers](http://www.microsoft.com/belux/nl/enterprise/magazine/Informaticarisico.mspx), who states that Google News is not a search engine, but a news portal. In combination with Google cache, a user can retrieve an article, even after the publisher has removed it from its website. Therefore, according to the expert, ""the publisher looses control about his websites and content"". The court decision states that ""using Google News circumvents the ads from the publishers"" which leads to losses from the publishers.
+
+&gt; The judge also states that Google cache enables the user to circumvent the required registration or payement on some newspaper websites. From a technical point of view, this is of course nonsense, unless the publisher expressivly gives Google's crawlerbot free access to pages that are normally only accessible for registered users.
+
+&gt; Technically, there exists a perfectly valid method to deny crawlerbots access to websites: the [robots.txt protocol](http://en.wikipedia.org/wiki/Robots_Exclusion_Standard). the websites of {Belgian newspapers} [Le Soir](http://www.lesoir.be/) and [La Libre Belgique](http://www.lalibre.be/) don't seem to use this protocol. This raises the suspiscion that the issue at stake here is not staying out of Google News, but rather the wish to receive revenues for it.",2006-09-18 12:19:54
+158,"I'd not read about this, but found [this paper](http://research.microsoft.com/Users/simonpj/papers/stm/stm.pdf#search=%22transaction%20memories%20composability%22) from Microsoft Research. Sadly, it's only written is Haskell, not Erlang.",2006-09-19 14:34:00
+159,"I want to buy a silent media computer for my living room. I'm sure I'm not the only one having that problem, that's why i think this question is relevant to the entire reddit community.
+
+Here are my requirements:
+
+* SILENT case
+
+* Linux ready. I'm not going to pay microsoft 100$ for a f*cking media center pc
+
+* Cheap. Come on, i don't nead bleading edge hardware just to play a few tunes and films. It should be possible to find something ~$300, right?
+
+* Network enabled. This way i can control it through ssh, but it can also act as a server. Neat.
+
+* Connectable to TV. Quite obvious for a media center
+
+* Am I forgetting something?
+
+So where can I buy this baby? If you know any vendors, I'd be VERY thankful!
+",2006-09-20 10:04:59
+160,"The main advantage of STM above locks is that they compose. It is best explained in the paper: [Compasable Memory Transactions](http://research.microsoft.com/Users/simonpj/papers/stm/stm.pdf):
+
+&gt;...Perhaps the most fundamental
+objection, though, is that lock-based programs do not compose:
+correct fragments may fail when combined.
+&gt;
+For example, consider a hash table with thread-safe insert and
+delete operations. Now suppose that we want to delete one item A
+from table t1, and insert it into table t2; but the intermediate state
+(in which neither table contains the item) must not be visible to
+other threads. Unless the implementor of the hash table anticipates
+this need, there is simply no way to satisfy this requirement. Even if
+she does, all she can do is expose methods such as LockTable and
+UnlockTable  but as well as breaking the hash-table abstraction,
+they invite lock-induced deadlock, depending on the order in which
+the client takes the locks, or race conditions if the client forgets.
+Yet more complexity is required if the client wants to await the
+presence of A in t1, but this blocking behaviour must not lock
+the table (else A cannot be inserted). In short, operations that are
+individually correct (insert, delete) cannot be composed into larger
+correct operations.
+&gt;
+The same phenomenon shows up trying to compose alternative
+blocking operations. Suppose a procedure p1 waits for one of two
+input pipes to have data, using an internal call to the Unix select
+procedure; and suppose another procedure p2 does the same thing,
+on two different pipes. In Unix there is no way to perform a select
+between p1 and p2, a fundamental loss of compositionality. Instead,
+Unix programmers learn awkward programming techniques
+to gather up all the file descriptors that must be waited for, perform
+a single top-level select, and then dispatch back to the correct
+handler. Again, two individually-correct abstractions, p1 and p2,
+cannot be composed into a larger one; instead, they must be ripped
+apart and awkwardly merged, in direct conflict with the goals of
+abstraction.
+&gt;
+Rather than fixing locks, a more promising and radical alternative
+is to base concurrency control on atomic memory transactions,
+also known as transactional memory. We will show that transactional
+memory offers a solution to the tension between concurrency
+and abstraction. For example, with memory transactions we can
+manipulate the hash table thus:
+&gt;
+`atomic { v:=delete(t1,A); insert(t2,A,v) }`
+&gt;
+and to wait for either p1 or p2 we can say
+&gt;
+`atomic { p1 orElse p2 }`
+&gt;
+These simple constructions require no knowledge of the implementation
+of insert, delete, p1, or p2, and they continue to work
+correctly if these operations may block, as we shall see...",2006-09-20 11:27:46
+161,"Collection of free microsoft reader ebooks for pocketPC's.
+Derived from Project Gutenberg etexts &amp; transformed into .lit ebook format.",2006-09-20 23:27:33
+162,"If the keyboard is so good, you should have something remarkable to say about it -- you shouldn't only talk about markings, which don't matter when you don't look at them or when you use anyway a different keymap; you shouldn't talk about Caps Lock presence or placement, which is an absolutely trivial concern for anyone using X.
+
+Does this best-keyboard-ever-used differ all from a microsoft or dell or apple keyboard in any meaningful way?",2006-09-21 17:46:22
+163,reddit has microsoft users?,2006-09-22 15:30:16
+164,"In runs in other players, just not Windows Media Player.  If it works in all other players (even the older Mplayer.exe which is by microsoft and distributed with newer WMP versions) and not WMP, then I would say that WMP has a flaw.
+
+I doubt Google would try these different combinations of FourCC code in the file to see if WMP would not play it.  Complete waste of time.",2006-09-22 20:50:34
+165,"+ +1 for astute patent analysis
+- -1 for gratuitous microsoft bashing (what is this, slashdot?)
+
+net: 0",2006-09-22 22:44:47
+166,"well.
+
+1. they don't suggest what should be done about DRM. simply ignoring the reality that parasite companies like TiVo want to benefit from free software and then undermine the spirit of it seems suspicious to me.
+
+2. determining what is and isn't DRM abuse seems simple enough: don't allow DRM bullshit at all.
+
+3. companies with a ""patent portfolio"" probably don't want to use free software anyway. deciding what your freedoms should be based on what's good for big business is far more disturbing than unanticpated consequences of contract language intend to counteract DRM. companies who use the term ""patent portfolio"" probably also like DRM, proprietary software, oracle, and microsoft.
+
+4. the additional restrictions clause doesn't seem that problematic to me. there's no ""picking and choosing"" to be done if you simply don't put additional restrictions in. from what i can tell, the draft limits the kind of additional restrictions that can be placed. don't put additional restrictions in and there's nothing to worry about.
+
+in general i'm skeptical and suspicious of people who say We're All Going To Die. linus, ESR, and other GNU/FSF critics always seem to have one thing in common: they just want cool toys to play with and if microsoft had the best toys, they'd use those. but since empirically free software results in pretty good software often times that's what they like best. it's a software development model to them, not a statement about how society should conduct itself. linus et al. seem to have no problems with a world where what is good for Bill Gates or Larry Ellison (and Halliburton or Diebold, for that matter) is by definition good for the entire world.",2006-09-24 11:32:18
+167,"The author of the ""[International Features in Microsoft SQL Server 2000](http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnsql2k/html/intlfeaturesinsqlserver2000.asp)"" is similarly defensive on the topic of named sort orders:
+
+""It should be emphasized that the developers of SQL Server are not ""political"" people and there really is no desire to offend any one country/region by asking them to ""use another country/region's sort order."" In fact, someone living in Serbia and Montenegro may not have to worry about using the Croatian sort order; because both the Croatian and Serbian languages use the same collation, the name is arbitrary.""",2006-09-24 22:11:43
+168,"i wouldn't be surprised if microsoft had something similar with respect to google, oracle, or whoever they have their eye on in their bug database. except you don't get to see all the bugs, you can't help microsoft fix them, and if they say they want to ""fucking kill google"" they say it with a dick cheney sneer rather than half-jokingly.",2006-09-28 14:57:39
+169,"Looks a bit like some ready-made article delivered my MSFT PR dept and delivered verbatim by the journalist.
+
+There are a couple of key points which aren't considered here:
+
+* microsoft consistently proved itself unable to deliver a usable product before version 3 or 4. I don't see why it would change with zune. If you were to believe microsoft PR, Windows 95 would have made OSX pointless.
+
+* they compare ipods from last year with zunes from next year. Apple does have new ipods in the tubes, and new ones will follow; those surely will integrate zune's most desirable features, plus some new, awesome ones: apple is unquestionnably much better than microsoft at shipping those original features without which you can't live, once you've tried them for 2 days. And they're trained at releasing a substancially new ipod product every 18 months or so. Do I need to talk about microsoft's product shipping cycle?
+
+Essentially, a full screen video ipod, with a virtual control wheel and wireless capabilities, will crush zune technically.
+
+One point is left for zune: medias. If microsoft manages to get exclusive rights with major RIAA members, *that* might badly hurt Apple.
+
+Nevertheless, I'd love to see some non-ridiculous competition against ipods. I'm sure they can provide even greater products, if pressured adequately :)",2006-10-01 10:33:08
+170,"I'm with you in priciple. However, bitmapped fonts offer one thing that outline fonts dont: simplicity of implementation.
+
+You can pretty much produce a bitmapped font at a normal size and then scale it. Then tweak the stuff that got messed up. Time consuming but simple. It's akin to a cut-and-paste approach.
+
+Outline fonts are definitely more sophisticated since they benefit from hinting of glyphs. They are pretty much guaranteed to work at all readable resolutions IFF the designer took the time to hint properly. The problem is that hinting is a complex and iterative process. You need to be a mix of graphic artist and computer programmer. Something that isn't commonly found.
+
+Anyway, I was looking at Microsoft's Visual TrueType software. It's an attempt to make the hinting process less of a programming task. However, even hinting things visually/graphically still means that you need a strong understanding of type and how scaling can affect readability and character relationships.
+
+A lot of intersting reading here:
+http://www.microsoft.com/typography/tools/vttusers.htm
+",2006-10-01 18:12:57
+171,"i remember during the internet bubble, microsoft had a capitalization greater than the GDP of Canada.",2006-10-01 23:21:07
+172,"microsoft will probably come out with their own antivirus solution, guaranteed to fuck your computer. and who should care? no one with brains enough to not upgrade. or to upgrade off the windows platform.",2006-10-02 14:42:38
+173,"This article does not 'uses material from the Wikipedia article ""Manhole Cover""', as stated below it, but is rather copied, word for word, from said wikipedia article.
+
+Besides, [this](http://www.petebevin.com/archives/2005/08/04/if_richard_feynman_applied_for_a_job_at_microsoft.html) is far more reddit-worthy.
+
+Edit:
+Oh, and guess what, [it was](http://programming.reddit.com/goto?id=93n8).",2006-10-02 15:44:14
+174,"Not in Opera you're not. 
+
+&gt;Thank you for your interest in SimCity 4! Unfortunately, you are currently running a browser version that is incompatible with our site. You will need to upgrade your browser to the most current version to get the most out of the SimCity 4 site. 
+
+&gt;To get the latest version of Microsoft's Internet Explorer, go to: http://www.microsoft.com/windows/ie/. 
+
+&gt;To get the latest version of Netscape's Navigator, go to: http://www.netscape.com and click on Download Netscape 7.0 in the tool bar.",2006-10-02 19:56:55
+175,or more likely a contractor that designed the website called IE stupid and microsoft didn't closely review the code.,2006-10-03 14:16:45
+176,"It will be impossible to patch it and maintain backwards compatibility. Somebody may be accidetally using a security hole to do normal things. For example I run Windows as a restricted user, and it's a huge pain. Even some microsoft applications are tested using administrative privileges. The result you know.",2006-10-03 15:14:56
+177,It seems that hoaxer had close relationship with microsoft,2006-10-03 17:19:21
+178,"That's hard to answer.
+
+There are some design patterns that are not expressible in C++. But that is off-topic, so we will drop it for now. 
+
+Some patterns in C++ could be replaced with libraries. Once you do that, you don't need the pattern any more. But this only counts if the standard library has the feature. If everyone has to create their own version, then you haven't really conquored the design pattern.
+
+Other patterns can be elminated with enchancements to the language. Macros in C++ server this role. But again, it only counts if everyone has access to the same common set. 
+
+Finally, there are the patterns simply must be carried out over and over again. Some patterns, like explicit memory management, cannot easily be placed in a library. The only way to eliminate the pattern is to fundementally change the language.
+
+There have been attempts to iterator pattern (for-each) in C++ libraries. But many people find them to be clumsy and somewhat worse than the original pattern. While adding a for-each construct to C++ would not be a fundemental change, it is certainly more involved than just creating a library.
+
+Eariler I mentioned that C++ simply cannot express some patterns. Here is an example:
+
+Consider the ""Create some XML"" design patterns. You basically have two choices, either using strings or objects. 
+
+The strings option requires you to manually escape text and ensure the tage are balanced. And when you are done, all you have is a string.
+
+The object option requires you to manually create objects for every element, and in many libraries for every attribute. This can be very tedious, even in a language that uses garbage collection.
+
+VB9 elminates the headaches of both these introducing a new syntax:
+
+    Dim myXml = &lt;tag1 attribute1=""&lt;%= someValue %&gt;""&gt; &lt;innerElement1/&gt; &lt;innerElement2&gt;&lt;%= someCollection %&gt; &lt;/innerElement&gt;  &lt;/tag1&gt;
+
+There is no way to express this in C++ or any other OO language via libraries. Even functional langauges cannot do this directly; though they can get close, you still have to do some translation.
+
+Has VB eliminate the need for design patterns? No, but is has replaced it with a simplier one.
+
+P.S. Reddit fragged my example, so just go to this link. Page 3 has the example.(http://research.microsoft.com/~emeijer/Papers/PlanXDemo.pdf)",2006-10-04 18:30:30
+179,"Also...
+
+* [Why Functional Programming Matters](http://www.google.com/search?hl=en&amp;lr=&amp;safe=off&amp;q=nested+data+types&amp;btnG=Search)
+* [QuickCheck](http://www.cs.chalmers.se/~rjmh/QuickCheck/)
+* [Composable memory transactions](http://research.microsoft.com/~simonpj/papers/stm/index.htm)
+* [The Under-Appreciated Unfold](http://citeseer.ist.psu.edu/gibbons98underappreciated.html)
+* [Strongly typed heterogeneous collections](http://homepages.cwi.nl/~ralf/HList/)
+* [Nested Datatypes](http://citeseer.ist.psu.edu/bird98nested.html)
+
+",2006-10-06 02:44:28
+180,"Ironic that microsoft live fires up MSN messenger when you visit the page :S
+
+Great article though.",2006-10-07 20:10:23
+181,"you can also stop using microsoft products right now, too.  It's just harder.",2006-10-10 08:08:00
+182,I use (absolutely) nothing from microsoft. I use a lot of Google tools. I can't help thinking that it becomes more and more problematic. Just hope they're really not evil...,2006-10-10 09:45:50
+183,[Related Presentation by Shriram](http://download.microsoft.com/download/9/4/1/94138e2a-d9dc-435a-9240-bcd985bf5bd7/Shriram.wmv),2006-10-13 12:31:23
+184,"It's your god-given right to use microsoft's software in any way you see fit, and don't let them or the republicans tell you otherwise!",2006-10-17 13:52:53
+185,"why everything i install from microsoft requires restart ? I mean, it's just a freakin' browser ! And I had IE7 RC1 installed WTF is wrong with them ?
+
+And if you dare to hit ""restart later"", now you're bombarded with warning popups.. 
+
+-- surprise update --
+
+actually i didn't get it at all.. the first restart was to REMOVE the old version (RC1) and then it could finally install (which take ages) to finish with another restart.",2006-10-19 00:27:13
+186,its so dumb that it completely replaces ie 6.  what about us web designers that need to test for both versions... stupid microsoft....,2006-10-19 13:00:28
+187,"&gt; mentioning that 'F#', a new CLR language which seems to be based on ML, is in the pipeline.
+
+I got ya pipeline right here:
+
+http://research.microsoft.com/fsharp/fsharp.aspx",2006-10-21 19:27:59
+188,"My coworker discovered [this one](http://support.microsoft.com/kb/141373) last week: Access 97 now says ""There is no license"" unless you uninstall, *rename the Haettenschweiler font*, and reinstall.
+",2006-10-23 20:55:07
+189,[here](http://micropipes.com/temp/fromredmondwithlove.jpg) or [here](http://homepage.mac.com.nyud.net:8090/mattwillis/temp/microsoftcake.jpg),2006-10-24 20:20:07
+190,"How to encrypt files, folders and volumes:
+
+[GNU/Linux](http://www.seifried.org/security/cryptography/crypto-book/chapter-10.html)
+
+[Mac OS X](http://www.apple.com/macosx/features/filevault/)
+
+[Windows XP](http://support.microsoft.com/kb/223316)",2006-10-25 17:14:18
+191,"Sounds like fun. I'd like to see statistics how often a day ""microsoft.com"" gets reported. :)",2006-10-26 07:23:21
+192,"Of course reddit has sytematic biases.  When was the last time you saw a story about a republican politician doing something good?  Or a religious group showing tolerance?  Or atheists killing each other?
+
+About as often as you see pro-microsoft stories on slashdot, pro-socialism articles in the economist or pro-globalisation talks at a trade union conference.  They're not hard and fast rules, but it does mean the content has to be really good to survive.
+
+It appears *jdk* misjudged things, but the general idea is not bullshit.",2006-10-26 19:41:37
+193,"1) The number of instructions on that page made it easy to miss, and the meaning of those instructions wasn't easy to interpret.
+
+2) There was no ""Do not show this again"" button in any of the dialog boxes that popped up.
+
+3) microsoft.com should be the default source to get Microsoft's script debugger.  Other sources are likely less secure.
+
+4) The point was to show the ""Microsoft way""",2006-10-26 20:13:16
+194,"Good point. Personally I like Firefox because I can fill it with as much or as little features as I want, but when it comes to it, using a browser that forces webmasters and microsoft to adhere to the standards more is all good in my books.",2006-10-30 03:31:54
+195,"Currently, the following features are known to have been adopted from Haskell:
+
+* Python: whitespace layout and list comprehensions
+* JavaScript: list comprehensions
+* Java: bounded types (closely resembled type classes)
+* C# and VB: LINQ is based on *monads*, and monad comprehensions
+* Scala: monad comprehensions and implicit parameters
+* Perl6 : lots of things (at least in the implementation of [pugs](http://pugscode.org)), currying and lazy lists for starters
+
+I've probably missed some things. There's also lots of cross pollination between OCaml, SML, Clean and Haskell.
+
+More info in the [History of Haskell](http://research.microsoft.com/~simonpj/tmp/history-v2.pdf) (pdf).
+
+P.S. Note that the guy who coined the term ""list comprehension"" is one of the authors of the ""History of Haskell"" ;)",2006-11-02 15:00:49
+196,"Yes, it's being transitioned into Visual Studio Tools for Office, the managed equivalent of VBA.
+
+http://msdn.microsoft.com/office/tool/vsto/",2006-11-03 17:38:27
+197,"Perhaps this will help: 
+
+XLinq: XML Programming Refactored -- The Return Of The Monoids 
+
+http://research.microsoft.com/~emeijer/Papers/XLinq%20XML%20Programming%20Refactored%20(The%20Return%20Of%20The%20Monoids).htm",2006-11-03 18:23:21
+198,"Honestly, its technical incompetance that's costing these companies millions. You're right, they may not be able to roll out Vista and run their VB apps. They might have to delay hardware upgrades. 
+
+But They were given something like a 2-3 year lead time (more if their developers pay money for MSDN enterprise subscriptions) to know that VB6 was the end-of-the-line and that .NET was the be-all, end-all to everything. 
+
+If they didn't take the time or effort to upgrade their application for the sake of future-proofing it, they're idiots, and yes, hiring idiots will cost those companies money.
+
+Blaming microsoft for this problem is like blmaing the DMV because your license expired and you didn't go down to renew, and now you need to take the driving test all over again.",2006-11-03 22:15:24
+199,"Which, of course, is why we have the [Microsoft Keyboard](http://chevroletchevette.tripod.com/images/new_microsoft_keyboard.JPG)",2006-11-05 16:11:52
+200,"you sir, need to get a life. if you think they've purcahsed EVERYTHING they've released, and all they've released is dos, excel, powerpoint, tcp/ip (although how the hell you claim this is ms, is quite beyond me), frontpage, spyglass, source safe and visual basic - then you need to venture out of your bedroom, for once.
+whilst you're out there, look at what other companies, or groups have actually copied, especially the likes of apple, and mozilla - hardly hot houses of 100% originality now, are they?
+
+infact, it's a generally accepted fact that apple, pretty much steals ideas of microsoft or independants INSTEAD of buying them - in my eyes this is worse, especially when in a polo-necked press conference billy boy jobs will be a smug fuck and claims it was all his work.",2006-11-06 14:41:39
+201,"This is not microsoft's site:
+It is registred to some unknown company:
+http://www.enom.com/domains/whois.asp?DomainName=msfirefox.com&amp;submit.x=0&amp;submit.y=0
+
+
+This postal address ""PMB 368, 14150 NE 20th St - F1 "" is used to register some other sites.
+Under any circumstance do not load ANYTHING from this site... It could be loaded with trojans!
+
+Microsoft can't make accusation of mozilla - cause mozilla is open source product. It can buy mozilla.com - mozilla corporation but not mozilla sources...
+",2006-11-06 17:03:37
+202,"what is it with microsofts current obsession about how many lines of code go into their products.
+
+its not a pissing contest.",2006-11-07 14:16:44
+203,"Because Caml is older than Haskell.  To shamelessly plagiarize Todd Proebstring at Microsoft research ( http://research.microsoft.com/~toddpro/papers/disruptive.ppt ):
+
+The next big programming language will be slower than what it replaces
+
+Why?
+
+ + The incumbent language will have been optimized relentlessly
+ + To replace it, the new language must offer something new that will be valuable even if slow.
+",2006-11-07 21:58:39
+204,Wierd. I was expecting a link to microsoft ;),2006-11-08 14:50:24
+205,"xml isn't designed to be human-readable; it's designed to be machine-readable and structured so that any arbitrary structure can be perpetually decoded by any machine with internet access (and is thus able to look up necessary references).
+
+the problem with simple data formats like csv is that they aren't typically well-defined...if i see 06-05-01 and know it's a date field, is it june 5, 2001? may 1, 2006? who knows? whereas with xml i have a dtd and explicit date formats so every field is defined.
+
+and the problem with complex data formats like dbf, sql, etc. is that they require proprietary programs to read or manipulate the data. an open standard like xml is far superior in that everyone can use it without being tied to a vendor, and can generate or modify xml with just a text editor (if necessary).
+
+sure it takes up more space than a csv, but with bandwidth and storage capacity increasing by orders of magnitude it hardly matters; video and voice take up far more capacity than text files of any sort.
+
+like it or hate it, xml is the future; just ask microsoft or google.",2006-11-08 19:54:22
+206,[Looks like](http://msdn2.microsoft.com/en-us/netframework/aa663314.aspx) they just added a set of libraries to version 2.0.,2006-11-08 23:19:42
+207,microsoft is planning to share some of their zune profits with labels (or at least with universal music)... sounds like a deal that will benefit artists and consumers (not),2006-11-09 04:42:22
+208,"The links below are the FAQ, Tutorial  and Blog
+
+
+http://www.microsoft.com/communities/beta/MSTSintro.mspx
+
+http://www.microsoft.com/communities/beta/MSTShowto.mspx
+
+http://davemscom.spaces.live.com/blog/cns!217A4DFE679DE9D4!560.entry",2006-11-09 07:27:47
+209,"Yes, but this isn't standard microsoft bashing, it's an argumented critic, which makes a lot of sense in my opinion. Hence your downmod.",2006-11-09 15:07:47
+210,"another braniac predicting the impending doom of a microsoft initiative!?! hm, seems i've heard similar tunes sung in the past...windows (every version), CE, VB, networking, IE, xbox, 360...and now zune! 'because of various missteps, this offering is sure to fail. lord knows microsoft never *improves* anything!'
+
+hold your breath for 3 years and see how zune's doing. personally i think it will be a wimax phone by that iteration, and will be doing great.",2006-11-09 20:45:00
+211,http://reddit.com/search?q=microsoft+ipod&amp;s=highscore,2006-11-10 03:18:08
+212,".Text - Application Error!
+
+Details
+
+Cannot execute a program. The command being executed was ""c:\windows\microsoft.net\framework\v1.1.4322\csc.exe"" /noconfig @""C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\Temporary ASP.NET Files\root\53f37b36\42de33f2\iw-zl5i6.cmdline"".
+
+*aah well,... they /will/ insist on using windows...*",2006-11-10 09:20:05
+213,"[Here's](http://www.microsoft.com/interop/msnovellcollab/community.mspx) the community commitments agreement. Here's the bit they are talking about:
+
+&gt;Microsoft hereby covenants not to assert Microsoft Patents against each Non-Compensated Individual Hobbyist Developer (also referred to as You) for Your personal creation of an originally authored work (Original Work) and personal use of Your Original Work. This pledge is personal to You and does not apply to the use of Your Original Work by others or to the distribution of Your Original Work by You or others. A Non-Compensated Individual Hobbyist Developer is an individual software developer (i.e., a person and not any corporation, partnership or other legal entity), including a developer of open source software, who receives no monetary payment or any other forms of consideration that can be valued monetarily for their creation of their Original Works.
+
+[Here's](http://www.microsoft.com/interop/msnovellcollab/patent_agreement.mspx) the patent cooperation agreement.
+
+&gt;I'm sick and tired of all this he-said she-said crap. Can't anyone post some real facts about the deal? You know, with quotes from the agreement along with some legal analysis.
+
+None of the article you're responding to is he-said she-said crap. It is a legal analysis written for non lawyers. [Here's](http://www.softwarefreedom.org/news/20061109a.html) the official analysis.",2006-11-11 04:24:34
+214,"Well some of the main reasons I hate vb, you'll have to correct me if I'm wrong on any of these as since I hate VB I try to stay as far away as possible from it: 
+
+1. It's not cross platform.
+2. No console programming. 
+3. It's too verbose. Why use isnot when you can use != 
+Sorry but less typing equals more code produced.
+4. It's slow.
+5. No threads (Is this still true?)
+6. No inline assembler.
+7. No pointers.
+8. New line terminates a line.
+9. It's based on basic.
+10. It's owned by microsoft.
+11. It doesn't have anywhere near the same adoption rate that vb 6 had. 
+
+I have more as well but i'm tired and going to bed.",2006-11-11 06:11:14
+215,"* [C# (see the language reference)](http://www.microsoft.com/mspress/books/toc/5798.aspx#TableOfContents)
+* [Python (see the language reference)](http://docs.python.org/ref/ref.html)
+* [Ruby](http://www.ruby-lang.org/en/documentation/)
+* Or Perl
+
+have implementations that come with library for threading. The language does not specify anything about threading, just like C++. And there is a good reason for it. Multithreading is dependant on and closely related to the implementation for its design, and so is best left out of the language specification.
+
+The only exception is the [Java which comes defined with threads and other language features for threading](http://java.sun.com/docs/books/jls/third_edition/html/j3TOC.html)
+
+By the way, I have read that there are Lisp implementations that come with some support for multithreading.",2006-11-11 17:47:25
+216,"http://forums.microsoft.com/WindowsOneCare/ShowPost.aspx?PostID=909837&amp;SiteID=2&amp;PageID=3
+
+Microsoft updated the OneCare definitions, and Google supposedly looked into the problem as well because they had made recent changes to their code.",2006-11-13 19:42:28
+217,"my thoughts exactly. I use the tagging system on Slashdot but it's becoming more and more of a joke.  
+These are the tags currently showing for the article ""[Steve Ballmer's Thoughts On Free Software](http://it.slashdot.org/article.pl?sid=06/11/13/1432221)"":microsoft,  developersdevelopersdevelopers, chairs, monkeyboy, ballmer.  
+Last week nearly all articles were tagged *itsatrap* in a new Slashdot meme.",2006-11-13 19:43:10
+218,"No, instead of this:
+
+FileStream fs = new FileStream(etc);
+fs.Foo();
+fs.Close();
+
+Use a using statement so that the file is closed if an exception occurs. See:
+http://msdn2.microsoft.com/en-us/library/yh598w02(VS.80).aspx",2006-11-14 23:39:51
+219,"did the other pc have problems? I think ye not, child.
+blame what you will on microsoft, but the a simple usb device crashing a raid volume.. far fetched?",2006-11-15 01:00:42
+220,"microsoft makes its own money !! whoooo !! soon it'll buy land and then secede !! then we can slap MS products with heavy duty and kill em all
+mwuhahahahahahaa
+",2006-11-15 03:39:28
+221,"yes, actually.  they do expect people to be so clueless that they'll buy into such a fundamentally broken system and love it.  it's worked in the past for bigger companies and worse products, so why won't it work for microsoft zune?
+
+If the world operated rationally, Mac would have a larger market share.  but unfortunately, there are still quite a few more microsoft fanboys than apple zealots out there.",2006-11-15 05:55:58
+222,"People feel the need to do this because M$ has become such a base that they cant innovate. iAPPLE has people so enculted that they can do anything but m$ gets MAD flack if they try and do ANYTHING different. If osx were deployed on the enterprise level, and jobbs suddenly said, "" OK now you gotta upgrade! BTW all your apps are pwned or will be virtualized."" then ppl would panic. Luckly no one runs mac os on the enterprise level so thats not an issue. But with microsoft comes conformity so stop asking them to cleverly innovate - its not going to happen.
+
+Work on fucking security and stability and once windows is as solid as BSD, then you can invest in innovation.",2006-11-15 06:24:59
+223,"i am impressed.
+Apple zealot steve-jobs-rimming websites are going in to overload over microsoft products lately. Diversionary tactics at the oft-delayed leopard, or faulty macbooks, maybe the weekly updates to the ill-conceived major update to itunes? Unlikely... more like the usual badger-baiting-esque childish name calling. Makes me be ashamed to be an mbp owner.
+
+so, back on topic. 
+Vista's not out yet. Yes, i can download it from microsoft licensing websites/msdn/technet, but this is a BUSINESS and ENTERPRISE editions. Why the hell do you think the consumer editions are put back to Q1 2007?... you probably don't know - to allow first and third parties to get up to gear with their hardware drivers. So is it any wonder a day1 consumer product works on a pre day1 non-finished consumer operating system? And more importantly, what the hell does it matter?",2006-11-15 18:23:40
+224,"I just switched to OSX from XP, but if there's one feature of windows that I sorely miss it's dotnet and indeed powershell. I have been using it for a while and really, from where I'm standing it beats bash hands down. Now I can already hear the linux geeks moan, how could microsoft ever create something that's better than bash?
+
+Even though powershell doesn't solve the problem of having that retarded windows filesystem, imho it's extremely powerful, elegant and well thought-out. Add to that that you can extend it with anything that compiles to the dotnet platform (J#, C#, VB.net, IronPython, etc) and you have a really useful tool. If you're on win32, just invest half an hour of your life and give it a whirl, you might just like it.",2006-11-15 21:39:32
+225,"Really good interview, 55 minutes though. 
+
+If you're impatient skip to 25 minutes in and the Doughnut Theory. Thats a really nice explain of the same idea that Joel discusses in ""Strategy Letter V"". 
+
+Questions asked in interview include
+""Why doesn't microsoft open source Office?""
+""Who can see the Windows source code"" 
+etc. 
+
+Worth a watch.",2006-11-16 18:51:25
+226,"this article lets OSX off the hook too easily. your hardware is just fine. it is your software that sucks. oh, OSX will work, but like vista, its hardware requirements are ridiculous, even ludicrous. there is no reason why a desktop user who reads email, surfs the web, does simple document editing etc needs anything above the cheapest PC available today, in fact you should be able to enjoy using a PIII with 256MB RAM. i don't think OSX or vista will even boot on such hardware (or its apple equivalent). people buy televisions once every ten years but they buy a computer every 18 months. this is ridiculous folks! stay on that consumerist treadmill, microsoft, apple, seagate, intel, amd etc etc etc thank you for your patronage.",2006-11-16 22:00:43
+227,Software wars! open systems vs microsoft vs rest!,2006-11-17 14:34:13
+228,"Same old SCO tactics. Pay us because you are using something that we won't tell you what it is. 
+
+Every OpenSourced product is in effect a published prior-art piece for any microsoft patent. Microsoft only started going patent crazy maybe 4 years ago. Most linux boxes have uptimes that long, so I doubt there's anything they've patented that would stop linux. 
+
+I am worried about Samba, but that's it.",2006-11-17 17:18:09
+229,"50 Cent Lyrics Adaptation
+
+""Ski Mask Way""
+
+[Intro]
+Yeah
+
+I'm Tryin to catch me sumthin
+
+I'ma catch you sumthin
+
+[Chorus]
+
+nigga that window manager is nice
+
+that's what you bought from me
+
+that Kernel is nice
+
+that's what you bought from me
+
+them OS is nice
+
+That's what you bought from me?
+
+Take that shit off, move I'll sue for intellectual property
+
+I get mine the fast way, SCO litigation way
+
+Make money
+
+Make money, money, money
+
+nigga if you ask me
+
+It's the only way
+
+Take money
+
+Take money, money, money
+
+
+[Verse 1]
+
+You wanna counter sue at me? Go head
+
+The last nigga that tried
+
+Bankrupted, keeled over, and bled green 'til he died
+
+Ya little friend Bill callin you stupid
+
+Reason why?
+
+Him and your stockholders in the spot now hog-tied
+
+I came up wit two new ways to get rich I cant wait
+
+Got a brand new Distro and that old OS
+
+I be scheming to put a lil' bread on my plate
+
+Watchin Steve serve iLife through iTunes
+
+I Buy a distro for the code, sell back to ya the next day
+
+You thought I really wanted ya business bitch please
+
+This is microsoft, jack pot, leave here them keys
+
+My black hat unit of developers just reak of caffeine
+
+Adrenalin comin out my pores in the sauna
+
+Im serious man I'm so sincere
+
+This the flow right here that fucked up BSD's career
+
+Make money, take money
+
+Yeah nigga yeah
+
+
+[Chorus]
+
+nigga that window manager is nice
+
+that's what you bought from me
+
+that Kernel is nice
+
+that's what you bought from me
+
+them OS is nice
+
+That's what you bought from me?
+
+Take that shit off, move I'll sue for intellectual property
+
+I get mine the fast way, SCO litigation way
+
+Make money
+
+Make money, money, money
+
+nigga if you ask me
+
+It's the only way
+
+Take money
+
+Take money, money, money
+
+
+[Verse 2]
+
+Whos dat peepin in my windows
+
+Wow
+
+The DOJ and EU on me now
+
+They know when im coding
+
+They know when im compiling
+
+I know they got my ISP taped im screamin Buy Bill
+
+Im tryin to stay out them pens, so I switched scheme
+
+Bad news WMP out though it looks great
+
+I see Jobs with that ipod on, gotta make Zunes go up
+
+This 3rd rock one big pussy waitin to get fucked
+
+I holla at developers but they laughs
+
+They charged me 500 a piece for two mini-macs
+
+Then im back suing for three
+
+Im back out on a spree
+
+Catch me copyright violations, pumpin out cease and desist
+
+Give me a lil' team I'll have em' coding for me
+
+The more product I buy the more paper we see
+
+Change name in longhorn they don't know how shitty It be
+
+Yeah a nigga doin dirt but aiming high then flee
+
+
+[Chorus]
+
+nigga that window manager is nice
+
+that's what you bought from me
+
+that Kernel is nice
+
+that's what you bought from me
+
+them OS is nice
+
+That's what you bought from me?
+
+Take that shit off, move I'll sue for intellectual property
+
+I get mine the fast way, SCO litigation way
+
+Make money
+
+Make money, money, money
+
+nigga if you ask me
+
+It's the only way
+
+Take money
+
+Take money, money, money
+",2006-11-18 06:41:46
+230,"You can hack it in C with setjmp/longjmp. I have implemented coroutines using only a few lines of assembly (a function I call cojump which essentially swaps stack pointers and saves a few non-clobbers).
+
+Here's how you can do it in C# using an old win32 api: http://msdn.microsoft.com/msdnmag/issues/03/09/CoroutinesinNET/default.aspx
+
+It's the sort of thing which really benefits from being part of the language design, IMO (since it relies on low-level implementation semantics).",2006-11-21 10:34:23
+231,Was that Microsof incident more embarrasing than Bill Gates catching a [pie to the face](http://www.bitstorm.org/gates/) or the guy who got fired over a picture of a [truck load of G5's](http://www.michaelhanscom.com/eclecticism/2003/10/23/even-microsoft-wants-g5s) that arrived at MS HQ?,2006-11-21 14:19:42
+232,"amazing, it took microsoft less than a week to jack novell.",2006-11-21 17:43:53
+233,"[See also](http://blog.seattlepi.nwsource.com/microsoft/archives/108806.asp?source=rss).  From da man himself.
+
+Interesting quotes:
+
+&gt; the fact that that product [Linux] uses our patented intellectual property is a problem for our shareholders.
+
+&gt; [...]
+
+&gt; And we agreed on a, we call it an IP bridge, essentially an arrangement under which they pay us some money for the right to tell the customer that anybody who uses Suse Linux is appropriately covered. There will be no patent issues. They've appropriately compensated Microsoft for our intellectual property, which is important to us. In a sense you could say anybody who has got Linux in their data center today sort of has an undisclosed balance sheet liability, because it's not just Microsoft patents. Because of the way open-source works, there's nobody who's been able to do patent coverage or patent indemnification behind that.
+
+&gt; [...]
+
+&gt; ""What we agreed, which is true, is we'll continue to try to grow Windows share at the expense of Linux. That's kind of our job. But to the degree that people are going to deploy Linux, we want Suse Linux to have the highest percent share of that, because only a customer who has Suse Linux actually has paid properly for the use of intellectual property from Microsoft.
+
+So, apparently, 
+
+* Yes, they're pulling a SCO.
+* It seems it will be patent-based, not copyright-based.  That's bad.  These days almost any large piece of software infriges some (stupid) patents.
+* No information yet on exactly which part of ""Linux"" is ""infringing"", but rumors on the web talk about Mono and Samba.
+* Novell chose to pay the fee to the troll on the bridge.  Time to boycott Novell.  MS wants you to use Suse.  Suse users: this is a good time to move to Ubuntu.
+",2006-11-21 21:21:59
+234,"Exactly, I remember following the case a few years back when IBM was being challenged, thank God Microsoft is going against people with some pretty deep pockets this time.  Otherwise they would get their way by persistent litigation just as they did against the justice department when it came to the antitrust case that was being brought against them.
+
+These threats may very well have validity, but it's going to be a matter of showing the code, and that is something that microsoft and it's legal arms have been unwilling to do.  I hope that there is no teeth to their claims, but until the code is revealed and our legal system is allowed to go over it with a fine tooth comb, these are just idle threats. I hope that this is all the ever amount to.",2006-11-21 21:52:42
+235,"this is unreal. usually microsoft assumes that the user is an idiot, and therefore does most of the stuff for them. this must be one of the places where someone dropped the ball.
+
+on another note, Joel forgot one. ctrl + alt + del",2006-11-22 04:04:04
+236,"Novell agreed to pay MS not to sue its customers; MS agreed to pay Novell not to sue its customers [[1](http://www.novell.com/news/press/item.jsp?id=1196)]. Novell did not admit any patent infringement in the software they distribute. They're not planning to start using MS's patents in the software they make, distribute, or contribute [[2](http://www.novell.com/linux/microsoft/community_open_letter.html)].
+
+Some are worried that this deal is in violation of Novell's obligations under section 7 of the [GPL](http://www.fsf.org/licensing/licenses/gpl.html). Eben Moglen of FSF is one of these.
+
+I understand the concern to be that Novell's assent to this agreement could be construed to imply that Novell believes there is some danger due to patent infringement. Why else seek a covenant from Microsoft wherein MSFT promises not to sue? But we know that our court system can be and has been abused. A company like Microsoft could conceivably decide to throw a few million dollars at frivolous lawsuits against users. So, if Microsoft offers to promise not to file such lawsuits, why not take them up on it?
+
+In this deal, Novell actually gets more money than Microsoft. So, assuming that it can be shown that the deal does not constitute an admission by Novell of patent infringement, it:
+
+ * protects Novell customers from baseless (but temporarily expensive!) lawsuits.
+ * assures Novell customers who are prone to irrational fears that they'll be OK
+ * has no effect on anyone besides Novell, Microsoft, and their customers
+ * increases Novell's net income.
+
+The negative publicity might be the only thing wrong with this deal.
+
+Novell has been fighting the good fight against SCO for some time now. Let Moglen and the lawyers settle the fine legal point here. Those of us who are not lawyers should give them the benefit of the doubt on this.",2006-11-22 04:26:02
+237,http://arstechnica.com/journals/microsoft.ars/2005/9/5/1130,2006-11-23 15:30:35
+238,"I'm not a big fan of ESR. He started by [rewriting](http://www.ntk.net/2003/06/06/) much of the Jargon File, and it seems the Open Source movement  (as opposed to Free Software) seems to have been [pretty damaged](http://www.theregister.co.uk/2006/11/20/eben_moglen_on_microsoft_novell/page2.html) by the recent Novell/Microsoft deal:
+
+&gt; What Microsoft did to 'Open Source' was what Stallman always said could be done to it: first you take the politics out, and when the veal has been bleached absolutely white, you can cover it with any sauce you like. And that's what Microsoft did, and 'Open Source' became the sauce on top of Microsoft proprietarianism. And once that process has been completed they have to go after the next vocabulary.
+
+-- Eben Moglen (Free Software Foundation's attorney)
+
+His religious views are pretty [strange](http://catb.org/~esr/writings/dancing.html) to say the least too...",2006-11-23 19:14:15
+239,"Let's take a step back in time; back to the mid- to late 1980s. After microsoft had worked with apple on some of their software (most notably the original calculator program on the orig. Mac), they started brewing Windows. 
+
+Steve was furious. Why were they stealing the GUI away? There was much litigation, and court cases concerning what was being stolen and what was being 'created'. Apple could not prove anything was taken, and windows was allowed to continue. The WIMP we know and love, given to Apple by Xerox, was to lead to windows eventually.
+
+Also, what microsoft did when working with IBM on OS/2. Compare OS/2 2.0 or so to Windows 3.1. www.guidebookgallery.com
+
+During these time, there were few patents concerning the way applications worked, not how they were coded. 
+
+I hate software patents. They are basically thoughts. It's not the same as a copyright; protection against exacty replication of your code. You just own the right to thinking about a problem in a certain way, which is ridiculous. Sure, it's great to receive compensation for your ideas, and even better when you don't have large, strong-armed software companies ripping off your ideas (i'm looking at your MS), but what recourse to some have?
+
+Apple learned their lesson, and sticks a patent on anything they can. IBM simply lost this battle. 
+
+In essence, software patents have created a stable and burgeoning class of thought-crime. Next up are all the sorting routines; no new ones, but just the old ones. They are probably in the patent pipeline right now.
+
+",2006-11-25 16:01:57
+240,"bad design and an awful user experience never stopped microsoft from dominating a market before... 
+
+i'd wager that unless MS deliberately kills it, Zune could easily capture a decent chunk of the market simply because a lot of (mostly non-tech) people have a pretty good opinion of Microsoft.",2006-11-26 20:10:23
+241,"you would probably avoid being flamed by not insinuating that apple users are sheep and calling them fanboys. apple's advertising certainly doesn't hurt ipod sales, but the fact of the matter is, the ipod is a very well designed piece of kit that is exceptionally simple to use. it is not the be-all-end-all of audio players, but for 90% of the consumer public it does exactly what they want.
+
+i would like to correct you on a few things though, neither AAC or H.264 are quicktime formats they are codecs which apple happens to support through their quicktime media layer. apple does not own AAC or H.264.
+
+as for the DRM, the stink is two-fold in my opinion. the first comes from the zune's insistence on applying DRM to all files transferred from zune to zune, regardless of where they were purchased/created. the second comes from microsoft's extortion payment to universal -- the $1 dollar per unit ""theft fee"". for the second reason alone i want the zune to fail miserably, i would hate for the license fee to a music company to become an industry standard.
+
+as for the zune itself, there's really not much to be excited about. it does nothing that competing players don't already do (wifi, video, nice design). you make mention of the ipod's success having to do with their advertising, but the zune suffers from the same glitch, there is nothing about the player other than microsoft's $100 million advertising campaign to differentiate it from the creative, apple, sandisk offerings. it's nothing more than a competent DAP.",2006-11-26 20:59:20
+242,"&gt;An illegal version or a (hypothetical) complete knock-off would work just fine.
+
+You obviously dont remember CPU's by cyrix. There is a reason Intel says Genuine Intel on it. They were close in functionality but not the same. Your example of a knock off would be using open source code, where it was exactly the same. Otherwise UNgenuine microsoft windows would have to be reverse engineered - with probably some (alot of?) loss of functionality/interoperability.
+
+Software IP should be credited, but people should release their software free - and only make people pay for feature requests and the like. If everything was open source, software would get to a point where it was all the best it could be. I don't want to be stuck using microsoft windows becuase its what microsoft considers to be ""the best"". If people could get in there and actually make it the best, everyone benefits. 
+
+
+Software development needs to move to more of a maintence roll. Think of it like this. Company A hires a programmer to develop a feature, company B does the same for the same feature. Now how much manpower is wasted developing two identical features independantly? Sure its good for the devs that 2 people are getting paid to do the work of one, but its not good for society and the progression of good software in general. Company B could have redirected its efforts into another area, used the effort by company A in its own products, and vice versa.
+
+
+Of course no one here likes it when you say ""just as music will continue to be made without financial incentive, so will software"" because most people reading these sorts of boards are developers and want to stay employed. It doesn't make it any less true though, and I think that you do end up with a far better product under an open source model.",2006-11-26 22:07:15
+243,"&gt;And I know Haskell isn't as fast as OCaml, but due to it being compiled down to native code, it is still reasonably fast correct?
+
+Haskell used to have all strings as lists, which was detrimental to performance. Recently (April 2006), ByteStrings were added to the Data library and now it is on par with C++/OCaml/etc. It probably comes in a shade under those languages in number crunching algorithms. However, it is one of the languages that will mostly easily take advantage of the '[TANSTAAFL](http://www.gotw.ca/publications/concurrency-ddj.htm)' issue that C++ faces. For example, Software Transactional Memory (STM)( [PDF](http://research.microsoft.com/Users/simonpj/papers/stm/stm.pdf) ) is being pioneered in Haskell.
+
+&gt;Is there a reason to mix OO and Functional concepts?
+
+Not really.",2006-11-27 03:31:47
+244,"Simon Peyton-Jones's [Tackling the Awkward Squad](http://research.microsoft.com/~simonpj/papers/marktoberdorf/) is really good too, on an academic-paper level.  I was shooting more for web tutorials and practical examples, since I suspect jesusphreak is coming more from C++/Java/PHP/whatever background.  (Also saves him from Ebil PDFs.)
+
+I hadn't read the sigfpe entry though.  Firefox had it as purple, so I must've clicked through at one point, but never read it.  Thanks.",2006-11-27 04:47:46
+245,"well, given how you can in fact install microsoft's ""core"" fonts on linux, and use them, i don't see how scoble can make this argument. likewise i find the dejavu font to be excellent for almost all of my uses - it is clear, well defined, and the monospace font works well for coding.
+
+i think scoble is just trying to bring himself back to life as a blogger with some controversy-fud.",2006-11-28 16:47:03
+246,"*well, given how you can in fact install microsoft's ""core"" fonts on linux, and use them, i don't see how scoble can make this argument.*
+
+It's illegeal without a Windows-license, and commercial vendors (Red Hat etc.) may not include the fonts in their distribution.",2006-11-28 19:00:10
+247,"For those people defensively saying ""why reinvent the wheel"", that is a different question. The question here is whether microsoft was innovative (in research and design) in creating these products to market... as many people blindly think Microsoft has done. One may argue (if one is desperate) that they were innovative in identifying the market and buying up intellectual property with their cash, and innovative in how they strong-armed and exploited their position, but this is a different sort of ""innovation"". One may (if even more desperate) say they have been innovative in the ways they have integrated and improved those products since acquiring them: however in most cases I think you will find that his innovation has been extremely minimal to say the least.
+
+Another interesting study would be to see how these licensed and purchased companies faired in their deals with microsoft. I know a few in that list were brutally screwed over in one way or another... i suspect probably more were.
+
+But for the sake of argument lets say that screwing people over is ""just business"" and not reinventing the wheel is ""just efficient"".... the question here still is, were they innovative in coming up with these products? But, that also depends on your perspective I suppose....
+
+",2006-11-30 17:35:42
+248,"It was but it was developed inside of Microsoft.  Have a look on channel9 one of there behind the code segments is with the creator of COM who invented OLE previously, all while at microsoft.",2006-11-30 17:36:15
+249,"&gt;Standing behind your work takes money and a lot of work.
+
+How exactly does Microsoft ""stand behind its work"" to a greater degree than any other for-profit software enterprise? At the end of the day, what does it even mean to ""stand behind"" a piece of software, anyway?
+
+&gt;I assert its easy to put in your license words to the effect ""take this software for what its worth; I can't stand behind it"".
+
+You mean [like this](http://www.microsoft.com/windowsxp/home/eula.mspx)?
+
+&gt;Microsoft and its suppliers provide the Software and support services (if any) AS IS AND WITH ALL FAULTS, and hereby disclaim all other warranties and conditions, whether express, implied or statutory, including, but not limited to, any (if any) implied warranties, duties or conditions of merchantability, of fitness for a particular purpose, of reliability or availability, of accuracy or completeness of responses, of results, of workmanlike effort, of lack of viruses, and of lack of negligence, all with regard to the Software, and the provision of or failure to provide support or other services, information, software, and related content through the Software or otherwise arising out of the use of the Software.
+",2006-11-30 19:12:49
+250,"F-Lock is the worst.  We have these shitty microsoft keyboards at work, and trying to hit F2 to enter a bios is a nightmare when you have to hit F-Lock.  You have to watch the lights on the keyboard like a hawk so you can lock the function keys after it flashes but before the OS starts to load.  Grrr.",2006-12-02 13:10:00
+251,"Not everyone wishes to sing praise for Bill Gates, or react predictably to some press release. I've personally communicated with activists who've consistently given far more of themselves socially than Gates and Buffett, week after week. Like Noam Chomsky -- and I'm not namedropping, as anyone can email him; he's just the most famous. Effective activists like them do tireless work for their societies (whose elites viscerally hate them) and even serve jail time.
+
+So maybe all Albert Einstein did was revolutionize science; he didn't accumulate megawealth because he [said things like](http://www.monthlyreview.org/598einst.htm), *""This crippling of individuals I consider the worst evil of capitalism.""* (Not the best attitude for making billions.) Shouldn't the press at least laud his activism nevertheless? ;)
+
+I have no idea whether Gates' money-dropping is particularly useful; it requires research. (How much of it just goes to biotech firms' profits, for example?) To the extent that his dad explains that his son's wealth [comes from federal spending](http://www.taxpolicycenter.org/publications/template.cfm?PubID=900584), and that his buddy Buffett literally explains they're [winning class warfare](http://www.nytimes.com/2006/11/26/business/yourmoney/26every.html?ex=1322197200&amp;en=0cf877b05b918674&amp;ei=5090&amp;partner=rssuserland&amp;emc=rss), great.
+
+But the fact that Microsoft is a [notorious tax miser](http://www.ctj.org/html/corp0402.htm) (kicking out the ladder form beneath him), and [allegedly promotes plans](http://www.seattleweekly.com/news/0439/040929_news_microsoft.php) to get the poor to regressively fund his favored educational programs... This isn't clear-cut.
+",2006-12-03 01:34:18
+252,"they lied, I received 620 million queries when I Googled 'microsoft' not 53 million.",2006-12-04 21:01:44
+253,"http://search.live.com/results.aspx?q=microsoft
+
+MSN-searching Microsoft gives only 835 now",2006-12-04 21:23:57
+254,"http://search.live.com/results.aspx?q=microsoft
+
+MSN-searching Microsoft gives only 835 now",2006-12-04 21:24:06
+255,"Yes but the 751 results are for Microsoft in Microsft Live. In other words Microsoft is not fair with... Microsoft.
+
+[(see screenshot)](http://pages.infinit.net/holaweb/microsoft.png)
+
+Search for Microsoft in Live = 774 results
+
+http://search.live.com/results.aspx?q=microsoft",2006-12-05 04:04:28
+256,"while i appreciate msr's funding of some key members of the haskell community, i continue to conclude that msr represents one of the worst investments in research. for a company that literally spends billions on research, i can see no appreciable payout. certainly it hasn't spawned or changed anything game-changing for windows or xbox, both of which continue to follow evolutionary models (i.e. copy the competition) in their markets. as to search, apparently microsoft spends a lot of money researching this too. so why does msn search suck?
+
+i work for a microsoft competitor that likewise spends a lot of money on research, almost all of it wasted. all of these companies have visions of bell labs, but it just isn't happening. furthermore i find these ""labs"" alienate employees that are really putting money in the bank by creating a ""class hierarchy"" inside the company, which is oddly bogus since most of the researchers are in no danger of ever generating any revenue. and please do not reply with something like ""well thats the nature of research, it pays out 5% of the time"". no. reading papers and sitting on committees pays out 0% of the time. the 5% who do produce are the ones who do actual research, not just yap and chat.",2006-12-05 16:37:57
+257,"interesting.  but, what was the context?  why would microsoft go to the trouble and expense to produce such a spoof?",2006-12-06 15:05:50
+258,"ah, that makes sense.  i can easily imagine SNL doing this.  and i can easily imagine microsoft using it as part of a FUD campaign to discourage people from embracing the internet.  they really came into the internet era kicking and screaming.",2006-12-06 16:01:15
+259,"microsoft is shipping the zune in 13 colors - sounds a bit like the imac.
+",2006-12-07 12:57:06
+260,"[This article](http://msdn2.microsoft.com/en-us/library/fs2xkftw.aspx) explains better what one needs to do.
+
+AFAICanSee, everything in the article is essential if Dispose is to be done properly. Now, suppose that I hold one unmanaged resource (one OS handle). I stripped all the other code from the article, I still need 15 (25 counting in {s and }s) additional lines of code. WTF!?
+
+Compare this to plain old C++:
+
+my_class::~my_class()
+{
+  CloseHandle(my_handle);
+}
+
+I wonder if IDisposable could have been implemented at a framework level. Writing *so much* code to close one friggin' handle is plain ridiculous.",2006-12-08 14:02:13
+261,"That is because there is no secure way to build this stuff. In the end there is some critical failure in the security, somewhere in the code you can just rip out the checks or spoof them.
+
+The only thing microsoft could do that would work is run the computers themselves and give you access. This is similar to an MMORPG where the servers handle all the important stuff, and the client is simply a terminal.
+
+So with that they spend billions of dollars to make billions of dollars regardless if its crackable or not. They think about the fact that its crackable but they can't really do anything but make it more annoying to crack.",2006-12-08 15:38:08
+262,"If they guy used Comic Sans you woudn't have learned anything from him anyway.  It screams amateur.
+
+Reason for its success: 
+ - its high in the alphabet ""c""
+ - its the first odd looking prepackaged font on microsoft word or windows text apps.
+ - it has ""comic"" in it hijacking the fun of comic into a junior high looking written marker font.
+
+",2006-12-09 22:34:44
+263,"This page at microsoft.com should demonstrate how this works:
+
+http://apple.com/?/moc.tfosorcim.www//:ptth",2006-12-11 13:46:41
+264,"You mean this page? [http:msdn.microsoft.com/search/?q=reversed+text](http://apple.com/)
+
+This doesn't really present any new problems to reddit's links. The whole spam angle is an interesting one though.
+",2006-12-12 02:15:30
+265,"Well, to a first approximation, you could think of a webserver as a function from HTTP requests to actions to be performed in order to construct a page with which to respond to the user. Those actions may have side effects (in anything more complex than static page servers), but the function which builds them need not have any. This is a somewhat nice distinction to make, as the level of referential transparency in the responses will be made completely clear. Any action which wishes to do something different based on state will have to explicitly pull in a state variable from somewhere, which looks very different from getting a function parameter. Also, ordinary evaluation doesn't cause any side effects -- all the actions which are composed by the function are somewhat akin to code which is interpreted by another function and which can check various consistency properties as it executes it.
+
+Check out [HAppS](http://happs.org/HAppS/README.html) which is a good example of using a monad in order to enforce [ACID](http://en.wikipedia.org/wiki/ACID) properties.
+
+The point is, functional languages don't completely discourage state when it's really the right model for things, but functional programmers tend to be really quite picky when they're going to use it at all about how nicely the abstraction is implemented -- how many checks and assurances are in place that the variables being threaded through a computation will not have things done to them which put them in an inconsistent state.
+
+As a vast generalisation of imperative programming (extending quite often to the point where it no longer appears to be imperative programming), monadic programming allows one to do everything that one might do in an imperative language, but to build in additional safety requirements.
+
+As for whether state really is the right model, well, perhaps not for all applications, but it seems that it's an at least halfway decent way to deal with the need to manage persistence in the face of a stateless protocol. Some applications might work out better with some form of stream-based interface, where certain streams are opened up at the beginning of the program, and read from and written to in a roughly FIFO manner.
+
+Another, rather different approach is to use continuations to manage the future of user sessions. This is an approach taken by [WASH](http://www.informatik.uni-freiburg.de/~thiemann/haskell/WASH/)  and perhaps more famously, the [PLT Scheme](http://www.plt-scheme.org/) [web server](http://download.plt-scheme.org/doc/360/html/web-server/)
+
+It allows one to treat entire user sessions as single continuous programs without having to manage restoring the session state and future of the computation by hand every step of the way. [Shriram Krishnamurthi](http://www.cs.brown.edu/~sk/) has a [rather good video of a talk given to Microsoft](http://download.microsoft.com/download/9/4/1/94138e2a-d9dc-435a-9240-bcd985bf5bd7/Shriram.wmv) regarding this technique and some of the more recent stuff which he's been working on for ajax, in which he tries very hard to pretend not to love functional and declarative programming.",2006-12-12 02:45:07
+266,"um... maybe microsoft made both pages and packaged them for both companies?
+
+Vote down.
+
+",2006-12-12 03:20:39
+267,this can only be a template from microsoft. nobody can be that stupid.,2006-12-12 12:09:42
+268,This is great... Very un-microsoft.,2006-12-12 20:53:18
+269,"""Janina"" - a monologue about herself.
+
+""Nazi"" - wields a riding crop.
+
+""fucker"" - ""Do you kiss your mother with that mouth?""
+
+""microsoft"" - ""Dewey says never use pirated software. Unless it's mapping software. I figure pirates know something about that.""
+
+",2006-12-12 22:05:26
+270,"What about (young, naive) investors who would like the low fees of an index fund, but who would like to avoid investing in unethical companies such as exxon and microsoft?  Searching for ""Socially responsible index fund"" turns up the ticker VCSIX which is the Vanguard Social Index, which seems like a nice idea, but doesn't seem to exist anymore.
+
+I guess I shouldn't try to mix ethics into my investing?",2006-12-13 06:39:01
+271,"series of women microsoft should consider for future ms deweys.
+
+leah dizon (originally race car model)
+jenna fischer (from the Office)
+
+or chris rock!",2006-12-13 06:51:06
+272,"Ok. So, lets see [how many patents assigned to Microsoft](http://www.google.com/patents?num=100&amp;as_pasgnee=microsoft) can we find here. 1157 as of this post date.
+",2006-12-14 22:41:17
+273,"Hmm, there's at least one [major corporation that likes Haskell](http://research.microsoft.com/Users/simonpj/haskell98-revised/haskell98-report-html/index.html)...
+
+(Hint: it's the company that makes the operating system for ""The System"")",2006-12-15 03:21:16
+274,"To find Haskell functions or types (e.g., fail) by [name](http://haskell.org/hoogle/?q=fail) or [type](http://haskell.org/hoogle/?q=Monad+m+%3D%3E+String+-%3E+m+a), use [Hoogle](http://haskell.org/hoogle/).
+
+Lots of reference and tutorial material can be found [here](http://haskell.org/haskellwiki/Learning_Haskell).
+
+If you've started dabbling with Haskell and are having a hard time reconciling Haskell programs with the real world, check out:
+
+[*Tackling the awkward squad: monadic input/output, concurrency, exceptions, and foreign-language calls in Haskell*](http://research.microsoft.com/~simonpj/papers/marktoberdorf/)",2006-12-17 18:33:58
+275,microsoft is a dirty player!,2006-12-18 11:59:24
+276,"*Most financially-sound public firms do not have to borrow to grow*
+
+wrong! wrong! three times wrong! i can assure you that most firms in the SP500 are holding debt. read their 10qs. they take on debt to make money! yahoo borrowed when rates were low even though the firm was flush with cash. they reinvested it profitably (the ""carry trade""). they borrow to do m&amp;a. they borrow all the time. 
+
+ford in your example is a different beast. it is getting loans at very bad terms that more or less mortgages the company itself. firms with great balance sheets are getting very good loans that they seek out as an investment mechanism.
+
+*The performance of a stock under inflation varies significantly depending on which market it's in*
+
+this is wrong. your examples of microsoft and coke are  wrong. these firms are impacted by interest rates, all firms are. it reduces their sales and impacts their borrowing. you may think that no one out there treats purchases of microsoft software or coke as a discretionary, but they do. phone microsoft's cfo and ask him if high interest rates impact microsoft adversely and significantly.
+
+the only industry that can sometimes escape unscathed is healthcare, and even that is not a sure bet as rates stay high for long periods of time.
+",2006-12-19 06:35:17
+277,"I disagree with this article in a bunch of small ways, and it really looks to me, from looking at the abstract of the talk referred to, that various points might have been misunderstood.
+
+Firstly, it is possible to get a wide variety of guarantees of compositionality in transactional memory systems. [Haskell's STM library](http://research.microsoft.com/~simonpj/papers/stm/index.htm) does quite a good job of providing a fair degree of compositionality guarantees, for instance. It does not support nested transactions, but if nested transactions make compositionality hard to obtain, perhaps they are the wrong idea.
+
+Certainly, you can't completely eliminate problems with deadlock, there are still ways for a program to request impossible uses of resources, but these systems do eliminate many many sources of these problems.
+
+There's a parallel situation with type systems. Good type systems like those in Haskell, ML, Scala, etc. don't magically catch all your bugs, but they do help eliminate wide classes of bugs which may arise before they become real problems, freeing more time for programmers to worry about the more subtle bugs.
+
+Indeed, we really need many idioms and ways of looking at parallelism and concurrency. Locks are not a terribly useful substrate on which to build libraries, and anyone who has tried to use that model understands why this is difficult. I agree with the speakers that automatic translation of lock-based code is very likely to be problematic.
+
+However, the ability to mark code such that it runs as-if-atomically, (perhaps together with some variety of means of combining transactions) is exactly the sort of abstraction which will allow development to move forward in terms of higher-level libraries, while compiler authors and hardware manufacturers work out better and better ways to run these ""atomic"" blocks in parallel to gain performance without damaging the semantic guarantees which have been set up.
+
+There are various potential design flaws which we have to be careful not to put into our foundations. Transactions should never have intermittent side effects visible before their completion, nor should the effects of any other concurrently running processes be visible from within them. They should behave as if they ran atomically -- when they fail, it should be as if nothing had happened at all. That's the whole point of them being transactions. This means that they cannot have side effects which cannot be rolled back in the case of failure (notably I/O). Of course, it's possible to design systems where transactions queue and/or trigger I/O to occur after they've completed.
+
+So I think the tone of the article is a little more negative than is probably appropriate. Yes, there are migration issues if you want to translate lock based code mechanically to use transactions. Yes, there are design choices which must be made carefully. Overall, however, transactions form a much nicer semantic substrate than locks, and will allow a great deal of progress to occur in terms of higher level libraries, as well as lower level performance optimisations.",2006-12-19 22:48:55
+278,"This isn;t the exact topic for this, but here's something that's been on my mind lately.  I have used many varieties of Macs over the years, and everyone I know right now has a Mac laptop.  Macs are great.  But on the other hand I went to fry's 2 1/2 years ago and built a desktop PC with a single core 3GHZ CPU and 1 gig of ram running windows XP.  I still have the snappiest, most reliable computer out of everyone.  And this isn't just my opinion. My computer has NEVER frozen, except for when I had a bad memory stick.  Everyone who uses this computer comments on how snappy it is.  And this is with pretty heavy use of way too many programs open,  also network connections open, VPN, C++ development, java environments and development.
+
+Now I;m sure there is some ways that I could force it to crash, but I just haven't seen all the woes that people talk about.  Sure, a lot of windows bites, but then again a lot of it works just fine.  On the other hand I used Mac OS 9.2 for a few years and that crashed all the time (I know Mac OSX is a different animal).
+
+Forgive me people, this is not a microsoft add at all.  I'm just saying emperically my windows XP PC has performed above my expectations and not anything like what people describe.",2006-12-20 18:29:37
+279,"better link here:
+http://msdn.microsoft.com/vstudio/support/vs2005sp1/default.aspx
+
+- you get a choice of versions. 
+Vista patch is still beta.",2006-12-20 20:26:59
+280,"You must [sign and encrypt the file with Microsoft Digital Rights Manager](http://www.microsoft.com/windows/windowsmedia/howto/articles/drmarchitecture.aspx)
+
+Apparently does it [in place](http://www.microsoft.com/windows/windowsmedia/forpros/drm/faq.aspx#drmfaq_4_3)",2006-12-23 00:07:21
+281,"First of all it would be important to learn how to count before making sarcastic replies.  If you consider 2001 a year that is countable, and 2006 a year that is essentially complete, that actually gives you a six year period.  Second, C# was at least released in beta form in early 2000.  There is an article on MSDN talking about building designable components in .net published July 2000 on MSDN, http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dndotnet/html/pdc_vsdescmp.asp.
+
+So, from mid 2000 to now we have about six and a half years.  Now if you factor in the fact that I didn't just stop using one language and then start using another, you'll see that you've presented a false dichotomy.",2006-12-23 00:24:48
+282,"The Gothica collection mostly blows.
+One whole ""disk"" ie compressed Atari CD is a hard disk backup of his system. Worse yet it is a multi or incremental backup so what you get is 600 megs of the same swill over and over.  The disk images aren't labelled many are just copies of crawly crypt cds, atari compendium and others. From what I have been able to determine is that this lamer bought a bunch of CDs from toad computers when they were in business and burned them. It would be nice if he had the decency of a last informing you which disk images were which cds. I was so horked off at this tosser I thought about creting my own DVD set and marketing it on ebay. It would be far better than the swill this guy slapped together. To top it off 4 disks are nothing but wav files of crappy techno loops. How interested is the average atari user in wav (microsoft file type) files? Not bloody much I can tell you. Save your money don't buy this tripe. You have been warned. 
+An old atarian.
+-Karl",2006-12-24 04:19:34
+283,"It's funny, if people actually *had* looked at Bill Gates 2 years after [he started his company](http://www.thocp.net/companies/microsoft/microsoft_company.htm), they'd see a couple guys with a small niche market, $380K in revenue, 9 employees, and 1 product (ported to 4 computers).  They weren't even incorporated yet.",2006-12-24 16:32:56
+284,"noooo, say it aint so! flaws? in a OS made by microsoft? IMPOSSIBLE I SAY!",2006-12-25 05:06:54
+285,"With all the hype going on about Microsoft Windows Vista, microsoft have publish a web page regarding Microsoft Windows Vista system requirements",2006-12-25 15:06:33
+286,"Erlang and Perl.  But I feel that I'd communicate better if I explained why I don't hold some of these other languages as my language of choice:
+
+Not python. Although someone calls it elegant and maintainable in this thread, and people often declare that they have an easy time reading it, I hold little faith for any of these attributes.  For inelegance, Python offers explicit returns, a destructive *array sort* among its crimes against functional programming, bizarre scoping, a pointlessly limited lambda, and disk-cached bytecode that never seems to help with anything.  For unmaintainability and unreadability, Python has the result of its cultural and linguistic biases: huge, undifferentiatable swaths of code, indented to the horizontal stratosphere, offering the bewildered eye on every *line* a singularly clear statement of code that helps to form an inpenetrable *block* of code -- and all of it massaged, with referential transparency or clear interaction completely out the window, into idiotically-named objects in a chaotic, undocumented heirarchy.  I've hacked on Python programs, but you can dive in, make a change, and flee from any codebase: Python on whole only stands in the way of a maintainer trying to understand a codebase.
+
+Not ruby. I *used* to like Ruby -- back when matz still wrote the English documentation and it had the primary hypes of 'Look at how reflective and pretty it is!' and the primary criticism of 'I cannot accept that it has so many ends!'.  I thought then that it might be a 'better Perl' -- but since then, Perl has itself turned into 'better Perl', and Ruby has improved only in that it now has jobs.
+
+Not Ruby or Python: they have manners of development identical to Perl.  They have plusses and contrasts-to-other-languages identical to Perl's.  Their communities fall ill to memes largely identically to Perl's.  They are effectively one language, with a winner-takes-all relationship as far as devotees go.  For me, Perl won.  I can go back and learn the new tricks Python has come up with -- and probably will, when I need to deal with a nifty python program, but this would otherwise only waste time that I could better spend on constantly-there languages -- and on novel languages.
+
+Not Haskell.  'Haskell' effectively means 'GHC', and the last release of GHC had (cout'em:) three supported platforms.  Ah, great, you can upgrade with an older GHC -- so however many few platforms in addition that this comes to.  Ah, even better, you can take GHC on one platform and cross-compile to another platform, somehow, producing C code that you can then massage, somehow, and then compile on that another platform.  No, until the Haskell community gets serious about portability, I for the most part *simply can't* use it.  When I have used it, it has competed with better-documented, vastly more-portable, plainly better-engineered O'Caml.
+
+Not Factor.  See complaints about GHC.
+
+Not D.  I don't care about C++, better C++'s, or any manner of not-very-different better-than-Cs.  C itself I care about only insofar as I find that many interesting programs use it, that C programs themselves always seem to come packaged with sincere efforts to make them portable throughout unix, that having languages that can hook into C allows me to interact in very interesting ways with aforementioned interesting C programs.  C is a useful, but not a great language, and nothing that tries to position itself as a superset (of a superset...) of C can interest me very much.
+
+Speaking of which, not C++.  Or C#.
+
+Not Java.  I don't want to touch a language so fearsome that it has spawned its own industry of code-mucking tools.  Even if I did: no Java program interests me very much, and see my complaints about GHC.
+
+Not PHP.  Nobody who has put effort into any of Perl, Python, or Ruby can have anything but little-adulterated contempt for this hackish, obscene ball of mud.  From core to extensions to community to documentation to popular programs -- *burn it all*.  Even someone not so immunized against this language should be able follow http://tnx.nl/php
+
+Not APL.  See complaints about GHC, and then pretend furthermore that GHC is a closed-source program purveyed by people who won't even list a price.
+
+Not BASIC.  But the person suggested that as a joke, I guess.
+
+Not any kind of Pascal.  By negative bias from two imperfect sources: http://www.lysator.liu.se/c/bwk-on-pascal.html and the footnote on this page http://www.ugcs.caltech.edu/manuals/lang/gforth-0.6.2/Structure-Usage.html
+
+Not Objective C.  See complaints about D.
+
+Not assembly.  Because I know Forth.
+
+Not JavaScript.  I like it, and it amuses me that it's the only programming language you can rely on in the world of desolate microsoft systems -- but it seems that I only ever use it to dumbly polish what I generate with Perl.  If I didn't need to generate even the most basic data for JavaScript, due to its lack of multiline string literals or HERE docs, maybe then I could care enough to do some moderately actual work with it.
+
+Not JScript.  Oh, you meant this instead of JavaScript?  I have nothing to do with windows programming, so: no need.  If someone threatened assault unless I produce a win32 program, I'd probably use Erlang or REBOL.  Or Emacs -- hah!
+
+Not nude celebrities.  These are poorly composable, worse even than assembly in getting something done.  I can't even fathom why you'd choose it.
+
+Not like that.  Please do it this way: `sub perl_does_not_care { shift + 1 }`
+
+Finally, two small notes about my languages of choice.  Perl has unmatched wealths in CPAN, in its electronic documentation and its written books, in the expertise and charitableness of its commmunity, and simply in its growth and history: it has over time developed features and worn away deficiencies in a manner far and away above that of any language in any context.
+
+Of Erlang, I'll say: it does not offer simply lots of processes, nor even just asynchronous concurrency with message-passing, nor only hot-code loading and multiple versions of modules; it is merely supremely good at processes, or distributed fault-tolerant soft-real-time systems; it is not merely good at telephony applications.  I can't explain the depth of solid, cohesive engineering in Erlang that makes me roll my eyes when someone posits that e.g., Python has some of these features.  I used Erlang for quite a while before I discovered the sweet-spot of hacking with it, where classic cycles (edit-&gt;run-&gt;debug) of programming fold away and I'm left with something almost absurdly fast and responsive, that nobody has given me a cutely hyped term for.
+
+That's all.  Some derisiveness and some bitterness and some praise undifferentiable from religion.  You probably wanted more flame than you've gotten, so far.
+",2006-12-26 05:34:51
+287,"&gt; .NET 3.0 is right around the corner
+
+It's out now. http://www.microsoft.com/downloads/details.aspx?FamilyId=10CC340B-F857-4A14-83F5-25634C3BF043&amp;displaylang=en",2006-12-26 12:55:52
+288,"the [Command Here](http://www.microsoft.com/windowsxp/downloads/powertoys/xppowertoys.mspx) power toy for WinXP does the same thing, for opening a DOS window when right-clicking on a directory in explorer. I find it indispensable.",2006-12-26 21:36:53
+289,"Why? Microsoft gets half as much money a year in Sales [(44,282 Million USD)](http://www.hoovers.com/microsoft/--ID__14120--/free-co-factsheet.xhtml)  as the entire premium content industry in the US [(81 Billion USD (81,000 Million) USD)](http://www.bea.gov/bea/industry/gpotables/gpo_action.cfm?anon=263&amp;table_id=18893&amp;format_type=0). In comparison, IBM is even larger than the entire premium content industry. Why should the government listen to such a puny industry?",2006-12-27 20:32:57
+290,"As dons notes, [GADTs are available now in Scala](http://www.google.com/search?q=site:scala.epfl.ch+scala+gadts), which is a language that runs on the JVM, uses Java libraries, and looks like the OO languages many people are used to seeing, and [GADTs will soon be available in C#](http://research.microsoft.com/~akenn/generics/).",2006-12-27 23:35:04
+291,MS/AMD have reacted to this: http://marshallk.com/microsoft-wants-its-laptops-back,2006-12-28 22:46:03
+292,"Whether the original recipients of the laptops blogged about it or not doesn't matter. All we have to do is keep saying ""Microsoft"", ""Vista"", and ""Free Laptop"" as many times as possible, in whatever context, and microsoft PR wins.",2006-12-28 22:52:08
+293,"I've got [my own prediction](http://supermikenews.blogspot.com/2006/12/predictions-about-microsofts-next-os.html).
+",2006-12-30 16:35:16
+294,"There's a [nice video](http://download.microsoft.com/download/9/4/1/94138e2a-d9dc-435a-9240-bcd985bf5bd7/Shriram.wmv) about the stuff that Shriram's been working on with respect to the web, for anyone who missed it.
+
+He makes a rather humourous attempt to appear to hate functional programming around the industry people. Also, in case he leaves anyone guessing, his claims of knowing nothing about Fran are [total lies](http://www.cs.brown.edu/~sk/Publications/Papers/Published/ck-frtime/) (the paper clearly states that FrTime is inspired and informed by it)",2006-12-31 03:29:15
+295,"oh come on! he's reflecting the way consumer behavior ACTUALLY functions. when people are burned by a product they don't dive into the reasoning, they just stay away. i mean, you are going to buy microsoft vista, aren't you? it isn't really fair to slight this product based on your experience with windows ME, is it?",2006-12-31 05:46:16
+296,"well at least the mozilla foundation is actually introducing changes into their js runtime...ie7 leaves support right where ie6 left it, which of course means anyone doing widescale deployment is just going to have to deal with the suckage.
+
+i sometimes wonder if microsoft is intentionally dogging it on rolling out improvements to its js runtime...do they see it as a .net threat? in any case, they have essentially frozen the web platform with their glacial rollouts.",2006-12-31 07:24:00
+297,"huh, that's funny. you could have just looked at a few comments here that either explained how to open it, or pointed you to a link to the google video. could have saved you 45 minutes of frustration and blaming microsoft for something that's really not their fault.",2006-12-31 08:36:03
+298,"i'm glad that windows doesn't have an all-in-one application source. it takes long enough for debian to come out with ""approved"" versions of various essentials like java, how long would it take for microsoft to come out with approved versions of the thousands of products that are made for the windows OS?
+
+XP has [multiple desktops as a powertoy](http://www.microsoft.com/windowsxp/downloads/powertoys/xppowertoys.mspx), but it's not nearly as powerful as what you get in *nix for free.
+
+there are plenty of good free tools, some of which come with the operating system. plenty don't. isn't that one of the largest complaints about windows- the fact that they try to bundle everything with the OS? i'm not upset that nothing fancier than notepad/wordpad comes with the OS. i actually like notepad as an exceptionally light editor, especially now that it has things like global search/replace and Go to line #.
+
+largely, the article is subjective, based on the needs of the author (he's a self-stated developer). Many of these are trade-offs, not necessarily things that MS gets wrong.",2006-12-31 11:04:22
+299,Bah. We've heard the same death knell for microsoft time and time again. MS ain't going anywhere anytime soon.,2006-12-31 23:28:31
