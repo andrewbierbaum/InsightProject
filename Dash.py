@@ -37,7 +37,7 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 app.layout = html.Div(children=[
     html.H1(children='HackerNews Mentions'),
-    html.Div(children='''Comparing the mentions of Xamarin and Flutter on HackerNews'''),
+    html.Div(children='''Comparing the mentions of Xamarin, Flutter, and React Native on HackerNews'''),
     
 #    #builds the year range selector
 #    dcc.RangeSlider(id='year_slider', min=2008, max=2020, value=[2008, 2020])
