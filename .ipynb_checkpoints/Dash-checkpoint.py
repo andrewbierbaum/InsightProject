@@ -6,13 +6,18 @@ import pandas
 from datetime import datetime
 import numpy
 
-df = pandas.read_csv("HackerNews_Microsoft.csv")
-Date_Data = df['date'].tolist()
-Body_Data = df['body'].tolist()
-count = df['Unnamed: 0'].tolist()
+df = pandas.read_csv("HackerNews_xamarin.csv")
+xamarin_Date_Data = df['date'].tolist()
+xamarin_Body_Data = df['body'].tolist()
+xamarin_count = df['Unnamed: 0'].tolist()
+df = None
 
-#i think I already did this and Its not needed
-#datetimes = [datetime.fromtimestamp(i) for i in timestamps]
+df = pandas.read_csv("HackerNews_flutter.csv")
+flutter_Date_Data = df['date'].tolist()
+flutter_Body_Data = df['body'].tolist()
+flutter_count = df['Unnamed: 0'].tolist()
+df = None
+
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
@@ -22,17 +27,18 @@ app.layout = html.Div(children=[
     html.H1(children='HackerNews Mentions'),
 
     html.Div(children='''
-        Tracking the number of mentions microsoft got on HackerNews
+        comparing the mentions of xamarin and flutter on HackerNews
     '''),
 
     dcc.Graph(
         id='example-graph',
         figure={
             'data': [
-                {'x': Date_Data, 'y': count, 'text': Body_Data,'type': 'scatter', 'name': 'HackerNews Microsoft Mentions'}
+                {'x': xamarin_Date_Data, 'y': xamarin_count, 'text': xamarin_Body_Data,'type': 'scatter', 'name': 'HackerNews Xamarin Mentions'},
+                {'x': flutter_Date_Data, 'y': flutter_count, 'text': flutter_Body_Data,'type': 'scatter', 'name': 'HackerNews Flutter Mentions'},
             ],
             'layout': {
-                'title': 'Dash Data Visualization'
+                'title': 'Posts'
             }
         }
     )
