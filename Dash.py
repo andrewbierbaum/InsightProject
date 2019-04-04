@@ -18,6 +18,18 @@ flutter_Body_Data = df['body'].tolist()
 flutter_count = df['Unnamed: 0'].tolist()
 df = None
 
+df = pandas.read_csv("HackerNews_react_native.csv")
+react_native_Date_Data = df['date'].tolist()
+react_native_Body_Data = df['body'].tolist()
+react_native_count = df['Unnamed: 0'].tolist()
+df = None
+
+# df = pandas.read_csv("HackerNews_xamarin_flutter_cross.csv")
+# cross_Date_Data = df['date'].tolist()
+# cross_Body_Data = df['body'].tolist()
+# cross_count = df['Unnamed: 0'].tolist()
+# df = None
+
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
@@ -37,6 +49,7 @@ app.layout = html.Div(children=[
             'data': [
                 {'x': xamarin_Date_Data, 'y': xamarin_count, 'text': xamarin_Body_Data,'type': 'scatter', 'name': 'HackerNews Xamarin Mentions'},
                 {'x': flutter_Date_Data, 'y': flutter_count, 'text': flutter_Body_Data,'type': 'scatter', 'name': 'HackerNews Flutter Mentions'},
+                {'x': react_native_Date_Data, 'y': react_native_count, 'text': react_native_Body_Data,'type': 'scatter', 'name': 'HackerNews React Native Mentions'},
             ],
             'layout': {
                 'title': 'Mentions'
