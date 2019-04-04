@@ -1,5 +1,4 @@
 ,body,date
-0,"Had simillar issue with async methods in xamarin but with HttpClient, fixed easily by running it on another thread, definitely not the most elegant solution but works good so far!",2018-12-16 11:09:01
 1,"&gt; ok i guess all the java based answers are going to be worthless soon?
 
 Yes, just like TypeScript deprecated JS. ^^^/s
@@ -9,6 +8,3 @@ so.
 
 Ignored where? Rx is universal, SQL/ORMs are universal, HTTP clients are universal, dependency injection is universal.
 ",2018-12-26 15:12:11
-2,"You can hack together a Xamarin.Forms app with mono develop on Linux:
-
-https://stackoverflow.com/questions/48693220/can-i-build-and-compile-cross-platform-xamarin-apps-on-linux",2018-12-30 17:18:22
