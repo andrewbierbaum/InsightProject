@@ -15,14 +15,14 @@ df = None
 
 df = pandas.read_csv("HackerNews_flutter.csv")
 hackernews_flutter_Date_Data = df['date'].tolist()
-hackernews_reddit_flutter_Body_Data = df['body'].tolist()
-hackernews_reddit_flutter_count = df['Unnamed: 0'].tolist()
+hackernews_flutter_Body_Data = df['body'].tolist()
+hackernews_flutter_count = df['Unnamed: 0'].tolist()
 df = None
 
 df = pandas.read_csv("HackerNews_react_native.csv")
-hackernews_reddit_react_native_Date_Data = df['date'].tolist()
-hackernews_reddit_react_native_Body_Data = df['body'].tolist()
-hackernews_reddit_react_native_count = df['Unnamed: 0'].tolist()
+hackernews_react_native_Date_Data = df['date'].tolist()
+hackernews_react_native_Body_Data = df['body'].tolist()
+hackernews_react_native_count = df['Unnamed: 0'].tolist()
 df = None
 
 df = pandas.read_csv("Reddit_xamarin.csv")
@@ -71,7 +71,7 @@ app.layout = html.Div(children=[
                 {'x': hackernews_react_native_Date_Data, 'y': hackernews_react_native_count, 'text': hackernews_react_native_Body_Data,'type': 'scatter', 'name': 'HackerNews React Native Mentions'},
             ],
             'layout': {
-                'title': 'Mentions'
+                'title': 'HackerNews Mentions'
             }
         }
     ),
@@ -79,12 +79,12 @@ app.layout = html.Div(children=[
         id='Reddit-graph',
         figure={
             'data': [
-                {'x': reddit_xamarin_Date_Data, 'y': reddit_xamarin_count, 'text': reddit_xamarin_Body_Data,'type': 'scatter', 'name': 'HackerNews Xamarin Mentions'},
-                {'x': reddit_flutter_Date_Data, 'y': reddit_flutter_count, 'text': reddit_flutter_Body_Data,'type': 'scatter', 'name': 'HackerNews Flutter Mentions'},
-                {'x': reddit_react_native_Date_Data, 'y': reddit_react_native_count, 'text': reddit_react_native_Body_Data,'type': 'scatter', 'name': 'HackerNews React Native Mentions'},
+                {'x': reddit_xamarin_Date_Data, 'y': reddit_xamarin_count, 'text': reddit_xamarin_Body_Data,'type': 'scatter', 'name': 'Reddit Xamarin Mentions'},
+                {'x': reddit_flutter_Date_Data, 'y': reddit_flutter_count, 'text': reddit_flutter_Body_Data,'type': 'scatter', 'name': 'Reddit Flutter Mentions'},
+                {'x': reddit_react_native_Date_Data, 'y': reddit_react_native_count, 'text': reddit_react_native_Body_Data,'type': 'scatter', 'name':'Reddit  React Native Mentions'},
             ],
             'layout': {
-                'title': 'Mentions'
+                'title': 'Reddit Mentions'
             }
         }
     )
