@@ -7,7 +7,7 @@
 from pyspark.sql import SparkSession
 spark = SparkSession.builder.appName("Reddit").getOrCreate()
 df = None
-df = spark.read.csv("s3a://andrew-bierbaum-insight-test-dataset/Reddit/Reddit_Comments_2018-000000000000.csv.gz", header=True,multiLine=True, escape='"')
+df = spark.read.csv("s3a://andrew-bierbaum-insight-test-dataset/Reddit_PushShift/Reddit_Comments_PushShift-000000000461.csv.gz", header=True,multiLine=True, escape='"')
 
 
 # In[2]:
@@ -86,11 +86,11 @@ Body_Data = []
 for date, body in python_xamarin_results_cleaned:
     Date_Data.append(date)
     Body_Data.append(body)
-matplotlib.pyplot.plot_date(Date_Data,count,xdate=True, drawstyle = 'steps-pre', linestyle = 'solid' )
-matplotlib.pyplot.ylabel('Xamarin Mentions')
-matplotlib.pyplot.title('Reddit Xamarin mentions')
+#matplotlib.pyplot.plot_date(Date_Data,count,xdate=True, drawstyle = 'steps-pre', linestyle = 'solid' )
+#matplotlib.pyplot.ylabel('Xamarin Mentions')
+#matplotlib.pyplot.title('Reddit Xamarin mentions')
 #plt.show()
-plt.savefig('Reddit_xamarin.png')
+#plt.savefig('Reddit_xamarin.png')
 
 
 # In[10]:
@@ -98,7 +98,7 @@ plt.savefig('Reddit_xamarin.png')
 
 import pandas
 pandas_df = pandas.DataFrame({'date':Date_Data,'body':Body_Data})
-pandas_df.to_csv("Reddit_xamarin.csv")
+pandas_df.to_csv("Reddit_xamarin_.csv")
 pandas_df
 
 
@@ -119,16 +119,16 @@ Body_Data = []
 for date, body in python_flutter_results_cleaned:
     Date_Data.append(date)
     Body_Data.append(body)
-matplotlib.pyplot.plot_date(Date_Data,count,xdate=True, drawstyle = 'steps-pre', linestyle = 'solid' )
-matplotlib.pyplot.ylabel('Flutter Mentions')
-matplotlib.pyplot.title('Reddit Flutter mentions')
+#matplotlib.pyplot.plot_date(Date_Data,count,xdate=True, drawstyle = 'steps-pre', linestyle = 'solid' )
+#matplotlib.pyplot.ylabel('Flutter Mentions')
+#matplotlib.pyplot.title('Reddit Flutter mentions')
 #plt.show()
-plt.savefig('Reddit_flutter.png')
+#plt.savefig('Reddit_flutter.png')
 
 #print csv for flutter
 pandas_df = pandas.DataFrame({'date':Date_Data,'body':Body_Data})
 pandas_df.head()
-pandas_df.to_csv("Reddit_flutter.csv")
+pandas_df.to_csv("Reddit_flutter_.csv")
 
 
 # In[13]:
@@ -141,16 +141,16 @@ Body_Data = []
 for date, body in python_react_native_results_cleaned:
     Date_Data.append(date)
     Body_Data.append(body)
-matplotlib.pyplot.plot_date(Date_Data,count,xdate=True, drawstyle = 'steps-pre', linestyle = 'solid' )
-matplotlib.pyplot.ylabel('React Native Mentions')
-matplotlib.pyplot.title('Reddit React Native mentions')
+#matplotlib.pyplot.plot_date(Date_Data,count,xdate=True, drawstyle = 'steps-pre', linestyle = 'solid' )
+#matplotlib.pyplot.ylabel('React Native Mentions')
+#matplotlib.pyplot.title('Reddit React Native mentions')
 #plt.show()
-plt.savefig('Redditreact_native.png')
+#plt.savefig('Redditreact_native.png')
 
 #print csv for flutter
 pandas_df = pandas.DataFrame({'date':Date_Data,'body':Body_Data})
 pandas_df.head()
-pandas_df.to_csv("Reddit_react_native.csv")
+pandas_df.to_csv("Reddit_react_native_.csv")
 
 
 # In[ ]:
@@ -160,7 +160,4 @@ pandas_df.to_csv("Reddit_react_native.csv")
 
 
 # In[ ]:
-
-
-
 

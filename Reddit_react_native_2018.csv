@@ -1,0 +1,1521 @@
+,body,date
+0,"Urgh, both of these things are sort of possible with like swap and react native ",2018-06-18 19:11:55
+1,"&gt;Wait until they have to spend that time synchronizing static content across 2 code bases
+
+Seriously. Maintaining two large native phone apps requires a very large team with individually specialized knowledge. There are tradeoffs and compromises but having done it both ways, I'm preferring react native right now. It has its flaws but you don't have to pay twice for every feature you implement, and that's huge.
+
+Also, native app builds are incredibly slow at scale; the development cycle is so slow as compared with the rapid iteration you can do on react native (because you're usually just updating the JS bundle).
+
+It does give me pause to wonder, though. Some of the earliest learning I did on react native were articles and videos from AirBNB developers. Will I be where they are in six months or a year?",2018-06-20 14:52:52
+2,"Yeah they did. Although, Ive seen them use react native a lot as well. ",2018-06-20 20:06:31
+3,"Why is this guy using expo? That means he can't use any native libraries in case there isn't a JavaScript solution that already exists.
+
+For one of our projects, react native maps didn't provide the performance we needed, so we went and wrote our own native module and integrated it into React Native. Expo doesn't allow for this, which makes development in my opinion very risky.",2018-06-29 17:22:50
+4,"Ive never used it, but a quick google search for react native reorder list brought up [this](https://github.com/deanmcpherson/react-native-sortable-listview). Try it out",2018-06-29 18:48:10
+5,"Brownfield apps are rough, especially because tooling becomes so difficult as soon as you introduce react native into your codebase. I'm curious if we'll see the same from companies with greenfield apps.",2018-07-03 16:23:26
+6,/r/learnprogramming. IOS uses swift. Or if you want both andriod and IOS you could use something like react native. Good luck.,2018-07-09 19:02:05
+7,Thanks. Turns out react native is pretty good all in all. Quite a complicated set of interacting menus it wasn't easy. But now it's done it's very smooth especially on ios,2018-07-10 15:02:39
+8,Does this mean that the SDK will work for apps created using react native?,2018-08-03 23:35:48
+9,"Yeah, I think it's because it's an i5 and the overheat makes it worse.  
+I wish I could go back using an XPS. Too bad I'm a react native engineer, I have to built for Android **and** IOS.",2018-08-05 04:18:09
+10,"dude php is like in top 5 are you fuckin kiddin me get out with that popular shit java is a shit language . java is so 2005. even android google says to use kotlin or dart. i prefer js react native for 90% of apps. if you havent learn go it will change your life.
+
+and most of indian companies uses java because they are too lazy to change. our schools teach those same old shit for decades. but many new startups dont use java atall.",2018-08-05 15:40:39
+11,"I am one of the team leads on our React Native project. 
+
+We just rebuild our entire android app from the ground up using react native.
+
+The app does not use Expo and we did end up writing a number of custom bridge modules. 
+
+I am working on a blog post detailing some of the decisions we made. Would love to get feedback on the app especially if you have used the app previously.
+
+Also happy to answer any questions.",2018-08-10 13:21:05
+12,"I would advise to approach react native cautiously. If you want to go to a big company know that they're for the most part native, not react native. Even FB has been closing down the amount of code that's in react native and Airbnb wrote a very good blog post about why they moved away from react native after they tried it.
+
+TL;DR - small start ups may use it or development contract shops, but big enterprise companies are native and will continue being native for the time being.",2018-08-13 22:41:11
+13,"I'm no longer an android dev, I work with react native in JS and some machine learning in Python. Would Kotlin be a useful addition to my ""toolbox""?",2018-08-15 21:34:56
+14,"[vscode](https://github.com/microsoft/vscode), j'utilise facilement tous les jours. J'utilise aussi le language [c#](https://github.com/microsoft/csharplang) quasiment tous les jours, compil avec [Roslyn](https://github.com/dotnet/roslyn).
+
+Tous les jours, j'utilise aussi Discord et Facebook, construits tous les deux avec [react native](https://github.com/facebook/react-native), ainsi que des centaines de sites construits avec [Boostrap](https://github.com/twbs/bootstrap).",2018-08-29 15:03:56
+15,"Lookup flutter or react native.
+
+In android, you can use a simple webview if your website is responsive and same for iOS. If you want to have native UI elements then flutter or react native could be useful.",2018-09-01 06:15:59
+16,"You can easily use react and react native from clojurescript. Look into Reagent, Rum and Fulcro.",2018-09-02 00:18:46
+17,You mean something like react native?,2018-09-02 16:47:28
+18,"Congrats on the completion of JavaScript section on FCC. If you are looking for a JS framework(/library) to learn I'd say to go with React just because it's popular and balanced between the ease of usage and it's ability to scale to a large enterprise apps(Can also use react native to build mobile apps). Also Vue and Angular are also great! There is actually no wrong framework to pickup. Just choose one and go with it.
+
+When starting out, CSS seems like it's easy and we can do everything using UI frameworks. But I promise you when you are building a real project you will be building for a customer requirement then the library can't help you and you need to use CSS by yourself. I think CSS is the hardest thing to master because like in JavaScript there is no logic, you have to follow set of established rules. 
+ 
+And it also totally depends on what you want to do Frontend, backend or full stack. 
+
+",2018-09-02 21:07:17
+19,"I've never used to TBH, I get all my work from LinkedIn. The best tip I can give is to connect with digital agencies / recruiters from agencies who are local to where you live / are from and see if they have any 3 month contracts they need filled - in Australia at least, agencies always have overflow work and as a mid-senior javascript dev you can get between $600 - $1000/day if it's a good contract. Traditionally I work these kinds of jobs for 3-ish months and save up like a mofo, then travel for the rest of the year with that money.
+
+That's what works for me, anyhow. Lots of good jobs in react/react native going atm so good to upskill in that area if you haven't already.",2018-09-03 12:39:32
+20,"I went to Lighthouse, and learned a ton and work in the industry now. But that was the full time 9(10 week now I think) web development course. If you just wanted a mobile app you could go the iOS route but I'd recommend taking the web course and just using react native to support android as well as you probably don't need mobile design theory and education for this.
+
+But what you think of as simple is probably not as easy as it seems. It's doable for sure but you could find a company or contractor to make this for the near 10k in tuition fees. The part-time courses would cost less and get you started but my guess is it would take a much longer time for you to finish the product on your own.
+
+Also, just my two cents, you can do all of what you're looking to do with Google calendar and surveys.
+
+",2018-09-03 15:27:50
+21,"It's available for Windows 10, but the new react native uwp skype on the store is only for rs5, which is still insider only. 
+
+In the mean time, the react native electron for desktop version for win7/8 works perfectly on win10 too.
+
+",2018-09-03 15:38:02
+22,"You should definitely read through the blogs from Airbnb. They talk through a lot of the issues far better than I can. Just wondering where you got the 100 million dollar barrier from. I have only been using react for around a year and my company started to heavily invest in react native, but we have decided to alter path after airbnb sunset their RN development. You are right, Facebook will be a big proponent of RNs success but any js framework and library will live by it's community. With tech giants moving away from RN, I think finding an alternate solution is safer for community longevity. But what do I know, I am a random user on Reddit.",2018-09-03 17:09:58
+23,"Hmm interesting take, I was just going to suggest react native, but if you've seen results through this method I suppose that works too",2018-09-03 17:40:02
+24,"I followed airbnb's Native Navigation project for some time. People were really frustrated with it as there was no traction on it.
+
+Here is what I think, airbnb's react native team was not a first class citizen in the company, overpowered by native developers (Swift/Java), so they roll back and focus on native.
+
+Turning brownfield apps to react native takes dedication. I think we can just say that the only way to make it really work and last, is to use a native navigation on the react native side. And that is what failed at airbnb.
+
+But then again, I know nothing and am guessing as this is just my perspective.
+
+Take Wix for example, they can make it work well. Not sure if their app is in the greenfield of react native or not. But I know it uses the RNNv2 at its core, and that is huge.
+
+I want more firepower in react-native-navigation. I would like bigger players to use it and elevate this to the next level. Heck I want that library shipped with React Native.
+",2018-09-04 03:16:55
+25,"I'm pretty sure Airbnb said that instead of having to work with 1 platform, now they had to support 2 platforms *and* react native",2018-09-04 21:40:17
+26,"\&gt; Where even is libRNCamera.a in the repo? 
+
+Step 3 says where where it is. 
+
+&amp;#x200B;
+
+Have patience. If you're going to develop mobile apps you're going to need to do this a lot and learning to get around Xcode, Android Studio and gradle files is paramount.
+
+&amp;#x200B;
+
+When you first installed react native camera from npm did you run react-native link ? It's important because it's the automated version of the manual steps above and for 90% of cases should work (if you're using Podfiles that's another case but you won't be). Read about what it does here:
+
+&amp;#x200B;
+
+[https://facebook.github.io/react-native/docs/linking-libraries-ios](https://facebook.github.io/react-native/docs/linking-libraries-ios)
+
+&amp;#x200B;
+
+Lastly. Once you've either run react-native link or followed the manual steps you actually need to rebuild your project. Shutdown the simulator and run react-native run-ios again. You can't just reload here as your actual native code has been updated. Reloading just reloads the javascript side of things.",2018-09-05 09:48:28
+27,"I'm very new to react / react native (started some hours ago), but not to programming. To learn as fast as possible, I usually look at best practices pre-built apps or starter kits. ",2018-09-05 10:29:23
+28,So do I write my whole react native app inside of an Xcode project?,2018-09-05 14:52:52
+29,"Having written apps in both xamarin and react native, the latter is a much better product. Community support is A LOT better, expo is a great option for getting up and running, and the overall product just feels so much better. Xamarin is clunky, unstable, and feels like beta/alpha level as a platform (which is sad since it's been around for quite some time now).
+
+My 'xamarin' experience is with xamarin.forms, which is the 'cross-platform ui' approach.",2018-09-05 15:49:06
+30,"You can't make not trivial production apps with react-native if you have zero native knowledge. You will have to deal with build issues, performance problems, current api limitations, bugs in native part of react native, etc... ",2018-09-05 16:17:43
+31,"I use react native because it's the only reasonable option. I don't want to develop two separate apps to support both android and iOS, and RN is the only native solution that works for both.",2018-09-05 19:17:00
+32,"Both.
+
+I've wanted to make mobile apps for several years. Hell, at one time I'd made some (very poor) mobile apps with Delphi (FMX framework). When I moved to JS in 2014, I moved permanently and never really looked back to using Delphi again because my interest was now focused on node, and view engines, and jquery, and websockets, and all the good stuff that came with node that I also couldn't easily achieve with Delphi.
+
+I didn't learn even AngularJS until late 2016, and Angular 2+ in early-2017. I learnt react in early 2018 when I started my current job. Part of that involved some basic react native work, but it wasn't anything extensive (though it was a case of using a really old version of RN due to technical limitations).
+
+I like the RN community and the ecosphere surrounding it. I like that I can use code that's very similar to what I've been writing in Node and front-end JS for over 4 years. I like that I can build a website with react, and use very similar principles, albeit not with the same rules, to produce a mobile app. I can use fetch in both, and reuse almost all of my functional code, including state management to produce a mobile app or website.
+
+I like that expo exists and that I don't yet need to know how to build using Android studio - that's something I can do later on (and it's definitely a priority). I like that it's had such support from big names. I like that I can design components and within the space of a few hours, have something functional. I like that it has made me a better developer, and that it also helped me learn some key concepts that apply in React.
+
+It is not a perfect product by any stretch of the imagination - no such thing exists. It is simply because it allows me to do something I couldn't do before, something I've wanted to do for a long time, without resorting to 'messy' systems like hybrid apps/cordova or learning an entirely new workflow and language. It does also mean that I'm bringing more value to my employer should they ever need me to write more mobile apps alongside our dedicated mobile developer.",2018-09-06 08:20:01
+33,"agree, i use react native to, react native is awesome for me becase it's easy to use, great documentation and many more. and react native has been used by industry",2018-09-06 09:14:42
+34,"As a recent bootcamp grad(MERN stack) and continuing study of data structures / algorithms to boost my general knowlege, as well as building react native projects.. for myself it is even hard to get noticed by companies because I don't have any relevant history.
+
+I think in your scenario since you have a huge amount of relevant work experience, if you were to learn one modern lib / framework like react / angular you would absolutely get interviews no problem.
+
+",2018-09-06 09:41:07
+35,"so better android native or react native framework for long lasting programmer? 
+
+I should learn android native? or just react native?",2018-09-06 09:59:10
+36,"react native, of course.",2018-09-06 10:01:52
+37,Instagram is made by react native 100% and it's the best looking apps IMO and you still want to learn android native ?,2018-09-06 10:03:37
+38,"Because in the future, more companies will want to save $ and hire mostly cross-platform devs. More work for their $. Then they can pay a couple native specialists to help with complete native functionality.
+
+The premise for react native being better is careers trending towards a cross platform developer as opposed to all native.
+
+With a big exception from AirBnB, which you can read about on Medium.",2018-09-06 10:09:24
+39,"I know instagram that build from react-native, but why not learn native language? maybe for basic? 
+
+&amp;#x200B;
+
+u can't want to learn android native? it's father of android right? lol 
+
+&amp;#x200B;
+
+I confused about learn android native or not, now i'm here in react native. can give me good answer, should learn android native or not? or stay in javascript? ",2018-09-06 10:09:36
+40,"I appreciate your comment. can you give me link for i read in medium? 
+
+if i may know, you a developer mobile? and now use react native? or u full stack developer? 
+
+&amp;#x200B;
+
+for a good career in developer, should learn fullstack? or what? this OOT haha lol. I just asking ",2018-09-06 10:22:41
+41,"thanks you very much for reply my post. 
+
+&amp;#x200B;
+
+if i may know, you a developer mobile? and now u use react native too? 
+
+for a good career in developer, should i learn full stack? or what? this OOT haha, im just ask ",2018-09-06 10:27:24
+42,"i don't know this, that i know instagram use react native, but i don't know use for few screens or all screen, because can't data accurate
+
+&amp;#x200B;
+
+@[NotYourMom132](https://www.reddit.com/user/NotYourMom132) can u explain instagram pure 100% react native? ",2018-09-06 10:43:43
+43,"Before react native, the performance of mobile javascript frameworks were less than desirable. You took a hit in terms of performance as everything was essentially a web view. Mobile apps produced using mobile javascript frameworks before react native were very slow. They could not really compete against native iOS and Android apps.
+
+React native changed the entire landscape of mobile javascript frameworks. It was no longer a web view and it compiled down to machine code so it is fast now!
+
+Now you can develop a cross platform mobile app that runs as fast as native iOS and Android apps if not faster!
+
+So NO. I did not use react native because I already knew it. It simply is a great product, not just good.",2018-09-06 11:05:06
+44,"https://medium.com/airbnb-engineering/react-native-at-airbnb-f95aa460be1c
+
+Im currently working as a front-end dev, but have the capability to be full-stack.
+I had a focus on the web side, but have recently taken on mobile apps with react native because our work demands it. We use it for the versatility across platforms and for support in the future.
+
+Best of luck!",2018-09-06 15:00:26
+45,"I have a 13"" late-2016 MBP with only 8gb RAM, SSD, and an i5 and I do any app development just fine (iOS or react native). Be aware if you buy new MBPs though Apple is a prick and solder the SSD/RAM etc in place so you can no longer replace parts like you would with a 2012 and below MBP so i'd advise upping your specs a little more so the laptop lasts longer. 
+
+That having been said, honestly you're fine with a 2012 MBP with i5 or i7 and 8-16GB RAM and itll be far cheaper. ",2018-09-06 21:35:06
+46,I believe it uses react native.,2018-09-06 22:30:57
+47,"You could also inline style when it's such a small change. Or create a Div element that creates different css based on props. That being said, I do see your point and would consider giving emotion a shot, if I didn't currently work on react native haha.
+
+In the end I'm just thankful that we have such a good toolset to choose from. ",2018-09-07 05:55:10
+48,"I will use react native, heard great things about it and since the website uses reactjs I will be able to reuse some code.",2018-09-07 08:09:19
+49,"As a web developer i was unsurprised. Nobody wants that experience besides people who literally dont realize /understand the point of native apps (ie my dad with twitter)
+
+Its not hard. Theres react native and plenty of other frameworks that make the process of building and deploying to mobile exceedingly smooth. Unless for some reason youre building an ad hoc frontend library from scratch, which any infant startup shouldnt do, theres not really a good reason to roll out a mobile first or mobile only experience as a web or hybrid app",2018-09-07 09:24:20
+50,"Total click bait: I clicked on it because I wanted to hear the perspective from a business ""runner""  (dunno WTF that means exactly I equated it to owner). 
+
+&amp;#x200B;
+
+As a business owner I'm disappointed. No real rationale on why we do/should choose react native. There's a heading about it but it's talking about what developers look for not business people.
+
+&amp;#x200B;
+
+This is just more content marketing aimed at no one. Please report it as spam.",2018-09-07 10:50:44
+51,"Expo is a tool designed to learn react native in a more web confortable way. It make things easier. But rarely an expo application would be production ready. By doing the eject you would be in a more real environment. So, my recommendation would be finish the course with expo if it is possible. But then learn to eject since day one, that way you would learn all the issues and the solutions to mobile development ",2018-09-07 13:35:57
+52,"Hi
+
+I work on Expo. 
+
+You can run Expo directly on Windows; you dont need to run it in a Mac VM. 
+
+You dont need to use Android Studio or Xcode if you are using Expo but if you ever do decide you need to write your own native code, you can eject. If you do that, thats basically the same experience as not using Expo. 
+
+Theres not really a downside to using Expo since it just makes your life easier I think. 
+
+Expo just uses the same react native under the hood that you would use if you dont use Expo so theres no performance difference or anything. 
+
+If you have any trouble, you can post in the expo forums ( https://forums.expo.io/ ) and usually there are helpful people there. 
+
+Good luck 
+",2018-09-07 17:12:03
+53,I probably cant help you much.   I just started learning react native.  But I live in Austin and am often down to hangout and problem solve.  Maybe with time I can be more helpful!,2018-09-07 21:54:49
+54,Check out [Infinite Red Community] (https://infiniteredcommunity.herokuapp.com) on Slack. Great community of react native developers.,2018-09-08 17:37:30
+55,Ty I know what I'm doing  can you talk about react native part ? ,2018-09-09 09:22:47
+56,"Let's take a step back a second.. are you sure why you want to use react native? One of the key purposes of react native is to allow people who are familiar with JS to write smartphone apps. There are some reasons that might make sense, but it seems a slightly odd fit for someone whose knowledge is java.",2018-09-09 09:29:14
+57,I took computer science A and principles in high school.  I've done some projects with arduinos and played around with creating apps with react native. ,2018-09-09 22:02:51
+58,"I have just very recently started self-teaching react native. It will be the 12th language and/or framework that I plan to add to my wheelhouse, at least. I was not schooled in UX/UI but I have common sense. I am on the central coast of CA directly in the middle of LA and the Bay Area.",2018-09-09 22:44:11
+59,"Yeah this right here.  Ive done a fair amount of research and react native seems like the best way to build maintainable cross platform apps.
+
+Plus Id like to learn more languages and technologies to become a more well rounded developer.",2018-09-10 18:22:03
+60,"Same content?
+I loved to have a deadline and were building real app, with some results.
+React, Redux, Redux-thunk, react-router, Reactstrap.
+https://xavierartot.github.io/would-you-rather/
+Then the slack forum still very good.
+With react native I didnt any support especially to run Android simulator on Mac.
+It never works :/",2018-09-11 04:32:49
+61,"i know javascript, but no es6
+So when I learn react native, I always thinking ""what are those??""",2018-09-11 15:57:28
+62,"React is a framework and es6 is ecma script version which includes allot of new features for javascript such as classes,  consider react native when you are also interested in the web development.",2018-09-11 16:06:10
+63,Is there a react native thread?,2018-09-11 16:19:18
+64,"If you learn react native, you already have a head start on reactJS. What is your primary goal for the education?",2018-09-11 18:09:38
+65,[Lynda.com](https://Lynda.com) is good and you can use your library card to learn it! They have react native on there and from I seen its really good!,2018-09-11 20:27:18
+66,nice! Ill definitely go over the docs and get to work. As i also would like to do a react native version for the project as well,2018-09-12 00:35:10
+67,Just to share which one is better flutter or react native. ,2018-09-12 05:42:22
+68,"ah sweet man I am doing web dev stuff to now, getting more into front end frameworks and checking out stuff like react native! sweet",2018-09-12 10:13:08
+69,"To answer the second part of your question though, learning ""vanilla"" react native isn't going to make you that much more employable tbh. There is so much more that goes into a native app than just the modules that you would be hooking up in order to access them in react native. A lot of the stuff is probably very specific to react native (speaking with very little native development experience)",2018-09-13 02:19:32
+70,"Thanks for the hard work on this! Is the profiler available for react native? If not, are there plans to make it work?",2018-09-13 07:38:56
+71,There are a lot of PITA challenges with an ejected app.  Focus on the fundamentals of how to write react native code first.  The rest of it is java and ios noise.,2018-09-13 11:36:54
+72,"&gt;In a real workplace where react native is  being used, are developers using expo at all?
+
+Not in my experience.
+
+&gt;Can all things that are lost from ejecting be added in vanilla react native?
+
+I'm not exactly sure what is lost from ejecting, so I couldn't answer for sure.
+
+&gt;As an unemployed developer looking for jobs, would I gain anything by the  knowledge of using vanilla react native (setting up all the tooling,  using simulators, using Android studio, using xcode) ?
+
+If you are looking for employment as an RN developer, then only knowing Expo means you won't have experienced the pain points that come from linking native modules and modifying the build environment (there are *many*). Get your basic RN chops together on Expo by all means, but I would imagine that most apps will want to leverage native capabilities that are beyond Expo, and employers/clients are likely going to want them.
+
+&gt;Not that there is anything wrong with the simulators. But seeing it on my physical device was pretty cool. Can this be added back somehow after ejecting?
+
+I take it you're talking about iOS? While you *can* dev on a real device on iOS through Xcode, the bundling and installation takes a bit too long for it to not to be a drag. I lead on Android on Windows, on a real device.",2018-09-13 15:49:36
+73,"I'm running windows 10, yes.
+
+React-native runs version 0.55.2 according to the package.json in a newly created project. I'm running react-navigation version 2.14.0 (if that has any relevance). I just install everything as the docs described it (including the react-navigation docs).
+
+My goal is to create a cross platform app, just something simple to learn the basics (like a notepad with various views and a list of saved notes etc.) to get the hang of it.
+
+The final app I need to work on, using react native, will rely on an api for handling data, need to set up menu's, navigation, create a chat and some other stuff. I assume it would make more sense to learn setting it up without CRNA, or what do you think?",2018-09-13 17:37:56
+74,"As a web developer I am fully behind this. It's a lot more overhead to build native apps than web apps, even with things like react native. It's only getting better too, with native APIs starting to get exposed to the browser.
+
+Soon you will be able to use fingerprints for payments and passwords right in your mobile browser.",2018-09-13 22:59:30
+75,"i only try android with native and seemly fail. So i'm going to all native for now. But , if you no need much native library go to react native.",2018-09-14 02:00:47
+76,airbnb is [moving away from react native](https://www.reddit.com/r/programming/comments/8saw35/airbnb_moving_away_from_react_native/) though,2018-09-14 07:38:34
+77,"Just curious, did you guys make this app using react native?",2018-09-14 14:30:26
+78,"Oh I see. I immediately spotted with the UI, font, and clicks that your app is not made using native Android.  Speaking of ionic, can you make app using both ionic and react native? I have a little bit of react native but have zero exposure with ionic.",2018-09-14 23:28:25
+79,"Other developers work on the app part. I generally work on the server-side - node.js and database. But over the years of working with app developers and researching into these topics I might know a few things. There are core differences between Ionic and React Native. The most important being that Ionic leverages WebView (provided by cordova) to render the app and React Native leverages native components. What this implies is that Ionic uses a browser (kind of) inside the app to render app. This app is then essentially an angular.js based single page application. Think of it as a single page website running inside a browser inside the app (there's more to it but this is for understanding the concept). React native on the other hand runs 2 threads, one that handles a Javascript engine and the other that handles native UI and interaction. So the way they work is completely different.
+
+But I am guessing you can run React inside Ionic (since it is just a web app). But React.js not React Native. But this probably is unnecessary as Angular.js can very well do what React.js can do (just a little differently). I am not sure but you can (may be) also add Angular.js (not Ionic) to your React Native app through a WebView component but you probably won't need this as well - depends on your use case.
+
+I hope that was clear enough :)
+
+Edit: Also I might have misread your question. Were you asking if you can make app using ionic and react native at the same time or that you can make apps using those frameworks in general? For the former question I have answered above and for the latter - you can make equally good apps with either of those 2 frameworks. Ionic is good and and so is react native. It just depends on your use case. For contrast in UI, Ionic gives you more freedom (since it essentially is a web app), but React Native gives you easier access to native components (which means using native components is faster compared to ionic).
+
+Edit: Please feel free to ask if you have more queries. Thanks!",2018-09-15 05:31:00
+80,"Wow you just gave me a crash course. Thanks for explaining the subject very well. As a native app developer, I was always fascinated with the cross platform frameworks such as react native and Ionic. Your company sounds like you guys are cooking something good. Best wishes.",2018-09-15 06:45:06
+81,"Downvote because wrong sub, no link to the project, and just an odd thing to want to do to convert a python program to react native.",2018-09-15 15:56:36
+82,"Ive made a couple using react native and using the Wordpress api, you an get pre-made templates for this too if you want to pay rather than figure it out.",2018-09-16 14:42:44
+83,&gt; Not using react native in 2018,2018-09-16 18:11:01
+84,NativeBase for react native is dope.,2018-09-17 04:36:49
+85,redux is global tree session.It nice but dont expect data will quick update.I see redux for react native build upon uncertain network connection. ,2018-09-17 10:31:45
+86,"Server side swift and the apple event just happened = massive influx of noobs who got second or first hand apple products and now want to have started development with those devices.   
+    
+it's just part of life as a programming for a popular thing subreddit. react native gets hit hard whenever a new mainstream samsung/google phone gets announced by people who look at the platform and go ""that's a lot of money and i could do with some money""       
+mod team could definitely stand to expand a little + add strictly enforced tags for ""question"" so people can filter that content out",2018-09-17 16:13:54
+87,"I saw this post a few hours ago and had it mulling around in the back of my head when a coworker (who's working on a react native app atm) posted this in our mobile slack channel:
+
+&gt; It is mind blowing how complicated _app icons_ are on Android
+
+And I realized that _this_ is the problem. App icons are, in my eyes, perfectly representative of the _current_ problem with Android development. 
+
+That problem is this: there's several layers of history to almost every action you want to take it on Android. Take the app icon. It used to be easy - you just supplied several images just like a normal icon. Fine.
+
+Then they added everything around rounded icons. On its face it's not too bad - there's a distinction between round icons and non round icons. But now it's complicated. Some launchers show the normal icon all the time, some launchers show the round icon, it depends what android version you're on etc etc. It's now a PIA and you need to remember that it's a thing before you figure it out.
+
+But that's not the end of it. There's now _another_ layer of complexity on top of it - adaptive icons. Now you have this very complicated, confusing process to create an icon. It's not at all beginner friendly, and something that feels like it should be trivial is now an exercise requiring research and an understanding of the ecosystem.
+
+Fwiw I don't know how I'd do it any better. I like that icons are standardized now. I think adaptive icons (may) look cool! I have no productive answers for how it should've been done. But it's painful and confusing, and somehow it's not as confusing when you're doing other non android things.",2018-09-17 19:01:05
+88,"Hi Arthur,
+
+Im riding the bus and viewing your apps on mobile. Seems like both tonify and flash cards arent working properly in safari?
+
+As for jobs its a lot of luck and you seem like youre going all in so just hang in there. 
+
+Learning wise, I personally dont think react native is a game changer in a resume. I get more excited about how well you can write modular components.
+
+Example, how do you write a paginator that wraps around another component that renders a list of thousands of items, and paginates it for me? (Im surprised theres no third party lib that just does this) 
+
+I also like websites that make use of search queries, react history API. 
+
+I also enjoy fun attempts at huge projects, like writing your own webpack. (I write my own internal npm) 
+
+But in the end it really comes down to luck. But the few ideas above shows youre not just a generic CRUD app producing bootcamp grad but an engineer customizing a solution.
+
+Gl! 
+
+",2018-09-18 23:28:43
+89,Pero has trabajado profesionalmente con react native?,2018-09-19 01:59:36
+90,"i'm currently learning from a course on [udemy](https://www.udemy.com/the-complete-react-native-and-redux-course/) taught by Stephen Grinder, it's pretty good, especially if are new to the react world.
+
+other than that there is a [free course presented by Harvard university](https://www.youtube.com/watch?v=_P7wHN_kOv4&amp;list=PLhQjrBD2T382gdfveyad09Ierl_3Jh_wR), and i might say it is better than the udemy course, it is well structured, and well explained, and even more stuff that the udemy course haven't addressed,
+
+if you wan't to speed up your react native development, read about expo. btw the Harvard course addresses it too.
+
+about the editor, the most popular choice is visual studio code and [here](https://medium.com/react-native-training/vscode-for-react-native-526ec4a368ce) is all you are gonna need, to setup your development environment.
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+[The Udemy course](https://www.udemy.com/the-complete-react-native-and-redux-course/)
+
+[The Harvard course on React Native](https://www.youtube.com/watch?v=_P7wHN_kOv4&amp;list=PLhQjrBD2T382gdfveyad09Ierl_3Jh_wR)
+
+[VS Code for React Native](https://medium.com/react-native-training/vscode-for-react-native-526ec4a368ce)
+
+&amp;#x200B;",2018-09-19 02:01:26
+91,"I'm a senior android dev (4 years +), doing some react native. While I think it is nice, I believe you won't be able to build a complete app in React Native. Too many devices crash with RN",2018-09-19 14:42:30
+92,"Another perspective (positive this time), following Airbnb's [update about sunsetting react native](https://medium.com/airbnb-engineering/react-native-at-airbnb-f95aa460be1c) from a couple months back",2018-09-19 19:56:07
+93,Its still in a broken phase npm 4.6 is conpatible if you update it to 5 it will break react native. Also the code gets updated every 3 weeks or so. Which means code that i wrote erlier doesnt work now anymore. Its too broken to use.,2018-09-20 12:25:03
+94,"There's things like Cordova, Ionic or PhoneGapp that help you create hybrid apps - your app will be made in html/css/javascript and it runs in a native webview. However, this will give you a lot of overhead. You could also build your own webview in Java, kotlin, whatever and then run your javascript app in that.
+
+You could also go for React Native. You can code in javascript/jsx and react native will run it as a native app.",2018-09-20 12:55:02
+95,"was at a hackathon recently and our project had to do with maps. unfortunately Flutter doesn't have good maps so we had to use react native.  really bad experience, one person had windows and also so many errors on windows",2018-09-20 18:13:43
+96,"Make it react native, bruh.",2018-09-20 19:33:04
+97,"Hi, sorry you're being downvoted. From looking at your code, the react native aspects seem to be perfectly fine, but your sort comparison function does not.  
+
+
+On line 23, you've got:
+
+`export const compareNames = (contact1, contact2) =&gt; contact1.name &gt;` [`contact2.name`](https://contact2.name)
+
+If you see [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) on MDN, there Array.sort() method's 'compare function' parameter is expecting you to return a *number*, but the code I pasted above returns a *boolean*.  this causes the sort function to be super unstable, which is likely the root of your problem. From searching around on the internet, many people have come across situations where their sort worked in one environment but not another, usually due to this exact issue.
+
+Try changing line 23 to the following, and I'm betting it'll work:
+
+`export const compareNames = (contact1, contact2) =&gt; contact1.name &gt; contact2.name ? 1 : -1;`  
+
+
+You're right, with a few exceptions (usually with styling) the React Native code should world exactly the same on the two platforms, granted it's just pure JavaScript and not using any sort of native modules. SO when you run into issues like this, resort to thinking 'What's wrong with React Native?' last, and instead look for simple JavaScript issues first. That's something I had to learn the hard way.  
+
+
+Good luck, and let me know if you need further help.  
+",2018-09-20 23:08:40
+98,"Well Android uses Java, and it's relatively easy to package a java project for Windows, Linux, and Mac(not in your list, but if it takes no extra work, may as well do it). So you'd write classes to take care of all your logic, and then wire that up to 2 different UI's. Probably JavaFX for desktop, and then the android UI stuff. I think you can go into android studio, start a new android app, and then create a different build configuration, that would build your desktop stuff. This would let you keep everything in one project file.
+
+An alternative approach, is to use LibGDX, a java framework designed for making games, that exports to Android, ios, html, and desktop. The  piece of software wouldn't look like a native app on any platform, since you'd be using a game framework to design your own UI. But, depending on what the UI looks like, and how complex your backend code is gonna be, this is a feasible approach, that may be right up your alley. I love LibGDX and have considered doing this for an app myself, but don't think I'd actually do it. But, i mean, look into it.
+
+Finally, you could probably use javascript and get the job done. Build something like a react native app to target android, and then put the backend javascript code into an electron app to target desktop. Another feasible option, but I hate javascript with a passion, and think there are better ways to do what you want to do.",2018-09-21 02:59:44
+99,"I found xamiran to be awful too..   
+
+I tried it out on two occasions.(for hours) separately(months apart fresh installs).. the first time it was trash and I tried the second time after it was on dot net rocks and they where bumming it up.. my machine is i5 16gb 500ssd ..   
+errors running stock example programs ..  
+An absolute eon building to a device or external Mac..   
+  
+  
+I'm genuinely surprised that you didn't get downvoted for mentioning xamiran in an anyway bad way. I too only downloaded it to use c# on mobile, the reality is it's not fit for purpose unless you want many headaches, building apps is already a lot of work why bother with this approach.  
+  
+
+
+  
+My recommendation is to try out expo yes it's (react native)JavaScript (the arch nemesis of the of a lot if this sub going on and on about blazor) .. **you can get started in your browser in 30 seconds with real-time updates..   
+try it out [expo.io](https://expo.io)**",2018-09-21 06:50:48
+100,"If you care more about fast development process and/or you are already familiar with Js and React, you could build an electron app for desktop and if you use React it will be possible to reuse a lot of code for your mobile app using react native ",2018-09-21 06:55:31
+101,"Haha, reminds me of what I use to console log inside a react native webview. I override it like that and make it send a postMessage with json that makes my component log it to my console. It's a dirty hack I know, I'd like to know a better solution.",2018-09-21 15:17:17
+102,"&gt; react native in the new Skype app.
+
+React Native for Windows targets WinRT/UWP and WPF. https://github.com/Microsoft/react-native-windows
+
+You're confusing it with Electron.",2018-09-21 16:38:05
+103,"I've looked into having other developers put together an app for me and realized how much I underestimate the cost. It could cost you anywhere from a few thousand to a few hundred thousand dollars, my minimal mvp costing $5k from a freelance developer.
+
+App development is not cheap.
+
+If you believe your app is simple enough I would recommend learning some code if you have the time, not only will it save you money the experience and knowledge will be worth it in the future. I took a course on udemy for react native and it's definitely good to know information.",2018-09-22 01:24:23
+104,"buy Angela Yu's course on Udemy for 15 dollars.  I came from Javascript too and it'll take a few weeks to get up and running.  Don't do react native, its not the ""thing"" anymore and its in decline.  You need a Mac OS to work with Swift and Xcode though.  ",2018-09-22 06:34:21
+105,"Yeah I remember reading how AirBnb was having an entire infrastructure team to handle everything around react native, and in the end needed comparable manpower just because that overhead",2018-09-22 15:10:09
+106,Doesn't matter.  With reactjs and functional components and depending on your build tools sometimes if you just export an anonymous function vs. exporting a named const you won't get the names of the components in your devtool.  With classes it doesn't matter.  No idea if this comes up in react native.,2018-09-22 15:48:51
+107,"I tried Kivy two years ago and it was a mess. As a beginner, I would not recommend it. It would be better if you code your backend using flask and your front end with react native.
+
+Also look up cefpython and the eel library for python. They're for desktop applications using electron but they're still cool. 
+
+
+As for your requirement about pushing data only on wifi, that's definitely possible.
+
+
+For flask, look up Miguel grinberg's tutorials. They are amazing. ",2018-09-22 16:23:00
+108,"totally disagree!
+
+Maybe that was true a few years ago, but in today's day and age of responsive web apps and react native - the only thing benefit you get from using Apple's ecosystem is that you're getting walled into their garden.
+
+Sync over dropbox (or other cloud store) should be just as easy as with iCloud.",2018-09-22 16:26:24
+109,"I agree I was a bit too harsh, but the thing is, you actually traveled to a wealthy city I could say, i don't know what other cities did you visit, but it's definitely some where with tourism attraction, and usually the population around there have you know better culture and more money, and of course it's not such a hell for some people, including myself, i have  relatively speaking a good life(its related to my job and family I'll explain later on) but major part of population don't have it all good, and the term ""hell"" is right for their life, so i know it's true that there countries worse than mine, but we have so much resources and the situation it's not good at all considering what we have. 
+and about the sexual need, i didn't say it's like none, you are so many the girlfriend boyfriend relationships are really more common, infact it was, but the problem is the how most relationships works, what i meant there's no like you can really find a Royal girlfriend(considering you can have sex before marriage). and USUALLY you can't have emotional fulfillment, because it's not like boy or girl stay with one partner, not that I have a problem in this case, and I don't have no problem attending to my sexual needs, the thing is it's happening on a large scale, and if you want to marry someone, usually takes many requirement, and the average age for men to vet married is about 27, so there are so many men live to their 30's without sex.
+
+and the job part i code in js mostly, i develop react native apps and node js servers, i work mostly as freelancer, but I do projects for a few companies too, also I do so many other things computer science related, cause I love CS.
+i have a few ideas too and I work on them on a regular basis.",2018-09-22 19:17:55
+110,"Note sure if this is a good place to ask but: I'm thinking of getting a MacBook Pro, should I worry about the supposed keyboard issues?  Background: my main reason for wanting to replace my windows laptop with  an apple one is so i can compile my react native projects for ios  release. (Previously I had been asking my brother to do it for me). Ive  avoided getting one mostly due to how expensive it is compared to a  windows machine, but I might be willing to bite the bullet now. Since  Im a programmer, the reported issues with the new keyboard concern me,  how likely am I to encounter this problem, assuming I am buying brand  new? ",2018-09-24 01:04:11
+111,Can you develop apps using react native?,2018-09-24 08:09:58
+112,Just start with the official react native guide/docs and start coding. You'll pick it all up surprisingly fast.,2018-09-24 18:01:19
+113,"Apologies, the developer said it is in react native, using firebase as the backend. My technical expertise is limited but Xcode was also mentioned if that provides any context. ",2018-09-24 19:21:05
+114,"This isn't going to answer your question but I have to query as to why you would want to build a docker image for RN development in the first place?
+
+With the exception of node and the react native cli it's mainly user space-ish with Android and xcode tooling.
+
+Docker's more for replicating your server environments.
+
+TL;DR don't bother with it.",2018-09-25 13:56:02
+115,"THAANK YOU !!!!  
+i know few things and BUT I WILL learn everything you wrote here, as you have mentioned ""  deleted completely incorrect code "" i have done it so many times due to frustration.
+
+still on the new day i am able to understand the footprints and have multiple feel dumb moment.
+
+&amp;#x200B;
+
+one other note many of my engineering pals said you should go with react native or flutter, 
+
+i am so really confused.  
+and i am confused about many programming languages  (java/kotlin) (react/flutter/xamarin/ionic/angular)
+
+&amp;#x200B;
+
+please if you have time would you like to explain me like a dumb kid and in simplest manner.
+
+i am sorry if i am asking too much from you.  
+
+
+thank you once again",2018-09-25 14:05:59
+116,"People have done it (I remember playing an android game written in clj for example), but the startup time is too slow due to the fact that clojure.core creates a ton of classes and dalvik apparently isn't too good with that. I think it's a common wisdom to use cljs + react native instead of jvm clojure for mobile apps (see http://cljsrn.org)",2018-09-25 16:33:23
+117,"&gt; Flutter is probably going to be the future of mobile development
+
+Do you mean something like in the (far) future they'll deprecate the android SDK in favor of Flutter, or that Flutter will beat our react native to dominate cross platform development?
+
+I could see the first happening (in a few years), but sadly I don't see the latter happening. I hope it does! But I don't think it will.",2018-09-25 23:36:34
+118,"We recently completed a react native app for one of our clients. Contact 918.software
+
+",2018-09-26 12:04:54
+119,"NativeScript Vue is a pretty intense project, adopting the NativeScript toolset to use within vue. 
+
+Vue native is a Vue to react native to native compiler. It seems to have a bit less support on the community and developer side, and more of a showcase of enguiniety on the org if the devs that were able to put it together.
+
+They both seem really cool! But I would tend towards NativeScript-Vue for project stability. They are already on to NSVue 2.0 built in NativeScript 4+.",2018-09-26 12:23:08
+120,"My Android Studio broke after 3.2 update and it has been 2 days, I have starred issue in their issue-tracker and waiting for a fix, Solution on StackOverflow didn't work for me so in meantime I am learning react native to understand it.
+
+PS: I have even tried downloading a fresh AS copy but no luck, I can build apps using gradle command line but AS is useless until fixed.",2018-09-26 15:27:07
+121,"OP, take a look to react native :) ",2018-09-26 16:06:17
+122,"I see, I dont want to be stuck as a react native developer all my life lol",2018-09-26 16:49:50
+123,Sorry. I'm making a pretty basic web app.  I am using react native for the front end.  I need to ajax to call a Python function that will run MySQL scripts.  So far that's what I think I am looking for.,2018-09-27 16:07:04
+124,"This post is borderline troll sounding, but I'll give you the benefit of the doubt... you should not be so quick to reject the advice given thus far. Your question/post has very peculiar requirements that evolve as others are attempting to provide options.
+
+* First thing - .net core (and asp.net core) is extremely fast and getting faster. [Here's](https://www.ageofascent.com/2016/02/18/asp-net-core-exeeds-1-15-million-requests-12-6-gbps/) and old post; performance keeps getting better.
+* You should focus on your goals to define the methods rather than the methods themselves. If your goal is a desktop app written in C#, you want to focus on WinForms, WPF, UWP or Xamarin. If your goal is future mobile device compatibility, you want to look at Xamarin or React (react native &amp; react desktop).
+* If you want to ignore all the advice given and continue trying to shoehorn js+c#, you should rephrase your question to look for alternatives to CefSharp. You're not likely to find many.",2018-09-28 14:07:04
+125,Yes. I dont know that language trust me that's the next step. Do you knwmow react native,2018-09-28 18:50:04
+126,"I repost it caused it's been removed :
+
+&amp;#x200B;
+
+So I just started this new job 3 weeks ago in a company. This well established company doesn't have a real IT pole yet. I'm the second IT guy there, an ""advanced developer"", doing and supervising both front end and back-end, but that's what I want having a global vision of projects. My job was to improve the react native app on both iOS and Android and that's mainly what I've been doing mostly for the past 3 weeks.
+
+And yesterday I did something both clever and stupid at the same time, but it tends more on the stupid edge. I was trying to configure the apple developer account of the company with AppCenter (owned by Microsoft, to automatize deployments), so that the future deployments would happen more smoothly. Except I couldn't, because 2FA was enabled on the appleID account. So I figured, no problem, must be easy turning off right? So I found multiple tutorials treating this specific issue such as this one :  
+[http://osxdaily.com/2016/08/17/disable-two-factor-authentication-apple-id/](http://osxdaily.com/2016/08/17/disable-two-factor-authentication-apple-id/)
+
+Well, here is where problems started, I didn't have the button : ""Turn off Two-Factor Authentication"". I couln't figure why at that time. I searched a solution to that problem on multiple websites, but nothing. So I figured, hey maybe I should try updating the password to another one, maybe that would change something (not proud about my thinking). So I did exactly this, and because I'm smart, I used my password manager to generate the new password and simply copied/pasted it. So I validate the new password. And then, right after, my boss was talking to me and I don't know why but I copied something else, without saving the new password before.
+
+
+
+But that's no big deal right ? I figured huh it's okay, I'll just click on I forgot my password and generate a new one right ? Well, not possible thanks to Apple security policies. I asked for a new password, received an email from Apple telling me that to reset my AppleID account I needed to wait for an email from them in 24hours. So I did, and today in the email I received from them, I learnt that I needed to wait until the 11 of October (and that's in the best case scenario according to some forums!).
+
+
+
+And here I am today, sharing with you this story, my company was planing on deploying the new app version next week on all the iPhones of the company's employees and I have no idea about how I'm going to do that. And my company is pretty pissed about it.
+
+
+
+\- The current build of the app is signed for production so no deployment possible directly from test flight
+
+\- I called Apple about that, and the person on the phone just told me that she couldn't do anything and I had to deal with it.
+
+\- I could create a new Apple developer account, but I couldn't deploy it cause Apple doesn't allow multiple same app on the App Store.
+
+
+
+TL;DR : I made the mistake of forgetting my password and Apple f\*cked me hard for that.",2018-09-29 08:24:23
+127,"Im biased as an actual app dev but how are you going to send notifications with a site, X's talk has been delayed x min,  Y's conference room has been changed to Z etc. You can use the phones location if needed. You can enable the user to verify by phone, which i don't see very many sites do. + it's not like it necessarily needs to be more expensive to make an app vs a site. You can use web style frameworks like react native to make a cross platform app. ",2018-09-29 14:45:48
+128,"Well, a senior react native dev contractor can make around 400 - 600 a day. Some of that can be remote work. So for a junior employee that requires mentoring, 30k to 40k depending on your level. Not sure what that is hourly but Im sure you can work that part out. 
+Ill be hiring on behalf of my company in London early next year. Were always looking for RN/React devs. Pm your cv if you like.",2018-09-29 18:26:10
+129,"I really don't like cross platform development, I much prefer native development. It's just better on so many levels, and in my opinion, will *always* be superior. But we have some teams at work who are using react native for their projects and they're getting along just fine. Remember this is just my preference, so take it with a grain of salt!  
+
+
+Edit: To add about the popularity point, React Native is much more popular than Flutter at this time, but I would say the majority of our teams by far use native development tools. React native is cheaper for customers who want iOS and Android apps, but it's all about what the customer wants to pay etc.",2018-09-29 18:56:25
+130,incredibly impressive. everyone should download this to play with. possibly the best react native app ive ever seen,2018-09-29 21:27:13
+131,"I feel like most of the features would be tricky to implement in react native. Things like location, Bluetooth and ibeacons and the Core Motion stuff.",2018-09-30 09:06:51
+132,"&gt; The mobile app would come for free
+
+That is **not** how react native works. You don't get mobile for free when you write desktop react. ",2018-09-30 16:52:59
+133,I have done react native development. It explicitly does not work that way. ,2018-09-30 17:11:39
+134,"[Omnii](https://Omnii.io)
+
+**Location:** Salt Lake City, Utah
+
+
+
+
+**Elevator Pitch:** A modern CRM that is designed for clean looks and powerful automation, at no extra costs.
+
+
+
+
+**More details:** We are currently in beta stage, we are 2 co-founders both developers but I am more business oriented.
+
+
+
+
+**Are you looking for anything:** We are looking for more developers, feedback, and investors. ( working in react, react native, with firebase backend. )
+
+
+
+
+**Discount for /r/startup subscribers:** Anyone that joins the beta gets 35% off for life when we officially launch
+
+
+
+
+Email us at **info@omnii.io** if you have any questions/feedback.
+
+
+
+
+edit: fixed link.",2018-10-01 17:53:30
+135,Amazing! Thanks BiiLabs for making this open source! Also thanks for using react native so us javascript junkies can read it lol,2018-10-02 00:47:58
+136,"react.js developers. Basically web devs. 
+
+tbh i have to admit that react native is pretty cool though",2018-10-03 06:01:42
+137,"Expo claims that when you eject to Expokit, you will be able to build/integrate native modules while still being able to use the expo SDK. I would think that you would get both the ios and android folder. If you don't its probably a bug. Personally, when I ejected, I just went to pure react native so I don't have experience with expokit.",2018-10-03 15:30:49
+138,"Not a chance. There are competing, more sound(in my opinion) frameworks out there like Xamarin, Ionic and now Flutter (which is backed by Google and slowly gaining traction). Facebook can try but all in all, most developers still prefer native Android. You can do react native, if you want to stick to more JS-like frameworks but that's a nuanced taste. Basic Android development is with Java or Kotlin. Even though it's been some years since I used cross-platfomr I dare say, native is more wieldy than cross-platform.",2018-10-05 06:32:00
+139,"seems like a pretty good summary of xamarin and cordova. no experience with react native.
+
+i'd add jet brains rider into the mix of xamarin IDEs. it works across both windows and mac and unlike visual studio, isn't a completely different product depending in the platform.
+
+i'd also add to the list of cons for cross platform in general is the added layer of bugs. not only do you have to deal with bugs that exist in the native SDKs but you'll also have to deal with the bugs in whatever framework you're relying upon.",2018-10-05 18:45:32
+140,"Hey nice app! Can you tell more about libs you used, how you handled state etc. Im all for good practices in making react native apps. Also, have you tested on android? Any issues there?",2018-10-06 12:02:15
+141,"No worries! I dont know how the slack api works considering authentication but you should be able to make skip node-red and make the post request straight from react native! Look into the Fetch API, thats what you want to use!",2018-10-06 13:48:06
+142,"Discord is pretty irritating to tweak because its not like your average app. Discord uses [react native](https://facebook.github.io/react-native/), which means its a essentially big ball of JavaScript being turned into a native app. In my experience, and the experience of a few people I was working with (who I wont name for their privacy, but are welcome to comment here) this makes tweaking discord harder. Certain things youd expect to be easily hooked into and changed just dont work like youd expect. Theres a lot of dead ends. All this said, if you can find ways to skirt around the fact that its using react native, and hook generalized areas, you can get some small stuff done. This is, from what I can tell, the reason everything released for discords iOS client is so blah. 
+
+On a somewhat related note, [I recently figured out how to get an OLED tweak going for it](https://i.imgur.com/7iwsNlN.jpg), though its not quite ready yet, and Im not sure where Id release it since I dont really like my options for repos right now.
+
+Hope this helps.",2018-10-07 19:57:52
+143,"I'll look around, shouldn't be too hard to find, especially tech stack being in react native and python ",2018-10-08 00:05:24
+144,"[Omnii](https://getomnii.com)
+
+
+
+**Location**: Salt Lake City, Utah
+
+
+
+**Elevator Pitch**: A modern CRM that is designed for clean looks and powerful automation, at no extra costs.
+
+
+
+**More details**: We are currently in beta stage, we are 2 co-founders both developers but I am more business oriented.
+
+
+
+**Are you looking for anything**: We are looking for more developers, feedback, and investors. ( working in react, react native, with firebase backend. )
+
+
+
+**Discount for /r/smallbusiness subscribers**: Anyone that joins the beta gets 35% off for life when we officially launch
+
+
+
+**Email us at info@omnii.io if you have any questions/feedback.**",2018-10-08 01:50:17
+145,"Its more than js and react native lmao
+
+I feel like OP is trying to do something without 0 validation of his idea. Learning the entire mobile stack tech cant be done under a short period of time unless you just want a prototype. ",2018-10-08 16:33:08
+146,"How long ago is ""the past"" in regards to your react native experience and what were you trying to build? I too tried it years ago and it was a sour experience but it is much much better now, especially with something great and more mature now like Expo. 
+
+I love vue, but i'm not using it to build a mobile app just because the choices out there seem like if you get stuck in some issues you have far less documentation/prior github issues/etc to reference. ",2018-10-08 18:35:33
+147,"I can't wait vscode to die so react native proponent, or whatever that platform is, won't have any great example. ",2018-10-09 14:35:37
+148,"Short explanation is: the new build system in xcode 10 breaks react native as explained here: https://github.com/facebook/react-native/issues/21168
+
+To fix it: upgrade to rn 0.57.2, then remove your rncache and reinstall glog-0.3.5 (read the github issue I liked above)... The solution is not perfect that that fixes your issue under the xcode10.",2018-10-10 19:50:22
+149,"Sviluppo app per lavoro, ti lascio i miei 5cent
+
+1) dipende da tante cose. Le ""ibride"" basate su tecnologie web hanno prestazioni pessime e fanno cagare, per le ibride che compilano in nativo (React native, xamarin, flutter) sono buone e utili se la tua app  ad alto livello, mentre se devi utilizzare molto le risorse a basso livello (bluetooth, grafica avanzata tipo videogiochi ecc) sei obbligato ad usare il nativo. Poi dipende dalla tua formazione, se conosci react ti conviene usare react native, se sai gi bene sviluppare in nativo ci potresti mettere di meno a fare due app native separate che non una unica con tecnologia non nota. Un'infarinatura dei due nativi  comunque necessaria anche in caso di tecnologie cross-platform, per effettuare i corretti binding, le librerie e il bug solving in generale
+
+2) percezione dell'utente (che non ha sbatti di usare il sito ma preferisce usare l'app), performance, push notification e in generale pi controllo a basso livello (bluetooth, fotocamera, sensori vari ecc ecc). Se poi ne valga la pena dipende tutto dall'applicazione specifica
+
+3) Direi React native ",2018-10-13 09:33:32
+150,"When you update react native and it 
+
+no longer compiles 
+
+:hat wasn't very cash money of you 
+
+
+
+---
+
+v0.5.0 | This message was posted by a bot. | [FAQ](https://www.reddit.com/r/TranscribersOfReddit/wiki/index) | [Source](https://github.com/GrafeasGroup/tor) | Questions? [Message the mods!](https://www.reddit.com/message/compose?to=%2Fr%2FTranscribersOfReddit&amp;subject=Bot%20Question&amp;message=)",2018-10-14 04:31:47
+151,"Thanks for the opinion, I'm planing to check out react native but I started with Ionic because I know Angular before.",2018-10-15 15:14:19
+152,"Nice post!! React native has gained so much popularity due to its simplicity, flexibility and the use of javascript. Every app developer now prefers react native for developing native and hybrid apps. It is considered as the future of mobile app development. ",2018-10-17 05:44:15
+153,"I recently took a react native course where I needed to use ios simulator in xcode. Initially used VM on a pretty powerful gaming laptop. It was ok but manageable - ios simulator was laggy. Later i installed hackintosh on an underppowered Asus zenbook, dare i say the development experience is much better.",2018-10-17 09:19:02
+154,"I had the same dilemma but then I came across this article on Airbnb and how the are moving away from react native to native iOS / Android. [medium article](https://medium.com/airbnb-engineering/react-native-at-airbnb-f95aa460be1c)  Its worth a read. My thought process was to deep dive into one language in to grasp all the concepts since Im new to CS. Just keep in mind that youll eventually NEED to learn a new tech stack on the fly. With a solid foundation, its easy to translate what you know.",2018-10-19 08:15:36
+155,I find this really interesting. I feel completely opposite to you. I developed a react native app for a company over the course of a year and after that jumped into native IOS and I seriously cannot imagine going back. ,2018-10-19 16:02:06
+156,We mostly do react native work for clients now but even then I had to write a bunch of obj-c last week to do something that RN just wasnt gonna cut it for. So no even if you do RN its still super useful (arguably essential) to know the native side of things.  ,2018-10-19 20:31:18
+157,"Is it possible to build a wallet on r/reactnative 
+I would love to build myself a wallet the thing is i dont know how to ""ajax"" the blockchain. I have a background in UI design and webdevelopement. 
+How do you actually fetch() data from the blockchain and in what meta format does it come XML/JSON ? Do i need to download the whole blockchain to fetch some data of it. As far as i know the blockchain is almost identical to a complex data stack ie linkedList. Its really complicated but if i were to build my own wallet i could 100% trust it and i wouldnt have to deal with clis even though its kind of mandatory to use the terminal for a react native project. ",2018-10-23 10:10:13
+158,"I'd say web dev, if you are equally interested and skilled in both. As a mobile dev, you are often expected to master both Android and iOS (small to medium size clients). Client may not have budget to hire two devs for each platform, for instance. As web dev, you can deliver without such limitations.
+
+(I know about react native etc., above is assuming the app would be native)",2018-10-25 13:11:54
+159,"&gt;Now there is this: https://github.com/necolas/react-native-web, which exists to render the native components on web, but it's not something i've tried. In general, there hasn't been a strong history of write once run everywhere succeeding without writing some platform specific code.
+
+Thanks for your response @agrmcleod 
+
+Makes sense i totally agree, i have experience with PWA and know the pro and cons of componentization in PWA. I am starting with react native and trying to find out if a what are the pro and cons of componentization in react-native and how different are they from react components. Thanks",2018-10-25 14:15:43
+160,"I suspected that, but i never did an app in native. Thinking about learning Java as soon as i get comfortable enough with react native.
+Thank you. ",2018-10-25 20:53:26
+161,I'm currently working on bridging from c++ to react native. Someone please send help,2018-10-26 16:37:03
+162,"No, stick with react navigation. While react native navigation does improve performance, we found it was so lacking in functionality it was t worth using.",2018-10-28 03:29:30
+163,"I recommend starting with the basics
+
+First, I recommend learning:
+
+* Algorithms
+* Data Structures
+* Database
+* Discrete Math
+
+Tho if you don't want to, you can skip this and learn the stuff as you develop your apps. 
+
+Done with that? now you need to pick a programming language and the platform to learn.
+
+Want a hybrid? (Cross platform web based apps) Learn HTML + CSS &amp; Javascript then work on your framework of choice (ionic, electron, react native, etc).
+
+Native? check the supported language in each platform and work from there. I recommend Java for Android (Learn Kotlin after you get the hang of it) Swift for IOS, and C++ (Qt), C# (Windows; WPF) or Java (Swing/JavaFX) for Desktop.
+
+Finished? Yay now you're ready to develop your apps!
+
+Some addition, you can survive without this but it's nice to know:
+
+* Debugging technique
+* Git/version control
+* Unit testing",2018-10-28 18:36:51
+164,"Great answer! I've been a web designer for a long time and every time I think well I can just pop in and make apps I get overwhelmed. They are similar but not the same. This is helpful to me. I want to check out these ionic, electron, and react native now as they might help me get a head start on creating apps using the knowledge I already have rather than having to start completely from scratch.
+
+&amp;#x200B;
+
+Question though, do you think the quality of apps made using the hybrid method end up being worse than apps that are done using the native method?",2018-10-28 20:50:52
+165,"If done correctly, hybrid apps is virtually indistinguishable from native. Though if performance and memory footprint is a concern, going native might be a good idea (Or code the bottleneck in native and the rest in JS as in case of react native apps)
+
+Take VSCode for example of a good hybrid apps. They use electron as their framework of choice and the result speaks for itself.",2018-10-29 02:27:53
+166,"I learnt it from a combination of react natives website and some YouTube videos from https://www.youtube.com/channel/UC8ivCOllOAo7MfPT9k3Hs-Q
+
+Once you know state and props management, then you can really focus on what you want to build and start learning things from there ",2018-10-30 16:46:09
+167,"anyone wanna help summarize/transcribe here?
+
+EDIT: OK you lazy asses here goes
+
+---
+
+## Versions
+
+**[React 16.6](https://reactjs.org/blog/2018/10/23/react-v-16-6.html)**
+
+- `&lt;Suspense /&gt;` component captures a suspender and renders a fallback in its place
+- `lazy` to do code-splitting
+- `unstable_ConcurrentMode`
+
+You can use both in Synchronous mode even before you upgrade to Concurrent Mode. Both are not supported in Server Rendering yet. It is a top feature request, but the current server renderer architecture is a lot of work that needs to be done in the next months.
+
+**[React 16.7](https://www.npmjs.com/package/react/v/16.7.0-alpha.0)**
+
+- /u/brianvaughn pushed the button :)
+- `ConcurrentMode` stable
+- Hooks
+
+---
+
+## Specific Features
+
+**ConcurrentMode**
+
+- in `&lt;ConcurrentMode&gt;` allows you to pause a render **without** immediately rendering a fallback (hence the term ""suspend""), in Synchronous mode you immediately show the fallback
+- or you can `ReactDOM.createRoot` instead of `ReactDOM.render` and your whole app (including initial mount) will be in ConcurrentMode. Be sure to wrap in `StrictMode` first if you are migrating an existing app.
+- **Testing** in ConcurrentMode
+  - Most of the time, Just test like you are in Synchronous mode. Trust that React works.
+  - But if you are working on a data library they will be adding things in [`react-test-renderer`](https://www.npmjs.com/package/react-test-renderer) and Jest to help with mocking out time completely to ensure you are at the exact things are happening at the right time.
+
+[**scheduler**](https://www.npmjs.com/package/scheduler)
+
+- not specific to React, stuff they want built in
+- provides a priority queue for the whole platform
+- you cant have two priority queues - impossible to merge sensibly since priorities are not coordinated
+- since React has its own scheduler it is hard to coordinate with other libraries/frameworks
+- broke it out for other libraries/frameworks to share, but ultimately needs to be pushed all the way into the platform, so working with browser vendors like Chrome team
+- has some state so that if i set my work at high priority now, subsequent work is also high priority. vice versa for low.
+- automatically determining priorities of work based on type
+  - for text api's, do synchronously by default
+  - tapping needs to be done serially: ""A"" followed by ""B"" must be executed in that order -&gt; high priority
+  - mouse moves can be throttled: past state doesnt matter -&gt; low priority
+- do people need to explicitly opt into this?
+  - it will be part of the framework so most of the time the user won't need to interact with `scheduler` in concurrent mode
+  - but you can import `scheduler` if you need finer grained control - probably will be rare
+  - eg a router can set the priorities of updates that trigger as a result of navigation (normal non blocking priority)
+- try to avoid saying ""low"" or ""high"" priority to avoid a CSS z-index 999 situation
+  - ""normal"" for normal events like router change
+  - ""user blocking priority"" for things that must happen right now eg ""hover""
+
+[**react-cache**](https://www.npmjs.com/package/react-cache)
+
+- probably will use Suspense with a data framework like Relay or Apollo
+- but wanted people to have a reference implementation to try Suspense without data frameworks
+- good for Images and other one-off usecases
+
+[**Profiler**](https://reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html)
+
+- shows time spent rendering components grouped by commit
+   - more about duration spent rendering components than showing wallTime (though you can see it)
+- with errorBoundaries and concurrrentMode, the time React spends rendering your component might be difficult to parse with traditional browser rendering tools
+- basing on commits helps avoid doubts whether some profiles took longer due to garbage collection
+- goal is to show you the time React spends inside render functions and lifecycles -you- control instead of the total time React takes (which you cant control)
+- traditional flamegraph - a lot of time looking for delta, but in profiler it only colors deltas from cool blue (fast) to bright yellow (slow)
+- shows the name of the component in dev mode, easier to scan
+- what the profiler shows us is not how users may experience the App
+- **trace** API - can use programmatically to add labels to profiling data for when things become slow over time
+- people can take snapshots of the profiling data to spot regressions over time - this is being tried at FB
+
+[**Hooks**](https://reactjs.org/docs/hooks-intro.html)
+
+- [alternative names](https://twitter.com/sophiebits/status/1055711619404062720) - seb wanted ""augmentors"" lol
+- ways to encapsulate stateful logic and add them to function components
+- Ryan Florence - [90% Cleaner React](https://www.youtube.com/watch?v=wXLf18DsV-I)
+- more human (less code, no more `this`/function binding) and machine friendly (aka transpilation)
+- Tom Occhino: ""people will be able to copy and paste a lot more code now""
+  - Dan liked React because copying code between render methods was easy, but for lifecycles it was hard, order matters because it is imperative. with hooks you can copy and paste.
+  - they want a site with hooks recipes to copy and paste
+- **Custom Hooks** - instead of spreading out logic for one behavior across cDM, cDU, etc, you can easily group logic together in chunks. **this is what they are most excited about**
+  - RFC comments - most alternative proposals dont support the custom hooks model
+  - share logic eg a `useRedux` hook instead of `connect()()`
+  - opens up a lot of possibilities for simple api's
+  - [the authors of Redux and Recompose integrating both into React](https://twitter.com/swyx/status/1055509912069885953) - Recompose now deprecated
+- rules:
+  - top level (no conditions)
+  - use* naming
+  - order matters ([just like jsx](https://twitter.com/sebmarkbage/status/1055722913611972608))
+- second argument to useEffect
+  - the problem with [useLifeCycleHooks](https://twitter.com/dan_abramov/status/1055845972583112705) is it will cause issues with stale values
+  - ideally - the second argument is unnecessary, more of a perf optimization
+  - it forces you to think about the render function over time
+  - it is possible for type systems/linters to track whether you have included everything in the second argument
+  - when you handle everything in a declarative way like in React and interface with imperative JS code inside useEffect, you have to handle all cases
+  - with this API it is noticeable when it goes wrong, but when you compare to class examples of cDM/cWU, it has subtle bugs that you don't see. in hooks you are *subscribing*, in classes you are *assigning*.
+  - ""componentDidMount"" sounds simple, it runs when component mounts. but its easy to use it and not do the right thing, there are a lot of nuances to do that properly. moving from an API that looks easy but is actually hard, to an API that looks a bit harder but has fewer pitfalls.
+
+**React Fusion**
+
+- experiment with ahead of time compilation of React components
+- similar to glimmer with bytecode and svelte with AOT branching
+- focusing on taking a React app and doing static optimizations
+- interesting/difficult space - static analysis of JS
+- hasnt had much exploration in academia/etc
+- Prepack project has made a lot of progress
+- figuring out a way to productionize that research
+
+**Misc info**
+
+- React's build process has evolved a lot in the past couple years, used to cherry pick and take 3h-1day, needed a ""run book"" and now more automated build from master (check the `/scripts` directory). Needs to support building different versions of react for react dom and react native, feature flags, unit tests on build bundles to ensure nothing in the build process is introducing bugs. Could adopt Github Actions soon.
+- **React feels like more of a framework, and not ""just Javascript"" anymore** - `React.lazy` seems like React.getComponent which was removed because we dont want to ""feel like a framework"". 
+  - yes initial goal of React was to limit the scope
+  - but now we find other usecases we want to cover. `react-loadable` not as powerful as what we could build internally
+  - humans are lazy too so want to encourage people to code split so make it easier to do
+  - yes now the way you fetch data is slightly different
+  - but doing it with Suspense is less error prone so we want to encourage that
+  - ""just javascript"" criticism - putting limitations on your js code is not new. `render` function is supposed to be idempotent, can't put `setTimeout` in it, thats a limitation.  (see also: [Rules of React](https://gist.github.com/sebmarkbage/75f0838967cd003cd7f9ab938eb1958f)). `state` and lifecycles are also not defined conditionally.
+- [React Fire](https://github.com/facebook/react/issues/13525)
+",2018-10-31 15:55:21
+168,"You don't really need 2 different view files for ios and android with nativescript if you are trying to keep identical functionality in both. Most differences can be covered with platform specific css files and android: and ios: tag attributes.
+
+Application logic is basically the same for both, minus the occasional component that needs to work different depending on each platform's paradigms.
+
+To be honest the real issue I found with nativescript was the overall low adoption rate and  lack of libraries to choose from for certain things, but the developer experience and results/performance is quite alright. There's also a new major version coming up soon with the much awaited hot reload like react native and flutter.
+
+However, keep in mind that using this kind of tools is bound to bring issues sooner or later because things won't always look or work exactly the same in both android or ios. ",2018-10-31 21:24:39
+169,"The thing is that I've really tried going over to the other side, trying to actually like js as a language.
+
+Forgive me for being a human, and having a preference, I guess. I, as a human don't really have much control over what fits my brain.
+
+Sure, I can _force_ myself to like JS, but then I won't be doing myself and my fellow humans justice.
+
+&gt; You should always be prepared to change your opinion
+
+No trust me I really tried making JS work. I had a client who wanted a mobile app, and almost made it using react native, because I actually feel like React is a great way to build apps.
+
+But at almost every step the language was a constant PITA.
+
+I switched over to flutter, and boy I just fell in love with this thing; it was actually good. The language seems to work well. The framework itself is also exceptionally good and the community is amazing.
+
+A lot of it owed to the fact that dart is a real, modern programming language with a meaningful standard library.
+
+&gt; Be specific
+
+Have tried that before. The thing is that no amount of JavaScript ""WATS"" seem to make my argument strong, because the js community has this strong tendency of ""it's not a bug it's a feature"" which basically makes it impossible to win any argument.
+
+&gt; I am in the cool gang
+
+Weird, to me it looks like all the JS+node guys are in the cool gang, and I'm out here trying to make django work with JS. (https://github.com/pycampers/react-pages)
+
+
+It looks like you work for money, and got into JS  because of it. Am I wrong? 
+
+Seems to me, most people's primary motive behind liking JS is that it's gets their job done and with typescript, it's relatively ""acceptable"".
+
+I just care too much about the technology to accept this. We can do much better than JavaScript. I don't want the future generation to have to witness this weird artifact of human creation one day.",2018-11-01 20:46:06
+170,JSI is part of the new react native architecture codenamed Fabric. I dont know that many details myself but I think the JSI piece is part of the interface definition and implementation that will enable method calls between JS and Native without using the bridge.  ,2018-11-02 02:29:17
+171,"Thanks for the answer! I briefly read the article.  Im wondering what does nativescript provide, that react native doesn't? What is your experience with nativescript so far? I'm leaning towards ns aswell because I have a web project made with angular and I wan't to create an app for it. Using ns I will probably be able to share alot of code. ",2018-11-04 20:50:48
+172,"The iPhone X model is actually a pain to develop for so I am not saying it's not apple's fault either. Generally you would develop for android first when making a multiplatform app using something such as react native and it used to just work when ported to iOS. Unfortunately the X has changed that due to the rounded bezels in combination with the notch.
+
+Anyways I'm saying to the op he's gonna have to live with it because setting a personalized resolution for the X on an existing code base is a lot of work for a small user base. It hasn't really blocked off anything too important from my experience.",2018-11-04 20:53:32
+173,"I don't understand. You already have to do this exactly only once where it is needed. Or do you mean a wrapper function around async. calls? I tried that, I tried many things, including how stack traces look like when using `.catch()` instead of try/catch. What resulted in the best stack traces - and across platforms (my particular code needs to run on node.js, react native, browser, a backende library that.. ""does stuff"") - was this method. At that point I stopped micro-optimizing any further, because it really sucks to do this and I'm really just waiting for runtimes to produce async stack traces on their own (which should be relatively easy when `await` is used, teh ""real async."" option probably would/will have considerable runtime cost, in comparison, because it needs to keep track of a stack that's no longer there).",2018-11-05 17:44:33
+174,"Right. We have ejected. I edited the original comment to make that clear because I forgot to originally. 
+
+Do you know of some good resources for a general react native app then?",2018-11-05 23:58:17
+175,"James Long has a good talk at ReactConf 2018 about what react native is currently not good with. That should hopefully be resolved with Fabric. 
+
+https://m.youtube.com/watch?v=ZXqyaslyXUw",2018-11-06 06:03:58
+176,"well, now your precious discussion over iot for vibrator made in react native will never be archived. it's a damn shame, isn't?
+
+now, i invite you to use a practical git repo with full of freedom and practicality, Gitea.",2018-11-08 15:20:15
+177,"they never were fully react native, they just used it in a portion of the screens. They moved away from it because it proved an unnecessary complexity in their codebase and workflow.",2018-11-08 19:55:03
+178,"At least in Detroit, the market for react/react native developers is huge.  GM was just tons until the cuts last week.",2018-11-08 19:59:39
+179,"But i've been doing react, react native, and node for the past two years lol.",2018-11-09 19:55:15
+180,"But i've been doing react, react native, and node for the past two years ago brother im set dont worry about it.",2018-11-10 07:46:35
+181,"It was really just a goal of mine to develop an app, Im currently on my placement year at uni and up until 5 months ago Id never used JavaScript. Quite a lot of my work involves using react so I thought it would be good to brush up on these skills by using react native, plus Ive always wanted to have an app on the App Store, and it will always be a tick on my cv for the future, I do however plan on making some future changes to the app and also developing some other apps along the way. Thanks a lot for the feedback and Ill keep the font choice in mind when I make my next changes ",2018-11-10 09:26:12
+182,"Use the tutorials as a springboard to start doing something.
+
+A simple example: at uni, the professor gave us a workbook to follow. I did by started adding my name on every variable. (When I got stuck professor gave up on me)
+
+I followed the same thing always. I've too been part of treehouse but never did anything from start to finish. I recently started the advanced react course from Wes Boss and about video 10 I've stopped and been playing with something of my own.
+
+You might have the same problem I have, I can't clone things. I find cloning Reddit boring. So you could go on Pinterest and with pen and paper steal design ideas and create your own thing.
+
+So this Wes Boss course somehow got me thinking about react native. I started doing a small todo list. Now I've added (hardcoded) categories and basically, the possibilities have opened up.
+
+Don't build stuff. Just play. Try not to think about the end goal (A bad idea for real products but not in your case).
+
+Say you want to create a music app. How on earth are you going to get songs to play? No idea. However getting the artists and song titles and creating user accounts is easy. There are APIs that give you the info. So it would take you months of frontend and backend work before ever needing to deal with getting the actual songs to play. **if you never get the songs to play** or if you never achieve 50% of the features you'd still be in a better position than you are right now.
+
+So play. Take every idea that gets in your head and run with it
+
+## Use gitlab/bitbucket
+
+I use gitlab. Every ""project"" starts with an empty git repository and at least one readme.md file. I never bother with what messages to use for the commits I just push commits every now and then. I make excessive use of branches
+
+- master
+- 01added-redux
+- 02API
+
+So if I can't be bothered carrying on I'm at least more likely to come back at some point
+
+So change the common advice of ""build stuff"" with ""do stuff"". That is easier. If all you can think of is ""to do apps"" do that. You want to learn CSS? Design 3 todo apps. Again don't think about the future. ",2018-11-11 02:12:35
+183,"If youre going to focus on mobile. Learn react native after javascript.
+
+&amp;#x200B;
+
+Honestly, if you arent going to be there start to end, with beginner level coding, you will just get in the way and make the code harder to read/understand for the person taking over your role. If you want to contribute to your own project but not code it thoroughly, then be the team manager. Dictate the scrum meetings, set limits, set deadlines, etc.
+
+&amp;#x200B;
+
+As you can probably figure out already. NOTHING is as easy as it seems. Many times, coders can get stuck on a very tiny and stupid issue. There is almost no way to figure out if something has a bug later on without heavy testing and deploying with feedback. 
+
+&amp;#x200B;
+
+A MVP (minimum viable product) for this. I say would take \~80 hours. It also depends how in-depth you want your meal plans to be. What makes you stand out from all the other ones? If you dont care about standing out and just want an application that is yours, thats fine too.  
+
+&amp;#x200B;
+
+It gets as complicated as you want it to be.",2018-11-13 22:12:21
+184,"React native is used to develop mobile applications for Android and iOS platforms. It is based on JavaScript just like react so the logic remains kind of same. Though, there are react native components that you need to know that are specifically designed for mobile applications. In short, if you know React then learning react native wont be a problem. Just go through the documentation and youll get an idea.",2018-11-16 02:43:10
+185,We at airbnb ditched react native for native development ,2018-11-17 04:34:06
+186,Nice! You can also use the react native cli to setup a typescript project by running the bash command: `react-native init &lt;ProjectName&gt; template typescript` followed by `cd &lt;ProjectName&gt; &amp;&amp; node setup.js` :) ,2018-11-17 22:33:26
+187,"&gt; Native apps will surely have a place though. PWAs won't replace it.
+It'll be more like: small apps( like QR code readers ) will get PWA-based, while massive apps or games will still remain native.
+
+Yeah absolutely.  Games and audio/video editing especially.  But it's already a normal thing for typical ""document"" stuff, i.e. Google Docs, Office 365 (web-based), as well as some smaller open source projects doing the same thing (there's actually quite a few of them, but hardly anyone has even heard of them).  
+
+This stuff already exists, and it's becoming more and more popular.  All I'm saying is that it would be cool to have a **big** open source project (Libreoffice) focusing on it more too.  Because even though many of us super techie linux users might not be into it... it's certainly the way things are going overall for the masses.  
+
+Seems they have actually started: https://www.libreoffice.org/download/libreoffice-online/ - but I just haven't heard much momentum on it lately.  But been a while since I looked into all of it again.
+
+
+
+&gt; It's not the only downside. As long as JS is there, many people won't use it.
+
+Well ***some*** super technical users with strong opinions, yeah, I personally wouldn't describe that demographic as ""many"" though. :)  ...plus as I was getting at in my previous comment above, many of these users likely are also using latex and better tools than GUI Word/Excel clones to begin with.  
+
+As a programmer myself, I'm usually either using markdown or SQL.  I'm only using this office doc type software to share/edit stuff with others, so web-based is just easier there.  
+
+&gt; PWAs won't replace it.
+
+Maybe not PWAs specifically.  But 5-10+ years from now I imagine a lot of stuff is going to be built using some hybrid system along these lines where you can just as easily run something locally -vs- over HTTP, much like we're already starting to see with web-first systems like Slack/Discord have local clients in Electron.  If you're building something in TS/JS to begin with, it's quite easy to port between browser/electron/PWA/mobile (react native etc).  We've also got stuff like web-assembly on the way too.  ",2018-11-19 05:14:22
+188,"It is an app developed on react native, basically to understand working of API and showing result, you can search any artist and see its events venues.",2018-11-20 07:21:12
+189,"Unless you have an incredibly tight deadline, I think writing your own styles is your best bet right now. With some exceptions, out of the box React Native makes cross platform styling pretty easy, and the built in interaction system(touchable opacity, pan responder, etc.) is powerful enough to make things like tabbed views, radio buttons, and whatnot fairly easily. If you need some ""exotic"" piece of functionality that you don't want to invest time in building from scratch, like a swipe view or a carousal view, you can find a specific library that implements that behavior and import it on its own, rather than bringing in the whole kitchen sink from something like react native elmenets(which is probably mostly full of stuff you don't need anyway). 
+
+&amp;#x200B;
+
+From a maintainability perspective, React Native, component system libraries, and often individual component libraries, have lots of bugs. So if you want control over the long-term health of your project, you want to make it easy on yourself to fork individual parts to patch bugs. Modular imports of small third party components makes this possible, but importing huge component libraries does not.",2018-11-21 02:20:30
+190,"My last reply was assuming you're trying to install a release build of an iOS app, not react native. I'm in middle of demo at the moment. I'll get back to this when I have time later.",2018-11-21 09:23:03
+191,"im sorry, i really dont want to waste your time at all and im already very thankful for the time you've spent. but i think my question is more related to xcode and the build system and less to react native ( probably )",2018-11-21 09:38:28
+192,"1) GraphQL only if you're using a graphQL endpoint for data. You can always do this with Fetch too.
+
+2) Meteor - see above
+
+3) Redux or some other state management unless you're not planning on having your UI adapt to any dynamic data or conditions
+
+4) MongoDB client-side library only if you're using a MongoDB DB server and HTTP isn't an option, unless it's using a client-side mongoDB library.
+
+5) Firebase only if you're using a firebase functions or libraries.
+
+6) This is not a react-native library but is needed to run most of the development stuff.
+
+7) SQL is a language used my SQL databases, and so it's not something you ""include"" in your app.
+
+
+I'd honestly research each of them. It seems like most of your questions can and are answered by simple google searches. You also haven't ""finished"" react native if you're asking these questions (also because it's simply not possible to actually finish learning development because the different libraries, frameworks and environments we are using right now are always evolving and having new things added to them).",2018-11-24 21:54:32
+193,"Dude JS is very solid, you wont regret it. I was working as a software architect at Ticketmaster for 3  years and now Im head of engineering at other place, TM was moving to JS all the way and at this new place all the stack is JS as well, build tools, front end, backend, everything. I only have to do VTLs once in a while to do transformations at the edge (cdn and appsync edges) otherwise everything is JS. It is easier to put a dev to work on the backend or the front end when we are using the same language across the board.
+
+
+I guess the exception is mobile apps, though I worked for a while with live nation mobile developers and they were using react native also in JS, so even on mobile there is that option. 
+
+PM me if you want we can talk more. ",2018-11-24 23:49:15
+194,"If you want to do a project in react native and use MobX.. I can't be of much help. But if you are open to learning and familiar with react state and props concepts then give a try using react native + react-redux. 
+
+You can always get the boiler plate and set up really quickly too. Btw
+Redux has one global store so no more injecting screens and no more mutable state. 
+You can think of it as a big state object which is your single source of truth.
+
+Most people would argue that React and Redux themselves have a good learning curve, but both together can be overwhelming. So as alternative use MobX if you are new to React.",2018-11-27 19:39:20
+195,Do you have any other tools for [react native developers](https://www.wedowebapps.com/react-native-developers/) tools to develop a mobile app in **React Native.**,2018-11-28 07:31:18
+196,Problem is the cost associated with hosting. I know cheap hosting solutions (I am a cloud engineer) but long term durability and also to provide an offline experience. (I travel a lot so this is a requirement for me) The last option is something like a react native app and just didnt want to do that.,2018-11-30 01:25:29
+197,Can try firebase . quite easy to use with react native.   I use react native firebase. The pain points is to integrated with both platforms iOS and android.,2018-12-01 03:23:23
+198,"C'est uniquement sur expo il me semble, pas react native  proprement parler. Il faut cependant faire attention, je crois que create-react-app utilise expo. Il faudrait que je rejet un coup d'oeil aux docs
+
+Et ce n'est pas sur react sans le native.",2018-12-01 10:20:41
+199,"Im self taught and just buggered around enough to get to know what Im doing, as such, I am not sure I 100% know the right terminology here so please, dont google what Im saying as itll likely bring up the wrong stuff, but the Wordpress documentation is pretty comprehensive, the one that helped me most was the one with the break down of the template files that Wordpress will look for and what they do. 
+
+Basically, if you know how to integrate a few php tags into your html, and what to google in terms of feature you want to include, its just a case of putting that code snippet into your html template and then it grabs the requisite info from your Wordpress backend.
+
+There is the loop which you need to look into and understand ideally as thats how your paginated content gets handled etc.
+
+If your so inclined you can access your Wordpress via API which then means you dont have to do stuff in a typical theme development manner, but Ive only dabbled with that a bit in react native apps and always found just making traditional themes easier.
+
+The tip Id say to anyone learning is to not hard code the directory structures into your theme for one specific usecase, just find the php from Wordpress to bang in there to get the required directory etc, means you can move your theme around etc without having to get under the hood again.",2018-12-01 16:13:03
+200,"We never really focus on Android on our client projects, RN made it a nice plus but I just wanted to learn react native regardless of only making an iOS app from it. Don't get me wrong either, I liked Viro it was arguably the best out of the three I tried (expo-three constantly crashing on particle systems, etc). In the end it was far easier just setting up the storyboard with subviews layering all the 2D UI elements over the ARSNView. I'm sure there's things I've overlooked, but like I said I had a deadline and just did what I needed to do. ",2018-12-01 17:23:37
+201,I dont think this is right. You can do some ota push code to apps by using JavaScript (react native etc) but as far as Im aware this is not available with native apps and I cant find any evidence to indicate you can. ,2018-12-01 20:53:47
+202,"my 2012 uses Mojave. still snappy as it is. But I noticed it to become really slow when compiling react native apps to IOS but not on android.
+
+Still a beast. I have MBP 2017 top-of-the-line I use at work, For programming you will notice the advantage of newer MBP, anything else they are equal :D  
+
+
+Edit: after compilation, recompilation seems to be fast.",2018-12-02 00:14:36
+203,"If you are looking for that level of filtering I'd suggest crunchbase API, there's a process to get a key but totally worth the trouble. As far as angelList I target few companies using the on-site filters manually, on load the script open all, click on founder(s) profile page and then activate voilanorbert fetch request, takes around 3 min for a thousand. 
+
+For you specific needs, I don't see how are you going to target specific people I am only aware of the main search which returns companies, this is a list of enterprise software using react native https://angel.co/companies?markets[]=Enterprise+Software&amp;teches[]=React+Native
+
+When looking at the company profile you'll see a bunch of divs, what I target is ''founders'' section, it's usually the decision makers, maybe ""employees"" would work better for you? 
+
+",2018-12-02 13:21:13
+204,"Facebook, Instagram, Airbnb... They use react native, and are NOT webviews. The problem with RN is when apps grows and more native stuff starts to being used the development gets harder and harder, and you ends up writing two entire different apps for two platforms. Some dude from Airbnb posted a series of articles on medium some months ago explain just that (an they will leave RN for that and other stuff). ",2018-12-02 14:30:51
+205,What do you think about xamarin or react native? They are cross platform and compile native apps with no web view.,2018-12-02 15:17:20
+206,"I'm working on a app that helps to prevent food waste in your home. It's on early basis. I'll use it as the conclusion project of my computer science degree.
+
+Will require a lot of stuff, such as machine learning, image recognition, heavy camera usage. I was trying to use ionic (FAIL), react native (Good, but not perf). And i decided to learn native IOS and Android... Yeah, that works and performs like a champ! ",2018-12-02 15:51:19
+207,Half the libraries for react native use javascript for stuff like rendering. Mostly in a single thread. React Native isnt there yet when it comes to performance.,2018-12-02 17:45:35
+208,You could start with a weather app. Create a backend service with Java or node that pulls the data and stores it in a database. Then create a react native app that talks to your service/database.,2018-12-02 19:19:49
+209,"I think he was referring to CSS styles - eg if you set the text color to blue at the root, it will set all nested text to blue unless something overrides it. In react native, styles just get set on the component and not at all to the children. React doesn't have a concept of styling by itself but since it renders to the DOM, normal CSS and HTML rules apy",2018-12-02 20:26:26
+210,"Developing in react native for cross platform (android and iOS), I am able to use ios emulators while developing on my windows machine.",2018-12-03 06:26:35
+211,"I dev without XCode for my Cordova based native apps and only need to use XCode for compiling a release. Most of the dev takes place in the web domain. 
+
+Isn't it similar for react native app dev worflows?",2018-12-04 00:56:39
+212,"Love love love it. Only drawback so far is using federated identities in combination with @auth is literally impossible without their hosted ui login... Which doesn't work with react native. 
+
+Anyone achieved this?",2018-12-04 04:34:07
+213,Dont think so. Theyre similar but too much breaking API changes between the two. Maybe when the revamped react native arrives... but not for the time being unfortunately. ,2018-12-04 04:54:29
+214,This is a good question for learn programming. I think I would start on a smaller project first as this is a complex app. I would look into cross-platform app frameworks like react native.,2018-12-04 06:49:00
+215,"&gt; react native
+
+one of the shittiest coding experiences i've ever had",2018-12-04 11:10:34
+216,Just finished a Web development Bootcamp on Udemy (Javscript and Node Js) planning on learning react to improve my front end skills and react native to go mobile. Really enjoying the journey so far :),2018-12-04 14:19:46
+217,"while JS primarly is used for the web, you very well know people are doing other things with it (react native for example).",2018-12-04 19:44:28
+218,"Damn lol i've not seen a JS to C approach, yeah thats silly. Like I said I really enjoy using JS but when building out a client AR app for iOS, I did the prototype in react native but faced frustrating time-waster roadblocks and ended up recreating the whole thing in Swift and Xcode in a day since it was the proper tool to use in the first place. ",2018-12-04 20:20:14
+219,"Flutter Live was a really cool presentation and really showcased how powerful it is. I really recommend people here give it a shot, especially now with free CI/CD and the 1.0 release for native views. Always good to have some competition in the cross platform app space.
+
+Edit: Sorry if it feels like i'm astroturfing this stub, I just wanted to provide a little insight into why Flutter devs are excited about this and encourage some people to do a little experimenting for themselves. I know I wouldn't have tried it if I hadn't had a coworker really dig in and convince me to try something outside of the react native realm for cross-platform development.",2018-12-04 20:28:42
+220,Flutter is promising but not yet ready to compare  react native,2018-12-04 20:58:08
+221,This is nothing new. They could always do react native or any other cross platform solutions. ,2018-12-04 21:38:30
+222,This is something you decide BEFORE you make the app. Your choices are react native or google flutter.,2018-12-05 01:53:50
+223,"&gt;Here
+
+both react native and flutter will have some issue which are updated on native first library compare to third party all in one. If you don't have third party plugin go for react-native,flutter. 
+
+&amp;#x200B;
+
+\*\* maybe be downvote saying this again, ",2018-12-05 05:28:08
+224,"This probably  isn't related to react native itself but to your terminal.
+Check your key bindings.
+Also it would be helpful to know what OS and terminal you're using.
+If you're on macos, I would recommend iTerm btw",2018-12-05 08:49:45
+225,"Did you link the ""react-native-material-kit"" library? 
+
+```
+react-native link react-native-material-kit
+```
+
+This command will install/link the native code for a react native library in the Android and iOS projects. After this command you will need to build a new app (`react-native run-android` or `react-native run-ios`)
+
+edit:
+
+Actually, you just have a type in 
+
+```
+import { MKTextfield, MKColor, MKButton } from 'react-native-material-kit';
+```
+
+You have `MKTextfield` and it should be `MKTextField` with a capital F.",2018-12-05 14:39:34
+226,"I think you mean ""React Native lol"" because when it comes to jokes, react native is a really good one.",2018-12-05 15:32:15
+227,I'm willing to put up with dart to not have to put up with react native anymore.  I really hope they're trying to find a way of having a kotlin story for dart in the future though,2018-12-05 16:57:10
+228,UI performance in specific absolutely crushes react native judging based on the sample apps I was playing with yesterday,2018-12-05 17:01:18
+229,"I would say so. I used xamarin android, and I like react native (specially with expo) a lot more.",2018-12-05 17:29:14
+230,"Hi all, I just open sourced one of my react native animations, can you star my repo on Github please: 
+
+[https://github.com/watadarkst/react-native-typing-animation](https://github.com/watadarkstar/react-native-typing-animation?fbclid=IwAR2QNZ0Pay8BX8hsXwcJaupdYXJ5q-DdUVfmzviqIru8pOBzVTRzqN8WkGo)
+
+There is a tweet button in the README if you are feeling extra generous :)  
+
+
+TLDR: Check it out and please star!",2018-12-05 17:42:39
+231,"&gt; That's why companies like AirBnb had no choice but maintain bug fixes in their RN fork.
+
+The fact that AirBnb had to maintain their own fork of an open-source project because bugfixes weren't being accepted into mainline at a reasonable cadence is itself an indictment of Facebook's stewardship of react native.
+
+AirBnb even cites it as [one of the reasons they moved away from RN](https://medium.com/airbnb-engineering/react-native-at-airbnb-the-technology-dafd0b43838):
+
+&gt; Due to React Natives immaturity, there were times in which we needed to patch the React Native source. In addition to contributing back to React Native, we had to maintain a fork in which we could quickly merge changes and bump our version. Over the two years, we had to add roughly 50 commits on top of React Native. This makes the process of upgrading React Native extremely painful.",2018-12-05 19:04:27
+232,Its good to share this since the bug is within the the react native library and anyone with a react native app could potentially have this issue. Although  Id like to know the specific JavaScript code which caused this in the first place.,2018-12-05 21:33:42
+233,"&gt; ""we're pretty deep into the Android support library, not sure we can deduce much from this at this point"" without immediately following it up with ""we thought at the time, because we were being dumb.""
+
+But that's the thing, they weren't wrong. The bug wasn't in the Android SDK, it was a react native bug. I think the point is to apply a simple heuristic where, all things being equal, the most likely source of any given bug are the codepaths that the least number of other developers around the world are running. So your own code is the overwhelming focus, followed by your dependencies in descending order by how many other people use them.  Bugs in core system libraries/compilers/kernel are obviously possible, but that's probably not the area where you want to focus your initial energies on.",2018-12-05 22:41:46
+234,"You can do desktop development with electron and similair framework.  
+You can use johnny five and similiar frameworks and do microcontroller hobby work.  
+You can develop apps with react native or other frameworks  
+You can generate cloud formation templates using AWS CDK  
+You can build apis whether it's with node or serverless technology  
+You can do large file processing work or even JSON file processing.  
+You can do some interesting ETL jobs using JS and Postgres and JSONB insertions  
+You can look at ML and AI libraries  
+You can develop extensions for Microsoft Excel  
+You can literally just explore the entire Node ecosystem and pretty much find out JS can do about everything else other programming languages can do just not as fast as compiled languages because there are a lot of developers who use JS and want to resuse their skills in just about every field.  
+
+
+&amp;#x200B;",2018-12-05 23:05:33
+235,"Not really sure what you mean. I didn't reference any library, just some stories from work. I wrote one for react native last year though and used the markdown from the library readme to make a medium post. ",2018-12-05 23:53:18
+236,"I was using a more basic model of the same year for iOS dev. If you upgrade your ram to max, it should be fine for another year or 2. It isn't Mojove compatible. I think it is xCode 10 compatible though. You'll need to check.
+
+What's the asking price? I had to upgrade to a new model for my current dev environment (react native and lots of docker containers locally).",2018-12-06 00:17:58
+237,"Everything looks great until you dig into the graphics processor. Intel's UHD Graphics 630 is going to be your biggest bottleneck trying to run any process heavy application... really anything beyond rendering mostly static applications like your text editor and internet browser. From my cursory research, it starts to chug on anything 4K that needs more than ~24FPS. That's a pretty standard feature film FPS. 
+
+Provided you aren't planning on doing any gaming, visual content creation, or really anything but text editing and watching 4K movies, you'll probably be fine. 
+
+How important is 4K to you? 
+
+Beyond all of that, I'm not sure if I could personally reconcile spending $1,500+ on ~$500 worth of hardware just to have a tiny case and OSx. The RAM is SLOW on this thing. The GPU is non existent. A 256gb SSD is incredibly inexpensive. The i7 8700 is the most expensive component on this thing and it's not even best in class from 8th gen. 
+
+Hackintosh, cloud based compiling or your other apple products can handle your react native apps. $1500 buys a lot of computer. 
+
+I get that people have their preferences, but good lord... this is egregiously overpriced. ",2018-12-06 01:53:28
+238,"&gt; I dont think that sharing a single UI between disparate platforms is desirable from any perspective that isnt cost savings and that even from that perspective its dicey.
+
+Hmm....? This sounds like an article coming out of a person who has never done a single project in react native.",2018-12-06 02:11:05
+239,"In react native i have mostly used fetch, but tbh im tired of writing wrappers around fetch for http methods and handling various errors",2018-12-06 05:20:24
+240,"When I try to upload the apk with Google console (like I used to do, based on react native docs), it tells me I'm missing hat signature. I tried to do it, but it's not working",2018-12-06 13:16:28
+241,"Last time I tried react native a couple of years ago, the only way to run in development was on my device over wifi. Updates were slow, the server kept crashing, etc. It didn't seem possible to run in an Android emulator on my machine",2018-12-06 16:03:40
+242,React Native is a framework for building mobile applications with JavaScript and leveraging Reactjs. Get our React Native app development services for Android and iOS. Hire our react native developers to build high-quality mobile apps. ,2018-12-07 05:57:20
+243,"My journey started last year. I wasn't very productive the first 6 months though, only learning about 1-2 hours a week. However, I really focused the last 6 months. The beginning was the hardest. I felt like the first couple of months I would hop from resource to resource because the basics just didn't seem to be clicking for me or I would go down rabbit hole because I didn't understand a certain concept the resource was teaching and became overwhelmed. The first couple months felt like I was just going in circles. I wanted to learn javascript, but I didn't get how the whole picture came together in terms of the web.
+
+I've tried FCC (old version) up until if I remember correctly, their intermediate algorithm challenges. I then felt maybe I needed a deeper dive into javascript, so I went to javascript.info and got to their objects section where I became pretty confused. At that point I thought maybe I needed more fundamentals, so I tried the CS50 course everyone was talking about. I think I only got through about 3 or 4 lectures, but the mario assignments they had felt too difficult for me and so I stopped, but I really liked learning from an actual video lecture than reading from javascript.info or FCC where sometimes I didn't understand the wording of what I was reading. Videos felt easier to absorb for me.
+
+Another issue I felt was that I can't seem to understand how the backend connects to the frontend and vice versa. I think alot of the resources I was going through doesn't really touch on this point. So in my head, I needed two things: video lectures and one that talks about both the frontend and backend. I heard great things about Colt Steele's udemy course, so I bought it. This is where things really started to click. I didn't really do a whole lot of his frontend section because it all felt like review. I guess all that circling the basics really did help afterall. But his backend section was great. The course is a bit dated, but honestly, the backend part held up pretty well in terms of understanding the routing and request/response, etc. After that I realized a lot of what I learned was prior to ES6. So I decided to check out a more modern course. The modern javascript bootcamp course by Andrew Mead on udemy was excellent, I got through the whole thing and I really learned a lot from it, great teacher for javascript. (Both courses I heard about from learnprogramming actually!) Of course, any time in between where I didn't understand something fully, I would try to find more resources to understand it. After these two udemy courses, I went ahead and read the main concepts section in the react documentations (I think at this point, I understood enough to be able to read and understand and not require videos) and built a basic react app with the help of some videos as well. After that, I decided to try React Native and built a simple mobile app reading through the official docs and applying concepts I already know. I dabbed into a bit of Java at the end too to see if it'd be easier learning a new language at this stage, and it was!
+
+TLDR: Started a year ago, really dived in during the last 6 months. Everything clicked once I did the Colt Steele backend section and Andrew Mead javascript course (Of course it helped that I went over the basics so many times). Went through the React documentation after to make a simple react app, then went on to react native and built a simple app there as well. ",2018-12-07 16:37:34
+244,"I think his main argument is that accessibility should be a first-class concern, and theres evidence that it is not in react native.",2018-12-07 21:53:41
+245,"I inadvertantly ended up doing this when a react native module that I wanted to use for an Android app had bugs / had become outdated. Just pick a project, find some react native modules to use, and I almost guarantee you'll start coming up against problems - especially if you pick one that was written by a hobbyist and doesn't have a strong support community. Just start googling. It's actually alot of fun to debug, open PRs against the original package etc and it's rewarding to have others thank you for solving a problem or fork your work :)
+
+Also knowing Java obviously helps. No recs on books as I've never really learned programming from a book. Good luck!",2018-12-08 03:28:55
+246,"&gt;Afaik the new app had a new web application based on js and react.
+
+The new ios app is react native?",2018-12-08 17:18:31
+247,"They were pretty basic projects. I just used some random api and then I displayed the information in different ways and when you click some of them, they do something. I first made the react web app, then I basically did the mobile version of it with react native. They both linked together, so when you did something on the mobile end, it updates on the web as well. It took me about 2-3 weeks ",2018-12-08 19:08:46
+248,"Do you work with Javascript? Javascript is turning into more of a intermediary language that developers dont write. In the case of Microsofts products and many others, the developers write the code in TypeScript which is then compiled. TS is much more like C#. And even if the devs work with JS, it still gets compiled into human-unreadable JS and the tooling assists with syntax and hinting pre-compile. 
+
+Web apps failed on iOS in 2008. That was 10 years ago. The languages and hardware limitations of 10  years ago were so different its no longer a useful example. I suppose you could be thinking of Facebook abandoning their HTML5 app in 2011, which isnt much more recent (and they introduced react native in the past few years)",2018-12-09 00:04:54
+249,"You need have a few options. You can learn, IOS, Android, or a cross-platform framework like react native. Do some research. Pop over to /r/learnProgramming. It may take you 6months to a year to publish an app. It will take longer to make a great app. I do not mind answering questions.",2018-12-09 01:17:09
+250,"People on reddit are weird. If you make any kind of post or ask a question they shred you like you just asked the dumbest question in the world along with insulting their mothers... 
+
+But thank you man! I appreciate it. I ran Facebook and Instagram ads when I got my taxes back in Febuary. I was averaging .19c per click and probably totaled about 600 signups before I ran out of money. When it comes to converting that to kickstarter backers it was horrible. However I had the filters set to 13-25 I realize that lower tier arent in the business of having disposable income to spend. So that was probably the problem.
+
+I reached out to influencers such as ""HaHaDavis Daquan, ReeloBrown, etc""
+
+That really worked especially with the small timers. (UNDER 1M Followers) I did learn to code I coded the android version in Java...But I need to get it to IOS asap. Looking back I should have learned react native but that's neither here nor there....
+
+Yes those images are basically just renders of the app. All of it was done by me as I taught myself to design and whatnot. I designed the entire app, same with those renders and mockups.
+
+Again thank you for the kind words ",2018-12-09 13:41:27
+251,React native is fast for development setup and getting a product or proof of concept to market. You can start an Android app (also ios) in react native or native and add in with native code or react native screens. This is really convenient if you have a greenfield or brownfield app and want to start in react native but the door is also open to switch the app development or just specific parts of the app in native code. ,2018-12-09 23:00:54
+252,"Typically we are maybe 1 minor version behind, and we probably wont change this because each react native version includes a lot of undocumented breaking changes and we have to put in a bunch of work to make all of our APIs and infrastructure compatible with it. Additionally, new releases are frequently unstable for the first patch release, so we prefer to wait for some of the issues shake out with more bleeding edge users before we bring it to Expo users. Hope that makes sense, open to other ideas or suggestions here for sure.",2018-12-10 02:32:24
+253,what do you think about ionic vs react native? i've never heard of ionic until now.,2018-12-10 03:04:10
+254,Does Expo have any plans (if it's even possible given that the iOS &amp; and Android files aren't actually generated unless ejected) on making libraries that require linking accessible to the projects? (e.g. react native fast image),2018-12-10 03:15:18
+255,"I know, Nodejs for backend. I meant to use react native for front end and node for back end.",2018-12-10 06:36:05
+256,I was thinking to use node as backend with react native? What do you think? ,2018-12-10 08:34:29
+257,"You people don't know a damn thing about flutter, just because it share some concepts with react native it doesn't mean they work alike, those are very different technologies that works in very different ways
+
+So don't make assumption and read a bit about Flutter from its official sources, or even better try a hello world tutorial
+
+On other side, not being pixel perfect is not con, you don't want your app to look yet another material design or iOS generic app, you want your app to have its own identity across platforms, 
+
+Edit: I did not know I was in r/flutterdev damn",2018-12-10 12:00:43
+258,I like react native more because it uses native elements and it has almost the same syntax as react itself versus ionic which is used to make hybrid apps which means it uses a browser instance to work.,2018-12-10 16:40:26
+259,"There are options. 
+
+If youre writing in java, then youll need to write a separate iOS version. 
+
+Option 1: Go hybrid. 
+
+Use something like ionic or phone gap to write once and run anywhere. You essentially write a web app that is rendered using a web view. Performance suffers and the app doesnt feel like its built using native components. 
+
+Option 2: go semi-native
+
+Tools like flutter (written in dart), react native (JavaScript) and xamarin (c#) allow you to write logic once and plug into native components (or write your own. Both flutter and react native transpire to vanilla JavaScript, interacting with native components. Youll need to provide any components that arent included out of the box using native languages.  Xamarin is similar, but doesnt compile down to JavaScript. 
+
+Option 3: maintain separate native apps. ",2018-12-11 02:28:08
+260,"&gt; this subreddit isn't maintained as it should be
+
+just like the react native github repo :P",2018-12-11 05:03:15
+261,"Wow, nice app! Would be very helpfull :)
+
+I am a frontend developer en develop with angular + ionic for multiplatform developing (ios and android).  
+If i had the time i really would like to help, but unfortunately am very busy right nou :/.   
+Maybe its interesting to know that the ionic team is developing a new bridge between native code and javascript frameworks (like react native etc) named capacitor. Beta is already released and they planning a 1.0 in January.  
+That way you still able to use swift code but also makes it easier to make an android version in the future.",2018-12-11 08:39:53
+262,"I truly wish that it was, but from my experience I cannot with a good conscience recommend React Native for all but a few types of projects.
+
+I am a big fan of React. I've used it for web where I find it quite pleasant to work with. It's pretty solid, the ecosystem has a lot to offer snd the development experience is generally good. I cannot say that any of the points above apply for React Native, however. Allow me to go through the points raised by the author:
+
+- *React Native is growing fast*
+
+Sure. What React Native offers on paper is fantastic. Businesses have been looking for this type of solution ever since there was more than one platform.
+
+- *React Native allows you to develop in JavaScript*
+
+Yeah. There are probably a lot more developers that know JavaScript due to the web being a thing. I do not think that JavaScript is a bad language, but I think that it is a necessary evil in browsers - we do not actually have to deal with JavaScript on native. Having JavaScript as a base comes at a cost user experience in many cases.
+
+- *Access to native functionality*
+
+You do get this! You still have to either build the native functionality yourself though, which does sort of negate the benefits this brings. Or you could make a gamble on using the react native libraries which are in all honestly of very poor quality. I have never forked so many libraries until I started using React Native as there is essentially something wrong with every library in the ecosystem.
+
+- *Native look and feel*
+
+No. React Native sure looks and feels more Native than for example a Cordova application, but they are definitely not what you get with true native. You will have to accept this if you want to commit to React Native.
+
+- *Cross-platform*
+
+React Native is cross-platform if you ignore everything that is particular to the underlying platform. If you want an application that behaves predictably in accordance with the underlying platform you will need to write a lot of code for each platform separately and you will still fall short due to the limitations React Native imposes. Hence, React Native applications tend to the lowest common denominator among the platforms the application must support.
+
+- *Shorter development cycles*
+
+If you exclude time spent on fixing React Native-bugs and fighting the platform limitations, maybe. Your users will pay the price for this, however.
+
+- *CD with CodePush and friends*
+
+This is honestly more pain than gain. You cannot push out bundles if you've changed any native dependencies, for example, so you are still mostly stuck with regular app store release cycles.
+
+- *Improved developer experience*
+
+No. Not even a little. React Native offers a pretty horrible developer experience compared to either of the big native platforms. This is the kind of thing you hear a lot so you tend to repeat it but it's really really not true.
+
+- *Easy to learn*
+
+Maybe for a seasoned React developer, but that ignore the fact that you're basically forced on a daily basis to debug the native vendor code. So it's easy until you need to fix that stuff and then it's way harder.
+
+- *Performance*
+
+You are paying the JavaScript and the Native bridge tax always when using React Native, period. Performance is definitely not better. Zero chance.
+
+Now I still think React Native is right for some projects:
+
+- Startups getting off the ground. Just know to get off in time if you value your users' experience
+- Apps that could have been WordPress installations if they were web pages. If this is the case however please ask yourself why you are even making an app, you should probably make a web page instead.
+
+In all other cases I recommend that you stay away from React Native. It does not deliver on what it promises.",2018-12-11 11:17:55
+263,"There has been an increase in mobile web apps through frameworks like react native and Ionic. If you're app is a couple of webpages it can be easily done in react native and you get cross platform. 
+
+If you want to do something a little more, it becomes less desirable. 
+
+Other cross platform solutions include Xamrin, which is starting to age. Up next are Kotlin and/or flutter. Both are kinda new to the stage and still evolving. Kotlin for cross platform is still in Beta. 
+
+Native apps aren't going away just yet either. If you make decent use of system APIs, native can become easier. 
+
+tl;dr Don't worry to much. JS on mobile still isn't a huge thing, but gaining more traction. If you want more cross platform look for flutter. ",2018-12-11 14:21:14
+264,"I think it would be really helpful to categorize the type of content we get on the sub as we talk about what we want the sub to look like. These are the different things I see on the sub:
+
+1. **Code questions**: Stack Overflow types of questions that even sometimes get cross-posted. These can be really useful to people trying to solve specific questions, but I think the reason they often get downvoted is because they seem to be beginner questions more often than not, and there are a lot of people on the sub who are past that level. Of course, we should welcome beginners, but I think we should try to help beginners learn how to answer questions with their own resources. It's a skill that can be learned and I think we should try to pass it on. And even the skill of asking a good question - Stack Overflow actually has pretty good guidelines on how to ask questions that are more likely to get good answers.
+2. **Vague, entry-level questions**:  Questions like ""react-native vs flutter,"" ""will react-native be around for a long time,"" ""should I use firebase,"" etc) which aren't helpful to many members of the sub (because they're asked every day), but could probably be served by one of those weekly q/a threads that a lot of subs have.
+3. **Blog posts**: I feel like there should be some filter for low-quality blog posts. I see a ""get started with react-native and firebase"" blog post every other day, it seems. I would love to see more really high-quality blog posts on the sub - for instance, the Airbnb series on why they left react native was very high quality and good for discussion as a community.
+4. **Advanced Topics**: We don't see a lot of this on the sub. It's hard for me to grow more as a react-native developer. I'm good at implementing stuff in react-native. But how do we implement complex background logic? What are good architecture practices? How do we remain mindful of memory? How do we ensure super-fast performance? I've read about different things related to these, but it would be really great to have more content targeting advanced developers.",2018-12-11 18:03:15
+265,"Web will never FULLY take over mobile. It might gain more and more speed, but native mobile will not die for a very long time, just like desktop development still isn't dead. I personally will never fully switch to react native. I hate js, ive been doing native for a few years and have been embracing flutter and xamarin, but every time i create a new project in RN, i get dissapointed. Just my thoughts.",2018-12-11 21:24:15
+266,"React for sure, also allows you to transition into react native if needed for a certain project fairly easily. ",2018-12-12 17:05:14
+267,"First some term clarification -
+
+Android Studio is a development environment that most people choose to use when developing Android Apps.
+
+Xcode is the same for developing iOS apps.
+
+Every cross platform tool will give you a ""compiled"" app - I don't think that terms means what you think it means.
+
+Now to get down to down to your actual question:
+
+Both native Android and native iOS development will give you a solid foundation to write your machine learning app on, but as you stated you'd have to write two apps.
+
+I'd be super surprised if there were no decent react native libraries that would hook into the native machine learning APIs, so my guess is react native would be an acceptable choice as well. There's a few other tradeoffs using react native - the build environment is quite ugly and as your app grows more complex you can end up hitting the edges of that framework and being in a weird split world where you still have to do some development on the native iOS side and the native Android side and now also on the cross platform react side.
+
+Ditto the above for Xamarin, except I have no idea how its build system compares and what its pain points are. I've never used it so I can't offer any feedback on what that process is like.
+
+Finally, I would not reccomend Flutter for your use case. I think Flutter is going to be awesome and I'm super excited for it, but if you choose to go with a Flutter app you'll really be on the front lines of using it with machine learning, and I'd honestly be surprised if there was a high quality tensor flow library already out there that interracts with Flutter. I could be wrong, but that's just my gut take.",2018-12-12 18:16:23
+268,"Another question, sorry to bother you, but how do I properly utilize the data in a get request with react native? I currently call a method, which does a fetch, in componentDidMount, and then I refer to one of my states that was updated in that fetch. However, using console.log statements I can see that the fetch is done after all the other code in componentDidMount. Is there a better way to do this, so that my code in that function can use values obtained from the get request?",2018-12-12 18:28:04
+269,"Hi u/jusulamminheimo . Great work with the app. I am a react native dev, trying flutter for a side project.
+Can you answer me the following questions ? 
+
+* Do you have native Android / iOS experience ? Have you made use of platform channels in your app ?
+* Can you list some pros / cons of flutter in terms of community, performance, ease of development etc ?
+* Can you share what were/are the most difficult aspects of developing with flutter ? 
+* What state management pattern did you used in the app ? 
+* I don't have native app development experience. Do you think flutters offers much for me to not worry about platform specific development ? 
+* What would be your suggestions for a fellow dec hoping to learn app development using flutter.
+
+Thank you.
+
+",2018-12-12 18:52:16
+270,"iOS development is cleaner on a macbook, there are options that involve compiling in the cloud or using a framework such as react native, but for making iOS swift applications a mac is a better choice.
+
+For all other development you'll be fine.  I highly recommend installing Ubuntu from the app store, it leverages WSL.  I program with it every day.  I can easily install items with apt-get, run shell scripts, and leverage any other linux items I may need.
+
+&amp;#x200B;
+
+If you are already in the i-ecosystem, that may be a benefit for the mac.  It may also be easier to share tips if everyone around you is on a mac.  Overall though, I'd say that the touchscreen/pen of the SB2 are extremely useful.  I will also say that the touchbar on the mac was terrible as a programmer.  It made my life harder and I would only use the laptop with an external keyboard.  If you plan to get a mac, opt for the base model without a touchbar, as a programmer the fn row is used frequently.",2018-12-12 23:00:36
+271,"Because people don't care. There are no repercussions for them. Facebook shut down parse with hardly any notice on a massive shutdown like that. Zero real backlash. People instantly went to pick up other facebook tech like react native etc. 
+
+The same is true for google. Google code serious f\*ed us over. App engine is [practically a crime](https://medium.com/@Codename_One/migrating-from-app-engine-to-spring-boot-75de8b4566ce) and is a horrible product that doesn't save, time, cost or provide real world scalability. But developers don't care... They still rush to the google brand with things such as flutter even if it makes zero business sense for Google to support a cross platform solution when they control the leading native platform.
+
+Asking ""why google?"" is like [this old parable](https://en.wikipedia.org/wiki/The_Scorpion_and_the_Frog). It's their nature, which they have shown time after time. ",2018-12-13 05:26:25
+272,"Hey a software developer here. I do mainly backend development and react native by myself, but I can help you with those two.",2018-12-13 12:34:17
+273,"I kinda do Android Development on Java and I really liked the concept of react and its native implications, so recently I am exploring reactJs and hoping to shift to react native in the near future. I haven't come across Redux practically yet but I will, it looks fun.",2018-12-13 12:54:41
+274,Y a t-il des gens qui connaissent le salaire moyen d'un dev react/react native en province avec tout juste 3ans d'exprience ?,2018-12-13 13:57:12
+275,"At the moment there isnt one. Im working on a react native LN bitcoin&amp;litecoin iOS and Android wallet, but its not near beta yet.",2018-12-13 19:51:03
+276,"It looks like you need a database with remote syncing. Not the easiest thing in the world to get right! I'm doing some research to pick a db for our app, so here's my 2 cents...
+
+* Firebase [Firestore](https://firebase.google.com/docs/firestore/)  Google's noSQL cloud db  probably the easiest to implement if your app is online-first but needs to do offline sometimes. There's also Firebase [realtime database](https://firebase.google.com/docs/database/), Google's older offering, could be cheaper depending on how you use your db.
+* [Realm](https://www.npmjs.com/package/realm)  offline-first noSQL db, you can figure out remote syncing when you need it (it does do it). Apparently has problems debugging, and it's synchronous so might block your UI thread under pressure.
+
+And two much less popular but promising modules...
+
+* [RX-DB](https://www.npmjs.com/package/realm)  noSQL pouchDB module, easily synced they say.
+* [Watermelon DB](https://www.npmjs.com/package/@nozbe/watermelondb) looks like a great react native SQLite db. [Nascent](https://github.com/Nozbe/WatermelonDB/blob/master/docs/Advanced/Sync.md) remote syncing, might be tough to implement. Nice talk they did [here](https://www.youtube.com/watch?v=UlZ1QnFF4Cw) where redux is mentioned.
+
+I'm probably missing something really popular, or much simpler.
+
+&amp;#x200B;",2018-12-13 21:00:44
+277,As someone new to react native and expo could someone give a quick run down on what these features mean?,2018-12-14 01:13:37
+278,Would love to see a thriving react native community on Reddit!  ,2018-12-14 01:17:12
+279,"Maybe one day ill make a post but it was pretty difficult. I did this in react native and i assume it would work the same with flutter.
+
+I cant explain it all now but basically you run export envfile &amp;&amp; compile/compileAndRun rather than running a specific build system in the IDE. 
+
+To make it work in xcode you have a buildphase script that exports your env variables to macros so you can reference them in the native code and manifest. With android you can just reference the env vars in gradle and pass them into the app as build properties.
+
+For the google services you just create a handlebars script that takes relevant env vars and puts them into a googleservices json and plist template. Then you copy those files over to their respective projects. Then you need an xcode build phase to copy over the google services plist to the project because for the file to be referenced it must by added as a build resource, not just be available in the project folder. If you want you can even use handlebars to generate your manifest file instead of using macros.
+
+This may seem like a lot of work but it is well worth it when working across multiple environments and doing things like working across multiple firebase projects or creating ci runners without having to ssh and copy files over
+
+My repo is a private repo for work with a bunch of other stuff in it so I cant share it but if i ever set it up again I will make a public boilerplate.",2018-12-14 04:13:47
+280,"I'm creating a react native app (android specifically) for part of my wife's xmas gift. I'm trying to convert some javascript code so that I can use it inside of react native. The javascript draws to a canvas. I'm using [https://github.com/iddan/react-native-canvas](https://github.com/iddan/react-native-canvas) and here is the javascript in question:
+
+[https://github.com/mofosyne/arduino-gameboy-printer-emulator/blob/master/jsdecoder/gbp\_gameboyprinter2bpp.js](https://github.com/mofosyne/arduino-gameboy-printer-emulator/blob/master/jsdecoder/gbp_gameboyprinter2bpp.js)
+
+How do I go about doing this?
+
+First time using react native. I have done some basic python programming in the past and I did take the reactjs courses on codecademy, but that was a while ago and I've pretty much forgotten everything. I really just need a quick hack so I can get this done before xmas. Or just a point in the right direction
+
+Thank you",2018-12-14 05:56:31
+281,"That hassle alone sounds like getting a mac would make it worth it.
+
+I do iOS/android dev for my company using react native, and its just straight up not feasible to dev on anything but a mac for that.",2018-12-14 07:36:19
+282,"I've work for a high profile company in my country (Argentina) and now I'm moving to London and it seems like it doesn't matter. I'm a mid level front end developer (4 years of professional experience). On my last two and a half years I've worked mainly with JavaScript and been juggling between react native, react, angular, and some old technologies, that's why I'm not looking for a senior position yet. But I don't know how much to ask for! I get from what you're saying that you're a senior developer, but would it be ok for a mid level to ask for 60k? I just saw on a LinkedIn statistics page that developers with one to five years of experience get paid around 48k but that seems a lot less than what my friends there are telling me.",2018-12-14 10:25:59
+283,"I built an app that I'm selling (not many) so I'd say it's pretty good. It's not too fancy, but developing for both platforms at the same time was a pretty major time saver. 
+
+Before I settled on flutter (it was barely even in beta) I tried xamarin and react native. I found react a little daunting as I don't do any web dev. 
+
+Xamarin worked, but I found it tough to develop for. I'm a c# dev, so the code wasn't the problem, but the tooling seemed unreliable. I was constantly getting errors that I couldn't figure out. I think I ended up restarting the project a number of times just to be able to build. It also took about 2 mins each time I built to android, so everything was just super slow. 
+
+For me, that's where flutter wins out. The tooling is simple, but pretty reliable and building the UI is fast, what with hot reloading (usually less than a second for small tweaks). I also found building for iOS pretty nice. I didn't really have to do much apart from set the version and go. 
+
+Basically, give it a shot. I think it's maybe the best hybrid for simpler apps. ",2018-12-15 00:03:54
+284,The react native subreddit looks pretty dead compared to React so I thought I'd post here. I know react and native are very similar. I'll try posting there though. Thank you,2018-12-15 04:10:24
+285,Refer React Native docs or which traversymedia React Native crash course and unsure programmr react native playlist on youtube,2018-12-15 09:34:32
+286,"An [exercise iOS app](https://itunes.apple.com/se/app/tummichi/id1446158488?mt=8) built with react native. Inspired by Tamagotchi, but instead of feeding it you have to exercise to get it into shape. So it will become healthier and happier the more you exercise.
+
+Uses apple health kit. Works best with an Apple Watch to get active calories but it works with a regular iPhone as well.",2018-12-15 15:04:02
+287,"you can achieve a very high degree of code reuse if you separate business logic from rendering details. redux is one way to enforce that: https://reddit.com/r/reactjs/comments/a5ke9u/devhubappdevhub_open_source_github_notifications/
+
+personally i agree with the other poster - start with react native, then try using react-native-web instead of react-dom",2018-12-15 21:36:16
+288,There are libraries like react native web and Rx that allow you to develop mobile and web app within the same project/file structure. ,2018-12-15 21:36:29
+289,"If you ain't using native functionality, go with a progressive web app instead. Then you'll just need your webapp and won't have to mess with react native.",2018-12-15 21:38:01
+290,"Yes native iOS and Android, also i know react native so that is a plus. ",2018-12-17 03:40:01
+291,"That means it's a shitty app.  Native mobile experience done right makes it way more enjoyable than navigating a mobile webpage or even the best cross-platform solutions like xamarin, react native or cordova (yuck).
+
+Native applications that are made up webviews displaying webpages don't really count.",2018-12-17 18:46:53
+292,"If you're going the cross platform route, I would suggest using React Native if you're new to mobile development and have web development experience.
+
+If you're not new to mobile development consider trying out Flutter. It's in a much earlier position than react native, but it has some interesting advantages.
+
+A lot of people in this sub will balk at the idea of using react native (and really any other cross platform development tool, other than Flutter for some reason) because this subreddit is entirely dedicated to real native development, i.e. not cross platform tools.
+
+You'll get a worse product by using React Native, at least compared to real native development. In my eyes, it's often worth it since it can basically cut your time to market by 30-40%, and I'd argue that's way, way more important than the ~ 20% quality drop you'll get.
+
+Once you have a successful app that you want to continue working on - that's when using these cross platform tools starts to bite.",2018-12-17 19:18:43
+293,Cool! Is it core java or react native or something else? Any plans for iOS? If you are going for open data make sure your app is compatible with OpenLitterMap  I could use a developer too ,2018-12-17 20:14:11
+294,"sorry about that mate, I am using expo at the moment to develop this under react native, I will refine this in the next release. Sorry for the trouble.",2018-12-18 01:45:26
+295,why react native?,2018-12-18 02:10:27
+296,I'm so happy about react native more than anything. Learn the react framework once and carry over all your skills to the mobile sphere. I believe tech will keep becoming more and more accessible,2018-12-18 05:44:15
+297,Yes it's possible. Xamarin Forms has already provided nuget for the usual native Android services like for bluetooth and camera. I don't think it's going to be easier to rewrite it to flutter or react native since 1. You already have an existing Xamarin Android app and you can reuse services from that to Xamarin forms by using Dependency service or Custom Renderers 2. You work at a .NET house so C#/.NET support is just around the corner,2018-12-18 06:57:29
+298,Is it really important to learn flutter as a react native developer?  Will people adopt flutter more than RN in the future?,2018-12-18 09:39:53
+299,[https://github.com/jacklein/rn-bottom-drawer](https://github.com/jacklein/rn-bottom-drawer) \-- ive been working on a react native bottom drawer component written completely in javascript ,2018-12-19 22:22:59
+300,"As someone who is building a heavily integrated map app, this is incredible work!
+
+I ran into the same problem with marker performance and did the tracksViewChanges solution too!
+
+I have a ton of questions!
+
+How did you get the location marker to be the dot same as google maps?
+
+Are you doing any location smoothing for when a user moves?
+
+The swiper performance is really good, are you using react native carousel?
+
+How did you create the masonry like images in the image view?
+
+Which navigation library are you using? 
+
+Are you using redux?
+
+So many questions! Really appreciate your post and congratulations, very impressive.
+
+
+",2018-12-20 05:45:56
+301,"Hi, answers inline
+
+
+How did you get the location marker to be the dot same as google maps?
+
+It comes out of the box with react-native-maps
+
+Are you doing any location smoothing for when a user moves?
+
+Nope
+
+The swiper performance is really good, are you using react native carousel?
+
+Yes
+
+How did you create the masonry like images in the image view?
+
+Using a terrible hack (grouping images into grids manually)
+
+Which navigation library are you using?
+
+React-navigation but I'm not sure I would recommend it. 
+
+Are you using redux?
+
+Nope, I use mobx but only for data",2018-12-20 07:44:00
+302,"I think we are solve this problem in two way?  First one ( convert fetch string convert to react native component) .  And other is ( convert json data to react object) 
+.  But we are not get  proper solution. ",2018-12-20 11:45:56
+303,"If you really want cross platform, any of the following will do: Flutter, xamarin, react native.
+
+Xamarin is the most mature of the three, but I feel that it has a steeper learning curve.",2018-12-20 18:43:41
+304,"That's what I planned. I don't want two separate databases.
+
+iPhone
+Android
+
+So I figured react native would be a safe bet. You think it's not a good idea? 
+
+Would you be willing to talk about the job? Even though you aren't in FL?",2018-12-21 04:20:31
+305,"Mate if you know js, react native etc. you can already program in nodejs. Think of it as a separate set of libraries",2018-12-21 08:48:04
+306,"ui framework nya grab apa sih ampas banget, react native?  
+
+kemarin atau kemarin lusa gitu semua grab di daerah gua gak bisa di buka, padahal jam jam pagi waktu sibuk mau kerja",2018-12-21 22:42:14
+307,"There's the whole react native thing or, from what I understand, js that happens to use multi-threaded implementation of renderer. Those 8 cores are weak and some apps do take a while to load even on wifi.",2018-12-22 05:26:20
+308,I don't mean a react native project. I mean a native module for writing native obj c/swift/java/etc code and pulling that into your project.,2018-12-23 12:20:07
+309,I'm intrested I have some react native experience which is a fairly simular language.,2018-12-24 10:06:03
+310,"To get confident you need to practice more. You can do either hackerrank,leetcode, EPI,CTCI. All of these have resources to learn and practice data structures especially for technical interviews. Don't get worried just look forward to all the progress you will make once you get going. And your practice doesn't have to be excessive maybe just start with an hour or 2 a day. 
+
+For projects focus on what you like. The field is soo broad and its impossible to impress everyone or have an applicable skillset everywhere. Most companies just want to see that you've been coding which you have so just keep doing the stuff you like and it will all fall into place. Since you like UI/UX learn a hot front-end framework like react/react native or vue.js and you can bundle that with a backend technology like node.js so you can learn server side programming. Same thing as above you can work on this maybe a couple hours a day doesn't have to be excessive. 
+
+Hope this helps. ",2018-12-24 11:06:41
+311,"React is quite simple actually. Most of React concepts apply to React Native. The hardest part for newbies is that you have to learn multiple things in parallel. React, Redux/other state management, ES6...
+
+Make sure you grasp ES6 really well. Async/await is a must if you wanna write readable code.
+
+You can start learning react native and learn ES6 as you go. ",2018-12-25 16:50:54
+312,"For Android and iOS I use flutter, makes it easier
+
+Else, you would need to choose between all the options that there is that allow a single app to be in android and ios(cordoba, react native, xamarin, etc,etc). Or make a version of the app in java/kotlin for android and another in objectivec/switft for ios",2018-12-25 17:31:58
+313,"yup, working on an app in my company with react native. 0 react apps previously",2018-12-25 18:15:46
+314,"In all fairness react and react native are essentially the same thing... they use the same principles, patterns, and syntax to build apps.
+
+Imo it doesnt really matter learning one over the other first as long as you know the core javascript fundamentals.
+
+If you know react native you will easily pick up react and vice versa. ",2018-12-26 03:59:05
+315,You even left off react/react native which is massive. Some of the best new tech amongst JavaScript frameworks in a long time,2018-12-26 17:06:00
+316,I don't think you really understand what those things are. React and react native are huge JavaScript frameworks used by tons of companies. They're a very big deal. Go look for front end development jobs and read the description and you'll have a decent idea of how big of a deal they are. It's one of the most common tools in the industry. It's used for so much more than Facebook,2018-12-26 21:11:53
+317,Always possible but I think reacts strength long term is react native. Very few frameworks crossover into native development and Facebook has the resources to maintain that ,2018-12-27 00:10:32
+318,The comment said big companies are switching back to native where cost isnt as big of an issue. React Native is great but companies will outgrow it like Airbnb did. Airbnb was bridging a lot of the react native code to native and it was almost like managing 3 code bases. React native/flutter will continue to be great for start ups and small companies but native developers will still be needed ,2018-12-27 00:31:24
+319,"I never said big companies. 
+
+
+React isn't the only framework out there. Neither is flutter. Xamarin, nativescript, and many others exist.... 
+
+
+Airbnb had a problem specifically with how Facebook ran react and react nstive. They had to maintain their own security patches, fixes, etc. Because Facebook wouldn't merge their updates into react native. This created a manual merge hell between the two and made updates to newer versions quite difficult. 
+
+",2018-12-27 00:44:02
+320,react native ok? ,2018-12-27 03:59:21
+321,"indeed.co.uk
+
+and yeah I'm aware plenty of Android jobs won't have Kotlin on the resume. Just like plenty of react native jobs will just have React or typescript on the advertisement",2018-12-27 05:18:45
+322,If a react native job description doesn't have React native in the description they're typically going to have a bad time. Depends on team size and such but if you aren't touching the native platform then you're going to have a lackluster app and see why people complain about the technology. ,2018-12-27 05:48:03
+323,"There's more that goes into it than just that. You need to build your custom components and such for each platform if you want to be able to make a half decent app. If you try to build your react native app with no mobile native components, it's going to be awful. Maybe they have other people doing it already and that's fine, but having done some react native, most of the difficulty is in making those native components, not so much in the react native JS portion itself",2018-12-27 06:24:43
+324,Hm yeah I was in the same boat as you once. Needed to convert a heavy Laravel + vuejs web app to mobile apps and I gave nativescript ago but ended up learning react native and used that. If your worried about the learning curve for react native then stick with nativescript. It all comes back to what is going to be the best solution for what you want rather than what you know. Cause if you use nativescript and it has limitations then its not what you should build on to start with. ,2018-12-27 11:59:28
+325,"At least for me it has the feel of a react native app, the navigation, icons and other things like only one dev makes me think it is. ",2018-12-27 14:07:29
+326,"Thanks for the reply, even the simplest code onLayout still not working, I just have a simple View on my root component nothing else. I m thinking is it possible that maybe this caused by version conflict, like react native and react or something else, their version dont match each other and caused this wired behavior?",2018-12-27 14:10:33
+327,"you think people are gonna learn another language (Dart) to use it tho? I don't see it happening. People seem to be getting really tired of all of the current fragmentation. 
+
+this is why I'm banking on react native/frameworks like Ionic which let you use the same codebase for web. Flutter probably gonna do something similar but having to learn Dart is a huge disadvantage",2018-12-27 17:09:48
+328,"Still not working, I created a new project with the same version by using react native cli, and everything works, then I copy paste the whole app component to my current project, this issue still remains, the code is same, I dont know what to do now ",2018-12-28 09:16:13
+329,Let me take a wild guess... A react native app with remote debugging enabled?,2018-12-29 04:59:24
+330,All of the backend API projects Im working on for fun are java 8 with spring boot 2 and Postgres.  The front end is all react (web or react native.),2018-12-29 06:43:15
+331,"People post all this bullshit to be told to go read the docs? This shit isnt even react native. Learn React, actually just JavaScript concepts first. Cue the bleeding heart fucks to tell me how this is a learning environment.  Anytime reading the docs is the answer, its not a learning environment. ",2018-12-29 13:56:07
+332,"You really have a problem communicating in a non-corrosive way. Your comments are always filled with negativity.
+
+You know, you can express your thoughts without belittling others. Being a part of any community means showing respect to other members.
+
+People come here with different skill/knowledge levels. They aren't all programmers by trade, some are just beginners, some are just lazy to google things themselves, some don't know what to search for... But all these people are a part of this community, and their perception of this community, this subreddit and react native in general is shaped by the feedback they get from the comments.
+
+You're hurting the community as a whole with your negativity.
+",2018-12-29 16:24:07
+333,"Ok, depends on which direction you want to go. If you want to make a safe bet and increase your employability then learning how to build web or mobile apps is one way to go.
+
+If you decide to go down the route of building web apps, here's a tip: **don't** start off with any frameworks like react, vue, etc. -- first learn to build things using plain html/css/js, then go down the framework route.
+
+If you want to build mobile apps, get familiar with native mobile development rather than picking up a cross platform framework like react native -- generally these cross platform frameworks create more problems than they solve. Pick one of Android or iOS and become familiar with its native platform.
+
+Another direction you can take is go deeper into your current field (i.e. networking). Now, I don't know whether this will improve your employability but if you are only familiar with layer 2 then you should definitely learn a lot more about layer 3 (IP, ICMP, etc.) and layer 4 (TCP, UDP). These protocols are the foundation of the Internet and if you understand them well you are well ahead of many software engineers. Go through Rich Stevens' TCP/IP Illustrated series. Also get familiar with tcpdump and wireshark and see for yourself how data flows through the pipes.
+
+These are just two out of many many directions that you can take. Feel free to ask me more questions in case you need more clarity.",2018-12-29 16:28:30
+334,"nope, i just can't stand people talking mindlessly about some good products generally. I develop apps for both platform in their native or react native and android is the total bs here. anyway.. location tracking solely on ha ios app is not there yet, needs some improvments",2018-12-29 20:31:09
+335,"So that verifies my thoughts then. We need a backend doing the heavy lifting which we don't have yet since the app runs on the users phone only. Any way to do all this in the app only, totally with react native? The goal is to view/manage/manipulate all accounts and transactions live, so users can tag transactions, make budgets, etc.",2018-12-30 06:49:34
+336,That I don't know. Check on awesome react native.,2018-12-30 10:13:43
+337,"A bit of the update on this situation. They are called fantasy sports solutions based in Ukraine. Their parent company is ITCraft 
+
+So I discussed this with him and this is what he said.
+
+""The code belongs to you in its entirety of course."" He signed an NDA and i drafted up some sort of contract agreement that the code belongs to me ANY code that is made belongs to me. He also said he doesn't need the source code since they are going to start from scratch and build the app in react native. He said that he needed the code if he was going to finish the app that I started however he said that after hearing me talk it was better if they just started from scratch.
+
+So he made a slack account and we have been talking on there. He wants a play by play description of the app, wireframes, how it flows etc
+
+No actual work has been done yet due to the holidays and such &amp; such. Still seem pretty sketchy?
+
+I wrote the parent company from a completely different email address saying I needed an app done and if the company knows who ""Xxx"" was (The dude that contacted me.
+
+The company responded to my inquiry after the weekend was up and said that ""xxx"" is the CTO of fantasy sports solutions.
+
+What do you think?",2018-12-30 17:28:11
+338,"Why should it be a js file? what the hell are you talking about. Instagram runs on native android/ios and not on react native
+
+what people are experiencing is A/B Testing.
+
+And stop spreading lies about this being done in 2 lines of code",2018-12-31 05:57:26

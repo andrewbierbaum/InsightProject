@@ -6,19 +6,19 @@ import pandas
 from datetime import datetime
 import numpy
 
-df = pandas.read_csv("HackerNews_xamarin.csv")
+df = pandas.read_csv("Reddit_xamarin.csv")
 xamarin_Date_Data = df['date'].tolist()
 xamarin_Body_Data = df['body'].tolist()
 xamarin_count = df['Unnamed: 0'].tolist()
 df = None
 
-df = pandas.read_csv("HackerNews_flutter.csv")
+df = pandas.read_csv("Reddit_flutter.csv")
 flutter_Date_Data = df['date'].tolist()
 flutter_Body_Data = df['body'].tolist()
 flutter_count = df['Unnamed: 0'].tolist()
 df = None
 
-df = pandas.read_csv("HackerNews_react_native.csv")
+df = pandas.read_csv("Reddit_react_native.csv")
 react_native_Date_Data = df['date'].tolist()
 react_native_Body_Data = df['body'].tolist()
 react_native_count = df['Unnamed: 0'].tolist()
@@ -37,7 +37,7 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 app.layout = html.Div(children=[
     html.H1(children='HackerNews Mentions'),
-    html.Div(children='''Comparing the mentions of Xamarin and Flutter on HackerNews'''),
+    html.Div(children='''Comparing the mentions of Xamarin, Flutter, and React Native on HackerNews'''),
     
 #    #builds the year range selector
 #    dcc.RangeSlider(id='year_slider', min=2008, max=2020, value=[2008, 2020])

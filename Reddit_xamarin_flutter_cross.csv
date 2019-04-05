@@ -1,10 +1,1 @@
 ,body,date
-1,"&gt; ok i guess all the java based answers are going to be worthless soon?
-
-Yes, just like TypeScript deprecated JS. ^^^/s
-
-&gt; but from the rxjava part of my answer onwards, all of these things seem to be IGNORED by all the cross platform solutions i've looked at in favor of their own language specific implementations- xamarin,react.js,flutter
-so.
-
-Ignored where? Rx is universal, SQL/ORMs are universal, HTTP clients are universal, dependency injection is universal.
-",2018-12-26 15:12:11

@@ -1,14 +1,23 @@
 ,body,date
-0,"Had simillar issue with async methods in xamarin but with HttpClient, fixed easily by running it on another thread, definitely not the most elegant solution but works good so far!",2018-12-16 11:09:01
-1,"&gt; ok i guess all the java based answers are going to be worthless soon?
+0,"Which is why Xamarin offers 3 flavours.  Xamarin Forms, Xamarin Native and a mix of the two.
 
-Yes, just like TypeScript deprecated JS. ^^^/s
+It all depends on your skill and appetite to do native development and learn the respective UI constructs.  If you want to be close to the metal, Xamarin Native exposes 100% API access, you just use C#.  Literally any Java code you find on the net can be copied and pasted, modify to title case (because generally speaking, Java uses lowercase method names to start from with) and you're good to go.  Native layout code you just copy and paste as is.
 
-&gt; but from the rxjava part of my answer onwards, all of these things seem to be IGNORED by all the cross platform solutions i've looked at in favor of their own language specific implementations- xamarin,react.js,flutter
-so.
+It also depends on your team's skillset.  Like in your case if your team has objective-c/swift, java/Kotlin and the only a c++ developer for common stuff that's great. 
 
-Ignored where? Rx is universal, SQL/ORMs are universal, HTTP clients are universal, dependency injection is universal.
-",2018-12-26 15:12:11
-2,"You can hack together a Xamarin.Forms app with mono develop on Linux:
+As always, it depends on your team's skillset.
 
-https://stackoverflow.com/questions/48693220/can-i-build-and-compile-cross-platform-xamarin-apps-on-linux",2018-12-30 17:18:22
+
+",2018-06-15 01:21:06
+1,"only until the next update, which breaks your support library, google maps and doesn't do shit until you downgrade again.... at least that is my experience with Xamarin Forms/Native...",2018-06-15 05:36:43
+2,"I suppose it's weird that you say you dislike VS but you say you want to work with WinForm & WPF.
+
+If you say you're working on ASP.NET, console apps, windows service, Unity or maybe Xamarin, I can see VS Code, Jetbrains Rider or other editors as viable path.
+
+But WinForm & WPF? AFAIK only Visual Studio offers WinForm designer for C# (aside from the no longer maintained SharpDevelop and maybe the upcoming RemObjects Water), and while Rider have XAML preview tool, it's still non-interactive, making working with it cumbersome if you have complex UI.
+
+With decent enough PC (SSD, largish RAM, non-potato CPU), VS is fast & have enough features to warrant the resources. Most alternative outside Rider just took too much CPU & RAM without offering real benefits. ",2018-06-15 07:19:52
+3,I would recommend learning a cross platform tool for mobile development Xamarin/React Native.,2018-06-15 11:56:47
+4,"Totally identify with your opinion and downvotes.  My comment got the same treatment.
+
+It may be am Android sub , but its clear its clear that Xamarin is not welcome here.",2018-06-15 23:50:17

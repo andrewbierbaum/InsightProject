@@ -1,18 +1,8 @@
 ,body,date
-0,"C'est uniquement sur expo il me semble, pas react native  proprement parler. Il faut cependant faire attention, je crois que create-react-app utilise expo. Il faudrait que je rejet un coup d'oeil aux docs
+0,"ah the js bridge, the bane of react native.",2018-06-15 02:47:06
+1,Well the project doesn't ask for any of your personal information. And the my motive behind was only to learn React native.,2018-06-15 09:54:14
+2,"As someone who is nearing completion of their react webapp (I love my server-side rendered react / redux / react-router / firebase stack) and will soon (in the next 2-3 months) begin porting to android / ios, this blog post made me feel like now is not a great time to be digging into react native because it will be fundamentally changing a lot, and that maybe its current architecture is difficult and archaic?
 
-Et ce n'est pas sur react sans le native.",2018-12-01 10:20:41
-1,"If you are looking for that level of filtering I'd suggest crunchbase API, there's a process to get a key but totally worth the trouble. As far as angelList I target few companies using the on-site filters manually, on load the script open all, click on founder(s) profile page and then activate voilanorbert fetch request, takes around 3 min for a thousand. 
+I have been looking closely at using flutter and dart. I'm not an expert on comparing the architectures, but it appears to have already solved the challenges that React Native is just starting to address with their re-architecture?
 
-For you specific needs, I don't see how are you going to target specific people I am only aware of the main search which returns companies, this is a list of enterprise software using react native https://angel.co/companies?markets[]=Enterprise+Software&amp;teches[]=React+Native
-
-When looking at the company profile you'll see a bunch of divs, what I target is ''founders'' section, it's usually the decision makers, maybe ""employees"" would work better for you? 
-
-",2018-12-02 13:21:13
-2,"React for sure, also allows you to transition into react native if needed for a certain project fairly easily. ",2018-12-12 17:05:14
-3,"you can achieve a very high degree of code reuse if you separate business logic from rendering details. redux is one way to enforce that: https://reddit.com/r/reactjs/comments/a5ke9u/devhubappdevhub_open_source_github_notifications/
-
-personally i agree with the other poster - start with react native, then try using react-native-web instead of react-dom",2018-12-15 21:36:16
-4,"you think people are gonna learn another language (Dart) to use it tho? I don't see it happening. People seem to be getting really tired of all of the current fragmentation. 
-
-this is why I'm banking on react native/frameworks like Ionic which let you use the same codebase for web. Flutter probably gonna do something similar but having to learn Dart is a huge disadvantage",2018-12-27 17:09:48
+Thoughts?",2018-06-15 11:56:47
