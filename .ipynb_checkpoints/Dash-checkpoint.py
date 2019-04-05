@@ -15,33 +15,33 @@ df = None
 
 df = pandas.read_csv("HackerNews_flutter.csv")
 hackernews_flutter_Date_Data = df['date'].tolist()
-hackernews_reddit_flutter_Body_Data = df['body'].tolist()
-hackernews_reddit_flutter_count = df['Unnamed: 0'].tolist()
+hackernews_flutter_Body_Data = df['body'].tolist()
+hackernews_flutter_count = df['Unnamed: 0'].tolist()
 df = None
 
 df = pandas.read_csv("HackerNews_react_native.csv")
-hackernews_reddit_react_native_Date_Data = df['date'].tolist()
-hackernews_reddit_react_native_Body_Data = df['body'].tolist()
-hackernews_reddit_react_native_count = df['Unnamed: 0'].tolist()
+hackernews_react_native_Date_Data = df['date'].tolist()
+hackernews_react_native_Body_Data = df['body'].tolist()
+hackernews_react_native_count = df['Unnamed: 0'].tolist()
 df = None
 
-df = pandas.read_csv("Reddit_xamarin.csv")
-reddit_xamarin_Date_Data = df['date'].tolist()
-reddit_xamarin_Body_Data = df['body'].tolist()
-reddit_xamarin_count = df['Unnamed: 0'].tolist()
+df = pandas.read_csv("Reddit_xamarin.csv",header = None)
+reddit_xamarin_Date_Data = df[2].tolist()
+reddit_xamarin_Body_Data = df[1].tolist()
+reddit_xamarin_count = df[0].tolist()
 df = None
 
-df = pandas.read_csv("Reddit_flutter.csv")
-reddit_flutter_Date_Data = df['date'].tolist()
-reddit_flutter_Body_Data = df['body'].tolist()
-reddit_flutter_count = df['Unnamed: 0'].tolist()
+df = pandas.read_csv("Reddit_flutter.csv",header = None)
+reddit_flutter_Date_Data = df[2].tolist()
+reddit_flutter_Body_Data = df[1].tolist()
+reddit_flutter_count = df[0].tolist()
 df = None
 
-df = pandas.read_csv("Reddit_react_native.csv")
-reddit_react_native_Date_Data = df['date'].tolist()
-reddit_react_native_Body_Data = df['body'].tolist()
-reddit_react_native_count = df['Unnamed: 0'].tolist()
-df = None
+# df = pandas.read_csv("Reddit_react_native.csv",header = None)
+# reddit_react_native_Date_Data = df[2].tolist()
+# reddit_react_native_Body_Data = df[1].tolist()
+# reddit_react_native_count = df[0].tolist()
+# df = None
 
 # df = pandas.read_csv("HackerNews_xamarin_flutter_cross.csv")
 # cross_Date_Data = df['date'].tolist()
@@ -62,7 +62,7 @@ app.layout = html.Div(children=[
 #    dcc.RangeSlider(id='year_slider', min=2008, max=2020, value=[2008, 2020])
                     
     #builds the graph                    
-    dcc.Graph_HackerNews(
+    dcc.Graph(
         id='HackerNews-graph',
         figure={
             'data': [
@@ -71,20 +71,20 @@ app.layout = html.Div(children=[
                 {'x': hackernews_react_native_Date_Data, 'y': hackernews_react_native_count, 'text': hackernews_react_native_Body_Data,'type': 'scatter', 'name': 'HackerNews React Native Mentions'},
             ],
             'layout': {
-                'title': 'Mentions'
+                'title': 'HackerNews Mentions'
             }
         }
     ),
-    dcc.Graph_Reddit(
+    dcc.Graph(
         id='Reddit-graph',
         figure={
             'data': [
-                {'x': reddit_xamarin_Date_Data, 'y': reddit_xamarin_count, 'text': reddit_xamarin_Body_Data,'type': 'scatter', 'name': 'HackerNews Xamarin Mentions'},
-                {'x': reddit_flutter_Date_Data, 'y': reddit_flutter_count, 'text': reddit_flutter_Body_Data,'type': 'scatter', 'name': 'HackerNews Flutter Mentions'},
-                {'x': reddit_react_native_Date_Data, 'y': reddit_react_native_count, 'text': reddit_react_native_Body_Data,'type': 'scatter', 'name': 'HackerNews React Native Mentions'},
+                {'x': reddit_xamarin_Date_Data, 'y': reddit_xamarin_count, 'text': reddit_xamarin_Body_Data,'type': 'scatter', 'name': 'Reddit Xamarin Mentions'},
+                {'x': reddit_flutter_Date_Data, 'y': reddit_flutter_count, 'text': reddit_flutter_Body_Data,'type': 'scatter', 'name': 'Reddit Flutter Mentions'},
+#                 {'x': reddit_react_native_Date_Data, 'y': reddit_react_native_count, 'text': reddit_react_native_Body_Data,'type': 'scatter', 'name':'Reddit  React Native Mentions'},
             ],
             'layout': {
-                'title': 'Mentions'
+                'title': 'Reddit Mentions'
             }
         }
     )

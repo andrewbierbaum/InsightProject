@@ -25,23 +25,23 @@ hackernews_react_native_Body_Data = df['body'].tolist()
 hackernews_react_native_count = df['Unnamed: 0'].tolist()
 df = None
 
-df = pandas.read_csv("Reddit_xamarin.csv")
-reddit_xamarin_Date_Data = df['date'].tolist()
-reddit_xamarin_Body_Data = df['body'].tolist()
-reddit_xamarin_count = df['Unnamed: 0'].tolist()
+df = pandas.read_csv("Reddit_xamarin.csv",header = None)
+reddit_xamarin_Date_Data = df[2].tolist()
+reddit_xamarin_Body_Data = df[1].tolist()
+reddit_xamarin_count = df[0].tolist()
 df = None
 
-df = pandas.read_csv("Reddit_flutter.csv")
-reddit_flutter_Date_Data = df['date'].tolist()
-reddit_flutter_Body_Data = df['body'].tolist()
-reddit_flutter_count = df['Unnamed: 0'].tolist()
+df = pandas.read_csv("Reddit_flutter.csv",header = None)
+reddit_flutter_Date_Data = df[2].tolist()
+reddit_flutter_Body_Data = df[1].tolist()
+reddit_flutter_count = df[0].tolist()
 df = None
 
-df = pandas.read_csv("Reddit_react_native.csv")
-reddit_react_native_Date_Data = df['date'].tolist()
-reddit_react_native_Body_Data = df['body'].tolist()
-reddit_react_native_count = df['Unnamed: 0'].tolist()
-df = None
+# df = pandas.read_csv("Reddit_react_native.csv",header = None)
+# reddit_react_native_Date_Data = df[2].tolist()
+# reddit_react_native_Body_Data = df[1].tolist()
+# reddit_react_native_count = df[0].tolist()
+# df = None
 
 # df = pandas.read_csv("HackerNews_xamarin_flutter_cross.csv")
 # cross_Date_Data = df['date'].tolist()
@@ -81,7 +81,7 @@ app.layout = html.Div(children=[
             'data': [
                 {'x': reddit_xamarin_Date_Data, 'y': reddit_xamarin_count, 'text': reddit_xamarin_Body_Data,'type': 'scatter', 'name': 'Reddit Xamarin Mentions'},
                 {'x': reddit_flutter_Date_Data, 'y': reddit_flutter_count, 'text': reddit_flutter_Body_Data,'type': 'scatter', 'name': 'Reddit Flutter Mentions'},
-                {'x': reddit_react_native_Date_Data, 'y': reddit_react_native_count, 'text': reddit_react_native_Body_Data,'type': 'scatter', 'name':'Reddit  React Native Mentions'},
+#                 {'x': reddit_react_native_Date_Data, 'y': reddit_react_native_count, 'text': reddit_react_native_Body_Data,'type': 'scatter', 'name':'Reddit  React Native Mentions'},
             ],
             'layout': {
                 'title': 'Reddit Mentions'

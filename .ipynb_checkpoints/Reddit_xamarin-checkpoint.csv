@@ -1,0 +1,580 @@
+0,"&gt; These are some of the things that we will be doing at Xamarin: 
+
+ * Build a new commercial .NET offering for iOS
+ * Build a new commercial .NET offering for Android
+ * Continue to contribute, maintain and develop the open source Mono and Moonlight components.
+ * Explore the Moonlight opportunities in the mobile space and the Mac appstore.
+
+Translation: continue to push microsoft technologies onto non-microsoft platforms, creating the illusion of real cross-platform support, while attempting to shunt developers toward microsoft's development tools.
+
+:(",2011-05-16 20:49:32
+1,and the best part - when he sells out Xamarin - like he did with Ximian in 2003 - he'll end up with [$$$MILLIONS](http://blog.internetnews.com/skerner/2011/05/mono-reborn-in-xamarin-thanks.html) in his pocket again.,2011-05-16 21:24:37
+2,"On one hand it's an excellent opportunity to provide them with some financial or political support, as Microsoft clearly has a vested interest in seeing Mono successful; but on the other hand any involvement in getting them back up on their feet by Microsoft, even if it comes with absolutely no strings attached, will be used as ammunition against them by certain factions within the community.
+
+One thing I think Microsoft *can* do as a show of support without it becoming an albatross around Xamarin's neck would be to come out and be very clear that the explicit patent agreements they previously made with Novell will also apply to Xamarin too.",2011-05-16 21:30:11
+3,"I don't understand the ins-and-outs of patent law and all that, but I would think a Microsoft investment in Xamarin would be a pretty explicit statement that they're not going to sue?",2011-05-16 21:43:41
+4,"Aw yeah! This is fantastic news!
+
+Before we were just treading dangerously on ground owned by Microsoft. Now we are treading dangerously on ground owned by Microsoft, Attachmate and Novell! 
+
+For example, check out the [updated Moonlight Covenant](http://www.microsoft.com/about/legal/en/us/IntellectualProperty/IPLicensing/customercovenant/msnovellcollab/moonlight.aspx), where the **only** Moonlight implementations covered are those *specifically developed by Novell*! Since Xamarin isn't Novell, and has no agreement with Novell or Microsoft, **no one** is covered by the Microsoft agreement if they get Moonlight from Xamarin!
+
+If that doesn't excite your company's lawyers, I don't know what will!
+
+(Also, please note that same covenant **specifically excludes mobile telephones**, so any Silverlight functionality **anyone** (outside of Microsoft) offers is explicitly outside the scope of the covenant. Just a minor concern, unless of course you are a iOS or Android developer.)
+
+That's the sort of robust environment you want your developers to invest in, believe you me!
+
+Let's not even get into the oh-so-minor-point that any ""we will not sue your customers"" agreement that Novell and Microsoft had and trumpeted as ""piece of mind"" doesn't apply between Xamarin and Microsoft! I wonder if we can get the upcoming Xamarin ~~astroturfers~~ PR team to talk up the **lack** of ""piece of mind"", the same way they talked it up when it was Novell praising Microsoft?
+
+Finally, I'm sure no one will question our ""re-implementation"" of the proprietary products we were developing like MonoTouch and MonoDroid. I'm positive that just because Attachmate owns those copyrights, and is continuing to sell the original products, that we - the same people that developed that closed-source and proprietary software - are going to be able to simply walk away and ""re-implement"" with no legal challenge whatsoever from our former employer.
+
+Mono - more exciting than ever!
+",2011-05-17 00:04:50
+5,"There would be a strong equitable estoppel case due to unclean hands against Microsoft.
+
+Basically, if a patent owner says something or acts in a way that supports a reasonable inference that they aren't going to enforce their patent, and people rely on that, then the defendant can use the unclean hands defense.
+
+It's hard to see how Microsoft could invest, or do pretty much anything that encourages Xamarin, without running into this problem.
+
+
+",2011-05-17 00:54:38
+6,"&gt;It's hard to see how Microsoft could invest, or do pretty much anything that encourages Xamarin, without running into this problem.
+
+Which is why they haven't invested and probably wont. They want to reserve the right to sue.",2011-05-17 10:48:57
+7,"If Microsoft invests in Xamarin: ""OMG! M$ embrace extend extinguish derp""
+
+If Microsoft doesn't invest in Xamarin: ""OMG! M$ will sue everyone herp derp"" ",2011-05-17 14:23:06
+8,Mono project moves to new company - Xamarin,2011-05-17 14:31:06
+9,"Well, the ""major"" commercial supporter of the Mono ecosystem (.NET on Linux, Mac, UNIX) is [Xamarin](http://www.xamarin.com/). Xamarin is about one-thousandth the size of Microsoft and gives away the entire IDE for free.",2011-05-31 04:26:12
+10,"It is almost the entire team. I know of only one guy that is not joining the new company. Also, Nat Friedman is jumping in as CEO.
+
+I have enough confidence in these guys (they rock) to ignore a few uninformed comments on the Internet. It is a hard sell at the moment but I have no doubts that Mono is better off with Xamarin than it was with Novell.",2011-06-01 03:35:50
+11,"My question is whether I should purchase Monotouch now, or wait until sometime in the future when Xamarin is released.",2011-06-01 04:09:51
+12,"&gt; after being frustrated with mono
+
+After being frustrated with ""the Cairo bindings"".
+
+[""I spent a lot of time with Mono C# ... and loved it ...""](http://www.reddit.com/r/programming/comments/ii9fx/the_future_of_mono_at_xamarin/c23yxbm)",2011-07-06 22:21:44
+13,"The Xamarin folks are building a business around Mono selling tools to application developers that target mobile devices like iOS (iPhone and iPad) and Android. Those do not seem very niche to me.
+
+They are not the only ones doing so either. Unity uses Mono in the same way but for games. Some of the best selling games in the App Store and Market are Unity based.
+
+http://unity3d.com/
+
+I personally really like ASP.NET MVC. It is my favourite platform for building web apps.
+
+I also really like Linux. It is my favourite server platform.
+
+Mono let's me use both of them at the same time.
+
+My current employer loves Macs. All our departmental level server stuff is Mac. Just today I wrote a utility that interfaces with the SOAP interface of SugarCRM. I can use the same (compiled) utility on both my OS X and Linux machines (because of Mono).
+
+Recently I wrote an iPhone app using MonoTouch. I lifted the database code and the XML processing code directly from a web app I had written months before. I will be doing Android and Windows Phone versions at some point and am looking forward to reusing the exact same code all over again.
+
+Mono is the only platform I have encountered that allows me to move from console utilities, to desktop apps, to web pages, to mobile devices using the same skills and much of the same code everywhere.
+
+Isn't code re-use supposed to be a goal? It is certainly a time saver, I can tell you that.
+
+For me, the advantages of Mono are many.",2011-07-07 00:46:37
+14,"They are not a huge company. Think of other companies that are roughly their size. A bakery, a small cinema, a car repair shop. They all operate in a very small niche, because their services are restricted to a very specific location on the earth. Xamarin's products will be available all over the world, so to be a successful company they only need to capture a very small density of customers. They don't need to be the thing that everybody uses to be successful.",2011-07-07 15:48:52
+15,How does Xamarin make money? I.e. is the income stream big and reliable enough that the stability of the platform is good enough to rely upon?,2011-07-18 15:04:15
+16,"Does this mean Xamarin will need a new deal with MS?
+  http://en.wikipedia.org/wiki/Novell#Agreement_with_Microsoft",2011-07-18 18:41:51
+17,"I just wanted to pass on that I agree with OMouse that the Xamarin mobile products are not really the same as the MySql model.
+
+I also want to say that the Xamarin guys are awesome and I will gladly give them some of my money for making such kick-ass products.
+
+Mono itself is completely open source. If I want to run ASP.NET MVC on Linux for example there is nothing better available than free, even from Xamarin. The only commercial area is mobile and that is a very new direction for Mono and a small part of even the MS .NET community.
+
+At this point, my take is that the Mono community is more than happy to allow Xamarin a niche to make money on mobile app dev in return for the excellent stewardship of the Mono ecosystem that they provide (have provided as part of Novell).
+
+My bet is that Xamarin will provide lighter weight licenses for MonoTouch and Mono for Android in time that address the Open Source, student, and hobby segments. If not, the majority of Mono is available as MIT/X11 code and the community could easily build their own.
+
+For now, I am just happy that Miguel and crew have a business that can fund the continued evolution of my favourite platform.",2011-07-19 00:15:03
+18,"I think that he means it is a challenge to sell 525 copies.
+
+That may be true, but unless you are a ""professional"" developer then why should Xamarin care if you buy their products. You cannot be a professional if you are not making enough money to survive.
+
+Xamarin is a new company. They have to target the devs that need and can afford their software. Once they are swimming in money they will have the luxury to pursue their humanitarian goals of great software for everyone. This has been Miguel's pattern ever since Ximian (eg. Red Carpet and Evolution Connector niche products for businesses to fund great core software that benefits lots and lots of people).",2011-07-19 00:21:59
+19,"Linux support for Mono Android ? Sorry, no.
+http://android.xamarin.com/FAQ#When_is_Mono_for_Android_for_Linux_coming.3f",2011-07-19 07:36:04
+20,"These aren't Microsoft libraries.  They're independently developed and maintained, originally by Novell and now by  Xamarin.  The Mono CLR, their C# compiler and their implementation of the .NET libraries are all open source and free.  They maintain the same APIs, with some exceptions, as the Microsoft .NET libraries, but do not include any Microsoft code.  They even have their own cross-platform IDE MonoDevelop, so you don't need Visual Studio.    You can find out more at http://www.mono-project.com/Start
+",2011-07-28 18:35:19
+21,http://android.xamarin.com/,2011-07-29 14:34:25
+22,"No, there's one guy who works for Google, Tim Bray I think, that was highly impressed with Xamarin's C# on Android. ""Beautiful"" or something like that I think he called it. I can't find the link right now, it was on Twitter. But yeah, I am super sad that Java was chosen over Mono for the original Android implementation.",2011-07-29 19:23:47
+23,"&gt; This is Xamarin's first official Mono release. 
+
+Maybe I'm reading too much into that, but isn't Mono an open source project? I wasn't aware that Xamarin or any other entity owned it.
+
+Is that text short for ""first release with Xamarin being the main contributor"", or does Xamarin own Mono?
+
+Edit: I am asking an honest question. Downmodders, stay classy.
+",2011-08-04 19:32:39
+24,"Xamarin holds the copyright. Xamarin does the development and maintain the project, you are free to do what you want with the source.",2011-08-04 20:04:54
+25,"&gt; Xamarin does the development
+
+Are there any non-Xamarin developers? Is development an open process, or is the project at least receptive to patches from outside (with/without copyright assignment)?
+
+Honest questions, not trying to pick a fight etc etc.",2011-08-04 23:20:50
+26,"There are plenty of non-Xamarin contributors both individual and corporate as the  GitHub logs clearly show. For example, I see Unity's name fairly often. Google, Codice, and Mainsoft also come to mind. Xamarin contributes the most though and they clearly set the direction.
+
+There are also many independent projects that would make no sense without Mono. MonoGame (XNA compat) has nothing to do with Xamarin as an example.",2011-08-05 00:37:34
+27,"Copyright assignment is required. Most of the code is MIT/X11. The runtime is GPL.
+
+The project is very receptive of patches. For example, there were a number of patches to improve Haiku support. I doubt that is a priority for Xamarin. BSD and Solaris support are pretty much non-Xamarin as well I believe.",2011-08-05 00:40:53
+28,[They have that](http://android.xamarin.com/),2011-08-19 01:59:38
+29,"Wow, there are so many things wrong with this post:
+
+&gt;But what about all those people that wanted to include yet another Mono program into Ubuntu by default?.
+
+In this case, this would have been no different than including a non-Mono program, only to have the maintainer drop support for it. e.g. Ubuntu includes Rhythmbox, only to find out the maintainer no longer wishes to develop it.
+
+&gt; Furthermore, with the recent development where Mono no longer has any real corporate backing, and relies on not just the whim of Microsoft, but now a second unrelated company, Attachmate
+
+You mean, except for [Xamarin](http://xamarin.com/), a company specifically started to develop Mono.
+
+I'm indifferent to Mono but I care about Linux and when you spout crap like this, it hurts Linux.
+
+",2011-09-07 23:00:30
+30,"Well said!
+
+There is no difference between a project that is started to ""scratch an itch"" like the need for that tool, and a project that is simply re-implementing-for-the-sole-purpose-of-our-cult-language. They are exactly the same! No difference!
+
+Also, there is no difference between the corporate support of a company like Novell, which had multiple product lines and history outside of Mono, and Xamarin, whose entire existence is solely tied to Mono! No difference!
+
+I thank you for your heroic efforts to equivocate dissimilar things to defend something you are indifferent about - imagine what one might do if they were actually supportive of Mono!
+",2011-09-07 23:50:23
+31,"&gt;a project that is started to ""scratch an itch"" like the need for that tool, and a project that is simply re-implementing-for-the-sole-purpose-of-our-cult-language.
+
+Pinta does scratch an itch, it sits somewhere between GNU Paint and GIMP in terms of ease-of-use and functionality. I care about this program because there is no other program on Linux that fills this gap. Without Pinta there the Linux ecosystem is less rich. The fact that it's written in Mono is irrelevant.
+
+&gt; lso, there is no difference between the corporate support of a company like Novell, which had multiple product lines and history outside of Mono, and Xamarin, whose entire existence is solely tied to Mono!
+
+I'd much prefer a company like Xamarin than Novell, behind a product like Mono. Novell is a big company and products like Mono are sometimes overlooked (and if you read Icaza's blog he mentions that Mono was overlooked at Novell and in the past he had wanted to ""spin-off"" the Mono division as a separate company). IMO, Novell used Mono as leverage to sell what really makes it money (Linux). Xamarin, with it's only source of income tied to Mono, needs to keep the product easy to use, update-to-date, feature rich, and stable. i.e. They need a top-notch product.
+
+---
+
+Wow, I just read your username. You're obviously a troll. I'm not even going to bother with any more replies. What have you ever contributed to Linux/FOSS?",2011-09-08 02:52:05
+32,"Fantastic response!
+
+Worth highlighting is the credence you attach to a blog posting from the single individual with the most invested in Xamarin! I always get my environmental news from Exxon, too.
+
+I am pleased you place Pinta on a pedestal where no other program sits, certainly not [KolourPaint](http://kolourpaint.sourceforge.net/) or [Shotwell](http://yorba.org/shotwell/), or [Krita](http://krita.org/), or [MyPaint](http://mypaint.intilinux.com/) or [XPaint](http://sf-xpaint.sourceforge.net/).
+
+I guess the secret is to carefully and narrowly define a niche ""between GNU Paint and GIMP""? Something none of the aforementioned programs can possibly fill. But wait! If only there were a paint program that sat between Pinta and GIMP! That'd be exactly what we need! Or perhaps, one that sat between that spot and Pinta (or GIMP) - now that's definitely the ticket! Keep moving that niche around and I'm sure we can find somewhere that ""no other program on Linux"" fits!
+
+(Reminds me of how Creationists like to point out that when you find fossil ""X"" between ""A"" and ""B"", there are now 2 gaps, where there only used to be 1!)
+
+I further admire the way you imply that Mono failed at Novell because Novell ""overlooked"" it, whereas anyone who follows the industry knows that Novell not only had an entire team devoted to Mono, but they constantly and quite vocally developed and promoted it, and rolled out multiple product lines around it. I, too, like to blame the ""old boss"" for my failures, especially if I was given damn near free reign, a VP role, and my own team!
+
+I also deeply appreciate how you went in for a personal attack and abandoned any pretense of factual discussion! This is technique I often encourage others to use, and -- without tooting my own horn too much -- employ myself quite masterfully.
+
+Here, allow me: RMS eats toe-jam y'all, so you know Free Software is bad!
+",2011-09-08 04:43:34
+33,"sure is.  its been clear since (edit:2003) that this was the direction dotnet was taking. dotnet = web apps, win apps, mobiles, set-top boxes, xbox, etc... it integrates with almost everything. then you have shit like mono, which the commercial linux community would gladly kill bcs they see it as a threat.
+
+reference: http://www.linuxfordevices.com/c/a/News/Xamarin-launched/",2011-09-12 15:03:45
+34,"Me too. There is MONO for Android (http://android.xamarin.com/), but I'd rather code in Java then shell out the cash for that.",2011-10-06 18:46:36
+35,"http://android.xamarin.com/
+
+http://monodevelop.com/",2011-10-07 22:58:25
+36,"Well if you know javascript, you could just build a really well made android website potentially. There is the NDK (Native Developers Kit), but it's really not recommended to build an entire app with that. It's more for libraries and whatnot.  
+  
+I also beleive there is [Mono for Android](http://android.xamarin.com/) which uses C#, but I'm not sure about it's current state of usability. I also believe it costs money, so for spare-time projects it might not be worth it.",2011-10-20 19:35:21
+37,"""Ximian was a company that provided free software desktop applications for Linux and Unix...and was bought by Novell on August 4, 2003...In May 2011, the Mono development team was laid off, and Miguel de Icaza created the company Xamarin[2] to continue development of Mono.""
+
+You should track down Miguel de Icaza and send him this and a link to this thread.  I am sure he would be amused.",2011-10-26 21:52:44
+38,"From the project homepage:
+
+&gt;Mono is a software platform designed to allow developers to easily create cross platform applications. Sponsored by Xamarin, Mono is an open source implementation of Microsoft's .NET Framework based on the ECMA standards for C# and the Common Language Runtime.",2011-11-05 10:04:45
+39,"&gt; Desktop Linux is much less language-dependent, sure the kernel and most basic programs that make up the system are C (which I like)
+
+The kernel and system libraries in Android are C too. There are tons of languages ported to Android.
+
+Python on Android: http://code.google.com/p/python-for-android/
+
+Lisp on Android: http://code.google.com/p/dialcode/
+
+Ruby on Android: http://ruboto.org/
+
+BASIC on Android: http://www.basic4ppc.com/
+
+C# on Android: http://android.xamarin.com/
+
+
+You can already compile C++ and run shell scripts natively on Android.",2011-11-13 23:32:51
+40,"Well, if you have money, you could write your program in C# and then buy [MonoTouch](http://xamarin.com/monotouch) to port to iOS and [MonoDroid](http://android.xamarin.com/) to port to Android. However, the licenses for those two products are not cheap at all.",2011-11-22 17:45:21
+41,"Lion broke all the things.
+
+But since Xamarin's main money spinner these days is OSX, fixing breakage on Lion was a rather high priority. Hence Spacechem, a .NET game, works fine on there.",2011-12-05 11:00:15
+42,mono was taken back over by xamarin a while ago and is now in safe hands. ,2011-12-06 01:48:59
+43,"Anybody out there actually using Xamarin in production?
+I am considering it for a project at work at the moment. How does it compare to native Java on Android?
+How is the compatibility with a .NET on WinPhone7? ",2011-12-14 01:46:36
+44,"ECMA standard covers BCL, Android/iOS wrappers are written and owned by Xamarin and are in no way affected by Microsoft patents, and GTK+ is opensource project that also has nothing to do with Microsoft or their patents. 
+
+The whole point of ECMA vs non ECMA is that Microsoft owns some parts of .NET like ASP.NET and WPF that they don't give away in ECMA standard. Those parts aren't used in any of those projects.
+
+Are you trolling ? ",2011-12-23 11:31:25
+45,"&gt;Android/iOS wrappers are written and owned by Xamarin and are in no way affected by Microsoft patents, 
+
+First of all any bit of non trivial code is effected by at least one Microsoft patent. Microsoft has thousands of patents and has shown that it is very willing to sue when they see a competitor beat them in the marketplace.
+
+Secondly you are avoiding the question and I am going to presume the answer is NO. The wrappers are not ECMA standards.
+
+&gt;GTK+ is opensource project that also has nothing to do with Microsoft or their patents. 
+
+Again avoiding the question. Is it an ECMA standard?
+
+&gt;Those parts aren't used in any of those projects.
+
+Do they do any XML processing, last I checked not only wasn't that covered by ECMA it was also patented by Microsoft.
+
+&gt;Are you trolling ? 
+
+I am asking questions and you are running away from them.",2011-12-23 11:47:23
+46,"I was just joking but (although they would never want to hand the mobile OS market to Google) it really would be a viable strategy for Microsoft to enable Android development as long as the courts continue to enforce their patent protection racket.
+
+I know you can use C# to develop for Android already (using Mono fro Android) but Microsoft could release an MS-branded .NET run-time for Android. This might encourage more .NET devs to create mobile apps which would also benefit Windows Phone 7. It might also reduce the number of devs learning Objective-C and driving the iOS ecosystem. It might even limit the next generation of developers learning Java just to code for Android which would be good for C#. Of course, apps would still need different UI code for Windows Phone 7 and Android as the experience is pretty different. With a well-developed framework they could share a lot of common code though.
+
+You can already do this today with Mono for Android of course. So, the lower risk strategy for Microsoft might be to stay away from official endorsement of Android and just let Xamarin do the work for them.",2012-01-04 19:16:48
+47,"I don't think MonoGame will work for you.  
+
+[Requirements](http://monogame.codeplex.com/wikipage?title=Setting%20up%20your%20first%20game&amp;referringTitle=Documentation):
+
+&gt;iOS - Mac OS X, MonoTouch, MonoDevelop
+
+Not only would you need a Mac, you'd also need [MonoTouch](https://store.xamarin.com/), which starts-out at $399.99.
+
+Also, I don't see anything on GameMaker's site about iOS.",2012-01-10 02:02:41
+48,"There's mono touch that will let you use C#. http://xamarin.com/monotouch
+
+Then I believe it's possible to save Flash to the correct format, but technically that goes against Apple's Terms, but they don't have a way of knowing either.",2012-01-12 22:08:36
+49,"Mono is not just for Linux applications. [Unity](http://unity3d.com/gallery/made-with-unity/game-list), for example, is based on Mono and allows you to develop games for Mac OS, iOS, the Wii, PS3, and Android. Even Microsoft used it to port [a game for iOS](http://itunes.apple.com/us/app/kinectimals/id482365195?mt=8). And the next Playstation [will ship an SDK](http://www.playstation.com/pss/closedbeta/index_e.html) that is based on Mono. And there's also [MonoTouch and Mono for Android](http://xamarin.com/).",2012-01-17 23:05:29
+50,"Earlier last year, Attachmate acquired Novell and killed off the team. However, Miguel de Icaza spun off a company called Xamarin, which picked up development on Mono. Here's the [wikipedia page with info](http://en.wikipedia.org/wiki/Xamarin)
+",2012-01-24 00:36:50
+51,"You can write Android apps in several different languages.  Check out Monotouch by Xamarin.  You can use C# instead, and it compiles to Android bytecode.",2012-02-21 04:36:59
+52,"C# is a Microsoft product but it's officially an open standard. There used to be some worry regarding whether Microsoft would stab the open source implementers of C# in the back, but they have stated multiple times that they have no intention of doing that.
+
+I'm not totally sure about the Android stuff. [Xamarin](http://xamarin.com/) are the ones who make the mobile C# environments. I've never used it and don't know exactly how it works.
+
+EDIT: I should mention that C# doesn't have list comprehensions like Python does, so it's not quite there. Here are the ways it is in my opinion superior to Java:
+
+* Optional variable names. You can say var x = 5 instead of int x = 5. The variable is still statically typed.
+
+* Operator overloading. You can declare your own implementation of operators. I really hated not being able to do that in Java.
+
+* double, int, etc. are not special citizens like they are in Java. They behave exactly the same way.
+
+* Real generics. Java has fake generics which can cause unfortunate bugs.
+
+* Lambdas (anonymous functions). You can write a function like x =&gt; x + 5 and pass it to another function.",2012-02-29 00:29:25
+53,"Xamarin is the company, Mono is the product...
+
+I do ASP.Net development using Mono regularly.  The last time I attempted to use their mobile (IOS) products there were missing bits of the .Net that made it impossible to go beyond a certain point, but what I did do was far easier than writing a Objective C app.
+
+I should note that they've since added the bits that I was missing (Parts of the web services client dealing with authentication), but the client changed directions.",2012-03-15 18:23:28
+54,"*scroll scroll scroll*
+
+&gt;Thousands of developers are already using Xamarin to create amazing apps.
+
+ #2, Microsoft.",2012-03-22 04:44:17
+55,"If you're making real *native* apps, you will generally have to do most of the work for both devices. This will likely also include graphic work due to the differing UI standards and expectations of the platforms. Web apps are in some cases  and with some hard work  a very good alternative to native apps, and almost immediately cross-platform. &lt;3 WebKit.
+
+It is, of course, possible to cheat  as mentioned by 0x2a, [PhoneGap][] can be used for this. If you use it, though, what you're effectively doing is writing a web-app with increased access to assorted APIs (e.g. JavaScript accelerometer access). As MobileSafari and Browser gain greater support for new HTML5-style APIs, you could've done this from a web browser anyway. This is probably both the easiest and worst approach to the issue, but if web apps work for your project  go for it! If nothing else, it will save you server load and give you app store/marketplace visibility.
+
+Another option is to use one of the [mono projects for iOS/Android][Xamarin]  while you'll still need to have separate UI code, it makes it far easier to share the application logic, etc. rather than having to port it into different languages. Downside: in my experience they can have performance and memory issues, though I haven't used them for a decent while. Major bonus: you can use .NET assemblies as libraries as long as mono can run them and they don't use P/Invoke.
+
+If you're making games or similar, [Unity3D][] is another option that I, unfortunately, know almost nothing about.
+
+In short: a common approach is to have somewhat separate teams develop separate apps with limited interaction between the two (besides an attempt at maintaining feature parity). You can cheat with web apps, [PhoneGap][], [Unity3D][], [mono][Xamarin], and likely via assorted other means I haven't discussed here.
+
+P.S. yes, I know my writing style sucks. I do mobile application development  both native and web-based  but am not 100% up-to-date on the latest cross-platform (psuedo-)native stuff.
+
+[PhoneGap]: http://phonegap.com/
+[Unity3D]: http://unity3d.com
+[Xamarin]: http://xamarin.com/",2012-03-27 22:47:37
+56,"&gt; How do you think they [Microsoft] make money on all Android devices sold?
+
+Not by contributing working code to the Android ecosystem under the [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0.html) and explicitly telling people that they [""love""](http://www.hanselman.com/blog/ASPNETMVC4ASPNETWebAPIAndASPNETWebPagesV2RazorNowAllOpenSourceWithContributions.aspx?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+ScottHanselman+%28Scott+Hanselman+-+ComputerZen.com%29) that the competing implementation runs their stuff [that is for sure](http://en.wikipedia.org/wiki/Estoppel). Apache 2.0 includes an explicit patent grant.
+
+- Microsoft is legally bound by the [Community Promise](http://www.microsoft.com/openspecifications/en/us/programs/community-promise/default.aspx)
+- The .NET runtime is both an ECMA and an ISO standard
+- Mono ships with a shit-tonne of Microsoft authored code
+- Microsoft has shared their test suite with the Mono team
+- Microsoft [uses Mono themselves and encourages us to do the same](http://www.tryfsharp.org/)
+- Microsoft uses the [commercial version of Mono](http://xamarin.com/) to [write iOS apps](http://allthingsd.com/20111213/microsoft-cranks-out-two-more-iphone-apps-kinectimals-and-skydrive/)
+
+Honestly, I think that MS could hand over legal control of the company (Microsoft) to the Mono project and the anti-mono crowd would still be crowing about how ""unsafe"" Mono is.",2012-03-29 04:15:34
+57,"Student? [They have a student license for $79](http://support.xamarin.com/customer/portal/articles/177042-do-you-have-any-student-or-academic-discounts-).
+
+&gt; Student Discount
+
+&gt; Students currently enrolled at an accredited institution can purchase a full MonoTouch Professional or Mono for Android Professional license for $79. Use your license to write great apps and games for iOS and Android, and deploy them to your friend's devices, or even publish to Apple's App Store or the Android Market.",2012-03-29 10:54:48
+58,"When Xamarin sponors someone actually on the ASP.NET MVC team I'll call it collaboration. As it stands, they have no more voice than any other member of the community.",2012-04-05 00:23:35
+59,"Oh yes. These people are:
+http://xamarin.com/monotouch
+
+As well as the programmers who are using their APIs to write and sell their apps. So there's that...",2012-04-19 00:37:06
+60,I believe MonoTouch is making Xamarin a fair amount of money. ,2012-04-19 02:42:56
+61,"But given Oracles context in this case, I would imagine that Microsoft might just try to field one of its software patent storehouses against a smaller player like Xamarin.  Even if they had no legal ground to stand on in a case against someone else implementing the CLR and C#, they could just use their war chest to crush any actually competitive implementations of the platform. 
+
+Is that why Google didn't consider C#? In their emails, they say they had it as an option and dropped it.",2012-04-19 13:38:46
+62,"Apparently Xamarin costs money, which I'm assuming is why I've never heard of it until just now.",2012-05-02 01:24:34
+63,"It runs in different forms on:
+
+* Windows, Linux, Mac
+* XBox 360, Wii, PS3, Vita
+* Windows Phone, Android, iOS
+* Web browsers through plugins
+* Netduino
+
+Just don't expect to be able to grab an executable from one platform and run it on another. Different operating systems and devices have different native components and design paradigms.
+
+Resources:
+
+http://unity3d.com/unity/publishing/
+
+http://create.msdn.com/en-US/
+
+http://www.mono-project.com/Start
+
+http://xamarin.com/monotouch
+
+http://xamarin.com/monoforandroid
+
+http://www.reddit.com/r/PSSuiteDev/
+
+http://netduino.com/",2012-05-02 02:55:59
+64,[You can](http://xamarin.com/monoforandroid).,2012-05-02 17:55:02
+65,"&gt;If Android was to take advantage of that, then dot Net would also need to be ported. So it'll just be a Windows phone, or rewrite the VM to understand C#. That adds development costs and it definitely won't be efficient from the start.
+
+Blah, blah, blah, I don't know what I'm talking about and /r/Android is senselessly upvoting me.
+
+1. Mono already exists.
+
+2. Using C#/Mono would not make this a ""Windows phone"" and that's an ignorant thing to say.
+
+3. "".NET would need to be ported"" doesn't even make sense.
+
+4. The VM wouldn't need to be ported, it already is. The Mono runtime works in the Android kernel, this Xamarin team did that years ago.
+
+5. Blah, the rest is nonsense resulting from bad, mis-assumptions.",2012-05-07 03:27:39
+66,"you are rude. right, but rude.
+
+on a sidenote, this is [extremely relevant.](http://xamarin.com/monoforandroid)",2012-05-07 06:36:55
+67,"&gt;With that realization Xamarin, makers of the open-source and cross-platform mobile .NET application development platform Mono, sat down almost a year ago to look at the Android platform and see what could be done to improve battery life and Android application performance.
+
+.Net company thinks .Net is the answer. And in other news, water is wet.",2012-05-07 15:05:38
+68,"&gt; What do you think about the 'state of the ecosystem' these days?
+
+Coughing up blood, tbh. There is a severe lack of fresh blood and interest in the platform. The ""Mono is dangerous"" meme is so self-perpetuating now that anyone expressing the merest hint of interest in doing work with .NET on Linux is drummed out of their community faster than you can say ""lolwut"".
+
+Without some serious spikes in interest, I don't know how much longer Mono on Linux will be worth the time I invest.
+
+&gt; Do you think Xamarin care enough for the interests of Mono on Linux?
+
+Xamarin don't have any products which make use of Mono on Linux. They're happy to engage with community efforts in a broad sense, but the priority assigned to paid employees is Android and Mac (especially iOS). I don't begrudge them that, but I wonder where they see the next generation of superstar employees coming from, if the pool of hardcore Linux hackers dries up.
+
+&gt; What about modern libraries? There's still no released GTK#3 or GAPI support, for example.
+
+Blocking on one human for far too long. Xamarin have spent money subcontracting fixes to GTK+2 on Mac for long-term use (i.e. for MonoDevelop), so there's no drive from inside the company for GTK#, and it's falling to the community to take care. The Banshee folks have more or less completed GTK#3, certainly to a ""beta 1"" release standard, but the GTK# sole maintainer is not a believer in GTK+3 at all, so doesn't see the point in a GTK#3 release, even as the rest of the world moves on and distributions move to drop GTK+2 apps.
+
+The problem with relying on the community for all this stuff is the Linux end of the community just keeps shrinking, and I don't really care about people making awesome iOS widget sets.
+
+&gt; What does the community need to do there to stop the bitrot?
+
+Hack moar! I've got a couple of little initiatives on the go to try and being back interest in Mono on Desktop Linux, but the biggest hole right now is in developers developing things. Apps, libs, patches, whatever - we need more people doing more things.
+
+MonoGame is a good example of a possible goldmine of new development interest, as developers of XNA games discover they have a low-effort route to multi-platform on Linux - but the Linux port of MonoGame needs more hackers (and seriously, someone needs to replace their non-Free joypad library with something adequately licensed).",2012-05-27 20:59:43
+69,"I think that's a question for upstream more than me - the only bugs I admit to the existence of are in bugs.debian.org or launchpad.net!
+
+Generally though, you should consider filing into the Xamarin bugzilla - especially if you have a minimal reproducible test case. Given the load on Xamarin employees, bugs without test cases or patches have a minimal chance of getting fixed.",2012-05-27 23:34:07
+70,"Pycharm is fantastic but quite the resource hog. The coolest thing is running it on windows (yup) (need Visual studio for Xamarin), with remote interpreter on a guest *nix os running your python environment. ",2012-05-28 05:58:53
+71,"Another problem is that GNOME has moved to GObject-Introspection which was supposed to make generating language bindings easy. However the format is insufficient to create bindings for .NET, Java, Vala and a bunch of other languages. Upstream for GObject-Introspection helpfully refuses to address these issues. 
+
+This means that we have to generate the .NET bindings by hand the way we did with GTK#2. A process that involves a pile of 10 year old perl voodoo magic and one supposes a kittie sacrifice to probe the original C code. This is quite error prone but still produces better results than what we can do with the GIR format.
+
+Add to this that the sole person wise in the wangling of said perl scripts (Mike Kestner, the GTK# maintainer) has largely left the community.. well it just doesn't help matters. 
+
+We are having a big GNOME &amp; Mono hackfest in Boston in late June with a lot of Xamarin and community people, I hope we can hash out a way forward there but right now the future on Linux looks bleak simply because the pieces don't fit together and there is little help to be found from GNOME. 
+
+(full disclosure, I arranged both this years GNOME &amp; Mono hackfest and last years edition in which GIR was explored).",2012-05-28 14:09:00
+72,"&gt;Do you work closely with Xamarin?
+
+Yes. I keep in fairly close contact over IRC and Twitter. When they fuck up, I let them know about it.
+
+&gt;Microsoft?
+
+Rarely. I occasionally talk to Microsoft folk over Twitter, but rarely more than that. I used to communicate with them more when IronRuby was being more actively developed, but that was a while ago.",2012-05-28 15:01:05
+73,"&gt; Nobody has yet to explain to me how Mono can be ""squashed"" in one go. The kernel hasn't been squashed, has it? Despite patent issues?
+
+The kernel can't be ""squashed"" effectively because no single entity owns all the copyrights. It's a good way to make suing the project impractical. Even if someone were to win a suit against the project, Linus could just roll back the commits from the infringer, and move on.
+
+IANAL, but this is the reason a lot of people give the Apache Foundation a hassle: because they demand copyright assignment. A single successful lawsuit against one of those projects could conceivably take it out of commission.
+
+I just looked at the FAQ, and the Mono project also requires copyright reassignment. So, really, the onus is back on you to tell us how Microsoft suing Xamarin for patent infringement wouldn't essentially kill the project.
+
+I'm more pragmatic than I'm coming across here, but the recent Oracle/Google Java kerfluffle is a perfect example of what can happen when someone finally rubs a ""we-promise-to-be-a-good-steward"" project's patent owner the wrong way. Of course, someone will point out, Google won, but I will be quick to add that it cost them MILLIONS to defend. Xamarin doesn't have that kind of cash, and who would come to their defense? Like Linus using BitKeeper, I think the overarching response would be, ""We told you so.""
+
+Those of us who've been around the programming and IT world since the early 90's are distrustful of Microsoft, and I think that distrust has been earned several times over.",2012-05-28 18:50:34
+74,"Okay, here's the full story. We're building Mono on armhf, and it runs fine... until it tries to P/Invoke any C library, at which point it crashes. So we're still shipping it, but it's sorta shit and the responsible thing would be to axe it from Wheezy.
+
+The ABI for armhf is different to armel. Structure sizes aren't the same. As a result, Mono needs to know and deal with those structure sizes in order to talk to armhf libraries - right now it lacks those structures.
+
+And for reasons I can't discuss, the patches needed to fix this ABI issue need to come from the community, not Xamarin.",2012-05-28 20:07:30
+75,"No surprise.  Silverlight was too little too late from Microsoft.  Came onto the scene just in time for its own obsolescence.  The only reason *anybody* gives a crap about it is Netflix, and because of the DRM issues they can never get Netflix support on Moonlight.
+
+I do feel bad for Miguel for the man-hours wasted on Moonlight.  So many little dead-ends that Mono tries to support... a while back Miguel commented on a thread explaining about their attempts to support some of the more challenging bits like WCF.... and that in the end they point people to simpler libs like ServiceStack.
+
+Hopefully this is a sign of a new thinking at Xamarin - that chasing Microsoft's massive, towering .NET codebase is just impractical and that .NET/Mono coders are happy to use C# even without Microsoft's numerous misstep libraries and sub-platforms.",2012-05-29 23:02:27
+76,"I think you can use this http://xamarin.com/monotouch
+for your pc
+",2012-06-16 22:18:33
+77,"None.  The judgement was very specific to Google's use of Java.
+
+The only part of the trial that could feasibly apply to Microsoft wrt C# and Mono would be the judge's ruling that API's are not copyrightable, but the applicability of that to Microsoft, C#, and Mono is nil because Microsoft has already irrevocably granted Xamarin the legal right to implement the C# and the .NET CLR standards in Mono.",2012-06-25 22:46:02
+78,"[C#](http://msdn.microsoft.com/en-us/vstudio/hh388566.aspx)
+
+* Android: [Xamarin Mono for Android](http://xamarin.com/monoforandroid) $399
+
+* iOS: [Xamarin Mono Touch](http://xamarin.com/monotouch) $399
+
+* Windows: [XNA](http://msdn.microsoft.com/en-us/centrum-xna.aspx)
+",2012-07-07 02:15:00
+79,"&gt; One: wasn't the point of having more than one button like the iPhone to make the screen less cluttered? Isn't adding an action bar having the opposite effect?
+
+I don't really know what the point was but if screen clutter was the reason it probably wasn't the only one. Note that there still are three buttons left and manufacturers can choose whichever method they want to implement it.
+
+The action bar does eat up some real estate, but it's a pretty integral part of every app and it does more than just the menu items (tab navigation and much more). It's worth noting that an action bar with tabs eats up the same amount of space that the [old tabs](http://docs.xamarin.com/@api/deki/files/79/=HelloViews5.png) did, so it's not as wasteful as it first sounds like.
+
+&gt; Two: what about the developers who are too lazy to correctly implement the action bar correctly as opposed to just throwing some images on it? In an ideal world it could work, unfortunately the world, and the developers in it, are not perfect.
+
+Well, this is where you come in. Encourage developers to follow the design guidelines and prefer the applications that fit in with the system. This isn't something new: developers have always been criticized for apps that look exactly like iPhone apps, etc.
+
+&gt; I love the reddit sync app, but instead of using the action bar, the developer just moved the menu to clicking the name of the app. 
+
+This is a fairly new design pattern and Google does it in Google+ too. In Google+ it's more navigation oriented, though: it lets you jump to your profiles, circles and whatever and it still uses the overflow menu too for other items.
+
+RS does show some option items at the right side too. The only complaint that I have about the left-slider menu is that there's no indication it exists (only the tutorial popup on first start) which is a bit like the old menu button.
+
+&gt; What is the use of pressing the app icon on the action bar in order to move back? There is still a back button on the device.
+
+The idea of the top left ""back button"" in the action bar is actually not to go *back* but to go **up**. Imagine that you get new mail and you open Gmail from the notification. Now, you want to go back to the e-mail list - pressing back will take you back to the screen you were in before, pressing the up button will take you to the e-mail list.
+
+&gt; In my opinion, the action bar is completely useless. We don't need duplicate functionality to make the action bar seen like is actually useful.
+
+As I mentioned before, the action bar is more than just the new place for menu items. It's a common UI element for all apps that handles other aspects like navigation, too.",2012-07-12 12:58:33
+80,"As a developer I am very interested in acquiring some info about the SDK. I guess it'll be like standard Android development? Please do give us some hints a.s.a.p. I have almost a complete game which I would be able to move to OUYA pretty fast. It already runs on iPhone, XBLIG and Android phones. But it's made with focus on XBLIG.
+
+And yes, I'm using MonoGame and Xamarins products.",2012-07-12 14:14:04
+81,"i think you got it wrong what xamarin does.  
+all they do is to provide tools that basically let you code apps in the c# language. the reason for this has almost nothing to do with windows phone. The reason they do this is to help lazy ass developers that are used to c# from developing buisiness programs to be able to make apps for  iOS and Adroid without the need to learn 2 new languages and frameworks (java, objective c)... nothing less, nothing more",2012-07-24 14:49:56
+82,A team that did a lot of development work for Sharpen [ported Android to .Net earlier this year](http://arstechnica.com/information-technology/2012/05/xamarin-releases-xobotos-the-net-powered-version-of-android/) and apparently used a Mono VM in place of Dalvik with decent success.,2012-08-01 20:28:21
+83,"Mobile dev here, if you want to make a cross platform app I recommend using a framework such as [MonoTouch](http://xamarin.com/monotouch/) right from the get go.  Will save you a lot of porting work down the line, and make it much easier to keep your updates in sync.  
+
+I don't work for MonoTouch, btw, so any cross platform framework would do.",2012-08-28 20:00:50
+84,"You are talking out of your ass. Experienced programmers are worth a shit ton more no matter what the language. 
+
+Here's a bunch of things that are way more important than knowledge of a particular language that experience in software development gives you.
+
+1. Design experience
+2. Exposure to different technologies
+3. Software quality control experience (testing, failure resistant programming, etc.)
+4. Team leadership/management experience (non-developer management can't provide the same)
+5. Exposure to different problems/obstacles/patterns (I recognize this design problem and therefore I can recognize the solution much faster)
+
+*Software Developers* don't create new languages to make things harder--they're there to make things better or easier. And there's really no practical difference between coding in any given procedural/OO language (C++/Java/Python/C#/ObjC/Javascript/PHP) which are widely popular. Any programmer will have experience in at least one of those, and a good progammer will probably have experience in a functional language or some other paradigm.
+
+Really, in the realm of software development, the language used is the least important thing. When you make a piece of software, you simply choose the right tool for the job. If you want to code a scalable web app, you choose your favorite cloud platform and a language that it supports ([Windows Azure supports every major language](http://www.windowsazure.com/en-us/home/features/cloud-services/)). If you want to make something for a particular platform like Android, you use whatever languages have compilers for that system ([Android has quite a lot available](http://stackoverflow.com/questions/3316801/which-programming-languages-can-be-used-to-develop-in-android)). Worst case, you use a translator so you can use another language you're used to. ([Monotouch](http://xamarin.com/monotouch/) and [Script#](https://github.com/nikhilk/scriptsharp)) come to mind.
+
+tl;dr languages are completely irrelevant and don't cost people jobs. Seasoned software developers are worth a LOT more.",2012-09-02 08:18:03
+85,Check out MonoTouch http://xamarin.com/monotouch,2012-09-14 14:43:26
+86,"I dont think so. That is not different from, for example, what xamarin is doing with monotouch (I guess that's the name). 
+",2012-09-14 22:22:25
+87,or just go to xamarin.com,2012-09-15 05:04:39
+88,"I'm thinking about getting into it too and I found [this](http://xamarin.com/monoforandroid) in my search for tools, but I haven't gotten around to trying it yet.",2012-09-23 01:12:59
+89,"I believe you are talking about [mono touch](http://xamarin.com/monoforandroid), and if I am not mistaken it is not really a version of C# on android as much as it is a compiler that takes input in C# and creates assemblies that target the android platform (java). They also have a version that creates native code for iOS.",2012-10-10 21:14:35
+90,"My understanding was that the code was ""native"" in both cases of Android and iOS. That the language you code in is C# but the compiled assembly targets the native platform. The product wouldn't be very popular if people had to install SDKs on their phone in order to run the apps right? Neither iOS or Android have MSIL interpreters.
+
+Edit: A quote from [their page](http://docs.xamarin.com/android/tutorials/cross_platform/Building_Cross_Platform_Applications) explaining building cross-platform apps: ""Not only do you get a single, modern language (C#) and framework (.NET) across all three platforms, but you also get a native experience on each, with code running as a native peer with direct access to the underlying SDK and device metal, including platform-specific UI and device capabilities.""",2012-10-11 00:44:27
+91,"[C# and .NET](http://xamarin.com/monoforandroid)
+
+[C and C++](https://developer.android.com/tools/sdk/ndk/index.html)
+
+[Ruby](http://www.ibm.com/developerworks/web/library/wa-ruby/)
+
+[Perl, Lua, others](https://code.google.com/p/android-scripting/)
+
+etc.
+
+Allow for android apps to be written in languages other than Java.",2012-10-12 13:46:26
+92,"If I had the free cash to buy Xamarin's software I might buy it and start using MonGame or ExEn. As it stands, though, I'd rather just use Java and still have the benefit of being able to run on most platforms without spending a dime.
+
+I see the value of MonoGame and ExEn because they allow you to run on Xbox, WP7, iOS and the platforms, which support Java; to me iOS is the only non-Java platform, which is worth considering, which considerably diminishes the value of MonoGame and ExEn to me.
+
+I'm also not sold on MonoGame and ExEn because depending on a game's design it may only be suitable for one type of platform. Being able to flawlessly port a PC/Mac game to a mobile device, and vice versa, isn't very useful if it can't be played.
+
+As it stands I think I'm pretty comfortable with just using Java or XNA depending on my needs, although Java is the more useful language.",2012-10-12 19:13:57
+93,"i use xamarin for multi-platform C# (super solid and great and i love it - not free), and monogame as a port of XNA that runs on it (open community, not finished, but getting there, i wrestle it sometimes - free).",2012-10-16 02:19:22
+94,Xamarin's software is expensive. http://code.google.com/p/libgdx/ looks like a better alternative for amateurs.,2012-10-21 13:43:04
+95,"Really? Every time I look at MonoGames and ExEn I see the Mono requirement, I go to Xamarin's website, and I see big price tags.",2012-10-21 14:28:24
+96,"Xamarin's stuff *uses* Mono and MonoGame, but it isn't MonoGame. MonoGame itself is completely free.",2012-10-21 15:26:18
+97,yes. See http://xamarin.com/monotouch for more info.,2012-10-23 06:04:26
+98,"FYI, they've created their own company called Xamarin after Novell pretty much dropped the ball. But your point still stands, they're not anonymous and they probably have better things to do than to make Moonlight work when MS itself is no longer pushing for Silverlight.
+
+As for Netflix, if they wanted to support Linux and could do so without getting hell from the videos right holders, they could do it without Moonlight. After all, there's a Netflix app for Android.",2012-10-23 06:30:59
+99,"I've seen a lot of support for Mono from the open source community.  Most of my favorite open source projects support Mono as a target.  NHibernate, Ninject, etc...
+
+The Uniy 3d engine (which targets many platforms) uses mono for scripting.  Mono is also portable to android and iPhone if you don't mind using commercial software like Xamarin.  t",2012-10-23 14:13:57
+100,"[Moai SDK](http://getmoai.com/moai-sdk.html) allows you to code for iOS, Android and Desktop with Lua, but Android support is still a little light.
+
+[Cocoon^JS](http://www.ludei.com/tech/cocoonjs) has support for Android and iOS with Javascript.
+
+[Xamarin](http://xamarin.com/) has support for iOS, Android, Windows Phone and Desktop with .NET, but it's commercial.",2012-10-23 16:15:54
+101,"There are few engines that use other languages to interact with Dalvik (ignoring native development here, because I don't know much about it). Probably the biggest ones I can think of are Xamarin (proprietary, powerful, $$$) and androidmono (FOSS, by koush, but horrendously unmaintained), which let you code Android apps using C#/.NET. ",2012-10-31 00:40:12
+102,"I think it's true for apps as well (not just games that use directx/c++).
+It's much faster to develop a WP app. the process of learning what the app should really do and how it should work is easier because changes are easier. This is particularly true if you're creating a server side API as well.
+
+And even better, if you use Xamarin to build ios/android apps with c# most of the code can be in a shared library, so once you're done with the WP app, it's faster to create the ios/android ",2012-11-02 08:13:46
+103,"There's [C#](http://xamarin.com/), [Appcelerator](http://www.appcelerator.com/), and probably others. Just googles it.",2012-11-04 17:29:07
+104,"If I had to write an app for either platform I would want to use the recommended frameworks and tooling available for both. I just don't trust that other solutions (Xamarin, RubyMotion, etc) are going to be supported for the long term. For rapid prototyping and easy requirements PhoneGap/Cordova is a no brainer as it easily allows for native extensions if required. For anything more complicated stick to the native tooling.",2012-11-06 00:19:36
+105,"&gt; Why not mono/xamarin?
+
+Mono is an interesting choice. Unfortunately, it's not that well supported for mobile devices. For example, you have to pay to play with Xamarin, and there isn't really a standard foss way to do Mono on more than one device at a time. I don't mind developing software for proprietary systems, but I *do* mind a situation in which the only viable option is to 1. pay for 2. third-party software just to get an app going.",2012-11-08 05:49:33
+106,"You can install the [latest mono runtime](http://download.mono-project.com/archive/2.10.9/macos-10-x86/11/MonoFramework-MRE-2.10.9_11.macos10.xamarin.x86.dmg) and install that. Then in terminal:
+
+    cd ~/Downloads/PonyLiberator
+    sudo mono ./PonyLiberator.exe
+
+*edit: needed sudo",2012-11-16 08:42:20
+107,"Pen and paper will do fine. Just reading about these technologies and familiarizing yourself with them will take you two weeks. 
+
+[Extra reading](http://msdn.microsoft.com/en-us/windows/apps/br229512.aspx) for mobile app development. [Extra reading](http://dev.windowsphone.com/en-us) for Windows Phone development. [Extra reading](http://unity3d.com/) for cross platform 3D game development with C#. [Extra reading](http://xamarin.com/) for cross platform mobile and phone development with C#. (The Express tools by Microsoft are free and good enough for many case scenarios. You need to pay to publish your apps to the app store but not to develop them. Unity is free only for desktop apps. Xamarin products will cost you money.)
+
+And you might also want to play with [TouchDevelop](https://www.touchdevelop.com/). It supposedly allows you to create simple apps with just about every device including your iPad, but it is really new and I haven't used it. And I don't think that it is really C#.
+",2012-12-08 17:55:59
+108,"While it's not suitable for every app, more devs should look into [Mono](
+http://xamarin.com/).
+
+",2012-12-08 23:42:27
+109,"This wasn't a law, it was a part of app store's terms of service. It was later removed. But before that, applications built with xamarin would definitely not be allowed in the app store. Even then, you could still release the app, but most of your potential users wouldn't be able to install it. ",2012-12-13 08:18:04
+110,Xamarin provides great tools for developer but it's quite expensive for indie developers especially for those who leave outside US/Europe. I think they should provide a cheaper license which allows to make only a limited number of production per year. I would be happy to pay $150 if it allowed only 3-4 production releases per year.,2012-12-13 08:28:23
+111,"Sorry, I'm just used to thinking in terms of touch versus desktop. I forgot this article is about Xamarin.Mac and not MonoTouch.",2012-12-14 20:16:01
+112,"For what it's worth I program for a living, and that's exactly my main rig. Two things:
+
+* Upgrade it all the way to 16 GB, it's cheap enough when you don't buy RAM from Apple and you'll probably be running a virtual machine for the .NET stuff.
+* Definitely put an SSD in there. I find the Crucial M4 works great, but you'll want to [patch IOAHCIBlockStorage.kext](https://gist.github.com/3768688) in order to enable TRIM support, and then possibly [disable atime and sleepimage](http://williamscott.me/blog/2010/12/optimizing-mac-osx-ssd/) to prevent unnecessary wear and save space on the drive.
+
+There are some downsides though:
+
+* 1280x800 is arguably insufficient for designing GUIs, whenever I find myself doing so I have to hook it up to an external monitor. And along with the current Air, the mid-2012 MBP has an [HDMI output bug](https://discussions.apple.com/thread/4080525?start=0&amp;tstart=0) that can result in unbearable image quality on *some* monitors, so you'll probably want to use DVI instead.
+* For C++ development, OS X (like FreeBSD, but unlike Linux) gives you ancient versions of GCC and GDB due to Apple's aversion toward the GPLv3 license of newer versions. You can build newer versions with Homebrew, but then you have to [codesign GDB](http://sourceware.org/gdb/wiki/BuildingOnDarwin) so that it can have debug privileges. ~~Of course, if you don't need all of GCC's C++ features then you might be able to get by on clang instead.~~ [*EDIT: [see below](http://www.reddit.com/r/mac/comments/14xw7l/is_a_macbook_pro_good_for_programming/c7hjyx4)*]
+* There is [MonoMac and Xamarin.Mac](http://www.mono-project.com/MonoMac), but when doing anything in .NET you'll probably want to be working in Visual Studio, and that means running a virtual machine. I find VMware Fusion works really well, other people prefer Parallels, but either way this will eat into your RAM usage and disk space.
+* Homebrew can install many of the packages you'd expect to find in a Linux distribution, but there are exceptions and packages that sometimes fail to build; such software is designed for Linux first, and OS X is not Linux.
+
+No problems using OS X for Java development anyway (though I haven't done much of that myself). The hardware and OS are great, despite the issues above. But in all honesty for the kind of work I do, I might have been better off with Linux on a ThinkPad X1 Carbon...",2012-12-16 17:06:47
+113,"And for C#, you can use [MonoDevelop](http://monodevelop.com/) or [Xamarin](http://xamarin.com/)!
+
+(As a fair VS replacement). Alternatively, you can dual-boot with Boot Camp, and run native Windows!",2012-12-19 15:14:32
