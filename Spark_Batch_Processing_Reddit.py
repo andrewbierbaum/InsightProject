@@ -8,7 +8,7 @@
 from pyspark.sql import SparkSession
 spark = SparkSession.builder.appName("Reddit").getOrCreate()
 df = None
-df = spark.read.csv("s3a://andrew-bierbaum-insight-test-dataset/Reddit_Fix/Reddit_Comments_20*.csv.gz", header=True,multiLine=True, escape='"')
+df = spark.read.csv("s3a://andrew-bierbaum-insight-test-dataset/Reddit_Fix/Reddit_Comments_2014*.csv.gz", header=True,multiLine=True, escape='"')
 
 
 # In[2]:
@@ -164,16 +164,5 @@ for date, body in python_react_native_results_cleaned:
 pandas_df = pandas.DataFrame({'date':Date_Data,'body':Body_Data})
 with open('Reddit_react_native.csv', 'a') as f:
     pandas_df.to_csv(f, header=False)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
 
 

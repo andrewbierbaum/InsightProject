@@ -93,7 +93,10 @@ app.layout = html.Div(children=[
 if __name__ == '__main__':
     app.run_server(debug=True, port = 9990, host ='0.0.0.0')
 
-
+    
+    
+#https://plot.ly/python/time-series/   
+    
 #https://stackoverflow.com/questions/46519518/how-to-range-slider-and-selector-with-plotly-dash
 
 # import dash_core_components as dcc
