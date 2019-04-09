@@ -5,9 +5,35 @@ import csv
 import pandas
 from datetime import datetime
 import numpy
+import sqlite3
 
-#SELECT subreddit, count(*) FROM [reddit_flutter] GROUP BY subreddit ORDER BY 2 DESC
+conn = sqlite3.connect('TechGraph.db')
+cur = conn.cursor()
 
+df = pandas.read_sql("SELECT * FROM Reddit_xamarin", conn)
+reddit_xamarin_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['created_utc']]
+reddit_xamarin_Id_Data = df['id'].tolist()
+reddit_xamarin_Body_Data = df['body'].tolist()
+reddit_xamarin_count = numpy.arange(len(reddit_xamarin_Id_Data))
+df = None
+
+df = pandas.read_sql("SELECT * FROM Reddit_flutter", conn)
+reddit_flutter_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['created_utc']]
+reddit_flutter_Id_Data = df['id'].tolist()
+reddit_flutter_Body_Data = df['body'].tolist()
+reddit_flutter_count = numpy.arange(len(reddit_flutter_Id_Data))
+df = None
+
+df = pandas.read_sql("SELECT * FROM Reddit_react_native",conn)
+reddit_react_native_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['created_utc']]
+reddit_react_native_Id_Data = df['id'].tolist()
+reddit_react_native_Body_Data = df['body'].tolist()
+reddit_react_native_count = numpy.arange(len(reddit_react_native_Id_Data))
+df = None
+
+
+
+'''
 df = pandas.read_csv("HackerNews_xamarin.csv")
 hackernews_xamarin_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['time']]
 hackernews_xamarin_Id_Data = df['id'].tolist()
@@ -28,6 +54,7 @@ hackernews_react_native_Id_Data = df['id'].tolist()
 hackernews_react_native_Body_Data = df['text'].tolist()
 hackernews_react_native_count = numpy.arange(len(hackernews_react_native_Id_Data))
 df = None
+
 
 df = pandas.read_csv("Reddit_xamarin.csv")
 reddit_xamarin_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['created_utc']]
@@ -55,6 +82,13 @@ df = None
 # cross_Body_Data = df['body'].tolist()
 # cross_count = df['Unnamed: 0'].tolist()
 # df = None
+'''
+
+
+#close the SQL 
+conn.close()
+
+
 
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
@@ -69,19 +103,19 @@ app.layout = html.Div(children=[
 #    dcc.RangeSlider(id='year_slider', min=2008, max=2020, value=[2008, 2020])
                     
     #builds the graph                    
-    dcc.Graph(
-        id='HackerNews-graph',
-        figure={
-            'data': [
-                {'x': hackernews_xamarin_Date_Data, 'y': hackernews_xamarin_count, 'text': hackernews_xamarin_Body_Data,'type': 'scatter', 'name': 'Xamarin Mentions'},
-                {'x': hackernews_flutter_Date_Data, 'y': hackernews_flutter_count, 'text': hackernews_flutter_Body_Data,'type': 'scatter', 'name': 'Flutter Mentions'},
-                {'x': hackernews_react_native_Date_Data, 'y': hackernews_react_native_count, 'text': hackernews_react_native_Body_Data,'type': 'scatter', 'name': 'React Native Mentions'},
-            ],
-            'layout': {
-                'title': 'HackerNews Mentions'
-            }
-        }
-    ),
+#     dcc.Graph(
+#         id='HackerNews-graph',
+#         figure={
+#             'data': [
+#                 {'x': hackernews_xamarin_Date_Data, 'y': hackernews_xamarin_count, 'text': hackernews_xamarin_Body_Data,'type': 'scatter', 'name': 'Xamarin Mentions'},
+#                 {'x': hackernews_flutter_Date_Data, 'y': hackernews_flutter_count, 'text': hackernews_flutter_Body_Data,'type': 'scatter', 'name': 'Flutter Mentions'},
+#                 {'x': hackernews_react_native_Date_Data, 'y': hackernews_react_native_count, 'text': hackernews_react_native_Body_Data,'type': 'scatter', 'name': 'React Native Mentions'},
+#             ],
+#             'layout': {
+#                 'title': 'HackerNews Mentions'
+#             }
+#         }
+#     ),
     dcc.Graph(
         id='Reddit-graph',
         figure={

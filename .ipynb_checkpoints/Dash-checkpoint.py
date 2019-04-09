@@ -5,52 +5,90 @@ import csv
 import pandas
 from datetime import datetime
 import numpy
+import sqlite3
+
+conn = sqlite3.connect('TechGraph.db')
+cur = conn.cursor()
+
+df = pandas.read_sql("SELECT * FROM Reddit_xamarin", conn)
+reddit_xamarin_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['created_utc']]
+reddit_xamarin_Id_Data = df['id'].tolist()
+reddit_xamarin_Body_Data = df['body'].tolist()
+reddit_xamarin_count = numpy.arange(len(reddit_xamarin_Id_Data))
+df = None
+
+df = pandas.read_sql("SELECT * FROM Reddit_flutter", conn)
+reddit_flutter_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['created_utc']]
+reddit_flutter_Id_Data = df['id'].tolist()
+reddit_flutter_Body_Data = df['body'].tolist()
+reddit_flutter_count = numpy.arange(len(reddit_flutter_Id_Data))
+df = None
+
+df = pandas.read_sql("SELECT * FROM Reddit_react_native",conn)
+reddit_react_native_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['created_utc']]
+reddit_react_native_Id_Data = df['id'].tolist()
+reddit_react_native_Body_Data = df['body'].tolist()
+reddit_react_native_count = numpy.arange(len(reddit_react_native_Id_Data))
+df = None
 
 
+
+'''
 df = pandas.read_csv("HackerNews_xamarin.csv")
-hackernews_xamarin_Date_Data = df['date'].tolist()
+hackernews_xamarin_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['time']]
 hackernews_xamarin_Id_Data = df['id'].tolist()
-hackernews_xamarin_Body_Data = df['body'].tolist()
+hackernews_xamarin_Body_Data = df['text'].tolist()
 hackernews_xamarin_count = numpy.arange(len(hackernews_xamarin_Id_Data))
 df = None
 
 df = pandas.read_csv("HackerNews_flutter.csv")
-hackernews_flutter_Date_Data = df['date'].tolist()
+hackernews_flutter_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['time']]
 hackernews_flutter_Id_Data = df['id'].tolist()
-hackernews_flutter_Body_Data = df['body'].tolist()
+hackernews_flutter_Body_Data = df['text'].tolist()
 hackernews_flutter_count = numpy.arange(len(hackernews_flutter_Id_Data))
 df = None
 
 df = pandas.read_csv("HackerNews_react_native.csv")
-hackernews_react_native_Date_Data = df['date'].tolist()
+hackernews_react_native_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['time']]
 hackernews_react_native_Id_Data = df['id'].tolist()
-hackernews_react_native_Body_Data = df['body'].tolist()
-hackernews_react_native_count = numpy.arange(len(hackernews_flutter_Id_Data))
+hackernews_react_native_Body_Data = df['text'].tolist()
+hackernews_react_native_count = numpy.arange(len(hackernews_react_native_Id_Data))
 df = None
 
-# df = pandas.read_csv("Reddit_xamarin.csv",header = None)
-# reddit_xamarin_Date_Data = df[2].tolist()
-# reddit_xamarin_Body_Data = df[1].tolist()
-# reddit_xamarin_count = df[0].tolist()
-# df = None
 
-# df = pandas.read_csv("Reddit_flutter.csv",header = None)
-# reddit_flutter_Date_Data = df[2].tolist()
-# reddit_flutter_Body_Data = df[1].tolist()
-# reddit_flutter_count = df[0].tolist()
-# df = None
+df = pandas.read_csv("Reddit_xamarin.csv")
+reddit_xamarin_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['created_utc']]
+reddit_xamarin_Id_Data = df['id'].tolist()
+reddit_xamarin_Body_Data = df['body'].tolist()
+reddit_xamarin_count = numpy.arange(len(reddit_xamarin_Id_Data))
+df = None
 
-# df = pandas.read_csv("Reddit_react_native.csv",header = None)
-# reddit_react_native_Date_Data = df[2].tolist()
-# reddit_react_native_Body_Data = df[1].tolist()
-# reddit_react_native_count = df[0].tolist()
-# df = None
+df = pandas.read_csv("Reddit_flutter.csv")
+reddit_flutter_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['created_utc']]
+reddit_flutter_Id_Data = df['id'].tolist()
+reddit_flutter_Body_Data = df['body'].tolist()
+reddit_flutter_count = numpy.arange(len(reddit_flutter_Id_Data))
+df = None
+
+df = pandas.read_csv("Reddit_react_native.csv")
+reddit_react_native_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['created_utc']]
+reddit_react_native_Id_Data = df['id'].tolist()
+reddit_react_native_Body_Data = df['body'].tolist()
+reddit_react_native_count = numpy.arange(len(reddit_react_native_Id_Data))
+df = None
 
 # df = pandas.read_csv("HackerNews_xamarin_flutter_cross.csv")
 # cross_Date_Data = df['date'].tolist()
 # cross_Body_Data = df['body'].tolist()
 # cross_count = df['Unnamed: 0'].tolist()
 # df = None
+'''
+
+
+#close the SQL 
+conn.close()
+
+
 
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
@@ -65,32 +103,32 @@ app.layout = html.Div(children=[
 #    dcc.RangeSlider(id='year_slider', min=2008, max=2020, value=[2008, 2020])
                     
     #builds the graph                    
-    dcc.Graph(
-        id='HackerNews-graph',
-        figure={
-            'data': [
-                {'x': hackernews_xamarin_Date_Data, 'y': hackernews_xamarin_count, 'text': hackernews_xamarin_Body_Data,'type': 'scatter', 'name': 'HackerNews Xamarin Mentions'},
-                {'x': hackernews_flutter_Date_Data, 'y': hackernews_flutter_count, 'text': hackernews_flutter_Body_Data,'type': 'scatter', 'name': 'HackerNews Flutter Mentions'},
-                {'x': hackernews_react_native_Date_Data, 'y': hackernews_react_native_count, 'text': hackernews_react_native_Body_Data,'type': 'scatter', 'name': 'HackerNews React Native Mentions'},
-            ],
-            'layout': {
-                'title': 'HackerNews Mentions'
-            }
-        }
-    ),
 #     dcc.Graph(
-#         id='Reddit-graph',
+#         id='HackerNews-graph',
 #         figure={
 #             'data': [
-#                 {'x': reddit_xamarin_Date_Data, 'y': reddit_xamarin_count, 'text': reddit_xamarin_Body_Data,'type': 'scatter', 'name': 'Reddit Xamarin Mentions'},
-#                 {'x': reddit_flutter_Date_Data, 'y': reddit_flutter_count, 'text': reddit_flutter_Body_Data,'type': 'scatter', 'name': 'Reddit Flutter Mentions'},
-# #                 {'x': reddit_react_native_Date_Data, 'y': reddit_react_native_count, 'text': reddit_react_native_Body_Data,'type': 'scatter', 'name':'Reddit  React Native Mentions'},
+#                 {'x': hackernews_xamarin_Date_Data, 'y': hackernews_xamarin_count, 'text': hackernews_xamarin_Body_Data,'type': 'scatter', 'name': 'Xamarin Mentions'},
+#                 {'x': hackernews_flutter_Date_Data, 'y': hackernews_flutter_count, 'text': hackernews_flutter_Body_Data,'type': 'scatter', 'name': 'Flutter Mentions'},
+#                 {'x': hackernews_react_native_Date_Data, 'y': hackernews_react_native_count, 'text': hackernews_react_native_Body_Data,'type': 'scatter', 'name': 'React Native Mentions'},
 #             ],
 #             'layout': {
-#                 'title': 'Reddit Mentions'
+#                 'title': 'HackerNews Mentions'
 #             }
 #         }
-#     )
+#     ),
+    dcc.Graph(
+        id='Reddit-graph',
+        figure={
+            'data': [
+                {'x': reddit_xamarin_Date_Data, 'y': reddit_xamarin_count, 'text': reddit_xamarin_Body_Data,'type': 'scatter', 'name': 'Xamarin Mentions'},
+                {'x': reddit_flutter_Date_Data, 'y': reddit_flutter_count, 'text': reddit_flutter_Body_Data,'type': 'scatter', 'name': 'Flutter Mentions'},
+                {'x': reddit_react_native_Date_Data, 'y': reddit_react_native_count, 'text': reddit_react_native_Body_Data,'type': 'scatter', 'name':'React Native Mentions'},
+            ],
+            'layout': {
+                'title': 'Reddit Mentions'
+            }
+        }
+    )
 ])
 
 if __name__ == '__main__':
