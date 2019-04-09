@@ -1,3 +1,5 @@
+*.cvs
+*.db
 TwitterSmall.csv
 twitter.db
 reddit.db
