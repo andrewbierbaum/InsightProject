@@ -10,14 +10,23 @@ import sqlite3
 conn = sqlite3.connect('TechGraph.db')
 cur = conn.cursor()
 
-df = pandas.read_sql("SELECT * FROM Reddit_xamarin", conn)
-reddit_xamarin_Date_Data = df['created_utc'].apply(to_datetime(unit ='s'))
-reddit_xamarin_Id_Data = df['id'].tolist()
-reddit_xamarin_Body_Data = df['body'].tolist()
-#count is now the index tho
-reddit_xamarin_count = df['index'].tolist()
-#reddit_xamarin_count = numpy.arange(len(reddit_xamarin_Id_Data))
+df = pandas.read_sql("SELECT * FROM HackerNews_xamarin", conn)
+# df = pandas.read_csv("HackerNews_xamarin.csv")
+hackernews_xamarin_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['time']]
+#df['time'].apply(to_datetime(unit ='s')).tolist()
+hackernews_xamarin_Id_Data = df['id'].tolist()
+hackernews_xamarin_Body_Data = df['text'].tolist()
+hackernews_xamarin_count = numpy.arange(len(hackernews_xamarin_Id_Data))
 df = None
+
+# df = pandas.read_sql("SELECT * FROM Reddit_xamarin", conn)
+# reddit_xamarin_Date_Data = df['created_utc'].apply(to_datetime(unit ='s'))
+# reddit_xamarin_Id_Data = df['id'].tolist()
+# reddit_xamarin_Body_Data = df['body'].tolist()
+# #count is now the index tho
+# reddit_xamarin_count = df['index'].tolist()
+# #reddit_xamarin_count = numpy.arange(len(reddit_xamarin_Id_Data))
+# df = None
 
 # df = pandas.read_sql("SELECT * FROM Reddit_flutter", conn)
 # reddit_flutter_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['created_utc']]
@@ -81,33 +90,33 @@ app.layout = html.Div(children=[
 #    #builds the year range selector
 #    dcc.RangeSlider(id='year_slider', min=2008, max=2020, value=[2008, 2020])
                     
-    #builds the graph                    
-#     dcc.Graph(
-#         id='HackerNews-graph',
-#         figure={
-#             'data': [
-#                 {'x': hackernews_xamarin_Date_Data, 'y': hackernews_xamarin_count, 'text': hackernews_xamarin_Body_Data,'type': 'scatter', 'name': 'Xamarin Mentions'},
-#                 {'x': hackernews_flutter_Date_Data, 'y': hackernews_flutter_count, 'text': hackernews_flutter_Body_Data,'type': 'scatter', 'name': 'Flutter Mentions'},
-#                 {'x': hackernews_react_native_Date_Data, 'y': hackernews_react_native_count, 'text': hackernews_react_native_Body_Data,'type': 'scatter', 'name': 'React Native Mentions'},
-#             ],
-#             'layout': {
-#                 'title': 'HackerNews Mentions'
-#             }
-#         }
-#     ),
+#    builds the graph                    
     dcc.Graph(
-        id='Reddit-graph',
+        id='HackerNews-graph',
         figure={
             'data': [
-                {'x': reddit_xamarin_Date_Data, 'y': reddit_xamarin_count, 'text': reddit_xamarin_Body_Data,'type': 'scatter', 'name': 'Xamarin Mentions'},
-                {'x': reddit_flutter_Date_Data, 'y': reddit_flutter_count, 'text': reddit_flutter_Body_Data,'type': 'scatter', 'name': 'Flutter Mentions'},
-                {'x': reddit_react_native_Date_Data, 'y': reddit_react_native_count, 'text': reddit_react_native_Body_Data,'type': 'scatter', 'name':'React Native Mentions'},
+                {'x': hackernews_xamarin_Date_Data, 'y': hackernews_xamarin_count, 'text': hackernews_xamarin_Body_Data,'type': 'scatter', 'name': 'Xamarin Mentions'},
+#                 {'x': hackernews_flutter_Date_Data, 'y': hackernews_flutter_count, 'text': hackernews_flutter_Body_Data,'type': 'scatter', 'name': 'Flutter Mentions'},
+#                 {'x': hackernews_react_native_Date_Data, 'y': hackernews_react_native_count, 'text': hackernews_react_native_Body_Data,'type': 'scatter', 'name': 'React Native Mentions'},
             ],
             'layout': {
-                'title': 'Reddit Mentions'
+                'title': 'HackerNews Mentions'
             }
         }
-    )
+    ),
+#     dcc.Graph(
+#         id='Reddit-graph',
+#         figure={
+#             'data': [
+#                 {'x': reddit_xamarin_Date_Data, 'y': reddit_xamarin_count, 'text': reddit_xamarin_Body_Data,'type': 'scatter', 'name': 'Xamarin Mentions'},
+#                 {'x': reddit_flutter_Date_Data, 'y': reddit_flutter_count, 'text': reddit_flutter_Body_Data,'type': 'scatter', 'name': 'Flutter Mentions'},
+#                 {'x': reddit_react_native_Date_Data, 'y': reddit_react_native_count, 'text': reddit_react_native_Body_Data,'type': 'scatter', 'name':'React Native Mentions'},
+#             ],
+#             'layout': {
+#                 'title': 'Reddit Mentions'
+#             }
+#         }
+#     )
 ])
 
 if __name__ == '__main__':
