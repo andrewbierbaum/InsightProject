@@ -11,78 +11,57 @@ conn = sqlite3.connect('TechGraph.db')
 cur = conn.cursor()
 
 df = pandas.read_sql("SELECT * FROM Reddit_xamarin", conn)
-reddit_xamarin_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['created_utc']]
+reddit_xamarin_Date_Data = df['created_utc'].apply(to_datetime(unit ='s'))
 reddit_xamarin_Id_Data = df['id'].tolist()
 reddit_xamarin_Body_Data = df['body'].tolist()
-reddit_xamarin_count = numpy.arange(len(reddit_xamarin_Id_Data))
+#count is now the index tho
+reddit_xamarin_count = df['index'].tolist()
+#reddit_xamarin_count = numpy.arange(len(reddit_xamarin_Id_Data))
 df = None
 
-df = pandas.read_sql("SELECT * FROM Reddit_flutter", conn)
-reddit_flutter_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['created_utc']]
-reddit_flutter_Id_Data = df['id'].tolist()
-reddit_flutter_Body_Data = df['body'].tolist()
-reddit_flutter_count = numpy.arange(len(reddit_flutter_Id_Data))
-df = None
+# df = pandas.read_sql("SELECT * FROM Reddit_flutter", conn)
+# reddit_flutter_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['created_utc']]
+# reddit_flutter_Id_Data = df['id'].tolist()
+# reddit_flutter_Body_Data = df['body'].tolist()
+# reddit_flutter_count = numpy.arange(len(reddit_flutter_Id_Data))
+# df = None
 
-df = pandas.read_sql("SELECT * FROM Reddit_react_native",conn)
-reddit_react_native_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['created_utc']]
-reddit_react_native_Id_Data = df['id'].tolist()
-reddit_react_native_Body_Data = df['body'].tolist()
-reddit_react_native_count = numpy.arange(len(reddit_react_native_Id_Data))
-df = None
-
-
-
-'''
-df = pandas.read_csv("HackerNews_xamarin.csv")
-hackernews_xamarin_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['time']]
-hackernews_xamarin_Id_Data = df['id'].tolist()
-hackernews_xamarin_Body_Data = df['text'].tolist()
-hackernews_xamarin_count = numpy.arange(len(hackernews_xamarin_Id_Data))
-df = None
-
-df = pandas.read_csv("HackerNews_flutter.csv")
-hackernews_flutter_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['time']]
-hackernews_flutter_Id_Data = df['id'].tolist()
-hackernews_flutter_Body_Data = df['text'].tolist()
-hackernews_flutter_count = numpy.arange(len(hackernews_flutter_Id_Data))
-df = None
-
-df = pandas.read_csv("HackerNews_react_native.csv")
-hackernews_react_native_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['time']]
-hackernews_react_native_Id_Data = df['id'].tolist()
-hackernews_react_native_Body_Data = df['text'].tolist()
-hackernews_react_native_count = numpy.arange(len(hackernews_react_native_Id_Data))
-df = None
+# df = pandas.read_sql("SELECT * FROM Reddit_react_native",conn)
+# reddit_react_native_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['created_utc']]
+# reddit_react_native_Id_Data = df['id'].tolist()
+# reddit_react_native_Body_Data = df['body'].tolist()
+# reddit_react_native_count = numpy.arange(len(reddit_react_native_Id_Data))
+# df = None
 
 
-df = pandas.read_csv("Reddit_xamarin.csv")
-reddit_xamarin_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['created_utc']]
-reddit_xamarin_Id_Data = df['id'].tolist()
-reddit_xamarin_Body_Data = df['body'].tolist()
-reddit_xamarin_count = numpy.arange(len(reddit_xamarin_Id_Data))
-df = None
 
-df = pandas.read_csv("Reddit_flutter.csv")
-reddit_flutter_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['created_utc']]
-reddit_flutter_Id_Data = df['id'].tolist()
-reddit_flutter_Body_Data = df['body'].tolist()
-reddit_flutter_count = numpy.arange(len(reddit_flutter_Id_Data))
-df = None
 
-df = pandas.read_csv("Reddit_react_native.csv")
-reddit_react_native_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['created_utc']]
-reddit_react_native_Id_Data = df['id'].tolist()
-reddit_react_native_Body_Data = df['body'].tolist()
-reddit_react_native_count = numpy.arange(len(reddit_react_native_Id_Data))
-df = None
+# df = pandas.read_csv("HackerNews_xamarin.csv")
+# hackernews_xamarin_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['time']]
+# hackernews_xamarin_Id_Data = df['id'].tolist()
+# hackernews_xamarin_Body_Data = df['text'].tolist()
+# hackernews_xamarin_count = numpy.arange(len(hackernews_xamarin_Id_Data))
+# df = None
+
+# df = pandas.read_csv("HackerNews_flutter.csv")
+# hackernews_flutter_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['time']]
+# hackernews_flutter_Id_Data = df['id'].tolist()
+# hackernews_flutter_Body_Data = df['text'].tolist()
+# hackernews_flutter_count = numpy.arange(len(hackernews_flutter_Id_Data))
+# df = None
+
+# df = pandas.read_csv("HackerNews_react_native.csv")
+# hackernews_react_native_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['time']]
+# hackernews_react_native_Id_Data = df['id'].tolist()
+# hackernews_react_native_Body_Data = df['text'].tolist()
+# hackernews_react_native_count = numpy.arange(len(hackernews_react_native_Id_Data))
+# df = None
 
 # df = pandas.read_csv("HackerNews_xamarin_flutter_cross.csv")
 # cross_Date_Data = df['date'].tolist()
 # cross_Body_Data = df['body'].tolist()
 # cross_count = df['Unnamed: 0'].tolist()
 # df = None
-'''
 
 
 #close the SQL 
