@@ -37,28 +37,26 @@ hackernews_flutter_Body_Data = df['text'].tolist()
 hackernews_flutter_count = numpy.arange(len(hackernews_flutter_Id_Data))
 df = None
 
-
+#take in reddit data
 df = pandas.read_sql("SELECT * FROM Reddit_xamarin", conn)
 reddit_xamarin_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['created_utc']]
 reddit_xamarin_Id_Data = df['id'].tolist()
 reddit_xamarin_Body_Data = df['body'].tolist()
-#count is now the index tho
-#reddit_xamarin_count = df['index'].tolist()
 reddit_xamarin_count = numpy.arange(len(reddit_xamarin_Id_Data))
 df = None
-
-# df = pandas.read_sql("SELECT * FROM Reddit_flutter", conn)
-# reddit_flutter_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['created_utc']]
-# reddit_flutter_Id_Data = df['id'].tolist()
-# reddit_flutter_Body_Data = df['body'].tolist()
-# reddit_flutter_count = numpy.arange(len(reddit_flutter_Id_Data))
-# df = None
 
 df = pandas.read_sql("SELECT * FROM Reddit_react_native",conn)
 reddit_react_native_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['created_utc']]
 reddit_react_native_Id_Data = df['id'].tolist()
 reddit_react_native_Body_Data = df['body'].tolist()
 reddit_react_native_count = numpy.arange(len(reddit_react_native_Id_Data))
+df = None
+
+df = pandas.read_sql("SELECT * FROM Reddit_flutter", conn)
+reddit_flutter_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['created_utc']]
+reddit_flutter_Id_Data = df['id'].tolist()
+reddit_flutter_Body_Data = df['body'].tolist()
+reddit_flutter_count = numpy.arange(len(reddit_flutter_Id_Data))
 df = None
 
 #close the SQL 
@@ -96,8 +94,8 @@ app.layout = html.Div(children=[
         figure={
             'data': [
                 {'x': reddit_xamarin_Date_Data, 'y': reddit_xamarin_count, 'text': reddit_xamarin_Body_Data,'type': 'scatter', 'name': 'Xamarin Mentions'},
-#                 {'x': reddit_flutter_Date_Data, 'y': reddit_flutter_count, 'text': reddit_flutter_Body_Data,'type': 'scatter', 'name': 'Flutter Mentions'},
                 {'x': reddit_react_native_Date_Data, 'y': reddit_react_native_count, 'text': reddit_react_native_Body_Data,'type': 'scatter', 'name':'React Native Mentions'},
+                 {'x': reddit_flutter_Date_Data, 'y': reddit_flutter_count, 'text': reddit_flutter_Body_Data,'type': 'scatter', 'name': 'Flutter Mentions'},
             ],
             'layout': {
                 'title': 'Reddit Mentions'
