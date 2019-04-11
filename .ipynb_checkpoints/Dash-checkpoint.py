@@ -61,34 +61,8 @@ reddit_react_native_Body_Data = df['body'].tolist()
 reddit_react_native_count = numpy.arange(len(reddit_react_native_Id_Data))
 df = None
 
-
-
-# df = pandas.read_csv("HackerNews_flutter.csv")
-# hackernews_flutter_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['time']]
-# hackernews_flutter_Id_Data = df['id'].tolist()
-# hackernews_flutter_Body_Data = df['text'].tolist()
-# hackernews_flutter_count = numpy.arange(len(hackernews_flutter_Id_Data))
-# df = None
-
-# df = pandas.read_csv("HackerNews_react_native.csv")
-# hackernews_react_native_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['time']]
-# hackernews_react_native_Id_Data = df['id'].tolist()
-# hackernews_react_native_Body_Data = df['text'].tolist()
-# hackernews_react_native_count = numpy.arange(len(hackernews_react_native_Id_Data))
-# df = None
-
-# df = pandas.read_csv("HackerNews_xamarin_flutter_cross.csv")
-# cross_Date_Data = df['date'].tolist()
-# cross_Body_Data = df['body'].tolist()
-# cross_count = df['Unnamed: 0'].tolist()
-# df = None
-
-
 #close the SQL 
 conn.close()
-
-
-
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 

@@ -1,3 +1,11 @@
+elasticsearch-7.0.0/*
+elasticsearch-7.0.0-linux-x86_64.tar.gz
+kibana-7.0.0-darwin-x86_64/*
+kibana-7.0.0-darwin-x86_64.tar.gz
+kibana-7.0.0-linux-x86_64/*
+logstash-7.0.0/*
+logstash-7.0.0.tar.gz   
+
 **/*.csv
 *.cvs
 *.db
