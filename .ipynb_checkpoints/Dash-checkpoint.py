@@ -74,34 +74,41 @@ app.layout = html.Div(children=[
 #    dcc.RangeSlider(id='year_slider', min=2008, max=2020, value=[2008, 2020])
 # May 16, 2011
     
-    
+    html.Div([
 #    builds the graph                    
-    dcc.Graph(
-        id='HackerNews-graph',
-        figure={
-            'data': [
+        dcc.Graph(
+            id='HackerNews-graph',
+            figure={
+                'data': [
                 {'x': hackernews_xamarin_Date_Data, 'y': hackernews_xamarin_count, 'text': hackernews_xamarin_Body_Data,'type': 'scatter', 'name': 'Xamarin Mentions'},
                 {'x': hackernews_react_native_Date_Data, 'y': hackernews_react_native_count, 'text': hackernews_react_native_Body_Data,'type': 'scatter', 'name': 'React Native Mentions'},
                 {'x': hackernews_flutter_Date_Data, 'y': hackernews_flutter_count, 'text': hackernews_flutter_Body_Data,'type': 'scatter', 'name': 'Flutter Mentions'},
             ],
-            'layout': {
-                'title': 'HackerNews Mentions'
+        'layout': {
+        'legend': {'orientation':'h','x':0,'y':1.15},
+        'title': 'HackerNews Mentions'
             }
         }
-    ),
-    dcc.Graph(
-        id='Reddit-graph',
-        figure={
-            'data': [
+    )],
+    style={'width': '50%', 'display': 'inline-block'}),
+    
+    html.Div([
+        dcc.Graph(
+            id='Reddit-graph',
+            figure={
+                'data': [
                 {'x': reddit_xamarin_Date_Data, 'y': reddit_xamarin_count, 'text': reddit_xamarin_Body_Data,'type': 'scatter', 'name': 'Xamarin Mentions'},
                 {'x': reddit_react_native_Date_Data, 'y': reddit_react_native_count, 'text': reddit_react_native_Body_Data,'type': 'scatter', 'name':'React Native Mentions'},
                  {'x': reddit_flutter_Date_Data, 'y': reddit_flutter_count, 'text': reddit_flutter_Body_Data,'type': 'scatter', 'name': 'Flutter Mentions'},
             ],
             'layout': {
-                'title': 'Reddit Mentions'
+            #'xaxis': {'range':[]}
+            'legend': {'orientation':'h','x':0,'y':1.15},
+            'title': 'Reddit Mentions'
             }
         }
-    )
+    )],
+    style={'width': '50%', 'display': 'inline-block'}),
 ])
 
 if __name__ == '__main__':
