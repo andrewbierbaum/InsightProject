@@ -10,23 +10,29 @@ import sqlite3
 conn = sqlite3.connect('TechGraph.db')
 cur = conn.cursor()
 
-df = pandas.read_sql("SELECT * FROM HackerNews_xamarin", conn)
-# df = pandas.read_csv("HackerNews_xamarin.csv")
-hackernews_xamarin_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['time']]
+df_hackernews_xamarin = pandas.read_sql("SELECT * FROM HackerNews_xamarin", conn)
+df_hackernews_xamarin['time'] = pandas.to_datetime(df_hackernews_xamarin['time'],unit = 's')
+
+print(df_hackernews_xamarin['text'][0])
+print(df_hackernews_xamarin['text'][1])
+print(df_hackernews_xamarin['text'][2])
+## df = pandas.read_csv("HackerNews_xamarin.csv")
+#hackernews_xamarin_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['time']]
 #df['time'].apply(to_datetime(unit ='s')).tolist()
-hackernews_xamarin_Id_Data = df['id'].tolist()
-hackernews_xamarin_Body_Data = df['text'].tolist()
-hackernews_xamarin_count = numpy.arange(len(hackernews_xamarin_Id_Data))
-df = None
+#hackernews_xamarin_Id_Data = df['id'].tolist()
+#hackernews_xamarin_Body_Data = df['text'].tolist()
+#hackernews_xamarin_count = numpy.arange(len(hackernews_xamarin_Id_Data))
+#df = None
 
 
-df = pandas.read_sql("SELECT * FROM HackerNews_react_native", conn)
+df_hackernews_react_native = pandas.read_sql("SELECT * FROM HackerNews_react_native", conn)
+df_hackernews_react_native['time'] = pandas.to_datetime(df_hackernews_react_native['time'],unit = 's')
 #df = pandas.read_csv("HackerNews_react_native.csv")
-hackernews_react_native_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['time']]
-hackernews_react_native_Id_Data = df['id'].tolist()
-hackernews_react_native_Body_Data = df['text'].tolist()
-hackernews_react_native_count = numpy.arange(len(hackernews_react_native_Id_Data))
-df = None
+#hackernews_react_native_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['time']]
+#hackernews_react_native_Id_Data = df['id'].tolist()
+#hackernews_react_native_Body_Data = df['text'].tolist()
+#hackernews_react_native_count = numpy.arange(len(hackernews_react_native_Id_Data))
+#df = None
 
 
 df = pandas.read_sql("SELECT * FROM HackerNews_flutter", conn)
@@ -66,9 +72,11 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
+
 app.layout = html.Div(children=[
-    html.H1(children='HackerNews Mentions'),
-    html.Div(children='''Comparing the mentions of Xamarin, Flutter, and React Native on HackerNews'''),
+    html.H1(children='Technology Mentions on HackerNews and Reddit',style={'text-align': 'center'}),
+#	html.Div(children ='user data',id='text-context'),
+    html.Div(children='''click to display the user comment''',style={'text-align': 'center','font-size': 24}),
     
 #    #builds the year range selector
 #    dcc.RangeSlider(id='year_slider', min=2008, max=2020, value=[2008, 2020])
@@ -80,11 +88,13 @@ app.layout = html.Div(children=[
             id='HackerNews-graph',
             figure={
                 'data': [
-                {'x': hackernews_xamarin_Date_Data, 'y': hackernews_xamarin_count, 'text': hackernews_xamarin_Body_Data,'type': 'scatter', 'name': 'Xamarin Mentions'},
-                {'x': hackernews_react_native_Date_Data, 'y': hackernews_react_native_count, 'text': hackernews_react_native_Body_Data,'type': 'scatter', 'name': 'React Native Mentions'},
-                {'x': hackernews_flutter_Date_Data, 'y': hackernews_flutter_count, 'text': hackernews_flutter_Body_Data,'type': 'scatter', 'name': 'Flutter Mentions'},
+                {'x': df_hackernews_xamarin['time'], 'y': df_hackernews_xamarin['index'],'hovertext': df_hackernews_xamarin['text'] ,'type': 'scatter', 'name': 'Xamarin Mentions'},
+                {'x': df_hackernews_react_native['time'], 'y': df_hackernews_react_native['index'], 'text': df_hackernews_react_native['text'],'type': 'scatter', 'name': 'React Native Mentions'},
+#                {'x': hackernews_flutter_Date_Data, 'y': hackernews_flutter_count, 'text': hackernews_flutter_Body_Data,'type': 'scatter', 'name': 'Flutter Mentions'},
             ],
         'layout': {
+	'clickmode': 'event+select',
+	'hovermode': 'closest',
         'legend': {'orientation':'h','x':0,'y':1.15},
         'title': 'HackerNews Mentions'
             }
@@ -102,6 +112,8 @@ app.layout = html.Div(children=[
                  {'x': reddit_flutter_Date_Data, 'y': reddit_flutter_count, 'text': reddit_flutter_Body_Data,'type': 'scatter', 'name': 'Flutter Mentions'},
             ],
             'layout': {
+	    'clickmode': 'event+select',
+	    'hovermode': 'closest',
             #'xaxis': {'range':[]}
             'legend': {'orientation':'h','x':0,'y':1.15},
             'title': 'Reddit Mentions'
@@ -109,12 +121,34 @@ app.layout = html.Div(children=[
         }
     )],
     style={'width': '50%', 'display': 'inline-block'}),
+    html.Div(children ='HackerNews user data',id='HackerNews-text',style={'width': '50%','display':'inline-block','vertical-align': 'top' }),
+    html.Div(children ='Reddit user data',id='Reddit-text',style={'width': '50%','display':'inline-block','vertical-align': 'top'}),
 ])
+
+
+@app.callback(
+    dash.dependencies.Output('HackerNews-text', 'children'),
+    [dash.dependencies.Input('HackerNews-graph', 'clickData')])
+def update_text(clickData):
+    string = df_hackernews_xamarin['text'][clickData['points'][0]['pointIndex']]
+    return html.H3(string)
+#    return html.H3(df_hackernews_xamarin['text'][clickData['points'][0]['pointIndex']])
+#u'curveNumber': 0, u'pointNumber': 2081, u'pointIndex': 2081
+
+
+@app.callback(
+    dash.dependencies.Output('Reddit-text', 'children'),
+    [dash.dependencies.Input('Reddit-graph', 'clickData')])
+def update_text(clickData):
+	
+    return html.H3("hi")
 
 if __name__ == '__main__':
     app.run_server(debug=True, port = 9990, host ='0.0.0.0')
 
-    
+
+
+
     
 #https://plot.ly/python/time-series/   
     

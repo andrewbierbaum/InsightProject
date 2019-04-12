@@ -67,8 +67,8 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 app.layout = html.Div(children=[
-    html.H1(children='HackerNews Mentions'),
-    html.Div(children='''Comparing the mentions of Xamarin, Flutter, and React Native on HackerNews'''),
+    html.H1(children='Technology Mentions on HackerNews and Reddit',style={'text-align': 'center'}),
+#    html.Div(children='''Comparing the mentions of Xamarin, Flutter, and React Native on HackerNews'''),
     
 #    #builds the year range selector
 #    dcc.RangeSlider(id='year_slider', min=2008, max=2020, value=[2008, 2020])
@@ -99,7 +99,7 @@ app.layout = html.Div(children=[
                 'data': [
                 {'x': reddit_xamarin_Date_Data, 'y': reddit_xamarin_count, 'text': reddit_xamarin_Body_Data,'type': 'scatter', 'name': 'Xamarin Mentions'},
                 {'x': reddit_react_native_Date_Data, 'y': reddit_react_native_count, 'text': reddit_react_native_Body_Data,'type': 'scatter', 'name':'React Native Mentions'},
-                 {'x': reddit_flutter_Date_Data, 'y': reddit_flutter_count, 'text': reddit_flutter_Body_Data,'type': 'scatter', 'name': 'Flutter Mentions'},
+                 {'x': reddit_flutter_Date_Data, 'y': reddit_flutter_count, 'text': reddit_flutter_Body_Data,'type': 'scatter', 'name': 'Flutter Mentions', 'hoverinfo': hackernews_flutter_Body_Data},
             ],
             'layout': {
             #'xaxis': {'range':[]}
