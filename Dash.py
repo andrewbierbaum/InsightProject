@@ -6,7 +6,7 @@ import pandas
 from datetime import datetime
 import numpy
 import sqlite3
-#import HTMLParser
+import HTMLParser
 
 conn = sqlite3.connect('TechGraph.db')
 cur = conn.cursor()
@@ -85,8 +85,8 @@ app.layout = html.Div(children=[
             figure={
                 'data': [
                 {'x': df_hackernews_xamarin['time'], 'y': df_hackernews_xamarin['index'],'text': df_hackernews_xamarin['text'] ,'type': 'scatter', 'name': 'Xamarin Mentions'},
-#                {'x': hackernews_react_native_Date_Data, 'y': hackernews_react_native_count, 'text': hackernews_react_native_Body_Data,'type': 'scatter', 'name': 'React Native Mentions'},
-#                {'x': hackernews_flutter_Date_Data, 'y': hackernews_flutter_count, 'text': hackernews_flutter_Body_Data,'type': 'scatter', 'name': 'Flutter Mentions'},
+                {'x': hackernews_react_native_Date_Data, 'y': hackernews_react_native_count, 'text': hackernews_react_native_Body_Data,'type': 'scatter', 'name': 'React Native Mentions'},
+                {'x': hackernews_flutter_Date_Data, 'y': hackernews_flutter_count, 'text': hackernews_flutter_Body_Data,'type': 'scatter', 'name': 'Flutter Mentions'},
             ],
         'layout': {
 #	'clickmode': 'event+select',
@@ -104,8 +104,8 @@ app.layout = html.Div(children=[
             figure={
                 'data': [
                 {'x': reddit_xamarin_Date_Data, 'y': reddit_xamarin_count, 'text': reddit_xamarin_Body_Data,'type': 'scatter', 'name': 'Xamarin Mentions'},
-#                {'x': reddit_react_native_Date_Data, 'y': reddit_react_native_count, 'text': reddit_react_native_Body_Data,'type': 'scatter', 'name':'React Native Mentions'},
-#                 {'x': reddit_flutter_Date_Data, 'y': reddit_flutter_count, 'text': reddit_flutter_Body_Data,'type': 'scatter', 'name': 'Flutter Mentions'},
+                {'x': reddit_react_native_Date_Data, 'y': reddit_react_native_count, 'text': reddit_react_native_Body_Data,'type': 'scatter', 'name':'React Native Mentions'},
+                 {'x': reddit_flutter_Date_Data, 'y': reddit_flutter_count, 'text': reddit_flutter_Body_Data,'type': 'scatter', 'name': 'Flutter Mentions'},
             ],
             'layout': {
 #	    'clickmode': 'event+select',
@@ -127,9 +127,15 @@ app.layout = html.Div(children=[
     dash.dependencies.Output('HackerNews-text', 'children'),
     [dash.dependencies.Input('HackerNews-graph', 'clickData')])
 def update_text(clickData):
-    string = df_hackernews_xamarin['text'][clickData['points'][0]['pointIndex']]
-    return html.H3(string)
-#    return html.H3(df_hackernews_xamarin['text'][clickData['points'][0]['pointIndex']])
+    return HTMLParser.HTMLParser().unescape(clickData['points'][0]['text'])
+
+
+@app.callback(
+    dash.dependencies.Output('Reddit-text', 'children'),
+    [dash.dependencies.Input('Reddit-graph', 'clickData')])
+def update_text(clickData):
+    return HTMLParser.HTMLParser().unescape(clickData['points'][0]['text'])
+
 
 #@app.callback(
 #    dash.dependencies.Output('HackerNews-text', 'children'),
