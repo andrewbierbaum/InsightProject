@@ -71,18 +71,12 @@ df = None
 conn.close()
 
 
-
-
-# theme = {
+    # theme = {
 #     'dark': False,
 #     'detail': '#007439',
 #     'primary': '#00EA64', 
 #     'secondary': '#6E6E6E'
 # }
-
-#external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
-external_stylesheets = ['https://codepen.io/anon/pen/mardKv.css']
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 # theme =  {
 #     'dark': True,
@@ -103,12 +97,8 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 #         className='dark-theme-control'
 #     ), html.Br(),
 # ])
-
-app.layout = html.Div(id='dark-theme-feature',children=[
-    html.H1(children='Technology Mentions on HackerNews and Reddit',style={'text-align': 'center'}),
-#	html.Div(children ='user data',id='text-context'),
-    html.Div(children='''Hover and click data to display the user comment''',style={'text-align': 'center','font-size': 24}),
-    html.Br(),
+   
+    
 #    #builds the year range selector
 #    dcc.RangeSlider(id='year_slider', min=2008, max=2020, value=[2008, 2020])
 #    May 16, 2011
@@ -146,6 +136,37 @@ app.layout = html.Div(id='dark-theme-feature',children=[
 #   })
 # ]),
     
+    
+    
+    
+
+#external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+external_stylesheets = ['https://codepen.io/anon/pen/mardKv.css']
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+
+app.config['suppress_callback_exceptions']=True
+
+
+crossposts = html.Div([
+     html.Div([
+        dcc.Link('Overview       ', href='/dash-techgraph-report/overview', className="tab first"),
+        dcc.Link('crossposts', href='/dash-techgraph-report/crossposts', className="tab"),
+    ], className="row "),
+    
+    html.H1(children='Top Crossposts HackerNews and Reddit',style={'text-align': 'center'})
+])
+
+
+overview = html.Div(id='dark-theme-feature',children=[
+    html.H1(children='Technology Mentions on HackerNews and Reddit',style={'text-align': 'center'}),
+#	html.Div(children ='user data',id='text-context'),
+    html.Div(children='''Hover and click data to display the user comment''',style={'text-align': 'center','font-size': 24}),
+    html.Br(),
+    
+    html.Div([
+        dcc.Link('Overview', href='/dash-techgraph-report/overview', className="tab first"),
+        dcc.Link('crossposts', href='/dash-techgraph-report/crossposts', className="tab"),
+    ], className="row "),
 #    builds the graph                    
      html.Div([
 #    builds the graph                    
@@ -153,9 +174,9 @@ app.layout = html.Div(id='dark-theme-feature',children=[
             id='HackerNews-graph',
             figure={
                 'data': [
-                {'x': hackernews_xamarin_Date_Data, 'y': hackernews_xamarin_count, 'type': 'scatter', 'name': 'Xamarin'}, #'text': hackernews_xamarin_Body_Data  ,
-                {'x': hackernews_react_native_Date_Data, 'y': hackernews_react_native_count,  'type': 'scatter', 'name': 'React Native'}, #'text': hackernews_react_native_Body_Data,
-                {'x': hackernews_flutter_Date_Data, 'y': hackernews_flutter_count, 'type': 'scatter', 'name': 'Flutter'},#'text': hackernews_flutter_Body_Data,
+                {'x': hackernews_xamarin_Date_Data, 'y': hackernews_xamarin_count, 'type': 'scatter', 'name': 'Xamarin'},
+                {'x': hackernews_react_native_Date_Data, 'y': hackernews_react_native_count,  'type': 'scatter', 'name': 'React Native'}, 
+                {'x': hackernews_flutter_Date_Data, 'y': hackernews_flutter_count, 'type': 'scatter', 'name': 'Flutter'},
             ],
         'layout': {
         #'clickmode': 'event+select',
@@ -189,14 +210,41 @@ app.layout = html.Div(id='dark-theme-feature',children=[
     )],
     style={'width': '50%', 'display': 'inline-block'}),
     
-    html.Div(children ='Click data to Select',id='HackerNews-text',style={'width': '49%','display':'inline-block','vertical-align': 'top' }),
-    html.Div(children ='Click data to Select',id='Reddit-text',style={'width': '49%','display':'inline-block','vertical-align': 'top'}),
-    html.Div(children ='Hover over data to quick view',id='HackerNews-hover-text',style={'width': '49%','display':'inline-block','vertical-align': 'top' }),
-    html.Div(children ='Hover over data to quick view',id='Reddit-hover-text',style={'width': '49%','display':'inline-block','vertical-align': 'top'}),
+    html.H4(children ='Click data to Select',id='HackerNews-text',style={'width': '49%','display':'inline-block','vertical-align': 'top','height':'175px','overflow-y': 'scroll'}),
+    html.H4(children ='Click data to Select',id='Reddit-text',style={'width': '49%','display':'inline-block','vertical-align': 'top','height':'175px','overflow-y': 'scroll'}),
+    html.H4(children ='Hover over data to quick view',id='HackerNews-hover-text',style={'width': '49%','display':'inline-block','vertical-align': 'top','height':'175px','overflow': 'hidden'}),
+    html.H4(children ='Hover over data to quick view',id='Reddit-hover-text',style={'width': '49%','display':'inline-block','vertical-align': 'top','height':'175px','overflow': 'hidden'}),
+]),
+
+
+noPage = html.Div([  # 404
+    html.P(["404 Page not found"])
+    ], className="no-page")
+
+
+app.layout = html.Div([
+    dcc.Location(id='url', refresh=False),
+    html.Div(id='page-content'),
+    
+    #I think I have to repeat these as empty to not have the callbacks be mad at me
+    html.Div(children ='',id='HackerNews-text',style={'width': '49%','display':'inline-block','vertical-align': 'top' }),
+    html.Div(children ='',id='Reddit-text',style={'width': '49%','display':'inline-block','vertical-align': 'top'}),
+    html.Div(children ='',id='HackerNews-hover-text',style={'width': '49%','display':'inline-block','vertical-align': 'top' }),
+    html.Div(children ='',id='Reddit-hover-text',style={'width': '49%','display':'inline-block','vertical-align': 'top'}),
 ])
 
 
-
+@app.callback(dash.dependencies.Output('page-content', 'children'),
+              [dash.dependencies.Input('url', 'pathname')])
+def display_page(pathname):
+    if pathname == '/dash-techgraph-report' or pathname == '/dash-techgraph-report/overview':
+        return overview
+    elif pathname == '/dash-techgraph-report/crossposts':
+        return crossposts
+    else:
+        return noPage
+    
+###Dark theme work!
 # @app.callback(
 #     [Output('dark-theme-feature','style'),
 #     Output('HackerNews-graph','style'),
