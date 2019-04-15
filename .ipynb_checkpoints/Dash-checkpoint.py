@@ -3,6 +3,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
 import dash_daq as daq
+import dash_table
 import csv
 import pandas
 from datetime import datetime
@@ -10,6 +11,10 @@ import numpy
 import sqlite3
 import HTMLParser
 import textwrap 
+import urllib
+import json
+from pandas.io.json import json_normalize
+
 
 conn = sqlite3.connect('TechGraph.db')
 cur = conn.cursor()
@@ -64,6 +69,25 @@ reddit_flutter_Body_Data = df['body'].tolist()
 reddit_flutter_count = numpy.arange(len(reddit_flutter_Id_Data))
 df = None
 
+
+#sql query for top crossposts
+df_cross_posts = pandas.read_sql("SELECT Reddit_flutter.link_id, count(*) as link_id_count FROM Reddit_flutter JOIN Reddit_xamarin ON Reddit_flutter.link_id = Reddit_xamarin.link_id JOIN Reddit_react_native ON Reddit_xamarin.link_id = Reddit_react_native.link_id GROUP BY Reddit_flutter.link_id ORDER BY link_id_count DESC LIMIT 25", conn)
+
+#get the webapi ready
+s = ','
+idlist = s.join(df_cross_posts['link_id'])
+str(idlist)
+
+#find and tabulate all the api data
+cross_posts_url = "https://api.pushshift.io/reddit/search/submission/?ids={}".format(idlist)
+cross_posts_file = urllib.urlopen(cross_posts_url)
+cross_posts_data = cross_posts_file.read()
+cross_posts_data_json = json.loads(cross_posts_data)
+if cross_posts_data_json['data']:
+    df_cross_posts_update = json_normalize(cross_posts_data_json['data'])
+    df_cross_posts_update = df_cross_posts_update[['full_link','title']]
+    df_cross_posts_full = pandas.concat([df_cross_posts, df_cross_posts_update], axis=1)
+    
 #close the SQL 
 conn.close()
 
@@ -159,20 +183,51 @@ def render_content(tab):
             )
             
         ])
-    elif tab == 'cross posts':
-        return html.Div([
-            html.H3('Tab content 2'),
-            dcc.Graph(
-                id='graph-2-tabs',
-                figure={
-                    'data': [{
-                        'x': [1, 2, 3],
-                        'y': [5, 10, 6],
-                        'type': 'bar'
-                    }]
-                }
-            )
-        ])
+    elif tab == 'cross-posts':
+        return html.Div(
+            [
+            html.P("Cross posts below"),
+            dash_table.DataTable(
+            id='table',
+            columns=[{'name':"total mentions", 'id':'link_id_count'},{'name':"Title", 'id':'title'},{'name':'url','id':'full_link'}],
+            data=df_cross_posts_full.to_dict("rows"),
+            )])
+  
+
+
+
+#link_id	link_id_count	full_link	title
+                
+                
+#             html.Table(
+#                 [html.Tr([html.Th(x) for x in ["Total mentions", "Post"]])],
+#                 data = df_cross_posts.to_dict("rows"),
+                
+#                 + [
+#                     html.Tr([html.Td(r[0]), html.A(r[1], href=r[2], target="_blank")])
+#                     for r in output
+#                 ],
+#
+
+        
+        
+        
+        
+#         return html.Div([
+#             html.H3('Top Cross Threads'),
+#             html.Table(
+#                  columns=["Total Number of mentions", "Post Title and Link]
+#              )])
+
+            
+            
+            
+
+    
+    
+    
+    
+
     
 
 # cur.execute(\"SELECT body FROM Reddit_flutter WHERE body LIKE '%xamarin%&%react native%'\")\n",
