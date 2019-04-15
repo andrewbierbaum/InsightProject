@@ -70,6 +70,9 @@ conn.close()
 
 
     
+    
+    
+    
 #external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 external_stylesheets = ['https://codepen.io/anon/pen/mardKv.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
@@ -100,7 +103,8 @@ def render_content(tab):
             html.Div([
             #builds the graph                    
                 dcc.Graph(
-                    id='HackerNews-graph',
+                    id='HackerNews-graph', 
+                    animate = True,
                     figure={
                     'data': [
                     {'x': hackernews_xamarin_Date_Data, 'y': hackernews_xamarin_count, 'type': 'scatter', 'name': 'Xamarin'},
@@ -118,6 +122,7 @@ def render_content(tab):
             html.Div([
                 dcc.Graph(
                     id='Reddit-graph',
+                    animate=True,
                     figure={
                     'data': [
                     {'x': reddit_xamarin_Date_Data, 'y': reddit_xamarin_count, 'type': 'scatter', 'name': 'Xamarin'},
@@ -170,6 +175,9 @@ def render_content(tab):
         ])
     
 
+# cur.execute(\"SELECT body FROM Reddit_flutter WHERE body LIKE '%xamarin%&%react native%'\")\n",
+# cur.fetchall()\n",
+    
 
 
 @app.callback(
