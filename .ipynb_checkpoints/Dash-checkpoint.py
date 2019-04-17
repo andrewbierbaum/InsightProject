@@ -15,7 +15,7 @@ import urllib
 import json
 from pandas.io.json import json_normalize
 
-
+#open the sql to get the data
 conn = sqlite3.connect('TechGraph.db')
 cur = conn.cursor()
 
@@ -34,7 +34,6 @@ hackernews_react_native_Id_Data = df['id'].tolist()
 hackernews_react_native_Body_Data = df['text'].tolist()
 hackernews_react_native_count = numpy.arange(len(hackernews_react_native_Id_Data))
 df = None
-
 
 df = pandas.read_sql("SELECT * FROM HackerNews_flutter", conn)
 hackernews_flutter_Date_Data = [datetime.fromtimestamp(float(time)) for time in df['time']]
@@ -93,39 +92,36 @@ conn.close()
 
 
 
-    
-    
-    
-    
-#external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+#setting up dash
 external_stylesheets = ['https://codepen.io/anon/pen/mardKv.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 app.config['suppress_callback_exceptions']=True
 
+#the main graph program, which simply links to the tabs below when selected
 app.layout = html.Div([
-    html.H1('TechGraph',style={'text-align': 'center'}),
+    html.H1('TechGraph: www.AndrewBierbaum.com',style={'text-align': 'center'}),
     dcc.Tabs(id="tabs-navigation", value='momentum-graph', children=[
         dcc.Tab(label='Momentum Graph', value='momentum-graph'),
-        dcc.Tab(label='Time Resolved', value='time-resolved'),
-        dcc.Tab(label='Cross posts', value='cross-posts'),
+        #dcc.Tab(label='Weekly interest', value='weekly-interest'), inplement if there is more time
+        dcc.Tab(label='Reddit Cross Posts', value='reddit-cross-posts'),
     ]),
     html.Div(id='tech-graph-tabs')
 ])
 
 
-
+#These are the main and secondary pages in tab 1 and 2
 @app.callback(Output('tech-graph-tabs', 'children'),
               [Input('tabs-navigation', 'value')])
 def render_content(tab):
     if tab == 'momentum-graph':
         return html.Div(id='dark-theme-feature',children=[
-            html.H1(children='Technology Mentions on HackerNews and Reddit',style={'text-align': 'center'}),
+            html.H2(children='Technology Mentions on HackerNews and Reddit',style={'text-align': 'center'}),
 #	html.Div(children ='user data',id='text-context'),
-            html.Div(children='''Hover and click data to display the user comment''',style={'text-align': 'center','font-size': 24}),
+            html.Div(children='''Hover and Click to Display User Comments''',style={'text-align': 'center','font-size': 22}),
             html.Br(),
             html.Div([
-            #builds the graph                    
+            #builds the HackerNews graph                    
                 dcc.Graph(
                     id='HackerNews-graph', 
                     animate = True,
@@ -136,13 +132,13 @@ def render_content(tab):
                     {'x': hackernews_flutter_Date_Data, 'y': hackernews_flutter_count, 'type': 'scatter', 'name': 'Flutter'},
                     ],
                     'layout': {
-                    #'clickmode': 'event+select',
                     'hovermode': 'closest',
                     'legend': {'orientation':'h','x':0,'y':-0.1},
                     'title': 'HackerNews'
                     }
                     }
                 )], style={'width': '50%', 'display': 'inline-block'}), 
+            #builds the 2nd graph for reddit below
             html.Div([
                 dcc.Graph(
                     id='Reddit-graph',
@@ -162,79 +158,35 @@ def render_content(tab):
                     }
                     }
                 )], style={'width': '50%', 'display': 'inline-block'}),
-    
-            html.H4(children ='Click data to Select',id='HackerNews-text',style={'width': '49%','display':'inline-block','vertical-align': 'top','height':'175px','overflow-y': 'scroll'}),
-            html.H4(children ='Click data to Select',id='Reddit-text',style={'width': '49%','display':'inline-block','vertical-align': 'top','height':'175px','overflow-y': 'scroll'}),
-            html.H4(children ='Hover over data to quick view',id='HackerNews-hover-text',style={'width': '49%','display':'inline-block','vertical-align': 'top','height':'175px','overflow': 'hidden'}),
-            html.H4(children ='Hover over data to quick view',id='Reddit-hover-text',style={'width': '49%','display':'inline-block','vertical-align': 'top','height':'175px','overflow': 'hidden'}),
-    ])
-    elif tab == 'time-resolved':
-        return html.Div([
-            html.H3('Tab content 2'),
-            dcc.Graph(
-                id='graph-2-tabs',
-                figure={
-                    'data': [{
-                        'x': [1, 2, 3],
-                        'y': [5, 10, 6],
-                        'type': 'bar'
-                    }]
-                }
-            )
-            
-        ])
-    elif tab == 'cross-posts':
-        return html.Div(
-            [
-            html.P("Cross posts below"),
-            dash_table.DataTable(
-            id='table',
-            columns=[{'name':"total mentions", 'id':'link_id_count'},{'name':"Title", 'id':'title'},{'name':'url','id':'full_link'}],
-            data=df_cross_posts_full.to_dict("rows"),
-            )])
   
 
-
-
-#link_id	link_id_count	full_link	title
-                
-                
-#             html.Table(
-#                 [html.Tr([html.Th(x) for x in ["Total mentions", "Post"]])],
-#                 data = df_cross_posts.to_dict("rows"),
-                
-#                 + [
-#                     html.Tr([html.Td(r[0]), html.A(r[1], href=r[2], target="_blank")])
-#                     for r in output
-#                 ],
-#
-
-        
-        
-        
-        
-#         return html.Div([
-#             html.H3('Top Cross Threads'),
-#             html.Table(
-#                  columns=["Total Number of mentions", "Post Title and Link]
-#              )])
-
             
+#these are the click and mouseover 
+            #dcc.Textarea(placeholder='Click data to Select',value='This is a TextArea component',style={'width': '100%'})
+            #html.Div(dcc.Textarea(placeholder='Click data to Select',value='This is a TextArea component',id='HackerNews-text',style={'width': '50%'})),
             
-            
+            html.H4(children ='Hover over data to quick view',id='HackerNews-hover-text',style={'width': '49%','display':'inline-block','vertical-align': 'top','height':'175px','overflow': 'hidden','border':'groove', 'border-radius': '5px','margin-top': '5px','margin-bottom':'5px'}),
+            html.H4(children ='Hover over data to quick view',id='Reddit-hover-text',style={'width': '49%','display':'inline-block','vertical-align': 'top','height':'175px','overflow': 'hidden','border':'groove', 'border-radius': '5px','margin-top': '5px','margin-bottom':'5px'}),
+            html.H4(children ='Click data to Select',id='HackerNews-text',style={'width': '49%','display':'inline-block','vertical-align': 'top','height':'200px','overflow-y': 'scroll','border':'groove', 'border-radius': '5px','margin-top': '5px','margin-bottom':'5px'}),
+            html.H4(children ='Click data to Select',id='Reddit-text',style={'width': '49%','display':'inline-block','vertical-align': 'top','height':'200px','overflow-y': 'scroll','border':'groove', 'border-radius': '5px','margin-top': '5px','margin-bottom':'5px'}),
+    ])
 
-    
-    
-    
-    
+    #building the crossposts tab
+    elif tab == 'reddit-cross-posts':
+        return html.Div(
+            [
+            html.H2(children='Top Posts Discussing all Three Technologies',style={'text-align': 'center'}),
+            dash_table.DataTable(
+                    style_data={'whiteSpace': 'normal'},
+                    css=[{'selector': '.dash-cell div.dash-cell-value', 'rule': 'display: inline; white-space: inherit; overflow: inherit; text-overflow: inherit;'}],
+                id='table',
+                columns=[{'name':"mentions", 'id':'link_id_count'},{'name':"Title", 'id':'title'},{'name':'url','id':'full_link'}],
+                data=df_cross_posts_full.to_dict("rows"),
+            )]
+        )
 
-    
 
-# cur.execute(\"SELECT body FROM Reddit_flutter WHERE body LIKE '%xamarin%&%react native%'\")\n",
-# cur.fetchall()\n",
-    
-
-
+#below is the logic for mousing over the graphs
 @app.callback(
     dash.dependencies.Output('HackerNews-hover-text', 'children'),
     [dash.dependencies.Input('HackerNews-graph', 'hoverData')])
@@ -258,6 +210,7 @@ def update_text(hoverData):
         return HTMLParser.HTMLParser().unescape(reddit_flutter_Body_Data[hoverData['points'][0]['pointIndex']])
   
 
+#below is the logic for clicking on the graphs
 @app.callback(
      dash.dependencies.Output('HackerNews-text', 'children'),
      [dash.dependencies.Input('HackerNews-graph', 'clickData')])
@@ -299,7 +252,7 @@ def update_text(clickData):
         ])   
    
 
-
+#this is the actual server call
 if __name__ == '__main__':
     app.run_server(debug=True, port = 9990, host ='0.0.0.0')
     
