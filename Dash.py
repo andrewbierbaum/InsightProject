@@ -70,19 +70,11 @@ df = None
 
 
 #sql query for top crossposts
-df_cross_posts = pandas.read_sql("SELECT flutter_table.link_id, flutter_table.link_id_count + xamarin_table.link_id_count + react_native_table.link_id_count as total_link_id_count FROM (SELECT Reddit_flutter.link_id, count(*) as link_id_count FROM Reddit_flutter GROUP BY Reddit_flutter.link_id) as flutter_table JOIN (SELECT Reddit_xamarin.link_id, count(*) as link_id_count FROM Reddit_xamarin GROUP BY Reddit_xamarin.link_id) as xamarin_table ON flutter_table.link_id = xamarin_table.link_id JOIN (SELECT Reddit_react_native.link_id, count(*) as link_id_count FROM Reddit_react_native GROUP BY Reddit_react_native.link_id) as react_native_table ON flutter_table.link_id = react_native_table.link_id ORDER BY total_link_id_count DESC LIMIT 25",conn)
-df_cross_posts
-
-
-#distinc
-
-# #sql query for top crossposts
-# df_cross_posts = pandas.read_sql("SELECT Reddit_flutter.link_id, count(*) as link_id_count FROM Reddit_flutter JOIN Reddit_xamarin ON Reddit_flutter.link_id = Reddit_xamarin.link_id JOIN Reddit_react_native ON Reddit_xamarin.link_id = Reddit_react_native.link_id GROUP BY Reddit_flutter.link_id ORDER BY link_id_count DESC LIMIT 25", conn)
-
+df_xamarin_cross_posts = pandas.read_sql("SELECT xamarin_table.link_id, xamarin_table.link_id_count as total_link_id_count FROM (SELECT Reddit_flutter.link_id, count(*) as link_id_count FROM Reddit_flutter GROUP BY Reddit_flutter.link_id) as flutter_table JOIN (SELECT Reddit_xamarin.link_id, count(*) as link_id_count FROM Reddit_xamarin GROUP BY Reddit_xamarin.link_id) as xamarin_table ON flutter_table.link_id = xamarin_table.link_id JOIN (SELECT Reddit_react_native.link_id, count(*) as link_id_count FROM Reddit_react_native GROUP BY Reddit_react_native.link_id) as react_native_table ON flutter_table.link_id = react_native_table.link_id ORDER BY total_link_id_count DESC LIMIT 25",conn)
 
 #get the webapi ready
 s = ','
-idlist = s.join(df_cross_posts['link_id'])
+idlist = s.join(df_xamarin_cross_posts['link_id'])
 str(idlist)
 
 #find and tabulate all the api data
@@ -93,12 +85,51 @@ cross_posts_data_json = json.loads(cross_posts_data)
 if cross_posts_data_json['data']:
     df_cross_posts_update = json_normalize(cross_posts_data_json['data'])
     df_cross_posts_update = df_cross_posts_update[['full_link','title']]
-    df_cross_posts_full = pandas.concat([df_cross_posts, df_cross_posts_update], axis=1)
-    
+    df_xamarin_cross_posts_full = pandas.concat([df_xamarin_cross_posts, df_cross_posts_update], axis=1)
+
+df_react_native_cross_posts = pandas.read_sql("SELECT react_native_table.link_id, react_native_table.link_id_count as total_link_id_count FROM (SELECT Reddit_flutter.link_id, count(*) as link_id_count FROM Reddit_flutter GROUP BY Reddit_flutter.link_id) as flutter_table JOIN (SELECT Reddit_xamarin.link_id, count(*) as link_id_count FROM Reddit_xamarin GROUP BY Reddit_xamarin.link_id) as xamarin_table ON flutter_table.link_id = xamarin_table.link_id JOIN (SELECT Reddit_react_native.link_id, count(*) as link_id_count FROM Reddit_react_native GROUP BY Reddit_react_native.link_id) as react_native_table ON flutter_table.link_id = react_native_table.link_id ORDER BY total_link_id_count DESC LIMIT 25",conn)
+
+#get the webapi ready
+s = ','
+idlist = s.join(df_react_native_cross_posts['link_id'])
+str(idlist)
+
+#find and tabulate all the api data
+cross_posts_url = "https://api.pushshift.io/reddit/search/submission/?ids={}".format(idlist)
+cross_posts_file = urllib.request.urlopen(cross_posts_url)
+cross_posts_data = cross_posts_file.read()
+cross_posts_data_json = json.loads(cross_posts_data)
+if cross_posts_data_json['data']:
+    df_cross_posts_update = json_normalize(cross_posts_data_json['data'])
+    df_cross_posts_update = df_cross_posts_update[['full_link','title']]
+    df_react_native_cross_posts_full = pandas.concat([df_react_native_cross_posts, df_cross_posts_update], axis=1)
+
+df_flutter_cross_posts = pandas.read_sql("SELECT flutter_table.link_id, flutter_table.link_id_count as total_link_id_count FROM (SELECT Reddit_flutter.link_id, count(*) as link_id_count FROM Reddit_flutter GROUP BY Reddit_flutter.link_id) as flutter_table JOIN (SELECT Reddit_xamarin.link_id, count(*) as link_id_count FROM Reddit_xamarin GROUP BY Reddit_xamarin.link_id) as xamarin_table ON flutter_table.link_id = xamarin_table.link_id JOIN (SELECT Reddit_react_native.link_id, count(*) as link_id_count FROM Reddit_react_native GROUP BY Reddit_react_native.link_id) as react_native_table ON flutter_table.link_id = react_native_table.link_id ORDER BY total_link_id_count DESC LIMIT 25",conn)
+
+#get the webapi ready
+s = ','
+idlist = s.join(df_flutter_cross_posts['link_id'])
+str(idlist)
+
+#find and tabulate all the api data
+cross_posts_url = "https://api.pushshift.io/reddit/search/submission/?ids={}".format(idlist)
+cross_posts_file = urllib.request.urlopen(cross_posts_url)
+cross_posts_data = cross_posts_file.read()
+cross_posts_data_json = json.loads(cross_posts_data)
+if cross_posts_data_json['data']:
+    df_cross_posts_update = json_normalize(cross_posts_data_json['data'])
+    df_cross_posts_update = df_cross_posts_update[['full_link','title']]
+    df_flutter_cross_posts_full = pandas.concat([df_flutter_cross_posts, df_cross_posts_update], axis=1)
+
+
+
 #close the SQL 
 conn.close()
 
-
+colors = {
+    'background': '#111111',
+    'text': '#7FDBFF'
+}
 
 #setting up dash
 external_stylesheets = ['https://codepen.io/anon/pen/mardKv.css']
@@ -116,6 +147,8 @@ app.layout = html.Div([
     ]),
     html.Div(id='tech-graph-tabs')
 ])
+
+
 
 
 #These are the main and secondary pages in tab 1 and 2
@@ -183,14 +216,42 @@ def render_content(tab):
     elif tab == 'reddit-cross-posts':
         return html.Div(
             [
-            html.H2(children='Top Posts Discussing all Three Technologies',style={'text-align': 'center'}),
+            html.H2(children='Top Xamarin Posts Discussing all Three Technologies',style={'text-align': 'center'}),
             dash_table.DataTable(
                     style_data={'whiteSpace': 'normal'},
                     css=[{'selector': '.dash-cell div.dash-cell-value', 'rule': 'display: inline; white-space: inherit; overflow: inherit; text-overflow: inherit;'}],
                 id='table',
-                columns=[{'name':"mentions", 'id':'link_id_count'},{'name':"Title", 'id':'title'},{'name':'url','id':'full_link'}],
-                data=df_cross_posts_full.to_dict("rows"),
-            )]
+                columns=[{'name':"mentions", 'id':'total_link_id_count'},{'name':"Title", 'id':'title'},{'name':'url','id':'full_link'}],
+                data=df_xamarin_cross_posts_full.to_dict("rows"),
+            ),
+            html.Br(),
+            html.H2(children='Top React Native Posts Discussing all Three Technologies',style={'text-align': 'center'}),
+            dash_table.DataTable(
+                    style_data={'whiteSpace': 'normal'},
+                    css=[{'selector': '.dash-cell div.dash-cell-value', 'rule': 'display: inline; white-space: inherit; overflow: inherit; text-overflow: inherit;'}],
+                id='table',
+                columns=[{'name':"mentions", 'id':'total_link_id_count'},{'name':"Title", 'id':'title'},{'name':'url','id':'full_link'}],
+                data=df_react_native_cross_posts_full.to_dict("rows"),
+            ),
+            html.Br(),
+            html.H2(children='Top Flutter Posts Discussing all Three Technologies',style={'text-align': 'center'}),
+            dash_table.DataTable(
+                    style_data={'whiteSpace': 'normal'},
+                    css=[{'selector': '.dash-cell div.dash-cell-value', 'rule': 'display: inline; white-space: inherit; overflow: inherit; text-overflow: inherit;'}],
+                id='table',
+                columns=[{'name':"mentions", 'id':'total_link_id_count'},{'name':"Title", 'id':'title'},{'name':'url','id':'full_link'}],
+                data=df_flutter_cross_posts_full.to_dict("rows"),
+            ),  
+                
+            
+            
+            
+            
+            
+            ],
+            
+            
+            
         )
 
 
@@ -202,7 +263,7 @@ def render_content(tab):
     [dash.dependencies.Input('HackerNews-graph', 'hoverData')])
 def update_text(hoverData):
     if hoverData['points'][0]['curveNumber']==0:
-        return HP.HTMLParser.HTMLParser().unescape(hackernews_xamarin_Body_Data[hoverData['points'][0]['pointIndex']])
+        return HP.HTMLParser().unescape(hackernews_xamarin_Body_Data[hoverData['points'][0]['pointIndex']])
     if hoverData['points'][0]['curveNumber']==1:
         return HP.HTMLParser().unescape(hackernews_react_native_Body_Data[hoverData['points'][0]['pointIndex']])
     if hoverData['points'][0]['curveNumber']==2:
@@ -290,7 +351,9 @@ if __name__ == '__main__':
 #         on=True,
 #         id='darktheme-daq-booleanswitch',
 #         className='dark-theme-control'
-#     ), html.Br(),
+#     ), 
+
+(),
 #     daq.ToggleSwitch(
 #         id='darktheme-daq-toggleswitch',
 #         className='dark-theme-control'
