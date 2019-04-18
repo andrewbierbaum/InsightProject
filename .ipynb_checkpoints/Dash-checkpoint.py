@@ -9,7 +9,7 @@ import pandas
 from datetime import datetime
 import numpy
 import sqlite3
-import HTMLParser
+import html.parser as HP
 import textwrap 
 import urllib
 import json
@@ -70,7 +70,15 @@ df = None
 
 
 #sql query for top crossposts
-df_cross_posts = pandas.read_sql("SELECT Reddit_flutter.link_id, count(*) as link_id_count FROM Reddit_flutter JOIN Reddit_xamarin ON Reddit_flutter.link_id = Reddit_xamarin.link_id JOIN Reddit_react_native ON Reddit_xamarin.link_id = Reddit_react_native.link_id GROUP BY Reddit_flutter.link_id ORDER BY link_id_count DESC LIMIT 25", conn)
+df_cross_posts = pandas.read_sql("SELECT flutter_table.link_id, flutter_table.link_id_count + xamarin_table.link_id_count + react_native_table.link_id_count as total_link_id_count FROM (SELECT Reddit_flutter.link_id, count(*) as link_id_count FROM Reddit_flutter GROUP BY Reddit_flutter.link_id) as flutter_table JOIN (SELECT Reddit_xamarin.link_id, count(*) as link_id_count FROM Reddit_xamarin GROUP BY Reddit_xamarin.link_id) as xamarin_table ON flutter_table.link_id = xamarin_table.link_id JOIN (SELECT Reddit_react_native.link_id, count(*) as link_id_count FROM Reddit_react_native GROUP BY Reddit_react_native.link_id) as react_native_table ON flutter_table.link_id = react_native_table.link_id ORDER BY total_link_id_count DESC LIMIT 25",conn)
+df_cross_posts
+
+
+#distinc
+
+# #sql query for top crossposts
+# df_cross_posts = pandas.read_sql("SELECT Reddit_flutter.link_id, count(*) as link_id_count FROM Reddit_flutter JOIN Reddit_xamarin ON Reddit_flutter.link_id = Reddit_xamarin.link_id JOIN Reddit_react_native ON Reddit_xamarin.link_id = Reddit_react_native.link_id GROUP BY Reddit_flutter.link_id ORDER BY link_id_count DESC LIMIT 25", conn)
+
 
 #get the webapi ready
 s = ','
@@ -79,7 +87,7 @@ str(idlist)
 
 #find and tabulate all the api data
 cross_posts_url = "https://api.pushshift.io/reddit/search/submission/?ids={}".format(idlist)
-cross_posts_file = urllib.urlopen(cross_posts_url)
+cross_posts_file = urllib.request.urlopen(cross_posts_url)
 cross_posts_data = cross_posts_file.read()
 cross_posts_data_json = json.loads(cross_posts_data)
 if cross_posts_data_json['data']:
@@ -186,28 +194,30 @@ def render_content(tab):
         )
 
 
+#server = app.server # the Flask app, doing "gunicorn app:server -b :80" to get the app to port 80
+
 #below is the logic for mousing over the graphs
 @app.callback(
     dash.dependencies.Output('HackerNews-hover-text', 'children'),
     [dash.dependencies.Input('HackerNews-graph', 'hoverData')])
 def update_text(hoverData):
     if hoverData['points'][0]['curveNumber']==0:
-        return HTMLParser.HTMLParser().unescape(hackernews_xamarin_Body_Data[hoverData['points'][0]['pointIndex']])
+        return HP.HTMLParser.HTMLParser().unescape(hackernews_xamarin_Body_Data[hoverData['points'][0]['pointIndex']])
     if hoverData['points'][0]['curveNumber']==1:
-        return HTMLParser.HTMLParser().unescape(hackernews_react_native_Body_Data[hoverData['points'][0]['pointIndex']])
+        return HP.HTMLParser().unescape(hackernews_react_native_Body_Data[hoverData['points'][0]['pointIndex']])
     if hoverData['points'][0]['curveNumber']==2:
-        return HTMLParser.HTMLParser().unescape(hackernews_flutter_Body_Data[hoverData['points'][0]['pointIndex']])
+        return HP.HTMLParser().unescape(hackernews_flutter_Body_Data[hoverData['points'][0]['pointIndex']])
 
 @app.callback(
     dash.dependencies.Output('Reddit-hover-text', 'children'),
     [dash.dependencies.Input('Reddit-graph', 'hoverData')])
 def update_text(hoverData):
     if hoverData['points'][0]['curveNumber']==0:
-        return HTMLParser.HTMLParser().unescape(reddit_xamarin_Body_Data[hoverData['points'][0]['pointIndex']])
+        return HP.HTMLParser().unescape(reddit_xamarin_Body_Data[hoverData['points'][0]['pointIndex']])
     if hoverData['points'][0]['curveNumber']==1:
-        return HTMLParser.HTMLParser().unescape(reddit_react_native_Body_Data[hoverData['points'][0]['pointIndex']])
+        return HP.HTMLParser().unescape(reddit_react_native_Body_Data[hoverData['points'][0]['pointIndex']])
     if hoverData['points'][0]['curveNumber']==2:
-        return HTMLParser.HTMLParser().unescape(reddit_flutter_Body_Data[hoverData['points'][0]['pointIndex']])
+        return HP.HTMLParser().unescape(reddit_flutter_Body_Data[hoverData['points'][0]['pointIndex']])
   
 
 #below is the logic for clicking on the graphs
@@ -218,17 +228,17 @@ def update_text(clickData):
     if clickData['points'][0]['curveNumber']==0:
         return html.Div([
             html.A("Direct link to HackerNews user comment", href="https://news.ycombinator.com/item?id="+str(hackernews_xamarin_Id_Data[clickData['points'][0]['pointIndex']]),target="_blank"),
-            html.H3(HTMLParser.HTMLParser().unescape(hackernews_xamarin_Body_Data[clickData['points'][0]['pointIndex']]))
+            html.H3(HP.HTMLParser().unescape(hackernews_xamarin_Body_Data[clickData['points'][0]['pointIndex']]))
         ])
     if clickData['points'][0]['curveNumber']==1:
         return html.Div([
             html.A("Direct link to HackerNews user comment", href="https://news.ycombinator.com/item?id="+str(hackernews_react_native_Id_Data[clickData['points'][0]['pointIndex']]),target="_blank"),
-            html.H3(HTMLParser.HTMLParser().unescape(hackernews_react_native_Body_Data[clickData['points'][0]['pointIndex']]))
+            html.H3(HP.HTMLParser().unescape(hackernews_react_native_Body_Data[clickData['points'][0]['pointIndex']]))
         ])
     if clickData['points'][0]['curveNumber']==2:
         return html.Div([
             html.A("Direct link to HackerNews user comment", href="https://news.ycombinator.com/item?id="+str(hackernews_flutter_Id_Data[clickData['points'][0]['pointIndex']]),target="_blank"),
-            html.H3(HTMLParser.HTMLParser().unescape(hackernews_flutter_Body_Data[clickData['points'][0]['pointIndex']]))
+            html.H3(HP.HTMLParser().unescape(hackernews_flutter_Body_Data[clickData['points'][0]['pointIndex']]))
         ])
 
 @app.callback(
@@ -238,23 +248,25 @@ def update_text(clickData):
     if clickData['points'][0]['curveNumber']==0:
         return html.Div([
             html.A("Direct link to Reddit user comment", href="https://new.reddit.com/comments/"+str(reddit_xamarin_link_Id_Data[clickData['points'][0]['pointIndex']]).replace("t3_","")+ "/_/" + str(reddit_xamarin_Id_Data[clickData['points'][0]['pointIndex']]),target="_blank"),
-            html.H3(HTMLParser.HTMLParser().unescape(reddit_xamarin_Body_Data[clickData['points'][0]['pointIndex']]))  
+            html.H3(HP.HTMLParser().unescape(reddit_xamarin_Body_Data[clickData['points'][0]['pointIndex']]))  
         ])
     if clickData['points'][0]['curveNumber']==1:
         return html.Div([
             html.A("Direct link to Reddit user comment", href="https://new.reddit.com/comments/"+str(reddit_react_native_link_Id_Data[clickData['points'][0]['pointIndex']]).replace("t3_","")+ "/_/" + str(reddit_react_native_Id_Data[clickData['points'][0]['pointIndex']]),target="_blank"),
-            html.H3(HTMLParser.HTMLParser().unescape(reddit_react_native_Body_Data[clickData['points'][0]['pointIndex']]))  
+            html.H3(HP.HTMLParser().unescape(reddit_react_native_Body_Data[clickData['points'][0]['pointIndex']]))  
         ])
     if clickData['points'][0]['curveNumber']==2:
         return html.Div([
             html.A("Direct link to Reddit user comment", href="https://new.reddit.com/comments/"+str(reddit_flutter_link_Id_Data[clickData['points'][0]['pointIndex']]).replace("t3_","")+ "/_/" + str(reddit_flutter_Id_Data[clickData['points'][0]['pointIndex']]),target="_blank"),
-            html.H3(HTMLParser.HTMLParser().unescape(reddit_flutter_Body_Data[clickData['points'][0]['pointIndex']]))  
+            html.H3(HP.HTMLParser().unescape(reddit_flutter_Body_Data[clickData['points'][0]['pointIndex']]))  
         ])   
    
 
+#server = app.server # the Flask app, doing "gunicorn app:server -b :80" to get the app to port 80
+
 #this is the actual server call
 if __name__ == '__main__':
-    app.run_server(debug=True, port = 9990, host ='0.0.0.0')
+    app.run_server(debug=True, port =9990, host ='0.0.0.0')
     
     
     

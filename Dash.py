@@ -70,7 +70,9 @@ df = None
 
 
 #sql query for top crossposts
-df_cross_posts = pandas.read_sql("SELECT Reddit_flutter.link_id, count(*) as link_id_count FROM Reddit_flutter JOIN Reddit_xamarin ON Reddit_flutter.link_id = Reddit_xamarin.link_id JOIN Reddit_react_native ON Reddit_xamarin.link_id = Reddit_react_native.link_id GROUP BY Reddit_flutter.link_id ORDER BY link_id_count DESC LIMIT 25", conn)
+df_cross_posts = pandas.read_sql("SELECT flutter_table.link_id, flutter_table.link_id_count + xamarin_table.link_id_count + react_native_table.link_id_count as total_link_id_count FROM (SELECT Reddit_flutter.link_id, count(*) as link_id_count FROM Reddit_flutter GROUP BY Reddit_flutter.link_id) as flutter_table JOIN (SELECT Reddit_xamarin.link_id, count(*) as link_id_count FROM Reddit_xamarin GROUP BY Reddit_xamarin.link_id) as xamarin_table ON flutter_table.link_id = xamarin_table.link_id JOIN (SELECT Reddit_react_native.link_id, count(*) as link_id_count FROM Reddit_react_native GROUP BY Reddit_react_native.link_id) as react_native_table ON flutter_table.link_id = react_native_table.link_id ORDER BY total_link_id_count DESC LIMIT 25",conn)
+df_cross_posts
+
 
 #distinc
 
