@@ -4,7 +4,7 @@ The goal of this project is to track technology trends in various technical and 
 
 This dashboard produced for this project is hosted on www.andrewbierbaum.com
 
-#Pipeline
+## Pipeline
 ![Screen Shot 2019-04-18 at 5 45 01 PM](https://user-images.githubusercontent.com/44590433/56399272-ca4c5400-6201-11e9-89c3-90587148854c.png)
 
 Historical reddit data was batch processed using spark sql, saved in sqlite, and visualized using dash. Near real-time updates are available through a web API.
