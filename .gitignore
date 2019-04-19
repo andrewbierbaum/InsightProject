@@ -1,3 +1,5 @@
+metastore_db/*
+
 elasticsearch-7.0.0/*
 elasticsearch-7.0.0-linux-x86_64.tar.gz
 kibana-7.0.0-linux-x86_64.tar.gz
