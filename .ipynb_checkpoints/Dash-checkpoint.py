@@ -142,8 +142,8 @@ app.layout = html.Div([
     html.H1('TechGraph: www.AndrewBierbaum.com',style={'text-align': 'center'}),
     dcc.Tabs(id="tabs-navigation", value='momentum-graph', children=[
         dcc.Tab(label='Momentum Graph', value='momentum-graph'),
-        #dcc.Tab(label='Weekly interest', value='weekly-interest'), inplement if there is more time
         dcc.Tab(label='Reddit Cross Posts', value='reddit-cross-posts'),
+#         dcc.Tab(label='Topic Search', value='topic-search'),
     ]),
     html.Div(id='tech-graph-tabs')
 ])
@@ -241,19 +241,16 @@ def render_content(tab):
                 id='table',
                 columns=[{'name':"mentions", 'id':'total_link_id_count'},{'name':"Title", 'id':'title'},{'name':'url','id':'full_link'}],
                 data=df_flutter_cross_posts_full.to_dict("rows"),
-            ),  
-                
-            
-            
-            
-            
-            
-            ],
-            
-            
-            
+            )]            
         )
-
+#     elif tab == 'topic-search':
+#         return html.Div([
+#             html.Div(dcc.Input(id='input-box-1', type='text')),
+#             html.Div(dcc.Input(id='input-box-2', type='text')),
+#             html.Div(dcc.Input(id='input-box-3', type='text')),
+#             html.Button('Submit', id='button'),
+#             html.Div(id='container-button-basic', children='Enter a value and press submit')
+# ])
 
 #server = app.server # the Flask app, doing "gunicorn app:server -b :80" to get the app to port 80
 
@@ -323,258 +320,20 @@ def update_text(clickData):
         ])   
    
 
-#server = app.server # the Flask app, doing "gunicorn app:server -b :80" to get the app to port 80
+
+# @app.callback(
+#     dash.dependencies.Output('container-button-basic', 'children'),
+#     [dash.dependencies.Input('button', 'n_clicks')],[dash.dependencies.State('input-box-1', 'value'),dash.dependencies.State('input-box-2', 'value'),dash.dependencies.State('input-box-3', 'value')])
+# def update_output(n_clicks,value1,value2,value3):
+  
+    
+#     return 'You are searching for {}'.format(searches)
+
+
+
+#port 80 was forwarded to 9990 with "sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 9990"
 
 #this is the actual server call
 if __name__ == '__main__':
     app.run_server(debug=True, port =9990, host ='0.0.0.0')
     
-    
-    
-    # theme = {
-#     'dark': False,
-#     'detail': '#007439',
-#     'primary': '#00EA64', 
-#     'secondary': '#6E6E6E'
-# }
-
-# theme =  {
-#     'dark': True,
-#     'detail': '#007439',
-#     'primary': '#00EA64',
-#     'secondary': '#6E6E6E',
-# }
-
-
-# rootLayout = html.Div([
-#     daq.BooleanSwitch(
-#         on=True,
-#         id='darktheme-daq-booleanswitch',
-#         className='dark-theme-control'
-#     ), 
-
-(),
-#     daq.ToggleSwitch(
-#         id='darktheme-daq-toggleswitch',
-#         className='dark-theme-control'
-#     ), html.Br(),
-# ])
-   
-    
-#    #builds the year range selector
-#    dcc.RangeSlider(id='year_slider', min=2008, max=2020, value=[2008, 2020])
-#    May 16, 2011
-    
-#      daq.ToggleSwitch(
-#         id='toggle-theme',
-#         label=['Light', 'Dark'],
-#         value=True
-#     ),
-    
-#     daq.ToggleSwitch(
-#         id='daq-light-dark-theme',
-#         label=['Light', 'Dark'],
-#         style={'width': '250px', 'margin': 'auto'}, 
-#         value=False
-#     ),
-
-#     daq.DarkThemeProvider([
-#   html.Link(
-#     href="https://codepen.io/anon/pen/BYEPbO.css",
-#     rel="stylesheet"
-#   ),
-#   html.Div([
-#     html.Div([
-#       html.H2('Controls'),
-#       dark_controls
-#     ], style={ 'width': '80%' })
-#   ],
-#   style={
-#     'width': '100%',
-#     'display': 'flex',
-#     'flexDirection': 'column',
-#     'alignItems': 'center',
-#     'justifyContent': 'center'
-#   })
-# ]),
-    
-    
-    
-    
-    
-    
-# crossposts = html.Div([
-#      html.Div([
-#         dcc.Link('Overview       ', href='/dash-techgraph-report/overview', className="tab first"),
-#         dcc.Link('crossposts', href='/dash-techgraph-report/crossposts', className="tab"),
-#     ], className="row "),
-    
-#     html.H1(children='Top Crossposts HackerNews and Reddit',style={'text-align': 'center'})
-# ])
-
-
-# overview = html.Div(id='dark-theme-feature',children=[
-#     html.H1(children='Technology Mentions on HackerNews and Reddit',style={'text-align': 'center'}),
-# #	html.Div(children ='user data',id='text-context'),
-#     html.Div(children='''Hover and click data to display the user comment''',style={'text-align': 'center','font-size': 24}),
-#     html.Br(),
-    
-#     html.Div([
-#         dcc.Link('Overview', href='/dash-techgraph-report/overview', className="tab first"),
-#         dcc.Link('crossposts', href='/dash-techgraph-report/crossposts', className="tab"),
-#     ], className="row "),
-# #    builds the graph                    
-#      html.Div([
-# #    builds the graph                    
-#         dcc.Graph(
-#             id='HackerNews-graph',
-#             figure={
-#                 'data': [
-#                 {'x': hackernews_xamarin_Date_Data, 'y': hackernews_xamarin_count, 'type': 'scatter', 'name': 'Xamarin'},
-#                 {'x': hackernews_react_native_Date_Data, 'y': hackernews_react_native_count,  'type': 'scatter', 'name': 'React Native'}, 
-#                 {'x': hackernews_flutter_Date_Data, 'y': hackernews_flutter_count, 'type': 'scatter', 'name': 'Flutter'},
-#             ],
-#         'layout': {
-#         #'clickmode': 'event+select',
-# 	    'hovermode': 'closest',
-#         'legend': {'orientation':'h','x':0,'y':-0.1},
-#         'title': 'HackerNews'
-#             }
-#         }
-#     )],
-#     style={'width': '50%', 'display': 'inline-block'}),
-    
-    
-    
-#      html.Div([
-#         dcc.Graph(
-#             id='Reddit-graph',
-#             figure={
-#                 'data': [
-#                 {'x': reddit_xamarin_Date_Data, 'y': reddit_xamarin_count, 'type': 'scatter', 'name': 'Xamarin'},
-#                 {'x': reddit_react_native_Date_Data, 'y': reddit_react_native_count,  'type': 'scatter', 'name':'React Native'}, 
-#                 {'x': reddit_flutter_Date_Data, 'y': reddit_flutter_count, 'type': 'scatter', 'name': 'Flutter'},
-#             ],
-#             'layout': {
-# 	        #'clickmode': 'event+select',
-# 	        'hovermode': 'closest',
-#             #'xaxis': {'range':[]}
-#             'legend': {'orientation':'h','x':0,'y':-0.1},
-#             'title': 'Reddit'
-#             }
-#         }
-#     )],
-#     style={'width': '50%', 'display': 'inline-block'}),
-    
-#     html.H4(children ='Click data to Select',id='HackerNews-text',style={'width': '49%','display':'inline-block','vertical-align': 'top','height':'175px','overflow-y': 'scroll'}),
-#     html.H4(children ='Click data to Select',id='Reddit-text',style={'width': '49%','display':'inline-block','vertical-align': 'top','height':'175px','overflow-y': 'scroll'}),
-#     html.H4(children ='Hover over data to quick view',id='HackerNews-hover-text',style={'width': '49%','display':'inline-block','vertical-align': 'top','height':'175px','overflow': 'hidden'}),
-#     html.H4(children ='Hover over data to quick view',id='Reddit-hover-text',style={'width': '49%','display':'inline-block','vertical-align': 'top','height':'175px','overflow': 'hidden'}),
-# ]),
-
-
-# noPage = html.Div([  # 404
-#     html.P(["404 Page not found"])
-#     ], className="no-page")
-
-
-# app.layout = html.Div([
-#     dcc.Location(id='url', refresh=False),
-#     html.Div(id='page-content'),
-    
-#     #I think I have to repeat these as empty to not have the callbacks be mad at me
-#     html.Div(children ='',id='HackerNews-text',style={'width': '49%','display':'inline-block','vertical-align': 'top' }),
-#     html.Div(children ='',id='Reddit-text',style={'width': '49%','display':'inline-block','vertical-align': 'top'}),
-#     html.Div(children ='',id='HackerNews-hover-text',style={'width': '49%','display':'inline-block','vertical-align': 'top' }),
-#     html.Div(children ='',id='Reddit-hover-text',style={'width': '49%','display':'inline-block','vertical-align': 'top'}),
-# ])
-
-
-# @app.callback(dash.dependencies.Output('page-content', 'children'),
-#               [dash.dependencies.Input('url', 'pathname')])
-# def display_page(pathname):
-#     if pathname == '/dash-techgraph-report' or pathname == '/dash-techgraph-report/overview':
-#         return overview
-#     elif pathname == '/dash-techgraph-report/crossposts':
-#         return crossposts
-#     else:
-#         return noPage
-    
-###Dark theme work!
-# @app.callback(
-#     [Output('dark-theme-feature','style'),
-#     Output('HackerNews-graph','style'),
-#     Output('Reddit-graph','style')],
-#     [Input('toggle-theme', 'value')]
-# )
-# def change_bg(dark_theme):
-#     if(dark_theme):
-#         return {'background-color': '#303030', 'color': 'white'}, {'plot_bgcolor': '#111111', 'paper_bgcolor': '#111111', 'font':'#7FDBFF'}, {'plot_bgcolor': '#111111', 'paper_bgcolor': '#111111', 'font':'#7FDBFF'}
-#     else:
-#         return {'background-color': 'white', 'color': 'black'}, {'plot_bgcolor': 'white', 'paper_bgcolor': 'black', 'font':'black'}, {'plot_bgcolor': 'white', 'paper_bgcolor': 'black', 'font':'black'}
-    
-                    
-# @app.callback(
-    
-# #    Output('Reddit-graph','style')],
-#     [Input('daq-light-dark-theme', 'value')]
-# )
-# def change_bg(dark_theme):
-#     if(dark_theme):
-#         return {'plot_bgcolor': '#111111', 'paper_bgcolor': '#111111', 'font':'#7FDBFF'}
-#     else:
-#         return {'plot_bgcolor': 'white', 'paper_bgcolor': 'black', 'font':'black'}
-
-    
-    
-# 'layout': {
-#                 'plot_bgcolor': colors['background'],
-#                 'paper_bgcolor': colors['background'],
-#                 'font': {
-#                     'color': colors['text']
-    
-#     colors = {
-#     'background': '#111111',
-#     'text': '#7FDBFF'
-                    
-
-#link_id     then    id
-#https://new.reddit.com/comments/hct9b/_/c1ufen4    
-    
-
-
-# @app.callback(
-#     dash.dependencies.Output('Reddit-hover-text', 'children'),
-#     [dash.dependencies.Input('Reddit-graph', 'hoverData')])
-# def update_text(hoverData):
-#     return HTMLParser.HTMLParser().unescape(hoverData['points'][0]['text'])
-
-
-
-
-
-
-# @app.callback(
-#     dash.dependencies.Output('Reddit-text', 'children'),
-#     [dash.dependencies.Input('Reddit-graph', 'clickData')])
-# def update_text(clickData):
-#     return HTMLParser.HTMLParser().unescape(clickData['points'][0]['text'])
-
-
-#@app.callback(
-#    dash.dependencies.Output('HackerNews-text', 'children'),
-#    [dash.dependencies.Input('HackerNews-graph', 'hoverData')])
-#def update_text(hoverData):
-#    return html.H3(hoverData)
-#clickData['points'][0]    return html.H3(HTMLParser.HTMLParser().unescape(string))
-#    return html.H3(df_hackernews_xamarin['text'][clickData['points'][0]['pointIndex']])
-#u'curveNumber': 0, u'pointNumber': 2081, u'pointIndex': 2081
-
-
-#@app.callback(
-#    dash.dependencies.Output('Reddit-text', 'children'),
-#    [dash.dependencies.Input('Reddit-graph', 'clickData')])
-#def update_text(clickData):	
-#    return html.H3(clickData['points'][0])
-
-
