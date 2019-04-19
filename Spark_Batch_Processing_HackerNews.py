@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[6]:
-
-
 #sparting spark and reading HackerNews
 from pyspark.sql import SparkSession
 from datetime import datetime
@@ -11,21 +5,14 @@ import pandas
 import numpy
 import sqlite3
 
-
-# In[ ]:
-
-
 #set up spark 
 spark = SparkSession.builder.appName("HackerNews").getOrCreate()
 df = None
 df = spark.read.csv("s3a://andrew-bierbaum-insight-test-dataset/HackerNews/hacker_news_full-000000*.csv.gz", header=True, multiLine=True, escape='"')
 
 
-# In[ ]:
-
 
 #Convert spark data to be readable using sql queries
-
 df.createOrReplaceTempView("HackerNews")
 
 #these could be combined into one search to only have to access the table once and be much faster, but they work as written
@@ -45,17 +32,10 @@ df_react_native = react_native_results.toPandas()
 df_react_native = df_react_native[['time', 'text', 'id', 'parent']]
 df_react_native = df_react_native.sort_values('time')
 
-
-# In[12]:
-
-
 #setup sqlite
 conn = sqlite3.connect('TechGraph.db')
 cur = conn.cursor()
 conn.text_factory = str
-
-
-# In[ ]:
 
 
 #transfter data to sqlite
@@ -64,22 +44,9 @@ df_flutter.to_sql('HackerNews_flutter', conn, if_exists='replace')
 df_react_native.to_sql('HackerNews_react_native', conn, if_exists='replace')
 
 
-# In[13]:
-
-
 #get rid of flutter comments before flutter was posted to github
 cur.execute("DELETE FROM HackerNews_flutter WHERE time<1305578972")
 
-
-# In[14]:
-
-
 conn.commit()
 conn.close()
-
-
-# In[ ]:
-
-
-
 

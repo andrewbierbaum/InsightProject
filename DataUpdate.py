@@ -1,12 +1,6 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 #reddit api works with urllib
 import urllib
-#hackernews api works with requests
+#hackernews api works with requests because it needs a 'user-agent' or throws errors
 import requests
 import json
 from datetime import datetime
@@ -18,14 +12,11 @@ conn = sqlite3.connect('TechGraph.db')
 cur = conn.cursor()
 conn.text_factory = str
 
-
-# In[2]:
-
-
+#find the time of the last entry
 cur.execute("SELECT max(time) FROM HackerNews_xamarin")
 last_timestamp = cur.fetchall()[0][0]
 
-
+#retreave, process, and store new data in sqlite
 xamarin_url = "https://hn.algolia.com/api/v1/search?query=xamarin&numericFilters=created_at_i>{}&hitsPerPage=1000&tags=comment".format(last_timestamp)
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
 xamarin_file = requests.get(xamarin_url,headers=headers)
@@ -40,13 +31,9 @@ if xamarin_data_json['nbHits']>0:
 df = None
 
 
-# In[3]:
-
-
+#repeat for HackerNews react native
 cur.execute("SELECT max(time) FROM HackerNews_react_native")
 last_timestamp = cur.fetchall()[0][0]
-
-
 react_native_url = "https://hn.algolia.com/api/v1/search?query=react%20native&numericFilters=created_at_i>{}&hitsPerPage=1000&tags=comment".format(last_timestamp)
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
 react_native_file = requests.get(react_native_url,headers=headers)
@@ -61,13 +48,9 @@ if react_native_data_json['nbHits']>0:
 df = None
 
 
-# In[4]:
-
-
+#repeat for HackerNews flutter
 cur.execute("SELECT max(time) FROM HackerNews_flutter")
 last_timestamp = cur.fetchall()[0][0]
-
-
 flutter_url = "https://hn.algolia.com/api/v1/search?query=flutter&numericFilters=created_at_i>{}&hitsPerPage=1000&tags=comment".format(last_timestamp)
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
 flutter_file = requests.get(flutter_url,headers=headers)
@@ -82,13 +65,9 @@ if flutter_data_json['nbHits']>0:
 df = None    
 
 
-# In[5]:
-
-
-#get the data from the web api and load the resulting json into python
+#Repeat for Reddit xamarin
 cur.execute("SELECT max(created_utc) FROM Reddit_xamarin")
 last_timestamp = cur.fetchall()[0][0]
-
 xamarin_url = "https://api.pushshift.io/reddit/search/comment/?q=xamarin&after={}&sort=asc&sort_type=created_utc&limit=5000".format(last_timestamp)
 xamarin_file = urllib.urlopen(xamarin_url)
 xamarin_data = xamarin_file.read()
@@ -100,12 +79,9 @@ if xamarin_data_json['data']:
 df = None
 
 
-# In[6]:
-
-
+#Repeat for Reddit react native
 cur.execute("SELECT max(created_utc) FROM Reddit_react_native")
 last_timestamp = cur.fetchall()[0][0]
-
 react_native_url = "https://api.pushshift.io/reddit/search/comment/?q=react%20native&after={}&sort=asc&sort_type=created_utc&limit=5000".format(last_timestamp)
 react_native_file = urllib.urlopen(react_native_url)
 react_native_data = react_native_file.read()
@@ -117,12 +93,9 @@ if react_native_data_json['data']:
 df = None
 
 
-# In[7]:
-
-
+#Repeat for Reddit flutter
 cur.execute("SELECT max(created_utc) FROM Reddit_flutter")
 last_timestamp = cur.fetchall()[0][0]
-
 flutter_url = "https://api.pushshift.io/reddit/search/comment/?q=flutter&after={}&sort=asc&sort_type=created_utc&limit=10000".format(last_timestamp)
 flutter_file = urllib.urlopen(flutter_url)
 flutter_data = flutter_file.read()
@@ -134,21 +107,6 @@ if flutter_data_json['data']:
 df = None
 
 
-# In[8]:
-
-
+#clean up sql
 conn.commit()
 conn.close()
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-

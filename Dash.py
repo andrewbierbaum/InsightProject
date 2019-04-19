@@ -126,6 +126,7 @@ if cross_posts_data_json['data']:
 #close the SQL 
 conn.close()
 
+#setup dark mode
 colors = {
     'background': '#111111',
     'text': '#7FDBFF'
@@ -202,10 +203,7 @@ def render_content(tab):
   
 
             
-#these are the click and mouseover 
-            #dcc.Textarea(placeholder='Click data to Select',value='This is a TextArea component',style={'width': '100%'})
-            #html.Div(dcc.Textarea(placeholder='Click data to Select',value='This is a TextArea component',id='HackerNews-text',style={'width': '50%'})),
-            
+#these are the click and mouseover textboxes  
             html.H4(children ='Hover over data to quick view',id='HackerNews-hover-text',style={'width': '49%','display':'inline-block','vertical-align': 'top','height':'175px','overflow': 'hidden','border':'groove', 'border-radius': '5px','margin-top': '5px','margin-bottom':'5px'}),
             html.H4(children ='Hover over data to quick view',id='Reddit-hover-text',style={'width': '49%','display':'inline-block','vertical-align': 'top','height':'175px','overflow': 'hidden','border':'groove', 'border-radius': '5px','margin-top': '5px','margin-bottom':'5px'}),
             html.H4(children ='Click data to Select',id='HackerNews-text',style={'width': '49%','display':'inline-block','vertical-align': 'top','height':'200px','overflow-y': 'scroll','border':'groove', 'border-radius': '5px','margin-top': '5px','margin-bottom':'5px'}),
@@ -243,16 +241,6 @@ def render_content(tab):
                 data=df_flutter_cross_posts_full.to_dict("rows"),
             )]            
         )
-#     elif tab == 'topic-search':
-#         return html.Div([
-#             html.Div(dcc.Input(id='input-box-1', type='text')),
-#             html.Div(dcc.Input(id='input-box-2', type='text')),
-#             html.Div(dcc.Input(id='input-box-3', type='text')),
-#             html.Button('Submit', id='button'),
-#             html.Div(id='container-button-basic', children='Enter a value and press submit')
-# ])
-
-#server = app.server # the Flask app, doing "gunicorn app:server -b :80" to get the app to port 80
 
 #below is the logic for mousing over the graphs
 @app.callback(
@@ -277,7 +265,6 @@ def update_text(hoverData):
     if hoverData['points'][0]['curveNumber']==2:
         return HP.HTMLParser().unescape(reddit_flutter_Body_Data[hoverData['points'][0]['pointIndex']])
   
-
 #below is the logic for clicking on the graphs
 @app.callback(
      dash.dependencies.Output('HackerNews-text', 'children'),
@@ -318,18 +305,6 @@ def update_text(clickData):
             html.A("Direct link to Reddit user comment", href="https://new.reddit.com/comments/"+str(reddit_flutter_link_Id_Data[clickData['points'][0]['pointIndex']]).replace("t3_","")+ "/_/" + str(reddit_flutter_Id_Data[clickData['points'][0]['pointIndex']]),target="_blank"),
             html.H3(HP.HTMLParser().unescape(reddit_flutter_Body_Data[clickData['points'][0]['pointIndex']]))  
         ])   
-   
-
-
-# @app.callback(
-#     dash.dependencies.Output('container-button-basic', 'children'),
-#     [dash.dependencies.Input('button', 'n_clicks')],[dash.dependencies.State('input-box-1', 'value'),dash.dependencies.State('input-box-2', 'value'),dash.dependencies.State('input-box-3', 'value')])
-# def update_output(n_clicks,value1,value2,value3):
-  
-    
-#     return 'You are searching for {}'.format(searches)
-
-
 
 #port 80 was forwarded to 9990 with "sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 9990"
 
