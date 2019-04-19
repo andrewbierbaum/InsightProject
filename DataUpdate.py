@@ -67,7 +67,7 @@ df = None
 
 #Repeat for Reddit xamarin
 cur.execute("SELECT max(created_utc) FROM Reddit_xamarin")
-last_timestamp = cur.fetchall()[0][0]
+last_timestamp = cur.fetchall()[0][0] 
 xamarin_url = "https://api.pushshift.io/reddit/search/comment/?q=xamarin&after={}&sort=asc&sort_type=created_utc&limit=5000".format(last_timestamp)
 xamarin_file = urllib.urlopen(xamarin_url)
 xamarin_data = xamarin_file.read()

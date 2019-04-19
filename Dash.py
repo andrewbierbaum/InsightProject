@@ -160,7 +160,7 @@ def render_content(tab):
         return html.Div(id='dark-theme-feature',children=[
             html.H2(children='Technology Mentions on HackerNews and Reddit',style={'text-align': 'center'}),
 #	html.Div(children ='user data',id='text-context'),
-            html.Div(children='''Hover and Click to Display User Comments''',style={'text-align': 'center','font-size': 22}),
+            #html.Div(children='''Hover and Click to Display User Comments''',style={'text-align': 'center','font-size': 22}),
             html.Br(),
             html.Div([
             #builds the HackerNews graph                    

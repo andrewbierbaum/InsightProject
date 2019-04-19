@@ -43,10 +43,7 @@ df_react_native.to_sql('Reddit_react_native', conn, if_exists='replace')
 conn.execute("DELETE FROM Reddit_flutter WHERE created_utc<1305578972")
 
 #delete subreddits not whitelisted
-conn.execute("DELETE FROM Reddit_flutter WHERE subreddit NOT IN ('FlutterDev','androiddev','programming','Android','techsupport','dartlang','technology','reactnative','Flutter','ProgrammerHumor','xamarindevelopers','Xamarin')")
-conn.execute("DELETE FROM Reddit_flutter WHERE subreddit NOT IN ('csparp','learnprogramming','dotnet','windowsphone','gamedev','cscareerquestions','Unity3d','apple','linux','webdev','appdev','fsharp')")
-conn.execute("DELETE FROM Reddit_flutter WHERE subreddit NOT IN ('reactjs','javascript','iOSProgramming','startups','Entrepreneur','swift','vuejs','AskProgramming','Clojure','AskReddit','learnjavascript','web_design','golang','forhire')")
-
+conn.execute("DELETE FROM Reddit_flutter WHERE subreddit NOT IN ('FlutterDev','androiddev','programming','Android','techsupport','dartlang','technology','reactnative','Flutter','ProgrammerHumor','xamarindevelopers','Xamarin','csparp','learnprogramming','dotnet','windowsphone','gamedev','cscareerquestions','Unity3d','apple','linux','webdev','appdev','fsharp','reactjs','javascript','iOSProgramming','startups','Entrepreneur','swift','vuejs','AskProgramming','Clojure','AskReddit','learnjavascript','web_design','golang','forhire')")
 
 conn.commit()
 conn.close()
