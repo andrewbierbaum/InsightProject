@@ -257,6 +257,9 @@ def render_content(tab):
     
 @app.callback(dash.dependencies.Output('search-graph', 'figure'),[dash.dependencies.Input('button', 'n_clicks')],[dash.dependencies.State('input-box-1', 'value'),dash.dependencies.State('input-box-2', 'value'),dash.dependencies.State('input-box-3', 'value')])
 def update_output(n_clicks,search1,search2,search3):
+    data1 = None
+    data2 = None
+    data3 = None
     if search1: 
         last_timestamp = 0  
         search1_url = "https://api.pushshift.io/reddit/search/comment/?q={}&after={}&sort=asc&sort_type=created_utc&limit=5000".format(search1,last_timestamp)
@@ -267,16 +270,53 @@ def update_output(n_clicks,search1,search2,search3):
         if search1_data_json['data']:
             df_search1 = json_normalize(search1_data_json['data'])
             df_search1 = df_search1[['created_utc', 'body', 'subreddit_id', 'link_id', 'parent_id','score', 'id', 'subreddit']]
+            df_search1['created_utc'] = pandas.to_datetime(df_search1['created_utc'],unit ='s')
 
             
-        print(df_search1)
-        data = plotly.graph_objs.Scatter(
+        data1 = plotly.graph_objs.Scatter(
                 x=df_search1['created_utc'],
                 y=df_search1.index,
                 name='search',
                 mode= 'lines',
                 )
-
+        
+    if search2: 
+        last_timestamp = 0  
+        search2_url = "https://api.pushshift.io/reddit/search/comment/?q={}&after={}&sort=asc&sort_type=created_utc&limit=5000".format(search2,last_timestamp)
+        headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
+        search2_file = requests.get(search2_url,headers=headers)
+        search2_data = search2_file.content
+        search2_data_json = json.loads(search2_data)
+        if search2_data_json['data']:
+            df_search2 = json_normalize(search2_data_json['data'])
+            df_search2 = df_search2[['created_utc', 'body', 'subreddit_id', 'link_id', 'parent_id','score', 'id', 'subreddit']]
+            df_search2['created_utc'] = pandas.to_datetime(df_search2['created_utc'],unit ='s')
+            
+        data2 = plotly.graph_objs.Scatter(
+                x=df_search2['created_utc'],
+                y=df_search2.index,
+                name='search',
+                mode= 'lines',
+                )
+        
+    if search3: 
+        last_timestamp = 0  
+        search3_url = "https://api.pushshift.io/reddit/search/comment/?q={}&after={}&sort=asc&sort_type=created_utc&limit=5000".format(search3,last_timestamp)
+        headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
+        search3_file = requests.get(search3_url,headers=headers)
+        search3_data = search3_file.content
+        search3_data_json = json.loads(search3_data)
+        if search3_data_json['data']:
+            df_search3 = json_normalize(search3_data_json['data'])
+            df_search3 = df_search3[['created_utc', 'body', 'subreddit_id', 'link_id', 'parent_id','score', 'id', 'subreddit']]
+            df_search3['created_utc'] = pandas.to_datetime(df_search3['created_utc'],unit ='s')
+            
+        data3 = plotly.graph_objs.Scatter(
+                x=df_search3['created_utc'],
+                y=df_search3.index,
+                name='search',
+                mode= 'lines',
+                )
 #         data2 = plotly.graph_objs.Bar(
 #                 x=X,
 #                 y=Y2,
@@ -291,7 +331,7 @@ def update_output(n_clicks,search1,search2,search3):
 
 # 'data': [data,data2]
 
-    return {'data': [data],'layout' : go.Layout()}
+    return {'data': [data1,data2,data3],'layout' : go.Layout()}
     
     
 # def update_graph_live(n):
