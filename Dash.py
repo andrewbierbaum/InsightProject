@@ -1,18 +1,21 @@
+import csv
+import html.parser as HP
+import json
+import urllib
+import sqlite3
+import textwrap
+import requests
+from datetime import datetime
+import plotly
+import plotly.graph_objs as go
 import dash
 import dash_core_components as dcc
-import dash_html_components as html
-from dash.dependencies import Input, Output
 import dash_daq as daq
+import dash_html_components as html
 import dash_table
-import csv
-import pandas
-from datetime import datetime
 import numpy
-import sqlite3
-import html.parser as HP
-import textwrap 
-import urllib
-import json
+import pandas
+from dash.dependencies import Input, Output
 from pandas.io.json import json_normalize
 
 #open the sql to get the data
@@ -144,7 +147,7 @@ app.layout = html.Div([
     dcc.Tabs(id="tabs-navigation", value='momentum-graph', children=[
         dcc.Tab(label='Momentum Graph', value='momentum-graph'),
         dcc.Tab(label='Reddit Cross Posts', value='reddit-cross-posts'),
-#         dcc.Tab(label='Topic Search', value='topic-search'),
+        dcc.Tab(label='Topic Search', value='topic-search'),
     ]),
     html.Div(id='tech-graph-tabs')
 ])
@@ -212,8 +215,7 @@ def render_content(tab):
 
     #building the crossposts tab
     elif tab == 'reddit-cross-posts':
-        return html.Div(
-            [
+        return html.Div(id = 'cross tables',children =[
             html.H2(children='Top Xamarin Posts Discussing all Three Technologies',style={'text-align': 'center'}),
             dash_table.DataTable(
                     style_data={'whiteSpace': 'normal'},
@@ -238,9 +240,137 @@ def render_content(tab):
                     css=[{'selector': '.dash-cell div.dash-cell-value', 'rule': 'display: inline; white-space: inherit; overflow: inherit; text-overflow: inherit;'}],
                 id='table',
                 columns=[{'name':"mentions", 'id':'total_link_id_count'},{'name':"Title", 'id':'title'},{'name':'url','id':'full_link'}],
-                data=df_flutter_cross_posts_full.to_dict("rows"),
+                data=df_flutter_cross_posts_full.to_dict("rows")
             )]            
         )
+    
+    elif tab == 'topic-search':
+        return html.Div(children=[
+            html.Div(dcc.Input(id='input-box-1', type='text')),
+            html.Div(dcc.Input(id='input-box-2', type='text')),
+            html.Div(dcc.Input(id='input-box-3', type='text')),
+            html.Button('Submit', id='button'),
+#             html.Div(id='container-button-basic', children='Enter a value and press submit')
+            dcc.Graph(id='search-graph')
+    ])
+
+    
+@app.callback(dash.dependencies.Output('search-graph', 'figure'),[dash.dependencies.Input('button', 'n_clicks')],[dash.dependencies.State('input-box-1', 'value'),dash.dependencies.State('input-box-2', 'value'),dash.dependencies.State('input-box-3', 'value')])
+def update_output(n_clicks,search1,search2,search3):
+    if search1: 
+        last_timestamp = 0  
+        search1_url = "https://api.pushshift.io/reddit/search/comment/?q={}&after={}&sort=asc&sort_type=created_utc&limit=5000".format(search1,last_timestamp)
+        headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
+        search1_file = requests.get(search1_url,headers=headers)
+        search1_data = search1_file.content
+        search1_data_json = json.loads(search1_data)
+        if search1_data_json['data']:
+            df_search1 = json_normalize(search1_data_json['data'])
+            df_search1 = df_search1[['created_utc', 'body', 'subreddit_id', 'link_id', 'parent_id','score', 'id', 'subreddit']]
+
+            
+        print(df_search1)
+        data = plotly.graph_objs.Scatter(
+                x=df_search1['created_utc'],
+                y=df_search1.index,
+                name='search',
+                mode= 'lines',
+                )
+
+#         data2 = plotly.graph_objs.Bar(
+#                 x=X,
+#                 y=Y2,
+#                 name='Volume',
+#                 marker=dict(color=app_colors['volume-bar']),
+#                 )
+
+#         df['sentiment_shares'] = list(map(pos_neg_neutral, df['sentiment']))
+
+#         #sentiment_shares = dict(df['sentiment_shares'].value_counts())
+#         cache.set('sentiment_shares', sentiment_term, dict(df['sentiment_shares'].value_counts()), 120)
+
+# 'data': [data,data2]
+
+    return {'data': [data],'layout' : go.Layout()}
+    
+    
+# def update_graph_live(n):
+#     satellite = Orbital('TERRA')
+#     data = {
+#         'time': [],
+#         'Latitude': [],
+#         'Longitude': [],
+#         'Altitude': []
+#     }
+
+#     # Collect some data
+#     for i in range(180):
+#         time = datetime.datetime.now() - datetime.timedelta(seconds=i*20)
+#         lon, lat, alt = satellite.get_lonlatalt(
+#             time
+#         )
+#         data['Longitude'].append(lon)
+#         data['Latitude'].append(lat)
+#         data['Altitude'].append(alt)
+#         data['time'].append(time)
+
+#     # Create the graph with subplots
+#     fig = plotly.tools.make_subplots(rows=2, cols=1, vertical_spacing=0.2)
+#     fig['layout']['margin'] = {
+#         'l': 30, 'r': 10, 'b': 30, 't': 10
+#     }
+#     fig['layout']['legend'] = {'x': 0, 'y': 1, 'xanchor': 'left'}
+
+#     fig.append_trace({
+#         'x': data['time'],
+#         'y': data['Altitude'],
+#         'name': 'Altitude',
+#         'mode': 'lines+markers',
+#         'type': 'scatter'
+#     }, 1, 1)
+#     fig.append_trace({
+#         'x': data['Longitude'],
+#         'y': data['Latitude'],
+#         'text': data['time'],
+#         'name': 'Longitude vs Latitude',
+#         'mode': 'lines+markers',
+#         'type': 'scatter'
+#     }, 2, 1)
+
+#     return fig
+
+
+
+#             html.Div(id ='search graphs',children=[
+#             html.H2(children='Search Graphs',style={'text-align': 'center'}),
+# #	html.Div(children ='user data',id='text-context'),
+#             #html.Div(children='''Hover and Click to Display User Comments''',style={'text-align': 'center','font-size': 22}),
+#             html.Br(),
+#             html.Div([
+#             #builds the HackerNews graph                    
+#                 dcc.Graph(
+#                     id='HackerNews-graph', 
+#                     animate = True,
+#                     figure={
+#                     'data': [
+#                     {'x': df_search1['created_utc'], 'y': df_search1.index, 'type': 'scatter'},
+# #                     {'x': hackernews_react_native_Date_Data, 'y': hackernews_react_native_count,  'type': 'scatter', 'name': 'React Native'}, 
+# #                     {'x': hackernews_flutter_Date_Data, 'y': hackernews_flutter_count, 'type': 'scatter', 'name': 'Flutter'},
+#                     ],
+#                     'layout': {
+#                     'hovermode': 'closest',
+#                     'legend': {'orientation':'h','x':0,'y':-0.1},
+#                     'title': 'HackerNews'
+#                     }
+#                     }
+#                 )], style={'width': '50%', 'display': 'inline-block'}), 
+#             #builds the 2nd graph for reddit below
+
+
+#             html.H3(children = 'You are searching for {}{}{}'.format(value1,value2,value3))])
+    
+
+    
 
 #below is the logic for mousing over the graphs
 @app.callback(
@@ -311,4 +441,3 @@ def update_text(clickData):
 #this is the actual server call
 if __name__ == '__main__':
     app.run_server(debug=True, port =9990, host ='0.0.0.0')
-    
