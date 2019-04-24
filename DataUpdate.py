@@ -1,4 +1,4 @@
-import requests
+cccimport requests
 import json
 from datetime import datetime
 import sqlite3
