@@ -252,22 +252,14 @@ def render_content(tab):
             html.Div(dcc.Input(id='input-box-2', type='text')),
             html.Div(dcc.Input(id='input-box-3', type='text')),
             html.Button('Submit', id='button'),
-#             html.Div(id='container-button-basic', children='Enter a value and press submit')
-            dcc.Graph(id='search-graph')
-            
-#             dash_table.DataTable(
-#                     style_data={'whiteSpace': 'normal'},
-#                     css=[{'selector': '.dash-cell div.dash-cell-value', 'rule': 'display: inline; white-space: inherit; overflow: inherit; text-overflow: inherit;'}],
-#                 id='search-cross-table',
-#                 columns=[{'name':"mentions", 'id':'total_link_id_count'},{'name':"Title", 'id':'link_id'}],
-#                          #{'name':'url','id':'full_link'}],
-#                 data=df_search_cross_posts.to_dict("rows")
-#             )
+            html.Div(children='Enter a value and press submit'),
+
+            html.Div(id='search-graph-and-table-container')
         ])
             
 
     
-@app.callback(dash.dependencies.Output('search-graph', 'figure'),[dash.dependencies.Input('button', 'n_clicks')],[dash.dependencies.State('input-box-1', 'value'),dash.dependencies.State('input-box-2', 'value'),dash.dependencies.State('input-box-3', 'value')])
+@app.callback(dash.dependencies.Output('search-graph-and-table-container', "children"),[dash.dependencies.Input('button', 'n_clicks')],[dash.dependencies.State('input-box-1', 'value'),dash.dependencies.State('input-box-2', 'value'),dash.dependencies.State('input-box-3', 'value')])
 def update_output(n_clicks,search1,search2,search3):
     data1 = None
     data2 = None
@@ -294,13 +286,13 @@ def update_output(n_clicks,search1,search2,search3):
             else:
                 quit_flag = True
             
-        data1 = plotly.graph_objs.Scatter(
-                x=df_search1_final['created_utc'],
-                y=df_search1_final.index,
-                text=df_search1_final['body'],
-                name=search1,
-                mode= 'lines',
-                )
+#         data1 = plotly.graph_objs.Scatter(
+#                 x=df_search1_final['created_utc'],
+#                 y=df_search1_final.index,
+#                 text=df_search1_final['body'],
+#                 name=search1,
+#                 mode= 'lines',
+#                 )
     
     if search2 is not None: 
         last_timestamp = 0
@@ -324,13 +316,13 @@ def update_output(n_clicks,search1,search2,search3):
             else:
                 quit_flag = True
             
-        data2 = plotly.graph_objs.Scatter(
-                x=df_search2_final['created_utc'],
-                y=df_search2_final.index,
-                text=df_search2_final['body'],
-                name=search2,
-                mode= 'lines',
-                )
+#         data2 = plotly.graph_objs.Scatter(
+#                 x=df_search2_final['created_utc'],
+#                 y=df_search2_final.index,
+#                 text=df_search2_final['body'],
+#                 name=search2,
+#                 mode= 'lines',
+#                 )
         
     if search3 is not None: 
         last_timestamp = 0
@@ -354,13 +346,13 @@ def update_output(n_clicks,search1,search2,search3):
             else:
                 quit_flag = True
             
-        data3 = plotly.graph_objs.Scatter(
-                x=df_search3_final['created_utc'],
-                y=df_search3_final.index,
-                text=df_search3_final['body'],
-                name=search3,
-                mode= 'lines',
-                )
+#         data3 = plotly.graph_objs.Scatter(
+#                 x=df_search3_final['created_utc'],
+#                 y=df_search3_final.index,
+#                 text=df_search3_final['body'],
+#                 name=search3,
+#                 mode= 'lines',
+#                 )
 
     #translating the sql used previously into 
     conn = sqlite3.connect('CrossTables.db')      
@@ -372,17 +364,60 @@ def update_output(n_clicks,search1,search2,search3):
     
     df_search_cross_posts = pandas.read_sql("SELECT search1_table.link_id, search1_table.link_id_count as total_link_id_count FROM (SELECT search1.link_id, count(*) as link_id_count FROM search1 GROUP BY search1.link_id) as search1_table JOIN (SELECT search2.link_id, count(*) as link_id_count FROM search2 GROUP BY search2.link_id) as search2_table ON search1_table.link_id = search2_table.link_id JOIN (SELECT search3.link_id, count(*) as link_id_count FROM search3 GROUP BY search3.link_id) as search3_table ON search2_table.link_id = search3_table.link_id ORDER BY total_link_id_count DESC LIMIT 25",conn)
     
-    print(df_search_cross_posts.head)
+    #get the webapi ready
+    s = ','
+    idlist = s.join(df_search_cross_posts['link_id'])
+    str(idlist)
+
+    #find and tabulate all the api data, this pulls the full_link and title of the corresponding post
+    cross_posts_url = "https://api.pushshift.io/reddit/search/submission/?ids={}".format(idlist)
+    cross_posts_file = urllib.request.urlopen(cross_posts_url)
+    cross_posts_data = cross_posts_file.read()
+    cross_posts_data_json = json.loads(cross_posts_data)
+    if cross_posts_data_json['data']:
+        df_cross_posts_update = json_normalize(cross_posts_data_json['data'])
+        df_cross_posts_update = df_cross_posts_update[['full_link','title']]
+        df_search_cross_posts_full = pandas.concat([df_search_cross_posts, df_cross_posts_update], axis=1)
     
     conn.commit()
-
-    
     conn.close()
     
     
+
+    # {'data': [data1,data2,data3],'layout' : go.Layout()}, {'data':df_search_cross_posts.to_dict("rows")}    
     
-    
-    return {'data': [data1,data2,data3],'layout' : go.Layout()}
+    return html.Div([
+                dcc.Graph(
+                    id='search-graph',
+                    animate=True,
+                    figure={
+                    'data': [
+                    {'x': df_search1_final['created_utc'], 'y': df_search1_final.index, 'type': 'scatter', 'text': df_search1_final['body'] ,'name': search1},
+                    {'x': df_search2_final['created_utc'], 'y': df_search1_final.index,  'type': 'scatter', 'text': df_search2_final['body'] ,'name':search2}, 
+                    {'x': df_search3_final['created_utc'], 'y': df_search1_final.index, 'type': 'scatter','text': df_search3_final['body'] , 'name': search3},
+                    ],
+                    'layout': {
+                    'hovermode': 'closest',
+                    'legend': {'orientation':'h','x':0,'y':-0.1},
+                    'title': 'Search Results'
+                    }
+                    }
+                ),
+            html.Div(id = 'search-cross-tables',children =[
+            html.H2(children='Top {} Posts Discussing all Three Technologies'.format(search1),style={'text-align': 'center'}),
+            dash_table.DataTable(
+                    style_data={'whiteSpace': 'normal'},
+                    css=[{'selector': '.dash-cell div.dash-cell-value', 'rule': 'display: inline; white-space: inherit; overflow: inherit; text-overflow: inherit;'}],
+                id='xamarin-cross-table',
+                columns=[{'name':"mentions", 'id':'total_link_id_count'},{'name':"Title", 'id':'title'},{'name':'url','id':'full_link'}],
+                data=df_search_cross_posts_full.to_dict("rows"),
+            ),
+            html.Br(),
+            ])
+    ])
+
+
+
     
 
 #below is the logic for mousing over the graphs
