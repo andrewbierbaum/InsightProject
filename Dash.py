@@ -517,4 +517,5 @@ def update_output(n_clicks,search1,search2,search3):
 
 #this is the actual server call
 if __name__ == '__main__':
-    app.run_server(debug=True, port =9990, host ='0.0.0.0')
+    app.run_server(debug=True, dev_tools_ui=False, port =9990, host ='0.0.0.0') #
+    #dev_tools_ui=False mutes the errors on the created website

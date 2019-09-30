@@ -1,4 +1,10 @@
 metastore_db/*
+hackernews_flutter
+hackernews_react_native
+hackernews_xamarin
+reddit_flutter
+reddit_react_native
+reddit_xamarin
 
 elasticsearch-7.0.0/*
 elasticsearch-7.0.0-linux-x86_64.tar.gz
